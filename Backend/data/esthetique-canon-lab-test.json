@@ -1,0 +1,1157 @@
+[
+  {
+    "id": "hydra-facial-with-glow-mask-0",
+    "name": "Hydra facial with Glow mask",
+    "description": "Aesthetic Procedure",
+    "price": 10000,
+    "discounted_price": 8000
+  },
+  {
+    "id": "korean-glass-hydra-glow-facial-1",
+    "name": "Korean Glass hydra glow facial",
+    "description": "Aesthetic Procedure",
+    "price": 12000,
+    "discounted_price": 9600
+  },
+  {
+    "id": "prp-therapy-for-face-rejuvenation-2",
+    "name": "PRP therapy for face rejuvenation",
+    "description": "Aesthetic Procedure",
+    "price": 12000,
+    "discounted_price": 9600
+  },
+  {
+    "id": "photo-facial-3",
+    "name": "Photo facial",
+    "description": "Aesthetic Procedure",
+    "price": 6000,
+    "discounted_price": 4800
+  },
+  {
+    "id": "exosomes-1-billion-face-hair-4",
+    "name": "Exosomes 1 billion face/hair",
+    "description": "Aesthetic Procedure",
+    "price": 60000,
+    "discounted_price": 48000
+  },
+  {
+    "id": "exosomes-2-5-billion-face-hair-5",
+    "name": "Exosomes 2.5 billion face/hair",
+    "description": "Aesthetic Procedure",
+    "price": 90000,
+    "discounted_price": 72000
+  },
+  {
+    "id": "exosomes-5-billion-face-hair-6",
+    "name": "Exosomes 5 billion face/hair",
+    "description": "Aesthetic Procedure",
+    "price": 150000,
+    "discounted_price": 120000
+  },
+  {
+    "id": "exosomes-12-billion-face-hair-7",
+    "name": "Exosomes 12 billion face/hair",
+    "description": "Aesthetic Procedure",
+    "price": 250000,
+    "discounted_price": 200000
+  },
+  {
+    "id": "exosomes-12-billion-face-hair-8",
+    "name": "Exosomes 12 billion face/hair",
+    "description": "Aesthetic Procedure",
+    "price": 310000,
+    "discounted_price": 248000
+  },
+  {
+    "id": "prp-scalp-with-serum-9",
+    "name": "PRP SCALP With serum",
+    "description": "Aesthetic Procedure",
+    "price": 12000,
+    "discounted_price": 9600
+  },
+  {
+    "id": "acne-treatment-10",
+    "name": "Acne treatment",
+    "description": "Aesthetic Procedure",
+    "price": 12000,
+    "discounted_price": 9600
+  },
+  {
+    "id": "carbon-peeling-11",
+    "name": "Carbon peeling",
+    "description": "Aesthetic Procedure",
+    "price": 6000,
+    "discounted_price": 4800
+  },
+  {
+    "id": "q-switch-therapy-12",
+    "name": "Q-Switch therapy",
+    "description": "Aesthetic Procedure",
+    "price": 8000,
+    "discounted_price": 6400
+  },
+  {
+    "id": "micro-needling-with-serum-13",
+    "name": "Micro needling with serum",
+    "description": "Aesthetic Procedure",
+    "price": 15000,
+    "discounted_price": 12000
+  },
+  {
+    "id": "skin-rejuvenation-therapy-14",
+    "name": "Skin rejuvenation therapy",
+    "description": "Aesthetic Procedure",
+    "price": 8000,
+    "discounted_price": 6400
+  },
+  {
+    "id": "slimming-drips-15",
+    "name": "Slimming drips",
+    "description": "Aesthetic Procedure",
+    "price": 15000,
+    "discounted_price": 12000
+  },
+  {
+    "id": "immunity-booster-drips-16",
+    "name": "Immunity booster drips",
+    "description": "Aesthetic Procedure",
+    "price": 15000,
+    "discounted_price": 12000
+  },
+  {
+    "id": "glow-whitening-drips-17",
+    "name": "Glow whitening drips",
+    "description": "Aesthetic Procedure",
+    "price": 15000,
+    "discounted_price": 12000
+  },
+  {
+    "id": "laser-for-birth-mark-removal-18",
+    "name": "Laser for birth mark removal",
+    "description": "Aesthetic Procedure",
+    "price": 10000,
+    "discounted_price": 8000
+  },
+  {
+    "id": "laser-for-tattoos-removal-19",
+    "name": "Laser for Tattoos removal",
+    "description": "Aesthetic Procedure",
+    "price": 10000,
+    "discounted_price": 8000
+  },
+  {
+    "id": "laser-for-skin-tag-removal-20",
+    "name": "Laser for skin tag removal",
+    "description": "Aesthetic Procedure",
+    "price": 10000,
+    "discounted_price": 8000
+  },
+  {
+    "id": "laser-for-mole-removal-21",
+    "name": "Laser for mole removal",
+    "description": "Aesthetic Procedure",
+    "price": 10000,
+    "discounted_price": 8000
+  },
+  {
+    "id": "laser-hair-removal-face-sides-22",
+    "name": "Laser hair removal face sides",
+    "description": "Aesthetic Procedure",
+    "price": 4000,
+    "discounted_price": 3200
+  },
+  {
+    "id": "laser-hair-removal-for-upperlip-23",
+    "name": "Laser hair removal for upperlip",
+    "description": "Aesthetic Procedure",
+    "price": 2000,
+    "discounted_price": 1600
+  },
+  {
+    "id": "laser-hair-removal-for-chin-24",
+    "name": "Laser hair removal for chin",
+    "description": "Aesthetic Procedure",
+    "price": 3000,
+    "discounted_price": 2400
+  },
+  {
+    "id": "laser-hair-removal-full-face-25",
+    "name": "Laser hair removal full face",
+    "description": "Aesthetic Procedure",
+    "price": 6000,
+    "discounted_price": 4800
+  },
+  {
+    "id": "laser-hair-removal-face-with-neck-26",
+    "name": "Laser hair removal face with neck",
+    "description": "Aesthetic Procedure",
+    "price": 8000,
+    "discounted_price": 6400
+  },
+  {
+    "id": "laser-hair-removal-neck-27",
+    "name": "Laser hair removal neck",
+    "description": "Aesthetic Procedure",
+    "price": 3000,
+    "discounted_price": 2400
+  },
+  {
+    "id": "laser-hair-removal-for-full-arms-28",
+    "name": "Laser hair removal for full arms",
+    "description": "Aesthetic Procedure",
+    "price": 8000,
+    "discounted_price": 6400
+  },
+  {
+    "id": "laser-hair-removal-half-arms-29",
+    "name": "Laser hair removal half arms",
+    "description": "Aesthetic Procedure",
+    "price": 5000,
+    "discounted_price": 4000
+  },
+  {
+    "id": "laser-hair-removal-for-full-legs-30",
+    "name": "Laser hair removal for full legs",
+    "description": "Aesthetic Procedure",
+    "price": 10000,
+    "discounted_price": 8000
+  },
+  {
+    "id": "laser-hair-removal-for-under-legs-31",
+    "name": "Laser hair removal for under legs",
+    "description": "Aesthetic Procedure",
+    "price": 6000,
+    "discounted_price": 4800
+  },
+  {
+    "id": "laser-hair-removal-for-half-legs-32",
+    "name": "Laser hair removal for half legs",
+    "description": "Aesthetic Procedure",
+    "price": 6000,
+    "discounted_price": 4800
+  },
+  {
+    "id": "laser-hair-removal-for-under-arms-33",
+    "name": "Laser hair removal for under arms",
+    "description": "Aesthetic Procedure",
+    "price": 5000,
+    "discounted_price": 4000
+  },
+  {
+    "id": "laser-hair-removal-for-full-body-34",
+    "name": "Laser hair removal for full body",
+    "description": "Aesthetic Procedure",
+    "price": 30000,
+    "discounted_price": 24000
+  },
+  {
+    "id": "lip-filler-35",
+    "name": "Lip filler",
+    "description": "Aesthetic Procedure",
+    "price": 60000,
+    "discounted_price": 48000
+  },
+  {
+    "id": "melasma-treatment-36",
+    "name": "Melasma treatment",
+    "description": "Aesthetic Procedure",
+    "price": 15000,
+    "discounted_price": 12000
+  },
+  {
+    "id": "lypolytic-injections-fat-dissolving-injections-37",
+    "name": "Lypolytic injections/Fat Dissolving injections",
+    "description": "Aesthetic Procedure",
+    "price": 50000,
+    "discounted_price": 40000
+  },
+  {
+    "id": "botox-american-38",
+    "name": "BOTOX american",
+    "description": "Aesthetic Procedure",
+    "price": 60000,
+    "discounted_price": 48000
+  },
+  {
+    "id": "botox-korean-39",
+    "name": "Botox korean",
+    "description": "Aesthetic Procedure",
+    "price": 30000,
+    "discounted_price": 24000
+  },
+  {
+    "id": "profhilo-40",
+    "name": "Profhilo",
+    "description": "Aesthetic Procedure",
+    "price": 70000,
+    "discounted_price": 56000
+  },
+  {
+    "id": "fillers-41",
+    "name": "Fillers",
+    "description": "Aesthetic Procedure",
+    "price": 60000,
+    "discounted_price": 48000
+  },
+  {
+    "id": "lip-tint-42",
+    "name": "Lip tint",
+    "description": "Aesthetic Procedure",
+    "price": 10000,
+    "discounted_price": 8000
+  },
+  {
+    "id": "eyebrow-lift-43",
+    "name": "EyeBrow lift",
+    "description": "Aesthetic Procedure",
+    "price": 30000,
+    "discounted_price": 24000
+  },
+  {
+    "id": "doctor-consultation-a-44",
+    "name": "Doctor consultation A",
+    "description": "Aesthetic Procedure",
+    "price": 3000,
+    "discounted_price": 2400
+  },
+  {
+    "id": "bb-glow-45",
+    "name": "BB Glow",
+    "description": "Aesthetic Procedure",
+    "price": 10000,
+    "discounted_price": 8000
+  },
+  {
+    "id": "electrolysis-46",
+    "name": "ELECTROLYSIS",
+    "description": "Aesthetic Procedure",
+    "price": 15000,
+    "discounted_price": 12000
+  },
+  {
+    "id": "threads-lift-47",
+    "name": "Threads lift",
+    "description": "Aesthetic Procedure",
+    "price": 90000,
+    "discounted_price": 72000
+  },
+  {
+    "id": "eyebrow-tint-48",
+    "name": "Eyebrow tint",
+    "description": "Aesthetic Procedure",
+    "price": 15000,
+    "discounted_price": 12000
+  },
+  {
+    "id": "carbon-peeling-for-hands-49",
+    "name": "Carbon peeling for hands",
+    "description": "Aesthetic Procedure",
+    "price": 10000,
+    "discounted_price": 8000
+  },
+  {
+    "id": "carbon-peeling-for-feets-50",
+    "name": "Carbon peeling for feets",
+    "description": "Aesthetic Procedure",
+    "price": 12000,
+    "discounted_price": 9600
+  },
+  {
+    "id": "carbon-peeling-for-lip-51",
+    "name": "Carbon peeling for lip",
+    "description": "Aesthetic Procedure",
+    "price": 2000,
+    "discounted_price": 1600
+  },
+  {
+    "id": "carbon-peeling-for-arms-52",
+    "name": "Carbon peeling for arms",
+    "description": "Aesthetic Procedure",
+    "price": 20000,
+    "discounted_price": 16000
+  },
+  {
+    "id": "carbon-peeling-for-neck-53",
+    "name": "Carbon peeling for neck",
+    "description": "Aesthetic Procedure",
+    "price": 8000,
+    "discounted_price": 6400
+  },
+  {
+    "id": "chemical-peel-54",
+    "name": "Chemical peel",
+    "description": "Aesthetic Procedure",
+    "price": 12000,
+    "discounted_price": 9600
+  },
+  {
+    "id": "lightning-peel-55",
+    "name": "Lightning peel",
+    "description": "Aesthetic Procedure",
+    "price": 15000,
+    "discounted_price": 12000
+  },
+  {
+    "id": "pink-antimate-peel-56",
+    "name": "Pink antimate peel",
+    "description": "Aesthetic Procedure",
+    "price": 15000,
+    "discounted_price": 12000
+  },
+  {
+    "id": "meso-acne-57",
+    "name": "Meso acne",
+    "description": "Aesthetic Procedure",
+    "price": 8000,
+    "discounted_price": 6400
+  },
+  {
+    "id": "meso-hair-58",
+    "name": "Meso hair",
+    "description": "Aesthetic Procedure",
+    "price": 8000,
+    "discounted_price": 6400
+  },
+  {
+    "id": "meso-therapy-59",
+    "name": "Meso therapy",
+    "description": "Aesthetic Procedure",
+    "price": 8000,
+    "discounted_price": 6400
+  },
+  {
+    "id": "morpheus-8-rf-microneedling-60",
+    "name": "Morpheus 8 (RF MICRONEEDLING)",
+    "description": "Aesthetic Procedure",
+    "price": 20000,
+    "discounted_price": 16000
+  },
+  {
+    "id": "hifu-full-face-61",
+    "name": "HIFU FULL FACE",
+    "description": "Aesthetic Procedure",
+    "price": 40000,
+    "discounted_price": 32000
+  },
+  {
+    "id": "hifu-for-double-chin-62",
+    "name": "HIFU FOR DOUBLE CHIN",
+    "description": "Aesthetic Procedure",
+    "price": 10000,
+    "discounted_price": 8000
+  },
+  {
+    "id": "hifu-for-neck-63",
+    "name": "HIFU FOR NECK",
+    "description": "Aesthetic Procedure",
+    "price": 15000,
+    "discounted_price": 12000
+  },
+  {
+    "id": "hifu-for-arms-64",
+    "name": "HIFU FOR ARMS",
+    "description": "Aesthetic Procedure",
+    "price": 30000,
+    "discounted_price": 24000
+  },
+  {
+    "id": "hifu-for-belly-65",
+    "name": "HIFU FOR BELLY",
+    "description": "Aesthetic Procedure",
+    "price": 50000,
+    "discounted_price": 40000
+  },
+  {
+    "id": "hifu-for-cheeks-66",
+    "name": "HIFU FOR CHEEKS",
+    "description": "Aesthetic Procedure",
+    "price": 20000,
+    "discounted_price": 16000
+  },
+  {
+    "id": "hifu-for-brows-lift-67",
+    "name": "HIFU FOR BROWS LIFT",
+    "description": "Aesthetic Procedure",
+    "price": 10000,
+    "discounted_price": 8000
+  },
+  {
+    "id": "boosters-face-eye-68",
+    "name": "BOOSTERS FACE/EYE",
+    "description": "Aesthetic Procedure",
+    "price": 50000,
+    "discounted_price": 40000
+  },
+  {
+    "id": "prp-for-dark-circle-69",
+    "name": "PRP FOR DARK CIRCLE",
+    "description": "Aesthetic Procedure",
+    "price": 5000,
+    "discounted_price": 4000
+  },
+  {
+    "id": "alopecia-areata-injection-70",
+    "name": "Alopecia areata injection",
+    "description": "Aesthetic Procedure",
+    "price": 10000,
+    "discounted_price": 8000
+  },
+  {
+    "id": "eye-lashes-extension-71",
+    "name": "Eye lashes extension",
+    "description": "Aesthetic Procedure",
+    "price": 15000,
+    "discounted_price": 12000
+  },
+  {
+    "id": "laser-hair-removal-for-cheeks-72",
+    "name": "Laser hair removal for cheeks",
+    "description": "For Men",
+    "price": 4000,
+    "discounted_price": 3200
+  },
+  {
+    "id": "laser-hair-removal-for-neck-73",
+    "name": "Laser hair removal for neck",
+    "description": "For Men",
+    "price": 5000,
+    "discounted_price": 4000
+  },
+  {
+    "id": "laser-hair-removal-for-shoulders-74",
+    "name": "Laser hair removal for shoulders",
+    "description": "For Men",
+    "price": 12000,
+    "discounted_price": 9600
+  },
+  {
+    "id": "laser-hair-removal-for-arms-75",
+    "name": "Laser hair removal for arms",
+    "description": "For Men",
+    "price": 15000,
+    "discounted_price": 12000
+  },
+  {
+    "id": "laser-hair-removal-for-legs-76",
+    "name": "Laser hair removal for legs",
+    "description": "For Men",
+    "price": 18000,
+    "discounted_price": 14400
+  },
+  {
+    "id": "laser-hair-removal-for-back-77",
+    "name": "Laser hair removal for back",
+    "description": "For Men",
+    "price": 12000,
+    "discounted_price": 9600
+  },
+  {
+    "id": "laser-hair-removal-for-chest-abdomen-78",
+    "name": "Laser hair removal for chest & abdomen",
+    "description": "For Men",
+    "price": 25000,
+    "discounted_price": 20000
+  },
+  {
+    "id": "laser-hair-removal-for-full-body-79",
+    "name": "Laser hair removal for full body",
+    "description": "For Men",
+    "price": 40000,
+    "discounted_price": 32000
+  },
+  {
+    "id": "rhinoplasty-nose-reshaping-80",
+    "name": "Rhinoplasty (Nose Reshaping)",
+    "description": "Cosmetic Surgery",
+    "price": 500000,
+    "discounted_price": 400000
+  },
+  {
+    "id": "blepharoplasty-eyelid-surgery-81",
+    "name": "Blepharoplasty (Eyelid Surgery)",
+    "description": "Cosmetic Surgery",
+    "price": 500000,
+    "discounted_price": 400000
+  },
+  {
+    "id": "lip-lift-lip-reshaping-82",
+    "name": "Lip Lift /Lip Reshaping",
+    "description": "Cosmetic Surgery",
+    "price": 300000,
+    "discounted_price": 240000
+  },
+  {
+    "id": "dimple-creation-83",
+    "name": "Dimple Creation",
+    "description": "Cosmetic Surgery",
+    "price": 200000,
+    "discounted_price": 160000
+  },
+  {
+    "id": "facial-fat-grafting-84",
+    "name": "Facial Fat Grafting",
+    "description": "Cosmetic Surgery",
+    "price": 200000,
+    "discounted_price": 160000
+  },
+  {
+    "id": "chin-implant-chin-reduction-85",
+    "name": "Chin Implant/Chin Reduction",
+    "description": "Cosmetic Surgery",
+    "price": 300000,
+    "discounted_price": 240000
+  },
+  {
+    "id": "otoplasty-ear-pinning-86",
+    "name": "Otoplasty (Ear Pinning)",
+    "description": "Cosmetic Surgery",
+    "price": 250000,
+    "discounted_price": 200000
+  },
+  {
+    "id": "buccal-fat-removal-87",
+    "name": "Buccal Fat Removal",
+    "description": "Cosmetic Surgery",
+    "price": 250000,
+    "discounted_price": 200000
+  },
+  {
+    "id": "mini-face-lift-local-anesthesia-88",
+    "name": "Mini Face Lift (Local Anesthesia )",
+    "description": "Cosmetic Surgery",
+    "price": 250000,
+    "discounted_price": 200000
+  },
+  {
+    "id": "scar-revision-surgery-89",
+    "name": "Scar Revision Surgery",
+    "description": "Cosmetic Surgery",
+    "price": 100000,
+    "discounted_price": 80000
+  },
+  {
+    "id": "gynecomastia-correction-male-chest-90",
+    "name": "Gynecomastia Correction (Male Chest )",
+    "description": "Cosmetic Surgery",
+    "price": 250000,
+    "discounted_price": 200000
+  },
+  {
+    "id": "double-chin-liposuction-91",
+    "name": "Double Chin Liposuction",
+    "description": "Cosmetic Surgery",
+    "price": 300000,
+    "discounted_price": 240000
+  },
+  {
+    "id": "hair-transplant-surgery-92",
+    "name": "Hair Transplant Surgery",
+    "description": "Cosmetic Surgery",
+    "price": 500000,
+    "discounted_price": 400000
+  },
+  {
+    "id": "breast-liftning-93",
+    "name": "Breast liftning",
+    "description": "Cosmetic Surgery",
+    "price": 500000,
+    "discounted_price": 400000
+  },
+  {
+    "id": "vaginoplasty-94",
+    "name": "Vaginoplasty",
+    "description": "Cosmetic Surgery",
+    "price": 500000,
+    "discounted_price": 400000
+  },
+  {
+    "id": "hymenoplasty-95",
+    "name": "Hymenoplasty",
+    "description": "Cosmetic Surgery",
+    "price": 500000,
+    "discounted_price": 400000
+  },
+  {
+    "id": "meni-pedi-basic-96",
+    "name": "Meni pedi basic",
+    "description": "Saloon Services",
+    "price": 3000,
+    "discounted_price": 2400
+  },
+  {
+    "id": "solution-meni-pedi-97",
+    "name": "Solution meni pedi",
+    "description": "Saloon Services",
+    "price": 12000,
+    "discounted_price": 9600
+  },
+  {
+    "id": "fliss-meni-padi-98",
+    "name": "Fliss meni padi",
+    "description": "Saloon Services",
+    "price": 6000,
+    "discounted_price": 4800
+  },
+  {
+    "id": "arabian-meni-pedi-special-99",
+    "name": "Arabian Meni pedi special",
+    "description": "Saloon Services",
+    "price": 10000,
+    "discounted_price": 8000
+  },
+  {
+    "id": "meni-pedi-whitening-100",
+    "name": "Meni pedi whitening",
+    "description": "Saloon Services",
+    "price": 6000,
+    "discounted_price": 4800
+  },
+  {
+    "id": "thalgo-facial-101",
+    "name": "Thalgo facial",
+    "description": "Saloon Services",
+    "price": 12000,
+    "discounted_price": 9600
+  },
+  {
+    "id": "guinot-facial-102",
+    "name": "Guinot facial",
+    "description": "Saloon Services",
+    "price": 15000,
+    "discounted_price": 12000
+  },
+  {
+    "id": "facials-basic-103",
+    "name": "Facials basic",
+    "description": "Saloon Services",
+    "price": 4000,
+    "discounted_price": 3200
+  },
+  {
+    "id": "facials-whitening-104",
+    "name": "Facials Whitening",
+    "description": "Saloon Services",
+    "price": 5000,
+    "discounted_price": 4000
+  },
+  {
+    "id": "janssen-facial-105",
+    "name": "Janssen facial",
+    "description": "Saloon Services",
+    "price": 10000,
+    "discounted_price": 8000
+  },
+  {
+    "id": "jonssen-facial-106",
+    "name": "jonssen facial",
+    "description": "Saloon Services",
+    "price": 6000,
+    "discounted_price": 4800
+  },
+  {
+    "id": "poliser-face-107",
+    "name": "Poliser face",
+    "description": "Saloon Services",
+    "price": 2000,
+    "discounted_price": 1600
+  },
+  {
+    "id": "poliser-neck-108",
+    "name": "poliser neck",
+    "description": "Saloon Services",
+    "price": 1500,
+    "discounted_price": 1200
+  },
+  {
+    "id": "poliser-hands-109",
+    "name": "Poliser hands",
+    "description": "Saloon Services",
+    "price": 2000,
+    "discounted_price": 1600
+  },
+  {
+    "id": "poliser-arms-110",
+    "name": "Poliser arms",
+    "description": "Saloon Services",
+    "price": 2000,
+    "discounted_price": 1600
+  },
+  {
+    "id": "poliser-feet-111",
+    "name": "Poliser feet",
+    "description": "Saloon Services",
+    "price": 3000,
+    "discounted_price": 2400
+  },
+  {
+    "id": "poliser-legs-112",
+    "name": "Poliser legs",
+    "description": "Saloon Services",
+    "price": 4000,
+    "discounted_price": 3200
+  },
+  {
+    "id": "poliser-for-full-body-113",
+    "name": "poliser for full body",
+    "description": "Saloon Services",
+    "price": 10000,
+    "discounted_price": 8000
+  },
+  {
+    "id": "hair-cut-114",
+    "name": "Hair cut",
+    "description": "Saloon Services",
+    "price": 3000,
+    "discounted_price": 2400
+  },
+  {
+    "id": "keratin-shoulder-length-115",
+    "name": "Keratin shoulder length",
+    "description": "Saloon Services",
+    "price": 25000,
+    "discounted_price": 20000
+  },
+  {
+    "id": "keratin-mid-back-116",
+    "name": "Keratin mid back",
+    "description": "Saloon Services",
+    "price": 30000,
+    "discounted_price": 24000
+  },
+  {
+    "id": "keratin-full-length-117",
+    "name": "Keratin full length",
+    "description": "Saloon Services",
+    "price": 35000,
+    "discounted_price": 28000
+  },
+  {
+    "id": "blowdry-118",
+    "name": "Blowdry",
+    "description": "Saloon Services",
+    "price": 3000,
+    "discounted_price": 2400
+  },
+  {
+    "id": "hightlights-shoulder-length-119",
+    "name": "Hightlights shoulder length",
+    "description": "Saloon Services",
+    "price": 15000,
+    "discounted_price": 12000
+  },
+  {
+    "id": "hightlights-mid-back-120",
+    "name": "Hightlights mid back",
+    "description": "Saloon Services",
+    "price": 18000,
+    "discounted_price": 14400
+  },
+  {
+    "id": "hightlights-full-length-121",
+    "name": "Hightlights full length",
+    "description": "Saloon Services",
+    "price": 22000,
+    "discounted_price": 17600
+  },
+  {
+    "id": "lowligthts-shoulder-length-122",
+    "name": "Lowligthts shoulder length",
+    "description": "Saloon Services",
+    "price": 15000,
+    "discounted_price": 12000
+  },
+  {
+    "id": "lowligthts-mid-back-123",
+    "name": "Lowligthts mid back",
+    "description": "Saloon Services",
+    "price": 18000,
+    "discounted_price": 14400
+  },
+  {
+    "id": "lowligthts-full-length-124",
+    "name": "Lowligthts full length",
+    "description": "Saloon Services",
+    "price": 22000,
+    "discounted_price": 17600
+  },
+  {
+    "id": "hair-colour-shoulder-length-125",
+    "name": "Hair colour shoulder length",
+    "description": "Saloon Services",
+    "price": 6000,
+    "discounted_price": 4800
+  },
+  {
+    "id": "hair-colour-mid-back-126",
+    "name": "Hair colour mid back",
+    "description": "Saloon Services",
+    "price": 8000,
+    "discounted_price": 6400
+  },
+  {
+    "id": "hair-colour-full-length-127",
+    "name": "Hair colour full length",
+    "description": "Saloon Services",
+    "price": 12000,
+    "discounted_price": 9600
+  },
+  {
+    "id": "balayage-128",
+    "name": "Balayage",
+    "description": "Saloon Services",
+    "price": 25000,
+    "discounted_price": 20000
+  },
+  {
+    "id": "nanoplasti-shoulder-length-129",
+    "name": "Nanoplasti shoulder length",
+    "description": "Saloon Services",
+    "price": 25000,
+    "discounted_price": 20000
+  },
+  {
+    "id": "nanoplasti-mid-back-130",
+    "name": "Nanoplasti mid back",
+    "description": "Saloon Services",
+    "price": 30000,
+    "discounted_price": 24000
+  },
+  {
+    "id": "nanoplasti-full-length-131",
+    "name": "Nanoplasti full length",
+    "description": "Saloon Services",
+    "price": 35000,
+    "discounted_price": 28000
+  },
+  {
+    "id": "hair-protein-treatment-132",
+    "name": "Hair protein treatment",
+    "description": "Saloon Services",
+    "price": 8000,
+    "discounted_price": 6400
+  },
+  {
+    "id": "shoulder-massage-female-133",
+    "name": "shoulder massage (Female)",
+    "description": "Saloon Services",
+    "price": 3000,
+    "discounted_price": 2400
+  },
+  {
+    "id": "neck-massage-female-134",
+    "name": "neck massage (Female)",
+    "description": "Saloon Services",
+    "price": 4000,
+    "discounted_price": 3200
+  },
+  {
+    "id": "body-massage-female-135",
+    "name": "body massage (Female)",
+    "description": "Saloon Services",
+    "price": 8000,
+    "discounted_price": 6400
+  },
+  {
+    "id": "acrylic-nails-136",
+    "name": "Acrylic Nails",
+    "description": "Saloon Services",
+    "price": 15000,
+    "discounted_price": 12000
+  },
+  {
+    "id": "nail-art-137",
+    "name": "Nail Art",
+    "description": "Saloon Services",
+    "price": 10000,
+    "discounted_price": 8000
+  },
+  {
+    "id": "nail-paint-138",
+    "name": "Nail paint",
+    "description": "Saloon Services",
+    "price": 2000,
+    "discounted_price": 1600
+  },
+  {
+    "id": "hair-styling-139",
+    "name": "Hair styling",
+    "description": "Saloon Services",
+    "price": 4000,
+    "discounted_price": 3200
+  },
+  {
+    "id": "party-makeup-principal-140",
+    "name": "party makeup principal",
+    "description": "Saloon Services",
+    "price": 7000,
+    "discounted_price": 5600
+  },
+  {
+    "id": "party-makeup-assistant-141",
+    "name": "party makeup Assistant",
+    "description": "Saloon Services",
+    "price": 10000,
+    "discounted_price": 8000
+  },
+  {
+    "id": "party-makeup-signature-142",
+    "name": "party makeup signature",
+    "description": "Saloon Services",
+    "price": 20000,
+    "discounted_price": 16000
+  },
+  {
+    "id": "nikah-makeup-principal-143",
+    "name": "Nikah makeup Principal",
+    "description": "Saloon Services",
+    "price": 20000,
+    "discounted_price": 16000
+  },
+  {
+    "id": "nikah-makeup-assistant-144",
+    "name": "Nikah makeup Assistant",
+    "description": "Saloon Services",
+    "price": 30000,
+    "discounted_price": 24000
+  },
+  {
+    "id": "nikah-makeup-signature-145",
+    "name": "Nikah makeup signature",
+    "description": "Saloon Services",
+    "price": 50000,
+    "discounted_price": 40000
+  },
+  {
+    "id": "mehndi-makeup-principle-146",
+    "name": "Mehndi makeup principle",
+    "description": "Saloon Services",
+    "price": 30000,
+    "discounted_price": 24000
+  },
+  {
+    "id": "mehndi-makeup-assistant-147",
+    "name": "Mehndi makeup assistant",
+    "description": "Saloon Services",
+    "price": 40000,
+    "discounted_price": 32000
+  },
+  {
+    "id": "mehndi-makeup-signature-148",
+    "name": "Mehndi makeup Signature",
+    "description": "Saloon Services",
+    "price": 50000,
+    "discounted_price": 40000
+  },
+  {
+    "id": "walima-makeup-principle-149",
+    "name": "walima makeup principle",
+    "description": "Saloon Services",
+    "price": 50000,
+    "discounted_price": 40000
+  },
+  {
+    "id": "walima-makeup-assistant-150",
+    "name": "walima makeup assistant",
+    "description": "Saloon Services",
+    "price": 80000,
+    "discounted_price": 64000
+  },
+  {
+    "id": "walima-makeup-signature-151",
+    "name": "walima makeup signature",
+    "description": "Saloon Services",
+    "price": 150000,
+    "discounted_price": 120000
+  },
+  {
+    "id": "barat-makeup-principal-152",
+    "name": "Barat makeup Principal",
+    "description": "Saloon Services",
+    "price": 80000,
+    "discounted_price": 64000
+  },
+  {
+    "id": "barat-makeup-assistant-153",
+    "name": "Barat makeup assistant",
+    "description": "Saloon Services",
+    "price": 100000,
+    "discounted_price": 80000
+  },
+  {
+    "id": "barat-makeup-signature-154",
+    "name": "Barat makeup signature",
+    "description": "Saloon Services",
+    "price": 200000,
+    "discounted_price": 160000
+  },
+  {
+    "id": "birthday-makeup-155",
+    "name": "Birthday makeup",
+    "description": "Saloon Services",
+    "price": 5000,
+    "discounted_price": 4000
+  },
+  {
+    "id": "mehndi-hand-single-side-156",
+    "name": "Mehndi hand single side",
+    "description": "Saloon Services",
+    "price": 500,
+    "discounted_price": 400
+  },
+  {
+    "id": "mehndi-hand-both-sides-157",
+    "name": "Mehndi hand both sides",
+    "description": "Saloon Services",
+    "price": 1000,
+    "discounted_price": 800
+  },
+  {
+    "id": "mehndi-both-hand-single-side-158",
+    "name": "Mehndi both hand single side",
+    "description": "Saloon Services",
+    "price": 1500,
+    "discounted_price": 1200
+  },
+  {
+    "id": "mehndi-both-hand-double-side-159",
+    "name": "Mehndi both hand double side",
+    "description": "Saloon Services",
+    "price": 2500,
+    "discounted_price": 2000
+  },
+  {
+    "id": "mehndi-for-arms-half-below-elbow-160",
+    "name": "Mehndi for arms half (below elbow)",
+    "description": "Saloon Services",
+    "price": 3000,
+    "discounted_price": 2400
+  },
+  {
+    "id": "mehndi-for-arms-full-above-elbow-161",
+    "name": "Mehndi for arms full (Above elbow)",
+    "description": "Saloon Services",
+    "price": 5000,
+    "discounted_price": 4000
+  },
+  {
+    "id": "mehndi-feet-162",
+    "name": "Mehndi feet",
+    "description": "Saloon Services",
+    "price": 1500,
+    "discounted_price": 1200
+  },
+  {
+    "id": "eyebrow-threading-163",
+    "name": "eyebrow threading",
+    "description": "Saloon Services",
+    "price": 400,
+    "discounted_price": 320
+  },
+  {
+    "id": "upperlip-threading-164",
+    "name": "upperlip threading",
+    "description": "Saloon Services",
+    "price": 200,
+    "discounted_price": 160
+  }
+]

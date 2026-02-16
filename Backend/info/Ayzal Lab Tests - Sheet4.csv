@@ -1,0 +1,528 @@
+Sr.#,Product Name,Short Description,Original Price,Discounted Price (40% Off)
+1,17-OH Progesterone,"Special Chemistry, 3-5cc Clotted Blood or Serum",3500,2100
+2,24 hrs Urinary Chloride,"Special Chemistry, 24 Hrs Urine",680,408
+3,24 Hrs Urinary Phosphate,"Special Chemistry, 24 Hrs Urine",680,408
+4,25-Hydroxy Vit-D3 Level,"Special Chemistry, 3-5cc Clotted Blood or Serum",3150,1890
+5,Abdominal Fluid For AFB C/S,"Microbiology, Abdominal Fluid",5100,3060
+6,Abdominal Fluid For AFB Stain / Zn Stain,"Microbiology, Abdominal Fluid",550,330
+7,Abdominal Fluid For C/S,"Microbiology, Abdominal Fluid",2350,1410
+8,Abdominal Fluid For Cytology,"Microbiology, Abdominal Fluid",1600,960
+9,Abdominal Fluid For Gram Stain,"Microbiology, Abdominal Fluid",550,330
+10,Absolute Eosinophil Count,"Hematology, 3cc EDTA WHOLE BLOOD",350,210
+11,Acid Phosphatase,"Chemical Pathology, 3-5cc Clotted Blood or Serum",11500,6900
+12,ACTH (Adrenocorticotropic Hormone),"Special Chemistry, 3- 5cc Clotted Blood or Serum(Fasting)",2800,1680
+13,ADA Level,"Special Chemistry, 3- 5cc Clotted Blood or Serum(Fasting)",4000,2400
+14,Adenosine Deaminase (ADA) (CSF),"Special Chemistry, CSF",4000,2400
+15,AFB C/S ( Tissue Biopsy for TB),"Microbiology, Biopsy",6000,3600
+16,AFB Staining / Zn Smear,"Microbiology, Body Fluid",450,270
+17,Albumin (24 Hrs Urine),"Chemical Pathology, 24 Hrs Urine",550,330
+18,Albumin (fluid),"Chemical Pathology, 3-5cc Clotted Blood or Serum",550,330
+19,Albumin (Serum),"Chemical Pathology, 3-5cc Clotted Blood or Serum",550,330
+20,Albumin / Creatinine Ratio Urine,"Chemical Pathology, Urine (Random/spot)",1300,780
+21,Albumin Globulin Ratio (A/G ratio),"Chemical Pathology, 3-5cc Clotted Blood or Serum",600,360
+22,Albumin Urine (Spot / Random),"Chemical Pathology, Urine (Random/spot)",1100,660
+23,Aldolase(Serum),"Special Chemistry, 3-5cc Clotted Blood or Serum",1700,1020
+24,Aldosterone,"Special Chemistry, 3-5cc Clotted Blood or Serum",3700,2220
+25,Alkaline Phosphatase (ALP),"Chemical Pathology, 3-5cc Clotted Blood or Serum",550,330
+26,Alpha 1-Antitrypsin level,"Special Chemistry, 3-5cc Clotted Blood or Serum",2200,1320
+27,Alpha Fetoprotein (AFP),"Special Chemistry, 3-5cc Clotted Blood or Serum",2550,1530
+28,ALT (SGPT),"Chemical Pathology, 3-5cc Clotted Blood or Serum",550,330
+29,Ammonia(NH3),"Chemical Pathology, Plasma of Edta vial",1800,1080
+30,Amphetamines (urine),"Chemical Pathology, Urine (Random/spot)",1700,1020
+31,Amylase (24Hrs Urine),"Chemical Pathology, 24 Hrs Urine",1200,720
+32,Amylase (Fluid),"Chemical Pathology, Body Fluid",1870,1122
+33,Amylase (Serum),"Chemical Pathology, 3-5cc Clotted Blood or Serum",1250,750
+34,ANA,"Special Chemistry, 3-5cc Clotted Blood or Serum",7000,4200
+35,ANA BY ELISA (Antinuclear Antibody),"Special Chemistry, 3-5cc Clotted Blood or Serum",2500,1500
+36,Anaerobic blood Culture C/S,"Microbiology, BLOOD(IN BLOOD CULTURE VAIL)",2300,1380
+37,ANCA - C,"Special Chemistry, 3-5cc EDTA blood and serum",5550,3330
+38,ANCA - P,"Special Chemistry, 3-5cc EDTA blood and serum",5550,3330
+39,Angiotensin Converting Enzyme (ACE) Level,"Hematology, 3-5cc Clotted Blood or Serum",3400,2040
+40,Anion Gap (Serum),"Special Chemistry, 3-5cc Clotted Blood or Serum",1100,660
+41,Anti Cardiolipin Antibodies IgG,"Special Chemistry, 3-5cc Clotted Blood or Serum",4200,2520
+42,Anti Cardiolipin Antibodies IgM,"Special Chemistry, 3-5cc Clotted Blood or Serum",4200,2520
+43,Anti CCP (Cyclic Citrullinated Peptide),"Special Chemistry, 3-5cc Clotted Blood or Serum",3200,1920
+44,Anti Ds DNA,"Special Chemistry, 3-5cc Clotted Blood or Serum",4700,2820
+45,Anti Endomysial IgA,"Special Chemistry, 3-5cc Clotted Blood or Serum",3000,1800
+46,Anti Epstein Barr Virus IgG (EBV),"Special Chemistry, 3-5cc Clotted Blood or Serum",4250,2550
+47,Anti Epstein Barr Virus IgM (EBV),"Special Chemistry, 3-5cc Clotted Blood or Serum",4250,2550
+48,Anti Gliadin IgA,"Special Chemistry, 3-5cc Clotted Blood or Serum",2800,1680
+49,Anti Gliadin IgM,"Special Chemistry, 3-5cc Clotted Blood or Serum",2800,1680
+50,Anti Hbc IgG,"Special Chemistry, 3-5cc Clotted Blood or Serum",2500,1500
+51,Anti Hbc IgM,"Special Chemistry, 3-5cc Clotted Blood or Serum",3200,1920
+52,Anti Hbe Antibodies (elisa),"Special Chemistry, 3-5cc Clotted Blood or Serum",3200,1920
+53,Anti HCV (ELISA),"Special Chemistry, 3-5cc Clotted Blood or Serum",2300,1380
+54,Anti HCV (ICT),"Chemical Pathology, 3-5cc Clotted Blood or Serum",600,360
+55,Anti HDV Anribodies,"Special Chemistry, 3-5cc Clotted Blood or Serum",3000,1800
+56,Anti HEV Antibodies IgG (ELISA),"Special Chemistry, 3-5cc Clotted Blood or Serum",3200,1920
+57,Anti HEV Antibodies IgM (ELISA),"Special Chemistry, 3-5cc Clotted Blood or Serum",3200,1920
+58,Anti HIV - 1 & 2 (ICT),"Chemical Pathology, 3-5cc Clotted Blood or Serum",500,300
+59,Anti HIV - 1 & 2 Antibodies (ELISA),"Special Chemistry, 3-5cc Clotted Blood or Serum",2700,1620
+60,Anti LKM (Anti Liver Kidney Microsomal),"Special Chemistry, 3-5cc Clotted Blood or Serum",4400,2640
+61,Anti Mitochondrial Antibody (AMA),"Special Chemistry, 3-5cc Clotted Blood or Serum",3400,2040
+62,Anti Mullerian Hormone (AMH),"Special Chemistry, 3-5cc Clotted Blood or Serum",5500,3300
+63,Anti Mumps IgM,"Special Chemistry, 3-5cc Clotted Blood or Serum",2550,1530
+64,Anti Scl-70 antibody,"Special Chemistry, 3-5cc Clotted Blood or Serum",2500,1500
+65,Anti Smooth Muscle Abs (ASMA),"Special Chemistry, 3-5cc Clotted Blood or Serum",4500,2700
+66,Anti Sperm Antibodies,"Special Chemistry, 3-5cc Clotted Blood or Serum",3200,1920
+67,Anti Thyroglobulin Antibodies Ab,"Special Chemistry, 3-5cc Clotted Blood or Serum",1500,900
+68,Anti Tissue Transglutaminase IgA (TTG),"Special Chemistry, 3-5cc Clotted Blood or Serum",2200,1320
+69,Anti Tissue Transglutaminase IgG (TTG),"Special Chemistry, 3-5cc Clotted Blood or Serum",2200,1320
+70,Anti Treponema Antibodies,"Special Chemistry, 3-5cc Clotted Blood or Serum",2000,1200
+71,Anti-Phospholipid (IgG),"Special Chemistry, 3-5cc Clotted Blood or Serum",3700,2220
+72,Anti-Phospholipid (IgM),"Special Chemistry, 3-5cc Clotted Blood or Serum",3700,2220
+73,Anti-Thyroglobulin Ab,"Special Chemistry, 3-5cc Clotted Blood or Serum",2500,1500
+74,APTT (Activated Partial Thromboplastin Time),"Hematology, Sodium Citrate Vial",1200,720
+75,Ascitic Fluid C/E,"Microbiology, Ascitic Fluid",1700,1020
+76,Ascitic Fluid For AFB C/S,"Microbiology, Ascitic Fluid",5100,3060
+77,Ascitic Fluid for AFB Culture,"Microbiology, Ascitic Fluid",6000,3600
+78,Ascitic Fluid For AFB Stain / Zn Stain,"Microbiology, Ascitic Fluid",550,330
+79,Ascitic Fluid for C/S,"Microbiology, Ascitic Fluid",2350,1410
+80,Ascitic Fluid for cytology,"Microbiology, Ascitic Fluid",1600,960
+81,Ascitic Fluid for Gram Stain,"Microbiology, Ascitic Fluid",550,330
+82,Ascitic Fluid for LDH,"Chemical Pathology, Ascitic Fluid",650,390
+83,Ascitic Fluid for Protein,"Chemical Pathology, Ascitic Fluid",650,390
+84,Ascitic Fluid for Triglycerides,"Chemical Pathology, Fluid",650,390
+85,ASO Titre,"Chemical Pathology, 3-5cc EDTA blood and serum",1200,720
+86,AST (SGOT),"Chemical Pathology, 3-5cc Clotted Blood or Serum",550,330
+87,Barbiturates (Urine),"Special Chemistry, spot Urine",3000,1800
+88,Basophils,"Hematology, 3cc EDTA WHOLE BLOOD",300,180
+89,Bence Jones Protein (24 Hrs Urine),"Special Chemistry, 24 Hrs Urine",600,360
+90,Benzodiazepines (Urine),"Special Chemistry, Urine (Random/spot)",2000,1200
+91,Beta HCG (Female),"Special Chemistry, 3-5cc Clotted Blood or Serum",1900,1140
+92,Beta HCG (Male),"Chemical Pathology, 3-5cc Clotted Blood or Serum",1900,1140
+93,Bicarbonate,"Chemical Pathology, 3-5cc Clotted Blood or Serum",500,300
+94,Bicarbonates (Fluid),"Special Chemistry, Body Fluid",1500,900
+95,Bicarbonates (HCO3),"Hematology, 3-5cc Clotted Blood or Serum",500,300
+96,Bicarbonates Urine (Spot / Random),"Chemical Pathology, Urine (Random/spot)",1100,660
+97,Bile Acid (Serum),"Special Chemistry, 3-5cc Clotted Blood or Serum",3300,1980
+98,Bile Pigment,"Chemical Pathology, Urine (Random/spot)",380,228
+99,Bile Salt,"Chemical Pathology, Urine (Random/spot)",420,252
+100,Biopsy (Large),"Histopathology, Biopsy Tissue with History",6000,3600
+101,Biopsy for H/P ( Large specimen ),"Histopathology, Biopsy",6500,3900
+102,Biopsy for H/P ( Small specimen ),"Histopathology, Biopsy",5000,3000
+103,Biopsy for H/P (Amputation) with history,"Histopathology, Biopsy",8250,4950
+104,Biopsy for H/P (Medium Specimen),"Histopathology, Biopsy",5500,3300
+105,Biopsy for H/P (Two Large Specimens),"Histopathology, Biopsy",6500,3900
+106,Biopsy for H/P (Two small specimen ),"Histopathology, Biopsy",5800,3480
+107,Biopsy for H/P( Three or more specimen ),"Histopathology, Biopsy",7800,4680
+108,Biopsy Medium,"Histopathology, Biopsy Tissue with History",4800,2880
+109,Biopsy Small,"Histopathology, Biopsy Tissue with History",3800,2280
+110,Bleeding Time (BT),"Hematology, Blood",300,180
+111,Block For Review,"Histopathology, Block and Slides",4998,2998.8
+112,Blood Cell Morphology/ Peripheral smear P/S,"Hematology, 3cc EDTA WHOLE BLOOD",500,300
+113,Blood Cross Match With ELISA,"Blood Bank, Blood",6000,3600
+114,Blood For C/S (Aerobic),"Microbiology, BLOOD(IN BLOOD CULTURE VAIL)",2300,1380
+115,Blood For C/S (Aerobic & Anaerobic),"Microbiology, BLOOD(IN BLOOD CULTURE VAIL)",4250,2550
+116,Blood For C/S (Aerobic ) final Report,"Microbiology, BLOOD(IN BLOOD CULTURE VAIL)",2300,1380
+117,Blood For C/S Right & Left(Aerobic & Anaerobic),"Microbiology, BLOOD(IN BLOOD CULTURE VAIL)",4250,2550
+118,Blood Grouping,"Blood Bank, 3cc EDTA WHOLE BLOOD",400,240
+119,Blood Sugar Fasting (BSF),"Chemical Pathology, Blood in Sodium Fluoride vial",300,180
+120,Blood Sugar Random (BSR),"Chemical Pathology, Blood in Sodium Fluoride vial",300,180
+121,Body Fluid For AFB Stain / Zn Stain,"Microbiology, Body Fluid",550,330
+122,Body Fluid For Cytology,"Microbiology, Body Fluid",1600,960
+123,Body Fluid For Gram Stain,"Microbiology, Body Fluid",550,330
+124,Bone Marrow (Slides For Review),"Hematology, SLIDES",10000,6000
+125,Bone Marrow Biopsy,"Hematology, BoneMarrow",1000,600
+126,Breast Abscess For C/S,"Microbiology, Breast Abscess",2350,1410
+127,Breast Abscess For Cytology,"Microbiology, Breast Abscess",1600,960
+128,Bronchial Washing Fluid For Gram Stain,"Microbiology, Heparinized or EDTA Blood",550,330
+129,Bronchial Washing For AFB C/S,"Microbiology, Bronchial Washing",5100,3060
+130,Bronchial Washing For AFB Stain / Zn Stain,"Microbiology, Bronchial Washing",550,330
+131,Bronchial Washing For Analysis C/E,"Microbiology, Bronchial Washing",1600,960
+132,Bronchial Washing For C/S,"Microbiology, Bronchial Washing",2350,1410
+133,Bronchial Washing For C/S (Anerobic),"Microbiology, Bronchial Washing",2350,1410
+134,Bronchial Washing For Cytology.,"Microbiology, Bronchial Washing",1600,960
+135,Bronchial Washing For Fungal C/S,"Microbiology, Bronchial Washing",1750,1050
+136,Brucella IgG,"Special Chemistry, 3-5cc Clotted Blood or Serum",1600,960
+137,Brucella IgM,"Special Chemistry, 3-5cc Clotted Blood or Serum",1600,960
+138,BUN (Blood Urea Nitrogen),"Chemical Pathology, 3-5cc Clotted Blood or Serum",450,270
+139,C Peptide Level ( Fasting),"Special Chemistry, 3-5cc Clotted Blood or Serum",3200,1920
+140,C3 (Complement 3),"Hematology, Lithium Heparin Vail",2000,1200
+141,C4 (Complement Level),"Hematology, Lithium Heparin Vail",2000,1200
+142,CA 125,"Special Chemistry, 3-5cc Clotted Blood or Serum",4100,2460
+143,CA 15-3,"Special Chemistry, 3-5cc Clotted Blood or Serum",3200,1920
+144,CA-19-9,"Special Chemistry, 3-5cc Clotted Blood or Serum",4100,2460
+145,Calcium,"Chemical Pathology, 3-5cc Clotted Blood or Serum",650,390
+146,Calcium (Fluid),"Chemical Pathology, Fluid",800,480
+147,Calcium / Creatinine Ratio Urine,"Chemical Pathology, Urine (Random/spot)",1100,660
+148,Calcium Urine (24 hr),"Chemical Pathology, spot Urine",680,408
+149,Cannabinoids (Urine),"Special Chemistry, Urine (Random/spot)",2000,1200
+150,Cardiac Enzymes,"Chemical Pathology, 3-5cc Clotted Blood or Serum",2400,1440
+151,Catheter Tip For C/S,"Microbiology, Catheter Tip",2350,1410
+152,CBC (Complete Blood Count),"Hematology, 3cc EDTA WHOLE BLOOD",600,360
+153,CBC (peripheral Blood Smear),"Hematology, 3cc EDTA WHOLE BLOOD",900,540
+154,CBC For (Dengue),"Hematology, 3cc EDTA WHOLE BLOOD",70,42
+155,CEA Level (Carcinoembryonic Antigen),"Special Chemistry, 3-5cc Clotted Blood or Serum",3200,1920
+156,CEA (Fluid),"Special Chemistry, Fluid",3200,1920
+157,Ceruloplasmin level,"Special Chemistry, 3-5cc Clotted Blood or Serum",1700,1020
+158,Chloride,"Chemical Pathology, 3-5cc Clotted Blood or Serum",550,330
+159,Chloride (Fluid),"Chemical Pathology, Fluid",550,330
+160,Chloride (Urine),"Special Chemistry, Urine",500,300
+161,Chloride Urine (Spot / Random),"Chemical Pathology, 24 Hrs Urine",650,390
+162,Cholesterol,"Chemical Pathology, 3-5cc Clotted Blood or Serum",450,270
+163,Cholinesterase (Serum),"Chemical Pathology, 3-5cc Clotted Blood or Serum",4000,2400
+164,Chromosome Analysis / karyotyping(Female),"Molecular Biology, Lithium Heparin Vail",13000,7800
+165,Chylomicrons,"Chemical Pathology, 3-5cc Clotted Blood or Serum",1500,900
+166,CK MB,"Chemical Pathology, 3-5cc Clotted Blood or Serum",1600,960
+167,Clotting Time (CT),"Hematology, Blood",300,180
+168,CMV IgG (Cytomegalovirus),"Special Chemistry, 3-5cc Clotted Blood or Serum",2350,1410
+169,CMV IgM (Cytomegalovirus),"Special Chemistry, 3-5cc Clotted Blood or Serum",2350,1410
+170,"COAGULATION PROFILE ( PT,APTT, INR)","Hematology, Sodium Citrate Vial",2400,1440
+171,Cold Agglutination Test,"Hematology, 3cc EDTA WHOLE BLOOD",1300,780
+172,Conjunctival Swab C/S,"Microbiology, Conjunctival secreation",2350,1410
+173,Coombs Test (Direct),"Blood Bank, 3cc EDTA WHOLE BLOOD",1700,1020
+174,Coombs Test (Indirect),"Blood Bank, Heparinized or EDTA Blood",1700,1020
+175,Copper (24 Hrs Urine),"Chemical Pathology, 24 Hrs Urine",1700,1020
+176,Copper (Serum),"Special Chemistry, 3-5cc Clotted Blood or Serum",1700,1020
+177,Copper Urine (Spot / Random),"Chemical Pathology, Urine (Random/spot)",1700,1020
+178,Cord Blood Group & Rh Factor,"Hematology, Cord Blood",400,240
+179,Corneal scraping C/S,"Microbiology, Corneal scrapping",2350,1410
+180,Cortisol (24 Hour Urine),"Special Chemistry, Urine (Random/spot)",2200,1320
+181,Covid-19 (Corona Virus) by PCR Qualitative,"Molecular Biology, 3cc EDTA WHOLE BLOOD",5000,3000
+182,C-Peptide Level (Random),"Special Chemistry, 3-5cc Clotted Blood or Serum",3200,1920
+183,CPK,"Chemical Pathology, 3-5cc Clotted Blood or Serum",1000,600
+184,Creatinine ( 24 Hours Urine ),"Special Chemistry, 24 Hrs Urine",600,360
+185,Creatinine Clearance (24 Hrs),"Chemical Pathology, 24 Hrs urine & Serum",1700,1020
+186,Cross Match with Screening,"Blood Bank, Blood",3000,1800
+187,CRP (High Sensitive),"Chemical Pathology, 3-5cc Clotted Blood or Serum",1200,720
+188,CSF Fluid For AFB C/S,"Microbiology, CSF",5100,3060
+189,CSF Fluid For Gram Stain,"Microbiology, CSF",550,330
+190,CSF For AFB Stain / Zn Stain,"Microbiology, CSF",550,330
+191,CSF For C/E,"Microbiology, CSF",1700,1020
+192,CSF For C/S,"Microbiology, CSF",2350,1410
+193,CSF For Cytology,"Microbiology, CSF",1600,960
+194,Cvp Tip For C/S,"Microbiology, Cvp Tip",2350,1410
+195,Cystic Fluid For AFB C/S,"Microbiology, Cystic Fluid",5100,3060
+196,Cystic Fluid For AFB Stain / Zn Stain,"Microbiology, Cystic Fluid",550,330
+197,Cystic Fluid For C/E,"Microbiology, Cystic Fluid",1700,1020
+198,Cystic Fluid For C/S,"Microbiology, Cystic Fluid",2350,1410
+199,Cystic Fluid For Cytology,"Microbiology, Fluid",1700,1020
+200,Cystic Fluid For Gram Stain,"Microbiology, CSF",550,330
+201,Dengue (IgG),"Special Chemistry, 3-5cc Clotted Blood or Serum",2700,1620
+202,Dengue (IgM),"Special Chemistry, 3-5cc Clotted Blood or Serum",2700,1620
+203,Dengue NS1 Antigen,"Chemical Pathology, 3-5cc Clotted Blood or Serum",3000,1800
+204,Detailed Liver Function Test (LFT),"Chemical Pathology, 3-5cc Clotted Blood or Serum",1800,1080
+205,DHEA SO4,"Special Chemistry, 3-5cc Clotted Blood or Serum",2200,1320
+206,Direct Bilirubin Test,"Chemical Pathology, 3-5cc Clotted Blood or Serum",400,240
+207,DLC (Differential Leukocyte Count),"Hematology, 3cc EDTA WHOLE BLOOD",400,240
+208,Drug Screen Profile (Spot/ Random Urine),"Chemical Pathology, spot Urine",4000,2400
+209,Ear Swab For AFB Stain / Zn Stain,"Microbiology, Ear Swab",550,330
+210,Ear Swab For C/S,"Microbiology, Ear Swab",2350,1410
+211,Ear Swab For Gram Stain,"Microbiology, Ear Swab",550,330
+212,ENA Profile,"Special Chemistry, 3-5cc Clotted Blood or Serum",8000,4800
+213,Eosinophil Count,"Hematology, 3cc EDTA WHOLE BLOOD",300,180
+214,ESR (Erythrocyte Sedimentation Rate),"Hematology, 3cc EDTA WHOLE BLOOD",400,240
+215,Estimated Glomerular Filtration Rate (eGFR),"Chemical Pathology, 3-5cc Clotted Blood or Serum",1100,660
+216,Factor V (Leiden Factor),"Hematology, Sodium Citrate Plasma",5000,3000
+217,Factor VIII Level,"Hematology, Sodium Citrate Plasma",5000,3000
+218,Fasting Insulin Level (Serum),"Chemical Pathology, 3-5cc Clotted Blood or Serum",3000,1800
+219,Fasting Lipid Profile (FLP),"Chemical Pathology, 3-5cc Clotted Blood or Serum",2000,1200
+220,FDPs (D-Dimer),"Special Chemistry, Sodium Citrate Vial",2400,1440
+221,Fibrinogen ( Factor -1 ),"Special Chemistry, 3cc EDTA WHOLE BLOOD",2000,1200
+222,Finger Swab For C/S,"Microbiology, Swab",2350,1410
+223,FLUID Adenosine Deaminase (ADA),"Special Chemistry, Body Fluid",4000,2400
+224,Fluid For Analysis Bile C/E,"Microbiology, Bile Fluid",1600,960
+225,Fluid For Analysis C/E,"Microbiology, Body Fluid",1600,960
+226,Fluid for C/S,"Microbiology, Body Fluid",2350,1410
+227,Fluid For Cytology,"Microbiology, Fluid",1600,960
+228,Fluid For TLC & DLC,"Microbiology, Fluid",700,420
+229,FNAC Procedure,"Histopathology, Fluid",6000,3600
+230,FNAC Slide Review,"Histopathology, SLIDES",4000,2400
+231,Folic Acid (Folate Level),"Special Chemistry, 3-5cc Clotted Blood or Serum",2100,1260
+232,Folley's Tip For C/S,"Microbiology, Folley's Tip",2350,1410
+233,Free T3,"Special Chemistry, 3-5cc Clotted Blood or Serum",2200,1320
+234,Free T4,"Special Chemistry, 3-5cc Clotted Blood or Serum",2200,1320
+235,Free Testosterone,"Special Chemistry, 3-5cc Clotted Blood or Serum",2550,1530
+236,FSH (Follicle Stimulating Hormone),"Special Chemistry, 3-5cc Clotted Blood or Serum",1870,1122
+237,Fungal Culture C/S,"Microbiology, Fungal scraping",2350,1410
+238,Fungal Stain,Microbiology Fluid After 24 hours(s),900,540
+239,Fungus For Skin Scraping,Microbiology Skin Scraping After 2 day(s),1700,1020
+240,Fungus Stain(KOH),Microbiology Fluid After 24 hours(s),1400,840
+241,G6PD (Glucose 6 Phosphate Dehydrogenase),Special Chemistry 3cc EDTA WHOLE BLOOD After 2 day(s),1870,1122
+242,Gamma GT,Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s),550,330
+243,Gastrin Level,Special Chemistry 3-5cc Clotted Blood or Serum After 3 day(s),5000,3000
+244,Gauze Piece For C/S,Microbiology Gauze Piece After 3 day(s),2350,1410
+245,GCT (Glucose Challenge Test),Chemical Pathology Blood in Sodium Fluoride vial After 1 day(s),950,570
+246,Gene-Xpert MTB-RIF Gene,Microbiology Pleural Fluid After 7 day(s),5100,3060
+247,Giemsa Stain,Microbiology 3-5cc EDTA blood and serum After 24 hours(s),550,330
+248,Glucose (Fluid),Chemical Pathology Body Fluid After 1 day(s),300,180
+249,Glucose 1 Hours ( Post Meal ),Chemical Pathology Blood in Sodium Fluoride vial After 8 hours(s),300,180
+250,Glycosylated Hemoglobin (HbA1C),Chemical Pathology 3cc EDTA WHOLE BLOOD After 8 hours(s),1800,1080
+251,Gram Stain,Microbiology CONTACT LAB After 24 hours(s),550,330
+252,Growth Hormone,Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s),4200,2520
+253,GTT(Glucose tolerance test),Chemical Pathology Blood in Sodium Fluoride vial After 8 hours(s),1000,600
+254,H.pylori Antibodies (ICT),Chemical Pathology 3-5cc Clotted Blood or Serum After 1 day(s),1150,690
+255,H.Pylori Antibodies IgM,Special Chemistry 3-5cc Clotted Blood or Serum After 2 day(s),2350,1410
+256,Haptoglobin,Special Chemistry 3-5cc Clotted Blood or Serum Same day,2200,1320
+257,HAV IgG (ELISA),Chemical Pathology 3-5cc Clotted Blood or Serum After 1 day(s),2700,1620
+258,HAV IgM(ELISA),Special Chemistry 3-5cc Clotted Blood or Serum After 1 day(s),2700,1620
+259,HB ( Hemoglobin ),Hematology 3cc EDTA WHOLE BLOOD After 24 hours(s),200,120
+260,Hb Electrophoresis (Blood),Special Chemistry 3cc EDTA WHOLE BLOOD After 5 day(s),2550,1530
+261,HBeAg,Special Chemistry 3-5cc Clotted Blood or Serum After 2 day(s),2700,1620
+262,HBsAg (ELISA),Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s),1900,1140
+263,HBsAg (ICT),Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s),600,360
+264,HBV DNA by PCR (QUALITATIVE),Molecular Biology 3cc EDTA WHOLE BLOOD After 4 day(s),5000,3000
+265,HBV DNA BY REAL-TIME PCR (Quantitative),Molecular Biology 3cc EDTA WHOLE BLOOD After 4 day(s),8000,4800
+266,HCT (Hematocrit),Hematology 3cc EDTA WHOLE BLOOD After 24 hours(s),380,228
+267,HCV RNA by PCR (QUALITATIVE),Molecular Biology 3cc EDTA WHOLE BLOOD After 4 day(s),5000,3000
+268,HDV RNA By Pcr (Qualitative),Molecular Biology 3-5cc Clotted Blood or Serum After 4 day(s),5000,3000
+269,HDV RNA By Pcr (Quantitative),Molecular Biology 3-5cc Clotted Blood or Serum After 3 day(s),8000,4800
+270,Helicobacter pylori IgA,Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s),2350,1410
+271,Helicobacter pylori IgG,Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s),2350,1410
+272,Herpes (HSV) IgG,Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s),1870,1122
+273,Herpes (HSV) IgM,Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s),1870,1122
+274,Histones,Chemical Pathology 3-5cc Clotted Blood or Serum After 3 day(s),5000,3000
+275,HLA B27 Allele by PCR,Special Chemistry 3cc EDTA WHOLE BLOOD After 7 day(s),18000,10800
+276,Homocysteine Level (Urine),Special Chemistry Serum & Spot Urine After 4 day(s),3000,1800
+277,HOSPITAL OT AIR FOR BACTERIAL GROWTH,Microbiology Hospital OT Air for Bacterial growth After 3 day(s),2350,1410
+278,HOSPITAL OT ANESTHESIA MACHINE FOR BACTERIAL GROWTH,Microbiology Hospital OT Anesthesia Machine Swab for Bacterial growth After 3 day(s),2350,1410
+279,Hospital Ot chair for culture growth,Microbiology Swab Same day,2350,1410
+280,HOSPITAL OT FLOOR SWAB FOR BACTERIAL GROWTH,Microbiology Hospital OT Floor Swab for Bacterial growth After 3 day(s),2350,1410
+281,HOSPITAL OT LIGHT SWAB FOR BACTERIAL GROWTH,Microbiology Hospital OT Light for Bacterial growth After 3 day(s),2350,1410
+282,HOSPITAL OT SUCTION MACHINE FOR BACTERIAL GROWTH,Microbiology Hospital OT Suction Machine for Bacterial growth After 3 day(s),2350,1410
+283,HOSPITAL OT TABLE SWAB FOR BACTERIAL GROWTH,Microbiology Hospital OT Table for Bacterial growth After 3 day(s),2350,1410
+284,Hospital OT Trolly for Bacterial growth,Microbiology Swab Same day,2350,1410
+285,HOSPITAL OT WALL SWAB FOR BACTERIAL GROWTH,Microbiology Hospital OT Wall for Bacterial growth After 3 day(s),2350,1410
+286,HVS For AFB Stain / Zn Stain,Microbiology Hvs Swab After 24 hours(s),550,330
+287,HVS For C/S,Microbiology Hvs Swab After 3 day(s),2350,1410
+288,HVS For Gram Stain,Microbiology Hvs Swab After 24 hours(s),550,330
+289,Hydrocele Fluid For AFB C/S,Microbiology Hydrocele Fluid After 70 day(s),5100,3060
+290,Hydrocele Fluid For AFB Stain / Zn Stain,Microbiology Hydrocele Fluid After 24 hours(s),550,330
+291,Hydrocele Fluid For C/S,Microbiology Hydrocele Fluid After 3 day(s),2350,1410
+292,Hydrocele Fluid For Gram Stain,Microbiology Hydrocele Fluid After 24 hours(s),550,330
+293,ICT Malaria,Hematology 3cc EDTA WHOLE BLOOD After 24 hours(s),1070,642
+294,IgA (Immunoglobulin A),Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s),1300,780
+295,IgE (Immunoglobulin E),Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s),2000,1200
+296,IgG (Immunoglobulin G),Special Chemistry 3-5cc Clotted Blood or Serum After 1 day(s),1300,780
+297,IgM (Immunoglobulin M),Special Chemistry 3-5cc Clotted Blood or Serum After 1 day(s),1300,780
+298,Indirect Bilirubin,Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s),400,240
+299,Insulin Growth Factor-1,Special Chemistry 3-5cc Clotted Blood or Serum After 3 day(s),6000,3600
+300,Intact Parathormone (PTH),Chemical Pathology 3-5cc Clotted Blood or Serum After 1 day(s),2900,1740
+301,Interleukin-6 (IL-6) levels,Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s),3000,1800
+302,Ionized Calcium,Special Chemistry 3-5cc Clotted Blood or Serum After 1 day(s),1100,660
+303,Iron,Chemical Pathology 3-5cc Clotted Blood or Serum After 1 day(s),850,510
+304,Iron profile,Chemical Pathology 3-5cc Clotted Blood or Serum After 1 day(s),3300,1980
+305,Joint Fluid C/E,Microbiology Joint Fluid After 24 hours(s),1600,960
+306,Joint Fluid For AFB C/S,Microbiology Joint Fluid After 70 day(s),5100,3060
+307,Joint Fluid For AFB Stain / Zn Stain,Microbiology Joint Fluid After 24 hours(s),550,330
+308,Joint Fluid For Analysis C/E,Microbiology Knee Joint Fluid After 24 hours(s),1600,960
+309,Joint Fluid For C/S,Microbiology Joint Fluid After 3 day(s),2350,1410
+310,Joint Fluid For Crystals,Microbiology Fluid After 24 hours(s),1600,960
+311,Joint Fluid For Gram Stain,Microbiology Joint Fluid After 24 hours(s),550,330
+312,Ketone (Blood),Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s),600,360
+313,Ketones Bodies (Urine),Special Chemistry Urine After 24 hours(s),500,300
+314,Knee Joint Fluid For AFB C/S,Microbiology Knee Joint Fluid After 70 day(s),5100,3060
+315,Knee Joint Fluid For AFB Stain / Zn Stain,Microbiology Knee Joint Fluid After 24 hours(s),550,330
+316,Knee Joint Fluid For C/S,Microbiology Knee Joint Fluid After 3 day(s),2350,1410
+317,Knee Joint Fluid For Cytology,Microbiology Knee Joint Fluid After 24 hours(s),1600,960
+318,Knee Joint Fluid For Gram Stain,Microbiology Knee Joint Fluid After 24 hours(s),550,330
+319,Lactate Level,Special Chemistry 1-2 Separate Plasma of Fluoride Vial After 1 day(s),2000,1200
+320,LDH (CSF),Chemical Pathology CSF After 8 hours(s),630,378
+321,LDH (Serum),Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s),630,378
+322,LDL (Cholesterol),Chemical Pathology 3- 5cc Clotted Blood or Serum(Fasting) After 8 hours(s),500,300
+323,LE Cell,Hematology 3cc EDTA WHOLE BLOOD After 24 hours(s),3000,1800
+324,LH (Luteinizing Hormone),Special Chemistry 3-5cc Clotted Blood or Serum After 2 day(s),1800,1080
+325,Lipase (Fluid),Chemical Pathology Fluid After 1 day(s),1270,762
+326,Lipase (Serum),Chemical Pathology 3-5cc Clotted Blood or Serum After 1 day(s),1270,762
+327,Lipid Profile (Random),Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s),2000,1200
+328,Liver Function Test (LFT),Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s),1700,1020
+329,Lupus Anticoagulant Abs,Special Chemistry 3-5cc Clotted Blood or Serum After 3 day(s),5500,3300
+330,Magnesium (Fluid),Chemical Pathology Fluid After 1 day(s),650,390
+331,MCH,Hematology 3cc EDTA WHOLE BLOOD After 24 hours(s),300,180
+332,MCHC,Hematology 3cc EDTA WHOLE BLOOD After 24 hours(s),300,180
+333,MCV,Hematology 3cc EDTA WHOLE BLOOD After 24 hours(s),300,180
+334,Measles IgG,Special Chemistry 3-5cc Clotted Blood or Serum After 3 day(s),2550,1530
+335,Measles IgM,Special Chemistry 3-5cc Clotted Blood or Serum After 3 day(s),2550,1530
+336,Metamyelocytes,Hematology 3cc EDTA WHOLE BLOOD After 24 hours(s),1500,900
+337,Microalbuminuria (24 Hrs Urine),Special Chemistry 24 Hrs Urine After 24 hours(s),1300,780
+338,Microalbuminuria Spot Urine,Chemical Pathology spot Urine After 8 hours(s),1300,780
+339,Milk for Analysis,Microbiology Milk After 24 hours(s),1600,960
+340,Milk For C/S,Microbiology Milk After 3 day(s),2350,1410
+341,Milk For Cytology,Microbiology Milk After 24 hours(s),1600,960
+342,Milk For Gram Stain,Microbiology Milk After 24 hours(s),550,330
+343,Milk For Zn Stain,Microbiology Milk After 24 hours(s),550,330
+344,Mycobacterium Culture C/S,Microbiology Body Fluid After 70 day(s),5100,3060
+345,Mycodot IgG,Special Chemistry 3-5cc Clotted Blood or Serum After 1 day(s),1700,1020
+346,Mycodot IgM,Special Chemistry 3-5cc Clotted Blood or Serum After 1 day(s),1700,1020
+347,Nasal Secretion C/S,Microbiology Nasal Secretion After 3 day(s),1600,960
+348,Nasal Secretion For AFB C/S,Microbiology Nasal Secretion After 70 day(s),5100,3060
+349,Nasal Secretion For AFB Stain / Zn Stain,Microbiology Nasal Secretion After 24 hours(s),550,330
+350,Nasal Secretion For Gram Stain,Microbiology Nasal Secretion After 24 hours(s),550,330
+351,Neutrophils,Hematology 3cc EDTA WHOLE BLOOD After 24 hours(s),300,180
+352,Opiates (Urine),Special Chemistry spot Urine After 3 day(s),1600,960
+353,Osmolality (Serum),Special Chemistry 3-5cc Clotted Blood or Serum After 2 day(s),1800,1080
+354,Osmolality Urine (Spot / Random),Chemical Pathology Urine (Random/spot) After 8 hours(s),1800,1080
+355,"Osmotic / RBC,s Fragility",Hematology Lithium Heparin Vail After 2 day(s),1800,1080
+356,Pap Smear,Histopathology SLIDES After 1 day(s),3500,2100
+357,PAP Smear For Cytology,Microbiology Block and Slides After 1 day(s),2990,1794
+358,Pericardial Fluid For AFB C/S,Microbiology Pericardial Fluid After 70 day(s),5100,3060
+359,Pericardial Fluid For AFB Stain / Zn Stain,Microbiology Pericardial Fluid After 24 hours(s),550,330
+360,Pericardial Fluid For C/E,Microbiology Pericardial Fluid After 24 hours(s),1600,960
+361,Pericardial Fluid For C/S,Microbiology Pericardial Fluid After 3 day(s),2350,1410
+362,Pericardial Fluid For Cytology,Microbiology Fluid After 24 hours(s),1600,960
+363,Pericardial Fluid For Gram Stain,Microbiology Pericardial Fluid After 24 hours(s),550,330
+364,Peripheral Blood Film/Smear,Hematology 3cc EDTA WHOLE BLOOD After 24 hours(s),600,360
+365,Peritoneal Fluid C/E,Microbiology Peritoneal Fluid After 24 hours(s),1600,960
+366,Peritoneal Fluid For AFB C/S,Microbiology Peritoneal Fluid After 70 day(s),5100,3060
+367,Peritoneal Fluid For AFB Stain / Zn Stain,Microbiology Pericardial Fluid After 24 hours(s),550,330
+368,Peritoneal Fluid For C/S,Microbiology Peritoneal Fluid After 3 day(s),2350,1410
+369,Peritoneal Fluid For Cytology,Microbiology Fluid After 24 hours(s),1600,960
+370,Peritoneal Fluid For Gram Stain,Microbiology Peritoneal Fluid After 24 hours(s),550,330
+371,Ph For Urine,Chemical Pathology Urine (Random/spot) After 8 hours(s),200,120
+372,Phosphate (24 Hrs Urine),Chemical Pathology 24 Hrs Urine After 1 day(s),600,360
+373,Phosphorus,Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s),700,420
+374,PIVKA - II,Special Chemistry Lithium Heparin Vail After 2 day(s),3800,2280
+375,Platelet Count,Hematology 3cc EDTA WHOLE BLOOD After 24 hours(s),300,180
+376,Pleural Fluid C/E,Microbiology Pleural Fluid After 24 hours(s),1600,960
+377,Pleural Fluid For AFB C/S,Microbiology Pleural Fluid After 70 day(s),5100,3060
+378,Pleural Fluid For AFB Stain / Zn Stain,Microbiology Pleural Fluid After 24 hours(s),550,330
+379,Pleural Fluid For C/S,Microbiology Pleural Fluid After 3 day(s),2350,1410
+380,Pleural Fluid For Cytology,Microbiology Fluid After 24 hours(s),1600,960
+381,Pleural Fluid For Gram Stain,Microbiology Pleural Fluid After 24 hours(s),550,330
+382,Potassium,Chemical Pathology 3-5cc Clotted Blood or Serum After 1 day(s),500,300
+383,Potassium (24 hrs Urine),Special Chemistry 24 Hrs Urine After 24 hours(s),500,300
+384,Potassium (Fluid),Chemical Pathology Fluid After 8 hours(s),500,300
+385,Potassium Urine (Spot / Random),Special Chemistry Urine (Random/spot) After 24 hours(s),500,300
+386,Pregnancy Test,Chemical Pathology Urine (Random/spot) After 1 hours(s),500,300
+387,ProBNP (N-t) II,Special Chemistry Heparinized or EDTA Blood After 1 day(s),2800,1680
+388,Progesterone,Special Chemistry 3-5cc Clotted Blood or Serum After 1 day(s),2000,1200
+389,Protein (24 Hrs Urine),Chemical Pathology 24 Hrs Urine After 8 hours(s),800,480
+390,Protein (Spot Urine),Chemical Pathology Urine (Random/spot) After 8 hours(s),550,330
+391,Protein Electrophoresis (Blood),Molecular Biology Lithium Heparin Vail After 10 day(s),2400,1440
+392,Protein/Albumin ratio,Chemical Pathology Blood Serum Same day,900,540
+393,Protein-C,Hematology Lithium Heparin Vail After 24 hours(s),5100,3060
+394,Protein-S,Hematology Lithium Heparin Vail After 1 day(s),5100,3060
+395,PSA (Prostate Specific Antigen),Special Chemistry 3-5cc Clotted Blood or Serum After 1 day(s),2800,1680
+396,PT with INR,Hematology Sodium Citrate Vial After 24 hours(s),1000,600
+397,Pus For AFB C/S,Microbiology PUS for C/S After 70 day(s),5100,3060
+398,Pus For AFB Stain / Zn Stain,Microbiology PUS for C/S After 24 hours(s),550,330
+399,Pus For C/S,Microbiology PUS for C/S After 3 day(s),2350,1410
+400,Pus For Cytology,Microbiology PUS for C/S After 24 hours(s),1600,960
+401,Pus For Gram staining,Microbiology PUS for C/S After 24 hours(s),550,330
+402,Pus Swab For AFB Stain / Zn Stain,Microbiology PUS SWAB After 24 hours(s),6000,3600
+403,Pus Swab For C/S,Microbiology PUS SWAB After 3 day(s),2350,1410
+404,Pus Swab For Gram Stain,Microbiology PUS SWAB After 24 hours(s),550,330
+405,RA Factor (Quantitative),Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s),1000,600
+406,RBC Morphology,Hematology 3cc EDTA WHOLE BLOOD After 24 hours(s),600,360
+407,Real time PCR HCV (QUANTITATIVE),Molecular Biology 3cc EDTA WHOLE BLOOD After 4 day(s),8000,4800
+408,Red Cell Folic Acid (Whole Blood),Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s),2300,1380
+409,Renal Function Test (RFTs),Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s),1550,930
+410,Retic Count,Hematology 3cc EDTA WHOLE BLOOD After 24 hours(s),650,390
+411,Rubella IgG,Special Chemistry 3-5cc Clotted Blood or Serum After 1 day(s),2200,1320
+412,Rubella IgM,Special Chemistry 3-5cc Clotted Blood or Serum After 1 day(s),2200,1320
+413,Semen Analysis,Microbiology Semen After 24 hours(s),2550,1530
+414,Semen For AFB Stain / Zn Stain,Microbiology Semen After 24 hours(s),550,330
+415,Semen For C/S,Microbiology Semen After 3 day(s),2350,1410
+416,Semen For Gram Stain,Microbiology Semen After 24 hours(s),550,330
+417,Serum Anti GAD 65,Special Chemistry 3- 5cc Clotted Blood or Serum(Fasting) After 3 day(s),7000,4200
+418,Serum Anti-islet Antibody,Special Chemistry 3-5cc Clotted Blood or Serum After 7 day(s),8000,4800
+419,Serum Bilirubin,Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s),400,240
+420,Serum CK,Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s),2000,1200
+421,Serum Cortisol (AM),Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s),2200,1320
+422,Serum Cortisol (PM),Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s),2200,1320
+423,Serum Creatinine,Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s),500,300
+424,Serum Electrolytes,Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s),1300,780
+425,Serum Estradiol level,Special Chemistry 3-5cc Clotted Blood or Serum After 1 day(s),1950,1170
+426,Serum Estrogen level,Special Chemistry 3-5cc Clotted Blood or Serum Same day,1700,1020
+427,Serum Ferritin Level,Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s),1870,1122
+428,Serum Globulin,Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s),500,300
+429,Serum Magnesium,Chemical Pathology 3-5cc Clotted Blood or Serum After 1 day(s),650,390
+430,Serum Phosphate,Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s),550,330
+431,Serum Procalcitonin (PCT),Special Chemistry 3-5cc Clotted Blood or Serum After 2 day(s),4100,2460
+432,Serum Prolactin,Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s),2200,1320
+433,Serum Transferrin level,Special Chemistry 3-5cc Clotted Blood or Serum After 2 day(s),1000,600
+434,Serum Triglycerides,Chemical Pathology 3-5cc Clotted Blood or Serum After 1 day(s),400,240
+435,Serum Uric Acid,Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s),650,390
+436,Sodium,Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s),550,330
+437,Sodium (24 hrs Urine),Chemical Pathology 24 Hrs Urine After 8 hours(s),550,330
+438,Sodium (Fluid),Chemical Pathology Fluid After 8 hours(s),550,330
+439,Specific Gravity Urine,Chemical Pathology Urine (Random/spot) After 8 hours(s),300,180
+440,Sputum For AFB C/S,Microbiology SPUTUM After 70 day(s),5100,3060
+441,Sputum For AFB Smear / Z.N,Microbiology SPUTUM After 24 hours(s),550,330
+442,Sputum For C/S,Microbiology SPUTUM After 3 day(s),2350,1410
+443,Sputum For Cytology,Microbiology SPUTUM After 24 hours(s),1600,960
+444,Sputum for Fungal Smear,Microbiology SPUTUM After 24 hours(s),1600,960
+445,Sputum For Gram Stain,Microbiology SPUTUM After 24 hours(s),550,330
+446,Sternal Wound Swab For C/S,Microbiology Wound Swab After 3 day(s),2350,1410
+447,STONE ANALYSIS,Chemical Pathology Stone After 1 day(s),4000,2400
+448,Stool for C/E,Microbiology Stool For C/S Same day,600,360
+449,Stool For C/S,Microbiology Stool For C/S After 3 day(s),2350,1410
+450,Stool for fecal Calprotactin,Microbiology Stool For C/S After 2 day(s),4500,2700
+451,"Stool for H, Pylori Antigen",Special Chemistry Stool For C/S After 1 day(s),5500,3300
+452,stool for occult blood,Special Chemistry Stool For C/S Same day,800,480
+453,Sugar Random 2Hrs. After Breakfast,Chemical Pathology Blood in Sodium Fluoride vial After 8 hours(s),300,180
+454,Swab For C/S,Microbiology Swab After 3 day(s),2350,1410
+455,Synovial Fluid C/E,Microbiology Synovial Fluid After 24 hours(s),1600,960
+456,Synovial Fluid For AFB C/S,Microbiology Synovial Fluid After 70 day(s),5100,3060
+457,Synovial Fluid For AFB Stain / Zn Stain,Microbiology Synovial Fluid After 24 hours(s),550,330
+458,Synovial Fluid For C/S,Microbiology Synovial Fluid After 3 day(s),2350,1410
+459,Synovial Fluid For Cytology,Microbiology Synovial Fluid After 24 hours(s),1600,960
+460,Synovial Fluid For Gram Stain,Microbiology Synovial Fluid After 24 hours(s),550,330
+461,Syphilis (VDRL) - (ICT),Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s),600,360
+462,T3 (TriIodothyronine),Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s),1300,780
+463,T4 (Tetraiodothyronine),Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s),1300,780
+464,Testosterone Level,Special Chemistry 3-5cc Clotted Blood or Serum After 1 day(s),1700,1020
+465,Throat Swab For AFB Stain / Zn Stain,Microbiology Throat Swab After 24 hours(s),550,330
+466,Throat Swab For C/S,Microbiology Throat Swab After 3 day(s),2350,1410
+467,Throat Swab For Gram Stain,Microbiology Throat Swab After 24 hours(s),550,330
+468,Thyroid Peroxidase Antibodies (TPO),Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s),3400,2040
+469,"Thyroid profile ( TSH, T4, T3)",Special Chemistry 3-5cc Clotted Blood or Serum After 8 hours(s),3300,1980
+470,TIBC,Chemical Pathology 3-5cc Clotted Blood or Serum After 1 day(s),1400,840
+471,Tissue Biopsy for AFB Smear/Zn stain,Microbiology Biopsy After 1 day(s),550,330
+472,Tissue Biopsy for Bacterial C/S (Aerobic),Microbiology Biopsy Tissue with History After 3 day(s),2700,1620
+473,Tissue Biopsy for Fungus C/S with Fungus stain (KOH),Microbiology Biopsy After 3 day(s),2700,1620
+474,Tissue BiOPSY for gram stain,Hematology Tissue After 1 day(s),500,300
+475,Tissue For AFB Stain / Zn Stain,Microbiology Tissue After 24 hours(s),550,330
+476,Tissue For C/S,Microbiology Tissue After 3 day(s),2350,1410
+477,Torch Profile (IgG),Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s),5000,3000
+478,Torch Profile (IgM),Special Chemistry 3-5cc Clotted Blood or Serum After 1 day(s),5000,3000
+479,Total Bilirubin,Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s),400,240
+480,Total Protein,Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s),400,240
+481,Total RBCs,Hematology 3cc EDTA WHOLE BLOOD After 24 hours(s),300,180
+482,Toxoplasma IgG,Special Chemistry Lithium Heparin Vail After 1 day(s),2200,1320
+483,Toxoplasma IgM,Special Chemistry Lithium Heparin Vail After 1 day(s),2200,1320
+484,TPHA,Chemical Pathology 3-5cc Clotted Blood or Serum After 1 day(s),1700,1020
+485,Tracheal Tube Secretion C/S,Microbiology Tracheal TIP After 3 day(s),2350,1410
+486,Tracheal Tube Secretion for Gram Stain,Microbiology Fluid After 24 hours(s),550,330
+487,Troponin-I (High Sensitive),Chemical Pathology 3cc EDTA WHOLE BLOOD After 8 hours(s),2550,1530
+488,Troponin-T,Chemical Pathology 3cc EDTA WHOLE BLOOD After 8 hours(s),2300,1380
+489,TSH (Thyroid Stimulating Hormone),Special Chemistry 3-5cc Clotted Blood or Serum Same day,1450,870
+490,"Typhidot IgM ,IgG (Screening)",Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s),1200,720
+491,Urea,Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s),400,240
+492,Urea (24 Hrs Urine),Chemical Pathology 24 Hrs Urine After 1 day(s),500,300
+493,Urea Urine (Spot / Random),Chemical Pathology Urine (Random/spot) After 1 day(s),600,360
+494,Urethral Swab For C/S,Microbiology Swab After 3 day(s),2350,1410
+495,Uric Acid (24 Hrs Urine),Chemical Pathology 24 Hrs Urine After 1 day(s),700,420
+496,Uric Acid (Urine),Chemical Pathology Urine (Random/spot) After 1 day(s),700,420
+497,"Urine Complete Examination, Urine C/E",Microbiology First Morning mid stream Urine After 24 hours(s),500,300
+498,Urine Creatinine (Spot),Chemical Pathology Urine (Random/spot) After 8 hours(s),700,420
+499,Urine For AFB C/S,Microbiology Urine After 70 day(s),5100,3060
+500,Urine For AFB Stain / Zn Stain,Microbiology Urine After 24 hours(s),550,330
+501,Urine For Bile Pigment,Chemical Pathology Urine (Random/spot) After 1 day(s),700,420
+502,Urine For C/S,Microbiology First Morning mid stream Urine After 3 day(s),2350,1410
+503,Urine For Cytology,Microbiology Urine (Random/spot) After 1 hours(s),1600,960
+504,Urine for Gram Stain,Microbiology Urine (Random/spot) After 24 hours(s),550,330
+505,Urine for Ketones,Special Chemistry 24 Hrs Urine After 24 hours(s),600,360
+506,Urine for Protein,Chemical Pathology Urine (Random/spot) After 8 hours(s),400,240
+507,Urine For RBC,Microbiology Urine (Random/spot) After 24 hours(s),200,120
+508,Urine for Sugar,Chemical Pathology Urine (Random/spot) After 8 hours(s),800,480
+509,Urine Pregnancy Test,Microbiology Urine (Random/spot) After 24 hours(s),400,240
+510,Urine Protein (Spot),Chemical Pathology Urine (Random/spot) After 8 hours(s),600,360
+511,Urine Protein Creatinine Ratio,Special Chemistry Urine (Random/spot) After 1 day(s),1300,780
+512,Urine Uric Acid / Creatinine Ratio,Chemical Pathology Urine (Random/spot) After 1 day(s),1300,780
+513,VDRL (Quantitative),Special Chemistry 3-5cc Clotted Blood or Serum After 1 day(s),1900,1140
+514,Vitamin B12,Special Chemistry 3-5cc Clotted Blood or Serum After 1 day(s),2000,1200
+515,Vitreous Fluid For AFB C/S,Microbiology Vitreous Fluid After 70 day(s),5100,3060
+516,Vitreous Fluid For C/S,Microbiology Vitreous Fluid After 3 day(s),2350,1410
+517,Vitreous Fluid For Gram Stain,Microbiology Vitreous Fluid After 24 hours(s),550,330
+518,Vitreous for AFB Stain / Zn Stain,Microbiology Vitreous Fluid After 24 hours(s),550,330
+519,VLDL (Cholesterol),Chemical Pathology 3- 5cc Clotted Blood or Serum(Fasting) After 8 hours(s),400,240
+520,WBC (TLC),Hematology 3cc EDTA WHOLE BLOOD After 1 day(s),300,180
+521,WBCs Morphology,Hematology 3cc EDTA WHOLE BLOOD After 24 hours(s),600,360
+522,Wound Aspirate For AFB Stain / Zn Stain,Microbiology Wound Swab After 24 hours(s),550,330
+523,Wound Swab for AFB Smear,Microbiology Wound Swab After 24 hours(s),550,330
+524,Wound Swab For C/S,Microbiology Wound Swab After 3 day(s),2350,1410
+525,Wound Swab For Gram Stain,Microbiology Wound Swab After 24 hours(s),550,330
+526,Zinc Level (Blood),Special Chemistry Lithium Heparin Vail After 1 day(s),3200,1920
+527,Zn Staining,Microbiology Body Fluid After 24 hours(s),550,330

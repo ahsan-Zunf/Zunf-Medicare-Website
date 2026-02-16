@@ -1,0 +1,1768 @@
+[
+  {
+    "id": "25-oh-vitamin-d3-biotech-lahore-0",
+    "name": "25 –OH Vitamin –D3",
+    "description": "3 cc Clotted Blood/Serum - Next Day",
+    "price": 3000,
+    "discounted_price": 1800
+  },
+  {
+    "id": "ace-angiotensin-converting-enzyme-biotech-lahore-1",
+    "name": "ACE (Angiotensin Converting Enzyme)",
+    "description": "3-5 cc Clotted Blood/Serum - After 2 Days",
+    "price": 3200,
+    "discounted_price": 1920
+  },
+  {
+    "id": "albumin-biotech-lahore-2",
+    "name": "Albumin",
+    "description": "3-5 cc Clotted Blood/Serum - Same Day",
+    "price": 500,
+    "discounted_price": 300
+  },
+  {
+    "id": "albumin-urine-biotech-lahore-3",
+    "name": "Albumin (Urine)",
+    "description": "Urine (Random/ 24 Hrs) - Same Day",
+    "price": 500,
+    "discounted_price": 300
+  },
+  {
+    "id": "aldolase-biotech-lahore-4",
+    "name": "Aldolase",
+    "description": "3-5 cc Clotted Blood/Serum - After 2 Days",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "alkaline-phosphate-biotech-lahore-5",
+    "name": "Alkaline Phosphate",
+    "description": "3-5 cc Clotted Blood/Serum - Same Day",
+    "price": 600,
+    "discounted_price": 360
+  },
+  {
+    "id": "alpha-feto-protein-afp-biotech-lahore-6",
+    "name": "Alpha Feto-Protein(AFP)",
+    "description": "3-5 cc Clotted Blood/Serum - Next Day",
+    "price": 2000,
+    "discounted_price": 1200
+  },
+  {
+    "id": "ammonia-nh3-biotech-lahore-7",
+    "name": "Ammonia (NH3)",
+    "description": "3-5 cc Blood In EDTA - Next Day",
+    "price": 2000,
+    "discounted_price": 1200
+  },
+  {
+    "id": "amylase-biotech-lahore-8",
+    "name": "Amylase",
+    "description": "3-5 cc Clotted Blood/Serum - Same Day",
+    "price": 1200,
+    "discounted_price": 720
+  },
+  {
+    "id": "ana-biotech-lahore-9",
+    "name": "ANA",
+    "description": "3-5 cc Clotted Blood/Serum - Same Day",
+    "price": 1400,
+    "discounted_price": 840
+  },
+  {
+    "id": "ana-by-elisa-biotech-lahore-10",
+    "name": "ANA by Elisa",
+    "description": "3-5 cc Clotted Blood/Serum - Next Day",
+    "price": 3000,
+    "discounted_price": 1800
+  },
+  {
+    "id": "anti-cardiolipin-igg-biotech-lahore-11",
+    "name": "Anti Cardiolipin IgG",
+    "description": "3-5 cc Clotted Blood/Serum - After 2 Days",
+    "price": 3000,
+    "discounted_price": 1800
+  },
+  {
+    "id": "anti-cardiolipin-igm-biotech-lahore-12",
+    "name": "Anti Cardiolipin IgM",
+    "description": "3-5 cc Clotted Blood/Serum - After 2 Days",
+    "price": 3000,
+    "discounted_price": 1800
+  },
+  {
+    "id": "anti-ccp-cpa-biotech-lahore-13",
+    "name": "Anti CCP(CPA)",
+    "description": "3-5 cc Clotted Blood/Serum - Next Day",
+    "price": 3000,
+    "discounted_price": 1800
+  },
+  {
+    "id": "anti-ds-dna-elisa-biotech-lahore-14",
+    "name": "Anti ds DNA Elisa",
+    "description": "3-5 cc Clotted Blood/Serum - Next Day",
+    "price": 2400,
+    "discounted_price": 1440
+  },
+  {
+    "id": "anti-hav-igg-elisa-biotech-lahore-15",
+    "name": "Anti HAV IgG Elisa",
+    "description": "3-5 cc Clotted Blood/Serum - Next Day",
+    "price": 2500,
+    "discounted_price": 1500
+  },
+  {
+    "id": "anti-hav-igm-elisa-biotech-lahore-16",
+    "name": "Anti HAV IgM Elisa",
+    "description": "3-5 cc Clotted Blood/Serum - Next Day",
+    "price": 2500,
+    "discounted_price": 1500
+  },
+  {
+    "id": "anca-c-pr-3-biotech-lahore-17",
+    "name": "ANCA-C (PR-3)",
+    "description": "3-5 cc Clotted Blood/Serum - Next Day",
+    "price": 5700,
+    "discounted_price": 3420
+  },
+  {
+    "id": "anca-p-mpo-biotech-lahore-18",
+    "name": "ANCA -P ( MPO)",
+    "description": "3-5 cc Clotted Blood/Serum - Next Day",
+    "price": 5700,
+    "discounted_price": 3420
+  },
+  {
+    "id": "acr-albumin-creatinine-ratio-biotech-lahore-19",
+    "name": "ACR (Albumin Creatinine Ratio)",
+    "description": "Urine (Random/Spot) - Next Day",
+    "price": 1800,
+    "discounted_price": 1080
+  },
+  {
+    "id": "anti-mullerian-hormone-amh-biotech-lahore-20",
+    "name": "Anti Mullerian Hormone (AMH)",
+    "description": "3-5 cc Clotted Blood/Serum - Next Day",
+    "price": 5500,
+    "discounted_price": 3300
+  },
+  {
+    "id": "anti-hcv-elisa-biotech-lahore-21",
+    "name": "Anti HCV (ELISA)",
+    "description": "3-5 cc Clotted Blood/Serum - Next Day",
+    "price": 1800,
+    "discounted_price": 1080,
+    "pinned": true
+  },
+  {
+    "id": "anti-hcv-screening-biotech-lahore-22",
+    "name": "Anti HCV (Screening)",
+    "description": "3-5 cc Clotted Blood/Serum - Same Day",
+    "price": 700,
+    "discounted_price": 420,
+    "pinned": true
+  },
+  {
+    "id": "anti-hdv-biotech-lahore-23",
+    "name": "Anti HDV",
+    "description": "3-5 cc Clotted Blood/Serum - Next Day",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "anti-hev-lgg-biotech-lahore-24",
+    "name": "Anti HEV lgG",
+    "description": "3-5 cc Clotted Blood/Serum - Next Day",
+    "price": 2500,
+    "discounted_price": 1500
+  },
+  {
+    "id": "anti-hev-lgm-biotech-lahore-25",
+    "name": "Anti HEV lgM",
+    "description": "3-5 cc Clotted Blood/Serum - Next Day",
+    "price": 2500,
+    "discounted_price": 1500
+  },
+  {
+    "id": "anti-hiv-screening-biotech-lahore-26",
+    "name": "Anti HIV Screening",
+    "description": "3-5 cc Clotted Blood/Serum - Same Day",
+    "price": 900,
+    "discounted_price": 540
+  },
+  {
+    "id": "anti-hiv-1-2-elisa-biotech-lahore-27",
+    "name": "Anti HIV-1&2 Elisa",
+    "description": "3-5 cc Clotted Blood/Serum - Next Day",
+    "price": 2400,
+    "discounted_price": 1440
+  },
+  {
+    "id": "anti-l-k-m-liver-kidney-microsomal-abs-biotech-lahore-28",
+    "name": "Anti L.K.M (Liver kidney microsomal abs)",
+    "description": "3-5 cc Clotted Blood/Serum - After 2 Days",
+    "price": 3000,
+    "discounted_price": 1800
+  },
+  {
+    "id": "anti-transglutaminase-igm-biotech-lahore-29",
+    "name": "Anti Transglutaminase IgM",
+    "description": "3-5 cc Clotted Blood/Serum - After 2 Days",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "anti-transglutaminase-iga-biotech-lahore-30",
+    "name": "Anti Transglutaminase IgA",
+    "description": "3-5 cc Clotted Blood/Serum - After 2 Days",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "anti-transglutaminase-igg-biotech-lahore-31",
+    "name": "Anti Transglutaminase IgG",
+    "description": "3-5 cc Clotted Blood/Serum - After 2 Days",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "aptt-activated-partial-thromboplastin-time-biotech-lahore-32",
+    "name": "APTT (Activated Partial Thromboplastin Time)",
+    "description": "Sodium Citrate Tube (PTVail) - Same Day",
+    "price": 800,
+    "discounted_price": 480
+  },
+  {
+    "id": "ascitic-fluid-for-cytology-biotech-lahore-33",
+    "name": "Ascitic Fluid for Cytology",
+    "description": "Specimen Fluid - After 5 Days",
+    "price": 2500,
+    "discounted_price": 1500
+  },
+  {
+    "id": "ascitic-fluid-for-analysis-biotech-lahore-34",
+    "name": "Ascitic Fluid For Analysis",
+    "description": "Specimen Fluid - Next Day",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "ascitic-fluid-for-c-s-biotech-lahore-35",
+    "name": "Ascitic Fluid for C/S",
+    "description": "Specimen Fluid - After 3 Days",
+    "price": 2500,
+    "discounted_price": 1500
+  },
+  {
+    "id": "aso-titre-ql-biotech-lahore-36",
+    "name": "ASO titre (QL)",
+    "description": "3-5 cc Clotted Blood/Serum - Same Day",
+    "price": 1000,
+    "discounted_price": 600
+  },
+  {
+    "id": "aso-titre-qn-biotech-lahore-37",
+    "name": "ASO titre (QN)",
+    "description": "3-5 cc Clotted Blood/Serum - Same Day",
+    "price": 1800,
+    "discounted_price": 1080
+  },
+  {
+    "id": "ast-sgot-biotech-lahore-38",
+    "name": "AST (SGOT)",
+    "description": "3-5 cc Clotted Blood/Serum - Same Day",
+    "price": 600,
+    "discounted_price": 360
+  },
+  {
+    "id": "beta-hcg-biotech-lahore-39",
+    "name": "Beta HCG",
+    "description": "3-5 cc Clotted Blood/Serum - Next Day",
+    "price": 2000,
+    "discounted_price": 1200
+  },
+  {
+    "id": "bicarbonate-hco3-biotech-lahore-40",
+    "name": "Bicarbonate (HCO3)",
+    "description": "3-5 cc Clotted Blood/Serum - Same Day",
+    "price": 1000,
+    "discounted_price": 600
+  },
+  {
+    "id": "bilirubin-direct-conjugated-biotech-lahore-41",
+    "name": "Bilirubin Direct (Conjugated)",
+    "description": "3-5 cc Clotted Blood/Serum - Same Day",
+    "price": 600,
+    "discounted_price": 360
+  },
+  {
+    "id": "bilirubin-indirect-unconjugated-biotech-lahore-42",
+    "name": "Bilirubin Indirect (Unconjugated)",
+    "description": "3-5 cc Clotted Blood/Serum - Same Day",
+    "price": 600,
+    "discounted_price": 360
+  },
+  {
+    "id": "bilirubin-total-biotech-lahore-43",
+    "name": "Bilirubin Total",
+    "description": "3-5 cc Clotted Blood/Serum - Same Day",
+    "price": 600,
+    "discounted_price": 360
+  },
+  {
+    "id": "biopsy-large-biotech-lahore-44",
+    "name": "Biopsy – Large",
+    "description": "Biopsy Tissue - After 1 Week",
+    "price": 5000,
+    "discounted_price": 3000
+  },
+  {
+    "id": "biopsy-medium-biotech-lahore-45",
+    "name": "Biopsy – Medium",
+    "description": "Biopsy Tissue - After 1 Week",
+    "price": 4000,
+    "discounted_price": 2400
+  },
+  {
+    "id": "biopsy-small-biotech-lahore-46",
+    "name": "Biopsy – Small",
+    "description": "Biopsy Tissue - After 1 Week",
+    "price": 3000,
+    "discounted_price": 1800
+  },
+  {
+    "id": "biopsy-slides-block-biotech-lahore-47",
+    "name": "Biopsy Slides & Block",
+    "description": "Slides and Block - After 5 Days",
+    "price": 2000,
+    "discounted_price": 1200
+  },
+  {
+    "id": "bladder-stone-for-analyses-biotech-lahore-48",
+    "name": "Bladder Stone For Analyses",
+    "description": "Stone - Next Day",
+    "price": 2500,
+    "discounted_price": 1500
+  },
+  {
+    "id": "bleeding-time-biotech-lahore-49",
+    "name": "Bleeding Time",
+    "description": "Contact Lab - Same Day",
+    "price": 400,
+    "discounted_price": 240
+  },
+  {
+    "id": "blood-c-e-dengue-patient-biotech-lahore-50",
+    "name": "Blood C/E (Dengue patient)",
+    "description": "3 cc EDTA Blood - Same Day",
+    "price": 90,
+    "discounted_price": 54,
+    "pinned": true
+  },
+  {
+    "id": "blood-c-e-cbc-cp-biotech-lahore-51",
+    "name": "Blood C/E (CBC/CP)",
+    "description": "3 cc EDTA Blood - Same Day",
+    "price": 600,
+    "discounted_price": 360,
+    "pinned": true
+  },
+  {
+    "id": "blood-c-s-biotech-lahore-52",
+    "name": "Blood C/S",
+    "description": "Blood Culture Vial - After 1 Week",
+    "price": 3500,
+    "discounted_price": 2100
+  },
+  {
+    "id": "blood-group-rh-factor-biotech-lahore-53",
+    "name": "Blood Group & Rh Factor",
+    "description": "3 cc Blood In EDTA - Same Day",
+    "price": 350,
+    "discounted_price": 210
+  },
+  {
+    "id": "bile-acid-biotech-lahore-54",
+    "name": "Bile Acid",
+    "description": "3-5 cc Clotted Blood/Serum - After 2 Days",
+    "price": 3350,
+    "discounted_price": 2010
+  },
+  {
+    "id": "bile-salt-biotech-lahore-55",
+    "name": "Bile salt",
+    "description": "UrineRandom/Spot After 2 Days",
+    "price": 700,
+    "discounted_price": 420
+  },
+  {
+    "id": "bilepigment-biotech-lahore-56",
+    "name": "BilePigment",
+    "description": "UrineRandom/Spot After 2 Days",
+    "price": 700,
+    "discounted_price": 420
+  },
+  {
+    "id": "bnp-plasma-biotech-lahore-57",
+    "name": "BNP (plasma)",
+    "description": "3 cc Blood In EDTA SameDay",
+    "price": 3200,
+    "discounted_price": 1920
+  },
+  {
+    "id": "brucella-test-igg-igm-biotech-lahore-58",
+    "name": "Brucella Test( IgG,IgM)",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "bun-biotech-lahore-59",
+    "name": "BUN",
+    "description": "3-5 ccClotted Blood/Serum SameDay",
+    "price": 650,
+    "discounted_price": 390
+  },
+  {
+    "id": "bun-creatinineratio-biotech-lahore-60",
+    "name": "BUN/CreatinineRatio",
+    "description": "3-5 ccClotted Blood/Serum SameDay",
+    "price": 1300,
+    "discounted_price": 780
+  },
+  {
+    "id": "ca-125-biotech-lahore-61",
+    "name": "CA 125",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 2800,
+    "discounted_price": 1680
+  },
+  {
+    "id": "ca-19-9-biotech-lahore-62",
+    "name": "CA 19-9",
+    "description": "3-5 ccClotted Blood/Serum After 3 Days",
+    "price": 3200,
+    "discounted_price": 1920
+  },
+  {
+    "id": "calcium-biotech-lahore-63",
+    "name": "Calcium",
+    "description": "3-5 ccClotted Blood/Serum SameDay",
+    "price": 650,
+    "discounted_price": 390
+  },
+  {
+    "id": "cardiac-enzymes-cpk-ckmb-sgot-ldh-biotech-lahore-64",
+    "name": "Cardiac Enzymes (CPK,CKMB,SGOT,LDH)",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "cbc-with-esr-biotech-lahore-65",
+    "name": "CBC With ESR",
+    "description": "3 cc Blood In EDTA SameDay",
+    "price": 950,
+    "discounted_price": 570,
+    "pinned": true
+  },
+  {
+    "id": "cbc-biotech-lahore-66",
+    "name": "CBC",
+    "description": "3 cc Blood In EDTA SameDay",
+    "price": 600,
+    "discounted_price": 360,
+    "pinned": true
+  },
+  {
+    "id": "cea-carcino-embryonicantigen-biotech-lahore-67",
+    "name": "CEA ( Carcino EmbryonicAntigen)",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 3200,
+    "discounted_price": 1920,
+    "pinned": true
+  },
+  {
+    "id": "chloride-biotech-lahore-68",
+    "name": "Chloride",
+    "description": "3-5 ccClotted Blood/Serum SameDay",
+    "price": 600,
+    "discounted_price": 360
+  },
+  {
+    "id": "cholesterol-biotech-lahore-69",
+    "name": "Cholesterol",
+    "description": "3-5 ccClotted Blood/Serum SameDay",
+    "price": 600,
+    "discounted_price": 360
+  },
+  {
+    "id": "cholestrol-hdl-ratio-biotech-lahore-70",
+    "name": "Cholestrol/HDL Ratio",
+    "description": "3-5 ccClotted Blood/Serum SameDay",
+    "price": 1200,
+    "discounted_price": 720
+  },
+  {
+    "id": "ck-mb-biotech-lahore-71",
+    "name": "CK-MB",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 700,
+    "discounted_price": 420
+  },
+  {
+    "id": "clotting-time-biotech-lahore-72",
+    "name": "Clotting Time",
+    "description": "Contact Lab SameDay",
+    "price": 400,
+    "discounted_price": 240
+  },
+  {
+    "id": "cmv-igg-biotech-lahore-73",
+    "name": "CMV –IgG",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "cmv-igm-biotech-lahore-74",
+    "name": "CMV –IgM",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "complete-medical-profile-health-profile-biotech-lahore-75",
+    "name": "Complete Medical Profile (Health Profile)",
+    "description": "CBC,ESR,RFTs,LFTs ,Uric Acid,BSL,cholestrol ,UrineC/ E,B/G,Calcium,HbsAg,Anti Hcv,Anti Hiv -ict SameDay",
+    "price": 5500,
+    "discounted_price": 3300,
+    "pinned": true
+  },
+  {
+    "id": "coomb-s-test-direct-biotech-lahore-76",
+    "name": "Coomb's Test (Direct)",
+    "description": "3 cc Blood In EDTA SameDay",
+    "price": 1200,
+    "discounted_price": 720
+  },
+  {
+    "id": "coomb-s-test-indirect-biotech-lahore-77",
+    "name": "Coomb's Test (Indirect)",
+    "description": "3-5 ccClotted Blood/Serum SameDay",
+    "price": 1200,
+    "discounted_price": 720
+  },
+  {
+    "id": "cortisol-a-m-biotech-lahore-78",
+    "name": "Cortisol(A.M.)",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "cortisol-p-m-biotech-lahore-79",
+    "name": "Cortisol(P.M.)",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "c-peptide-level-biotech-lahore-80",
+    "name": "C-Peptide Level",
+    "description": "3-5 ccClotted Blood/Serum After 2 Days",
+    "price": 3000,
+    "discounted_price": 1800
+  },
+  {
+    "id": "cpk-biotech-lahore-81",
+    "name": "CPK",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 700,
+    "discounted_price": 420
+  },
+  {
+    "id": "creatinine-biotech-lahore-82",
+    "name": "Creatinine",
+    "description": "3-5 ccClotted Blood/Serum SameDay",
+    "price": 650,
+    "discounted_price": 390
+  },
+  {
+    "id": "creatinineclearance-biotech-lahore-83",
+    "name": "CreatinineClearance",
+    "description": "24 Hours Urine SameDay",
+    "price": 1200,
+    "discounted_price": 720
+  },
+  {
+    "id": "crp-ql-biotech-lahore-84",
+    "name": "CRP (QL)",
+    "description": "3-5 ccClotted Blood/Serum SameDay",
+    "price": 1200,
+    "discounted_price": 720
+  },
+  {
+    "id": "crp-high-sensitive-qn-biotech-lahore-85",
+    "name": "CRP ( High Sensitive/QN )",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 1800,
+    "discounted_price": 1080
+  },
+  {
+    "id": "csf-cytology-biotech-lahore-86",
+    "name": "CSF Cytology",
+    "description": "Specimen CSF Fluid After 2 Days",
+    "price": 2500,
+    "discounted_price": 1500
+  },
+  {
+    "id": "csf-for-analysis-biotech-lahore-87",
+    "name": "CSF For Analysis",
+    "description": "Specimen CSF Fluid Next Day",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "csf-for-c-s-biotech-lahore-88",
+    "name": "CSF for C/S",
+    "description": "Specimen CSF Fluid After 3 Days",
+    "price": 2500,
+    "discounted_price": 1500
+  },
+  {
+    "id": "csf-for-gram-staining-biotech-lahore-89",
+    "name": "CSF for Gram staining",
+    "description": "Specimen CSF Fluid SameDay",
+    "price": 800,
+    "discounted_price": 480
+  },
+  {
+    "id": "csf-for-zn-staining-biotech-lahore-90",
+    "name": "CSF for ZN Staining",
+    "description": "Specimen CSF Fluid SameDay",
+    "price": 700,
+    "discounted_price": 420
+  },
+  {
+    "id": "troponin-i-biotech-lahore-91",
+    "name": "Troponin –I",
+    "description": "3-5 ccClotted Blood/Serum sameDay",
+    "price": 2000,
+    "discounted_price": 1200
+  },
+  {
+    "id": "d-dimer-f-d-p-s-biotech-lahore-92",
+    "name": "D-Dimer ( F.D.P,s)",
+    "description": "Sodium Citrate Tube (PTVail) Next Day",
+    "price": 2500,
+    "discounted_price": 1500
+  },
+  {
+    "id": "dengueviral-fever-igg-elisa-biotech-lahore-93",
+    "name": "DengueViral Fever IgG Elisa",
+    "description": "3 ccClotted Blood Next Day",
+    "price": 1500,
+    "discounted_price": 900
+  },
+  {
+    "id": "dengueviral-fever-igm-elisa-biotech-lahore-94",
+    "name": "DengueViral Fever IgM Elisa",
+    "description": "3 ccClotted Blood Next Day",
+    "price": 1500,
+    "discounted_price": 900
+  },
+  {
+    "id": "dhea-so4-biotech-lahore-95",
+    "name": "DHEA –SO4",
+    "description": "3 ccClotted Blood Next Day",
+    "price": 2800,
+    "discounted_price": 1680
+  },
+  {
+    "id": "ear-swab-c-s-biotech-lahore-96",
+    "name": "EAR Swab C/S",
+    "description": "EAR Swab After 4 Days",
+    "price": 2500,
+    "discounted_price": 1500
+  },
+  {
+    "id": "ena-profile-biotech-lahore-97",
+    "name": "ENA –Profile",
+    "description": "3-5 ccClotted Blood/Serum After 2 Days",
+    "price": 8000,
+    "discounted_price": 4800
+  },
+  {
+    "id": "esr-biotech-lahore-98",
+    "name": "ESR",
+    "description": "3 cc Blood In EDTA SameDay",
+    "price": 350,
+    "discounted_price": 210
+  },
+  {
+    "id": "estradiol-biotech-lahore-99",
+    "name": "Estradiol",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "estrogen-biotech-lahore-100",
+    "name": "Estrogen",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "ferritin-biotech-lahore-101",
+    "name": "Ferritin",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 1800,
+    "discounted_price": 1080
+  },
+  {
+    "id": "fluid-c-s-any-biotech-lahore-102",
+    "name": "Fluid c/s ( Any )",
+    "description": "Fluid After 3 Days",
+    "price": 2500,
+    "discounted_price": 1500
+  },
+  {
+    "id": "fibrinogen-biotech-lahore-103",
+    "name": "Fibrinogen",
+    "description": "Sodium Citrate Tube (PTVail) Next Day",
+    "price": 1800,
+    "discounted_price": 1080
+  },
+  {
+    "id": "fluid-for-c-e-any-biotech-lahore-104",
+    "name": "Fluid For C/E ( Any )",
+    "description": "Specimen Fluid Next Day",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "folicacid-folate-level-biotech-lahore-105",
+    "name": "FolicAcid (Folate Level)",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "freepsa-biotech-lahore-106",
+    "name": "FreePSA",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 3000,
+    "discounted_price": 1800
+  },
+  {
+    "id": "free-t-3-free-tri-iodoethyronine-biotech-lahore-107",
+    "name": "Free T-3 (Free Tri-Iodoethyronine)",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 1500,
+    "discounted_price": 900
+  },
+  {
+    "id": "free-t4-biotech-lahore-108",
+    "name": "Free T4",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 1500,
+    "discounted_price": 900
+  },
+  {
+    "id": "free-testosterone-biotech-lahore-109",
+    "name": "Free Testosterone",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 2800,
+    "discounted_price": 1680
+  },
+  {
+    "id": "fsh-follicle-stimulating-hormone-biotech-lahore-110",
+    "name": "FSH (Follicle Stimulating Hormone)",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 1850,
+    "discounted_price": 1110
+  },
+  {
+    "id": "fungus-culture-biotech-lahore-111",
+    "name": "Fungus Culture",
+    "description": "Contact Lab",
+    "price": 3000,
+    "discounted_price": 1800
+  },
+  {
+    "id": "g6pd-biotech-lahore-112",
+    "name": "G6PD",
+    "description": "EDTA Blood Next Day",
+    "price": 1800,
+    "discounted_price": 1080
+  },
+  {
+    "id": "gall-bladder-stone-for-chemical-biotech-lahore-113",
+    "name": "Gall Bladder Stone For Chemical",
+    "description": "Stone Next Day",
+    "price": 2500,
+    "discounted_price": 1500
+  },
+  {
+    "id": "gamma-gt-gamma-glutamyl-transpeptidase-biotech-lahore-114",
+    "name": "Gamma GT (Gamma Glutamyl Transpeptidase)",
+    "description": "3-5 ccClotted Blood/Serum SameDay",
+    "price": 800,
+    "discounted_price": 480
+  },
+  {
+    "id": "gh-growth-hormone-biotech-lahore-115",
+    "name": "GH (Growth Hormone)",
+    "description": "3-5 ccClotted Blood/Serum After 2 Days",
+    "price": 2400,
+    "discounted_price": 1440
+  },
+  {
+    "id": "glucosechallenge-test-gct-biotech-lahore-116",
+    "name": "GlucoseChallenge Test (GCT)",
+    "description": "Sodium FluorideBlood SameDay",
+    "price": 800,
+    "discounted_price": 480
+  },
+  {
+    "id": "gtt-glucose-tolerance-tests-biotech-lahore-117",
+    "name": "GTT (Glucose Tolerance Tests)",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 800,
+    "discounted_price": 480
+  },
+  {
+    "id": "gram-stain-biotech-lahore-118",
+    "name": "Gram Stain",
+    "description": "All Type Specimen Next Day",
+    "price": 800,
+    "discounted_price": 480
+  },
+  {
+    "id": "h-pylori-abs-screening-biotech-lahore-119",
+    "name": "H, Pylori Abs (Screening)",
+    "description": "3-5 ccClotted Blood/Serum SameDay",
+    "price": 1300,
+    "discounted_price": 780
+  },
+  {
+    "id": "h-pylori-abs-iga-biotech-lahore-120",
+    "name": "H. Pylori Abs IgA",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "h-pylori-abs-igg-biotech-lahore-121",
+    "name": "H. Pylori Abs IgG",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "h-pylori-abs-igm-biotech-lahore-122",
+    "name": "H. Pylori Abs IgM",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "hav-igg-biotech-lahore-123",
+    "name": "HAV –IgG",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 2500,
+    "discounted_price": 1500
+  },
+  {
+    "id": "hav-igm-biotech-lahore-124",
+    "name": "HAV –IgM",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 2500,
+    "discounted_price": 1500
+  },
+  {
+    "id": "hb-electrophoresis-biotech-lahore-125",
+    "name": "Hb –Electrophoresis",
+    "description": "2 cc EDTA Blood 1Week",
+    "price": 3000,
+    "discounted_price": 1800
+  },
+  {
+    "id": "hba1c-glycosylated-haemoglobin-biotech-lahore-126",
+    "name": "HbA1C (Glycosylated Haemoglobin)",
+    "description": "3 cc Blood In EDTA Next Day",
+    "price": 2000,
+    "discounted_price": 1200,
+    "pinned": true
+  },
+  {
+    "id": "hbeag-elisa-biotech-lahore-127",
+    "name": "HbeAg Elisa",
+    "description": "3-5 ccClotted Blood/Serum After 3 Days",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "hbsag-elisa-biotech-lahore-128",
+    "name": "HBsAg (ELISA)",
+    "description": "3-5 ccClotted Blood/Serum SameDay",
+    "price": 1400,
+    "discounted_price": 840,
+    "pinned": true
+  },
+  {
+    "id": "hbsag-screening-biotech-lahore-129",
+    "name": "HBsAg (Screening)",
+    "description": "3-5 ccClotted Blood/Serum SameDay",
+    "price": 700,
+    "discounted_price": 420,
+    "pinned": true
+  },
+  {
+    "id": "hbv-dna-real-time-pcr-ql-biotech-lahore-130",
+    "name": "HBV DNA REAL-TIME PCR (QL)",
+    "description": "3-5 ccClotted Blood/Serum After 3 Days",
+    "price": 5500,
+    "discounted_price": 3300
+  },
+  {
+    "id": "hbv-dna-real-time-pcr-qn-biotech-lahore-131",
+    "name": "HBV DNA REAL-TIME PCR (QN)",
+    "description": "3-5 ccClotted Blood/Serum After 3 Days",
+    "price": 8000,
+    "discounted_price": 4800
+  },
+  {
+    "id": "hcv-genotyping-biotech-lahore-132",
+    "name": "HCV Genotyping",
+    "description": "3-5 ccClotted Blood/Serum After 3 Days",
+    "price": 8000,
+    "discounted_price": 4800
+  },
+  {
+    "id": "hcv-rna-real-time-pcr-qn-biotech-lahore-133",
+    "name": "HCV RNA REAL-TIME PCR (QN)",
+    "description": "3-5 ccClotted Blood/Serum After 3 Days",
+    "price": 8000,
+    "discounted_price": 4800
+  },
+  {
+    "id": "hcv-rna-real-time-pcr-qualitative-biotech-lahore-134",
+    "name": "HCV RNA REAL-TIME PCR (QUALITATIVE)",
+    "description": "3-5 ccClotted Blood/Serum After 3 Days",
+    "price": 5500,
+    "discounted_price": 3300
+  },
+  {
+    "id": "hcv-serotyping-biotech-lahore-135",
+    "name": "HCV Serotyping",
+    "description": "3-5 ccClotted Blood/Serum After 3 Days",
+    "price": 9500,
+    "discounted_price": 5700
+  },
+  {
+    "id": "hdl-cholesterol-biotech-lahore-136",
+    "name": "HDL (Cholesterol)",
+    "description": "3-5 ccClotted Blood/Serum SameDay",
+    "price": 600,
+    "discounted_price": 360
+  },
+  {
+    "id": "hdv-antigen-biotech-lahore-137",
+    "name": "HDV Antigen",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 2200,
+    "discounted_price": 1320,
+    "pinned": true
+  },
+  {
+    "id": "hepatitis-b-profile-biotech-lahore-138",
+    "name": "Hepatitis B Profile",
+    "description": "3-5 ccClotted Blood/Serum After 2 Days",
+    "price": 8000,
+    "discounted_price": 4800,
+    "pinned": true
+  },
+  {
+    "id": "hiv-aids-by-elisa-biotech-lahore-139",
+    "name": "HIV (Aids) by ELISA",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 2400,
+    "discounted_price": 1440
+  },
+  {
+    "id": "hiv-aids-by-screening-biotech-lahore-140",
+    "name": "HIV (Aids) by Screening",
+    "description": "3-5 ccClotted Blood/Serum SameDay",
+    "price": 1000,
+    "discounted_price": 600
+  },
+  {
+    "id": "hvs-for-c-s-biotech-lahore-141",
+    "name": "HVS for C/S",
+    "description": "HVS Swab After 3 Days",
+    "price": 2500,
+    "discounted_price": 1500
+  },
+  {
+    "id": "ict-malaria-biotech-lahore-142",
+    "name": "ICT Malaria",
+    "description": "3-5 cc Blood in EDTA SameDay",
+    "price": 1000,
+    "discounted_price": 600
+  },
+  {
+    "id": "iga-biotech-lahore-143",
+    "name": "IgA",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 1800,
+    "discounted_price": 1080
+  },
+  {
+    "id": "ige-biotech-lahore-144",
+    "name": "IgE",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 1800,
+    "discounted_price": 1080,
+    "pinned": true
+  },
+  {
+    "id": "igg-biotech-lahore-145",
+    "name": "IgG",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 1800,
+    "discounted_price": 1080
+  },
+  {
+    "id": "igm-biotech-lahore-146",
+    "name": "IgM",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 1800,
+    "discounted_price": 1080
+  },
+  {
+    "id": "inr-pt-biotech-lahore-147",
+    "name": "INR / PT",
+    "description": "Citrate Tube from Lab SameDay",
+    "price": 800,
+    "discounted_price": 480
+  },
+  {
+    "id": "insulin-biotech-lahore-148",
+    "name": "Insulin",
+    "description": "3-5 ccClotted Blood/Serum After 2 Days",
+    "price": 3200,
+    "discounted_price": 1920
+  },
+  {
+    "id": "iron-fe-biotech-lahore-149",
+    "name": "Iron (Fe)",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 1000,
+    "discounted_price": 600,
+    "pinned": true
+  },
+  {
+    "id": "joint-fluid-for-analysis-biotech-lahore-150",
+    "name": "Joint Fluid For Analysis",
+    "description": "Specimen Fluid Next Day",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "ketones-urine-biotech-lahore-151",
+    "name": "Ketones (Urine)",
+    "description": "Urine (Random/Spot) SameDay",
+    "price": 350,
+    "discounted_price": 210
+  },
+  {
+    "id": "kidney-stone-for-analysis-biotech-lahore-152",
+    "name": "Kidney Stone for Analysis",
+    "description": "Specimen Stone Next Day",
+    "price": 2800,
+    "discounted_price": 1680
+  },
+  {
+    "id": "lactate-level-biotech-lahore-153",
+    "name": "Lactate Level",
+    "description": "Urine (Random / Spot) Next Day",
+    "price": 2400,
+    "discounted_price": 1440
+  },
+  {
+    "id": "ldh-lacticdehydrogenase-biotech-lahore-154",
+    "name": "LDH (LacticDehydrogenase)",
+    "description": "3-5 ccClotted Blood/Serum SameDay",
+    "price": 700,
+    "discounted_price": 420
+  },
+  {
+    "id": "ldl-cholestrol-biotech-lahore-155",
+    "name": "LDL Cholestrol",
+    "description": "3-5 ccClotted Blood/Serum SameDay",
+    "price": 700,
+    "discounted_price": 420
+  },
+  {
+    "id": "lft-liver-functions-tests-biotech-lahore-156",
+    "name": "LFT-Liver Functions Tests",
+    "description": "3-5 ccClotted Blood/Serum SameDay",
+    "price": 1600,
+    "discounted_price": 960,
+    "pinned": true
+  },
+  {
+    "id": "lh-luteinhizing-hormone-biotech-lahore-157",
+    "name": "LH (Luteinhizing Hormone)",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 1850,
+    "discounted_price": 1110
+  },
+  {
+    "id": "lipase-biotech-lahore-158",
+    "name": "Lipase",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 1200,
+    "discounted_price": 720
+  },
+  {
+    "id": "lipid-profile-biotech-lahore-159",
+    "name": "Lipid Profile",
+    "description": "3-5 ccClotted Blood/Serum SameDay",
+    "price": 2000,
+    "discounted_price": 1200,
+    "pinned": true
+  },
+  {
+    "id": "magnesium-biotech-lahore-160",
+    "name": "Magnesium",
+    "description": "3-5 ccClotted Blood/Serum SameDay",
+    "price": 650,
+    "discounted_price": 390
+  },
+  {
+    "id": "malarial-parasite-smear-mp-biotech-lahore-161",
+    "name": "Malarial Parasite Smear (MP)",
+    "description": "3 cc Blood In EDTA (CBC Vial) SameDay",
+    "price": 1000,
+    "discounted_price": 600,
+    "pinned": true
+  },
+  {
+    "id": "micro-albumin-urea-biotech-lahore-162",
+    "name": "Micro albumin urea",
+    "description": "Urine (Random/Spot) Next Day",
+    "price": 1800,
+    "discounted_price": 1080
+  },
+  {
+    "id": "mtb-by-pcr-ql-biotech-lahore-163",
+    "name": "MTB By PCR (QL)",
+    "description": "3-5 ccClotted Blood/Serum After 10 Days",
+    "price": 8000,
+    "discounted_price": 4800
+  },
+  {
+    "id": "mycodot-screening-biotech-lahore-164",
+    "name": "Mycodot(screening)",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 1200,
+    "discounted_price": 720
+  },
+  {
+    "id": "mycodot-igg-elisa-biotech-lahore-165",
+    "name": "Mycodot IgG Elisa",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 1800,
+    "discounted_price": 1080
+  },
+  {
+    "id": "mycodot-igm-elisa-biotech-lahore-166",
+    "name": "Mycodot IgM Elisa",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 1800,
+    "discounted_price": 1080
+  },
+  {
+    "id": "ns-1-elisa-biotech-lahore-167",
+    "name": "Ns-1 ( Elisa )",
+    "description": "3-5 ccClotted Blood/Serum SameDay",
+    "price": 1500,
+    "discounted_price": 900
+  },
+  {
+    "id": "pap-smear-for-cytology-biotech-lahore-168",
+    "name": "Pap smear for Cytology",
+    "description": "Pap Smear After 2 Days",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "peripheral-blood-picture-biotech-lahore-169",
+    "name": "Peripheral Blood Picture",
+    "description": "3 cc Blood In EDTA SameDay",
+    "price": 1000,
+    "discounted_price": 600
+  },
+  {
+    "id": "phosphorous-phosphate-po4-biotech-lahore-170",
+    "name": "Phosphorous (Phosphate) (PO4)",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 650,
+    "discounted_price": 390
+  },
+  {
+    "id": "platelet-count-by-smear-biotech-lahore-171",
+    "name": "Platelet Count (By smear)",
+    "description": "3 cc Blood In EDTA SameDay",
+    "price": 350,
+    "discounted_price": 210
+  },
+  {
+    "id": "pleural-fluid-for-analysis-biotech-lahore-172",
+    "name": "Pleural Fluid For Analysis",
+    "description": "Specimen Fluid Next Day",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "pleural-fluid-for-cytology-biotech-lahore-173",
+    "name": "Pleural Fluid For Cytology",
+    "description": "Specimen Fluid After 2 Days",
+    "price": 2500,
+    "discounted_price": 1500
+  },
+  {
+    "id": "potassium-k-biotech-lahore-174",
+    "name": "Potassium (K)",
+    "description": "3-5 ccClotted Blood/Serum SameDay",
+    "price": 700,
+    "discounted_price": 420
+  },
+  {
+    "id": "pregnancy-test-biotech-lahore-175",
+    "name": "Pregnancy Test",
+    "description": "Urine (Random/Spot) SameDay",
+    "price": 300,
+    "discounted_price": 180
+  },
+  {
+    "id": "pro-bnp-biotech-lahore-176",
+    "name": "Pro BNP",
+    "description": "3-5 ccClotted Blood/Serum After 2 Days",
+    "price": 3200,
+    "discounted_price": 1920
+  },
+  {
+    "id": "progesterone-biotech-lahore-177",
+    "name": "Progesterone",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 2400,
+    "discounted_price": 1440
+  },
+  {
+    "id": "prolactin-biotech-lahore-178",
+    "name": "Prolactin",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "protein-24-urine-biotech-lahore-179",
+    "name": "Protein 24 Urine",
+    "description": "Urine 24 Hours Next Day",
+    "price": 750,
+    "discounted_price": 450
+  },
+  {
+    "id": "protein-csf-biotech-lahore-180",
+    "name": "Protein CSF",
+    "description": "CSF SameDay",
+    "price": 700,
+    "discounted_price": 420
+  },
+  {
+    "id": "protein-electrophoresis-biotech-lahore-181",
+    "name": "Protein Electrophoresis",
+    "description": "3-5 ccClotted Blood/Serum After 10 Days",
+    "price": 3500,
+    "discounted_price": 2100
+  },
+  {
+    "id": "psa-biotech-lahore-182",
+    "name": "PSA",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 2500,
+    "discounted_price": 1500
+  },
+  {
+    "id": "pt-prothrombin-time-biotech-lahore-183",
+    "name": "PT (Prothrombin Time)",
+    "description": "Sodium Citrate Tube (PTVail) SameDay",
+    "price": 800,
+    "discounted_price": 480
+  },
+  {
+    "id": "pth-ipth-parathyroid-hormone-biotech-lahore-184",
+    "name": "PTH /iPTH(Parathyroid Hormone)",
+    "description": "3-5 ccClotted Blood/Serum After 2 Days",
+    "price": 2400,
+    "discounted_price": 1440
+  },
+  {
+    "id": "pus-fluid-for-c-s-biotech-lahore-185",
+    "name": "Pus Fluid For C/S",
+    "description": "Pus After 3 Days",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "pus-fluid-for-gram-staining-biotech-lahore-186",
+    "name": "Pus Fluid For Gram Staining",
+    "description": "Pus SameDay",
+    "price": 800,
+    "discounted_price": 480
+  },
+  {
+    "id": "pus-fluid-for-zn-staining-biotech-lahore-187",
+    "name": "Pus Fluid For ZN- Staining",
+    "description": "Pus SameDay",
+    "price": 800,
+    "discounted_price": 480
+  },
+  {
+    "id": "ra-factor-biotech-lahore-188",
+    "name": "RA Factor",
+    "description": "3-5 ccClotted Blood/Serum SameDay",
+    "price": 1000,
+    "discounted_price": 600
+  },
+  {
+    "id": "rbc-s-morphology-biotech-lahore-189",
+    "name": "RBC's Morphology",
+    "description": "3 cc Blood In EDTA SameDay",
+    "price": 1000,
+    "discounted_price": 600
+  },
+  {
+    "id": "renal-biopsy-biotech-lahore-190",
+    "name": "Renal Biopsy",
+    "description": "Renal Biopsy/Tissue 5 Days",
+    "price": 4500,
+    "discounted_price": 2700
+  },
+  {
+    "id": "retics-count-reticulocytes-biotech-lahore-191",
+    "name": "Retics Count (Reticulocytes)",
+    "description": "3 cc Blood In EDTA SameDay",
+    "price": 800,
+    "discounted_price": 480
+  },
+  {
+    "id": "rft-renal-function-tests-biotech-lahore-192",
+    "name": "RFT-Renal Function Tests",
+    "description": "3-5 ccClotted Blood/Serum SameDay",
+    "price": 1300,
+    "discounted_price": 780,
+    "pinned": true
+  },
+  {
+    "id": "ra-factor-quantitation-biotech-lahore-193",
+    "name": "RA Factor ( Quantitation )",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 1800,
+    "discounted_price": 1080
+  },
+  {
+    "id": "rh-antibodies-titer-biotech-lahore-194",
+    "name": "Rh. Antibodies Titer",
+    "description": "EDTA Blood SameDay",
+    "price": 1000,
+    "discounted_price": 600
+  },
+  {
+    "id": "rubella-lgg-biotech-lahore-195",
+    "name": "Rubella lgG",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 2000,
+    "discounted_price": 1200
+  },
+  {
+    "id": "rubella-lgm-biotech-lahore-196",
+    "name": "Rubella lgM",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 2000,
+    "discounted_price": 1200
+  },
+  {
+    "id": "semen-analysis-biotech-lahore-197",
+    "name": "Semen Analysis",
+    "description": "Specimen Semen SameDay",
+    "price": 2000,
+    "discounted_price": 1200
+  },
+  {
+    "id": "semen-c-s-biotech-lahore-198",
+    "name": "Semen C/S",
+    "description": "semen After 3 Days",
+    "price": 2500,
+    "discounted_price": 1500
+  },
+  {
+    "id": "serum-electrolytes-na-k-cl-biotech-lahore-199",
+    "name": "Serum Electrolytes (Na,K,Cl,)",
+    "description": "3-5 ccClotted Blood/Serum SameDay",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "sgot-ast-biotech-lahore-200",
+    "name": "SGOT (AST)",
+    "description": "3-5 ccClotted Blood/Serum SameDay",
+    "price": 600,
+    "discounted_price": 360
+  },
+  {
+    "id": "sgpt-alt-biotech-lahore-201",
+    "name": "SGPT (ALT)",
+    "description": "3-5 ccClotted Blood/Serum SameDay",
+    "price": 600,
+    "discounted_price": 360
+  },
+  {
+    "id": "skin-scrapping-for-fungus-biotech-lahore-202",
+    "name": "Skin Scrapping For Fungus",
+    "description": "Contact Lab",
+    "price": 1200,
+    "discounted_price": 720
+  },
+  {
+    "id": "sodium-na-biotech-lahore-203",
+    "name": "Sodium (Na)",
+    "description": "3-5 ccClotted Blood/Serum SameDay",
+    "price": 600,
+    "discounted_price": 360
+  },
+  {
+    "id": "sputum-afb-c-s-biotech-lahore-204",
+    "name": "Sputum AFB C/S",
+    "description": "Specimen Sputum After 8 Weeks",
+    "price": 4500,
+    "discounted_price": 2700
+  },
+  {
+    "id": "sputum-for-afb-smear-z-n-biotech-lahore-205",
+    "name": "Sputum For AFB Smear / Z.N.",
+    "description": "Specimen Sputum SameDay",
+    "price": 800,
+    "discounted_price": 480
+  },
+  {
+    "id": "sputum-for-c-s-biotech-lahore-206",
+    "name": "Sputum For C/S",
+    "description": "Specimen Sputum After 3 Days",
+    "price": 2500,
+    "discounted_price": 1500
+  },
+  {
+    "id": "sputum-for-cytology-biotech-lahore-207",
+    "name": "Sputum For Cytology",
+    "description": "Specimen Sputum After 2 Days",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "sputum-for-malignant-cells-biotech-lahore-208",
+    "name": "Sputum for Malignant cells",
+    "description": "Specimen Sputum Next Day",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "sputum-gram-staining-biotech-lahore-209",
+    "name": "Sputum Gram Staining",
+    "description": "Specimen Sputum SameDay",
+    "price": 800,
+    "discounted_price": 480
+  },
+  {
+    "id": "stool-c-s-biotech-lahore-210",
+    "name": "Stool C/S",
+    "description": "Specimen Stool After 4 Days",
+    "price": 2500,
+    "discounted_price": 1500
+  },
+  {
+    "id": "stool-for-c-e-biotech-lahore-211",
+    "name": "Stool For C/E",
+    "description": "Specimen Stool SameDay",
+    "price": 1200,
+    "discounted_price": 720
+  },
+  {
+    "id": "stoolfor-h-pylori-antigen-biotech-lahore-212",
+    "name": "Stoolfor H.Pylori Antigen",
+    "description": "Specimen Stool Next Day",
+    "price": 4500,
+    "discounted_price": 2700,
+    "pinned": true
+  },
+  {
+    "id": "stool-for-occult-blood-biotech-lahore-213",
+    "name": "Stool For Occult Blood",
+    "description": "Specimen Stool SameDay",
+    "price": 800,
+    "discounted_price": 480
+  },
+  {
+    "id": "t3-tri-iodoethronine-biotech-lahore-214",
+    "name": "T3 (Tri-Iodoethronine)",
+    "description": "3-5 ccClooted Blood/Serum Next Day",
+    "price": 900,
+    "discounted_price": 540
+  },
+  {
+    "id": "t4-free-biotech-lahore-215",
+    "name": "T4 (Free)",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 1500,
+    "discounted_price": 900
+  },
+  {
+    "id": "t4-throxine-biotech-lahore-216",
+    "name": "T4 (Throxine)",
+    "description": "3-5 ccClooted Blood/Serum Next Day",
+    "price": 900,
+    "discounted_price": 540
+  },
+  {
+    "id": "tb-screening-mycodot-biotech-lahore-217",
+    "name": "TB Screening (Mycodot)",
+    "description": "3-5 ccClotted Blood/Serum SameDay",
+    "price": 1200,
+    "discounted_price": 720
+  },
+  {
+    "id": "testosterone-biotech-lahore-218",
+    "name": "Testosterone",
+    "description": "3-5 ccClooted Blood/Serum Next Day",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "throat-swab-c-s-biotech-lahore-219",
+    "name": "Throat Swab C/S",
+    "description": "Swab After 3 Days",
+    "price": 2500,
+    "discounted_price": 1500
+  },
+  {
+    "id": "thyroid-profile-t3-t4-tsh-biotech-lahore-220",
+    "name": "Thyroid Profile (T3, T4, TSH)",
+    "description": "3-5 ccClooted Blood/Serum Next Day",
+    "price": 2800,
+    "discounted_price": 1680
+  },
+  {
+    "id": "tibc-total-iron-binding-capacity-biotech-lahore-221",
+    "name": "TIBC (Total Iron Binding Capacity)",
+    "description": "3-5 ccClooted Blood/Serum Next Day",
+    "price": 1200,
+    "discounted_price": 720,
+    "pinned": true
+  },
+  {
+    "id": "torch-profile-igg-igm-biotech-lahore-222",
+    "name": "Torch Profile (IgG/IgM)",
+    "description": "3-5 ccClotted Blood/Serum After 2 Days",
+    "price": 8500,
+    "discounted_price": 5100
+  },
+  {
+    "id": "torch-profile-igg-biotech-lahore-223",
+    "name": "TORCH Profile IgG",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 4250,
+    "discounted_price": 2550
+  },
+  {
+    "id": "torch-profile-igm-biotech-lahore-224",
+    "name": "TORCH Profile IgM",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 4250,
+    "discounted_price": 2550
+  },
+  {
+    "id": "total-protein-biotech-lahore-225",
+    "name": "Total Protein",
+    "description": "3-5 ccClotted Blood/Serum SameDay",
+    "price": 500,
+    "discounted_price": 300
+  },
+  {
+    "id": "toxoplasma-igg-biotech-lahore-226",
+    "name": "Toxoplasma IgG",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 2000,
+    "discounted_price": 1200
+  },
+  {
+    "id": "toxoplasma-igm-biotech-lahore-227",
+    "name": "Toxoplasma IgM",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 2000,
+    "discounted_price": 1200
+  },
+  {
+    "id": "tpha-vdrl-elisa-biotech-lahore-228",
+    "name": "TPHA / VDRL Elisa",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "tpha-triponema-pallidium-screening-biotech-lahore-229",
+    "name": "TPHA (Triponema Pallidium) Screening",
+    "description": "3-5 ccClotted Blood/Serum SameDay",
+    "price": 1100,
+    "discounted_price": 660
+  },
+  {
+    "id": "transferrin-saturation-iron-tibc-biotech-lahore-230",
+    "name": "Transferrin Saturation (Iron,TIBC)",
+    "description": "3-5 ccClotted Blood/Serum Next Day",
+    "price": 2400,
+    "discounted_price": 1440,
+    "pinned": true
+  },
+  {
+    "id": "triglycerides-biotech-lahore-231",
+    "name": "Triglycerides",
+    "description": "3-5 ccClotted Blood/Serum SameDay",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "troponin-i-biotech-lahore-232",
+    "name": "Troponin-I",
+    "description": "3 cc Blood In EDTA SameDay",
+    "price": 2000,
+    "discounted_price": 1200
+  },
+  {
+    "id": "troponin-t-biotech-lahore-233",
+    "name": "Troponin-T",
+    "description": "3 cc Blood In EDTA SameDay",
+    "price": 2000,
+    "discounted_price": 1200
+  },
+  {
+    "id": "urinary-protein-biotech-lahore-234",
+    "name": "Urinary Protein",
+    "description": "Urine (Random / Spot) Next Day",
+    "price": 700,
+    "discounted_price": 420
+  },
+  {
+    "id": "urinary-protein-24-hrs-biotech-lahore-235",
+    "name": "Urinary Protein (24 Hrs)",
+    "description": "24 Hrs Urine Next Day",
+    "price": 1000,
+    "discounted_price": 600
+  },
+  {
+    "id": "urinecomplete-examination-biotech-lahore-236",
+    "name": "UrineComplete Examination",
+    "description": "Urine (Random / Spot) SameDay",
+    "price": 450,
+    "discounted_price": 270
+  },
+  {
+    "id": "urine-for-c-s-biotech-lahore-237",
+    "name": "Urine For C/S",
+    "description": "Urine (Random / Spot) After 3 Days",
+    "price": 2500,
+    "discounted_price": 1500
+  },
+  {
+    "id": "urine-for-thin-layer-chromatography-biotech-lahore-238",
+    "name": "Urine For Thin Layer Chromatography",
+    "description": "Urine (Random / Spot) Next Day",
+    "price": 2500,
+    "discounted_price": 1500
+  },
+  {
+    "id": "urine-pregnancy-test-upt-biotech-lahore-239",
+    "name": "Urine pregnancy Test (UPT)",
+    "description": "Morning Urine Specimen SameDay",
+    "price": 300,
+    "discounted_price": 180
+  },
+  {
+    "id": "urine-sugar-fasting-biotech-lahore-240",
+    "name": "Urine Sugar Fasting",
+    "description": "Urine (Random / Spot) SameDay",
+    "price": 150,
+    "discounted_price": 90
+  },
+  {
+    "id": "urine-sugar-random-biotech-lahore-241",
+    "name": "Urine Sugar Random",
+    "description": "Urine (Random / Spot) SameDay",
+    "price": 150,
+    "discounted_price": 90
+  },
+  {
+    "id": "vitamin-b12-biotech-lahore-242",
+    "name": "Vitamin B12",
+    "description": "3-5 ccClotted Blood/Serum After 2 Days",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "vitamin-d3-biotech-lahore-243",
+    "name": "Vitamin D3",
+    "description": "3-5 ccClotted Blood/Serum After 4 Days",
+    "price": 3000,
+    "discounted_price": 1800,
+    "pinned": true
+  },
+  {
+    "id": "vldl-biotech-lahore-244",
+    "name": "VLDL",
+    "description": "3-5 ccClotted Blood/Serum SameDay",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "wbc-s-morphology-biotech-lahore-245",
+    "name": "WBC's Morphology",
+    "description": "3cc Blood in EDTA Next Day",
+    "price": 1000,
+    "discounted_price": 600
+  },
+  {
+    "id": "wound-swab-for-c-s-biotech-lahore-246",
+    "name": "Wound Swab For C/S",
+    "description": "Specimen Swab After 3 Days",
+    "price": 2500,
+    "discounted_price": 1500
+  },
+  {
+    "id": "z-n-stain-afb-smear-biotech-lahore-247",
+    "name": "Z.N Stain / AFB Smear",
+    "description": "All Type Specimen Next Day",
+    "price": 800,
+    "discounted_price": 480
+  },
+  {
+    "id": "zinc-level-biotech-lahore-248",
+    "name": "Zinc Level",
+    "description": "3-5ccClotted Blood/Serum SameDay",
+    "price": 3200,
+    "discounted_price": 1920
+  }
+]

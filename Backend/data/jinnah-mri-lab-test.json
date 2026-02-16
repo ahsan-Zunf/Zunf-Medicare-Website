@@ -1,0 +1,681 @@
+[
+  {
+    "id": "brain-plain-0",
+    "name": "BRAIN PLAIN",
+    "description": "MRI Scan",
+    "price": 12000,
+    "discounted_price": 9600
+  },
+  {
+    "id": "brain-with-contrast-1",
+    "name": "BRAIN WITH CONTRAST",
+    "description": "MRI Scan",
+    "price": 16000,
+    "discounted_price": 12800
+  },
+  {
+    "id": "face-plain-2",
+    "name": "FACE PLAIN",
+    "description": "MRI Scan",
+    "price": 12000,
+    "discounted_price": 9600
+  },
+  {
+    "id": "face-with-contrast-3",
+    "name": "FACE WITH CONTRAST",
+    "description": "MRI Scan",
+    "price": 16000,
+    "discounted_price": 12800
+  },
+  {
+    "id": "neck-plain-4",
+    "name": "NECK PLAIN",
+    "description": "MRI Scan",
+    "price": 12000,
+    "discounted_price": 9600
+  },
+  {
+    "id": "neck-with-contrast-5",
+    "name": "NECK WITH CONTRAST",
+    "description": "MRI Scan",
+    "price": 16000,
+    "discounted_price": 12800
+  },
+  {
+    "id": "orbits-plain-6",
+    "name": "ORBITS PLAIN",
+    "description": "MRI Scan",
+    "price": 12000,
+    "discounted_price": 9600
+  },
+  {
+    "id": "orbits-with-contrast-7",
+    "name": "ORBITS WITH CONTRAST",
+    "description": "MRI Scan",
+    "price": 16000,
+    "discounted_price": 12800
+  },
+  {
+    "id": "cervical-spine-plain-8",
+    "name": "CERVICAL SPINE PLAIN",
+    "description": "MRI Scan",
+    "price": 10000,
+    "discounted_price": 8000
+  },
+  {
+    "id": "cervical-spine-with-contrast-9",
+    "name": "CERVICAL SPINE WITH CONTRAST",
+    "description": "MRI Scan",
+    "price": 14000,
+    "discounted_price": 11200
+  },
+  {
+    "id": "lumbo-sacral-spine-10",
+    "name": "LUMBO-SACRAL SPINE",
+    "description": "MRI Scan",
+    "price": 10000,
+    "discounted_price": 8000
+  },
+  {
+    "id": "lumbo-sacral-spine-with-contrast-11",
+    "name": "LUMBO-SACRAL SPINE WITH CONTRAST",
+    "description": "MRI Scan",
+    "price": 14000,
+    "discounted_price": 11200
+  },
+  {
+    "id": "d-l-spine-plain-12",
+    "name": "D/L SPINE PLAIN",
+    "description": "MRI Scan",
+    "price": 13500,
+    "discounted_price": 10800
+  },
+  {
+    "id": "shoulder-with-contrast-13",
+    "name": "SHOULDER WITH CONTRAST",
+    "description": "MRI Scan",
+    "price": 16000,
+    "discounted_price": 12800
+  },
+  {
+    "id": "shoulder-plain-14",
+    "name": "SHOULDER PLAIN",
+    "description": "MRI Scan",
+    "price": 12000,
+    "discounted_price": 9600
+  },
+  {
+    "id": "d-l-spine-with-contrast-15",
+    "name": "D/L SPINE WITH CONTRAST",
+    "description": "MRI Scan",
+    "price": 17500,
+    "discounted_price": 14000
+  },
+  {
+    "id": "right-hand-plain-16",
+    "name": "RIGHT HAND PLAIN",
+    "description": "MRI Scan",
+    "price": 12000,
+    "discounted_price": 9600
+  },
+  {
+    "id": "right-hand-with-contrast-17",
+    "name": "RIGHT HAND WITH CONTRAST",
+    "description": "MRI Scan",
+    "price": 16000,
+    "discounted_price": 12800
+  },
+  {
+    "id": "abdomen-for-pelvis-18",
+    "name": "ABDOMEN FOR PELVIS",
+    "description": "MRI Scan",
+    "price": 15000,
+    "discounted_price": 12000
+  },
+  {
+    "id": "abdomen-for-pelvis-with-contrast-19",
+    "name": "ABDOMEN FOR PELVIS WITH CONTRAST",
+    "description": "MRI Scan",
+    "price": 19000,
+    "discounted_price": 15200
+  },
+  {
+    "id": "mrcp-plain-20",
+    "name": "MRCP PLAIN",
+    "description": "MRI Scan",
+    "price": 13500,
+    "discounted_price": 10800
+  },
+  {
+    "id": "mrcp-with-contrast-21",
+    "name": "MRCP WITH CONTRAST",
+    "description": "MRI Scan",
+    "price": 18500,
+    "discounted_price": 14800
+  },
+  {
+    "id": "pelvis-plain-22",
+    "name": "PELVIS PLAIN",
+    "description": "MRI Scan",
+    "price": 12000,
+    "discounted_price": 9600
+  },
+  {
+    "id": "pelvis-with-contrast-23",
+    "name": "PELVIS WITH CONTRAST",
+    "description": "MRI Scan",
+    "price": 16000,
+    "discounted_price": 12800
+  },
+  {
+    "id": "abdomen-plain-24",
+    "name": "ABDOMEN PLAIN",
+    "description": "MRI Scan",
+    "price": 12000,
+    "discounted_price": 9600
+  },
+  {
+    "id": "abdomen-with-contrast-25",
+    "name": "ABDOMEN WITH CONTRAST",
+    "description": "MRI Scan",
+    "price": 16000,
+    "discounted_price": 12800
+  },
+  {
+    "id": "both-hip-joints-plain-26",
+    "name": "BOTH HIP JOINTS PLAIN",
+    "description": "MRI Scan",
+    "price": 12000,
+    "discounted_price": 9600
+  },
+  {
+    "id": "both-hip-joints-with-contrast-27",
+    "name": "BOTH HIP JOINTS WITH CONTRAST",
+    "description": "MRI Scan",
+    "price": 16000,
+    "discounted_price": 12800
+  },
+  {
+    "id": "knee-joint-plain-28",
+    "name": "KNEE JOINT PLAIN",
+    "description": "MRI Scan",
+    "price": 12000,
+    "discounted_price": 9600
+  },
+  {
+    "id": "knee-joint-with-contrast-29",
+    "name": "KNEE JOINT WITH CONTRAST",
+    "description": "MRI Scan",
+    "price": 16000,
+    "discounted_price": 12800
+  },
+  {
+    "id": "ankle-plain-30",
+    "name": "ANKLE PLAIN",
+    "description": "MRI Scan",
+    "price": 12000,
+    "discounted_price": 9600
+  },
+  {
+    "id": "ankle-with-contrast-31",
+    "name": "ANKLE WITH CONTRAST",
+    "description": "MRI Scan",
+    "price": 16000,
+    "discounted_price": 12800
+  },
+  {
+    "id": "wrist-plain-32",
+    "name": "WRIST PLAIN",
+    "description": "MRI Scan",
+    "price": 12000,
+    "discounted_price": 9600
+  },
+  {
+    "id": "wrist-with-contrast-33",
+    "name": "WRIST WITH CONTRAST",
+    "description": "MRI Scan",
+    "price": 16000,
+    "discounted_price": 12800
+  },
+  {
+    "id": "elbow-plain-34",
+    "name": "ELBOW PLAIN",
+    "description": "MRI Scan",
+    "price": 12000,
+    "discounted_price": 9600
+  },
+  {
+    "id": "elbow-with-contrast-35",
+    "name": "ELBOW WITH CONTRAST",
+    "description": "MRI Scan",
+    "price": 16000,
+    "discounted_price": 12800
+  },
+  {
+    "id": "-36",
+    "name": "",
+    "description": "",
+    "price": null,
+    "discounted_price": null
+  },
+  {
+    "id": "product-name-37",
+    "name": "Product Name",
+    "description": "Short Description",
+    "price": null,
+    "discounted_price": null
+  },
+  {
+    "id": "ct-brain-plain-38",
+    "name": "CT Brain Plain",
+    "description": "CT Scan Services",
+    "price": 8000,
+    "discounted_price": 6400
+  },
+  {
+    "id": "ct-brain-with-contrast-39",
+    "name": "CT Brain With Contrast",
+    "description": "CT Scan Services",
+    "price": 14000,
+    "discounted_price": 11200
+  },
+  {
+    "id": "ct-chest-plain-40",
+    "name": "CT Chest Plain",
+    "description": "CT Scan Services",
+    "price": 10000,
+    "discounted_price": 8000
+  },
+  {
+    "id": "ct-chest-with-contrast-41",
+    "name": "CT Chest With Contrast",
+    "description": "CT Scan Services",
+    "price": 16000,
+    "discounted_price": 12800
+  },
+  {
+    "id": "hrct-lung-plain-42",
+    "name": "HRCT Lung Plain",
+    "description": "CT Scan Services",
+    "price": 10000,
+    "discounted_price": 8000
+  },
+  {
+    "id": "ct-nose-pns-fess-protocol-plain-43",
+    "name": "CT Nose PNS FESS Protocol Plain",
+    "description": "CT Scan Services",
+    "price": 10000,
+    "discounted_price": 8000
+  },
+  {
+    "id": "ct-nose-pns-fess-protocol-with-contrast-44",
+    "name": "CT Nose PNS FESS Protocol With Contrast",
+    "description": "CT Scan Services",
+    "price": 16000,
+    "discounted_price": 12800
+  },
+  {
+    "id": "ct-orbits-plain-45",
+    "name": "CT Orbits Plain",
+    "description": "CT Scan Services",
+    "price": 8000,
+    "discounted_price": 6400
+  },
+  {
+    "id": "ct-orbits-with-contrast-46",
+    "name": "CT Orbits With Contrast",
+    "description": "CT Scan Services",
+    "price": 14000,
+    "discounted_price": 11200
+  },
+  {
+    "id": "ct-hip-3d-plain-47",
+    "name": "CT Hip 3D Plain",
+    "description": "CT Scan Services",
+    "price": 10000,
+    "discounted_price": 8000
+  },
+  {
+    "id": "ct-hip-3d-with-contrast-48",
+    "name": "CT Hip 3D With Contrast",
+    "description": "CT Scan Services",
+    "price": 17000,
+    "discounted_price": 13600
+  },
+  {
+    "id": "ct-biphasic-triphasic-with-contrast-49",
+    "name": "CT Biphasic/Triphasic (With Contrast)",
+    "description": "CT Scan Services",
+    "price": 24000,
+    "discounted_price": 19200
+  },
+  {
+    "id": "ct-spine-one-region-plain-50",
+    "name": "CT Spine (One Region) Plain",
+    "description": "CT Scan Services",
+    "price": 10000,
+    "discounted_price": 8000
+  },
+  {
+    "id": "ct-spine-one-region-with-contrast-51",
+    "name": "CT Spine (One Region) With Contrast",
+    "description": "CT Scan Services",
+    "price": 16000,
+    "discounted_price": 12800
+  },
+  {
+    "id": "ct-neck-plain-52",
+    "name": "CT Neck Plain",
+    "description": "CT Scan Services",
+    "price": 9000,
+    "discounted_price": 7200
+  },
+  {
+    "id": "ct-neck-with-contrast-53",
+    "name": "CT Neck With Contrast",
+    "description": "CT Scan Services",
+    "price": 16000,
+    "discounted_price": 12800
+  },
+  {
+    "id": "ct-limb-one-joint-plain-54",
+    "name": "CT Limb (One Joint) Plain",
+    "description": "CT Scan Services",
+    "price": 10000,
+    "discounted_price": 8000
+  },
+  {
+    "id": "ct-limb-one-joint-with-contrast-55",
+    "name": "CT Limb (One Joint) With Contrast",
+    "description": "CT Scan Services",
+    "price": 16000,
+    "discounted_price": 12800
+  },
+  {
+    "id": "ct-arthrogram-with-contrast-56",
+    "name": "CT Arthrogram (With Contrast)",
+    "description": "CT Scan Services",
+    "price": 22000,
+    "discounted_price": 17600
+  },
+  {
+    "id": "ct-angio-liver-57",
+    "name": "CT Angio Liver",
+    "description": "CT Scan Services",
+    "price": 26000,
+    "discounted_price": 20800
+  },
+  {
+    "id": "ct-angio-renal-and-abdominal-angio-58",
+    "name": "CT Angio Renal and Abdominal Angio",
+    "description": "CT Scan Services",
+    "price": 26000,
+    "discounted_price": 20800
+  },
+  {
+    "id": "ct-angio-one-limb-59",
+    "name": "CT Angio One Limb",
+    "description": "CT Scan Services",
+    "price": 26000,
+    "discounted_price": 20800
+  },
+  {
+    "id": "ct-pulmonary-embolism-60",
+    "name": "CT Pulmonary Embolism",
+    "description": "CT Scan Services",
+    "price": 22000,
+    "discounted_price": 17600
+  },
+  {
+    "id": "ct-pyelo-kub-plain-61",
+    "name": "CT Pyelo (KUB) Plain",
+    "description": "CT Scan Services",
+    "price": 10000,
+    "discounted_price": 8000
+  },
+  {
+    "id": "ct-urogram-pyelogram-c-62",
+    "name": "CT Urogram (Pyelogram+C)",
+    "description": "CT Scan Services",
+    "price": 20000,
+    "discounted_price": 16000
+  },
+  {
+    "id": "ct-angio-cardiac-63",
+    "name": "CT Angio Cardiac",
+    "description": "CT Scan Services",
+    "price": 32000,
+    "discounted_price": 25600
+  },
+  {
+    "id": "ct-hr-temporal-bone-cochlear-plain-64",
+    "name": "CT HR Temporal Bone/Cochlear Plain",
+    "description": "CT Scan Services",
+    "price": 12000,
+    "discounted_price": 9600
+  },
+  {
+    "id": "ct-hr-temporal-bone-cochlear-with-contrast-65",
+    "name": "CT HR Temporal Bone/Cochlear With Contrast",
+    "description": "CT Scan Services",
+    "price": 18000,
+    "discounted_price": 14400
+  },
+  {
+    "id": "ct-face-3d-plain-66",
+    "name": "CT Face 3D Plain",
+    "description": "CT Scan Services",
+    "price": 10000,
+    "discounted_price": 8000
+  },
+  {
+    "id": "ct-face-3d-with-contrast-67",
+    "name": "CT Face 3D With Contrast",
+    "description": "CT Scan Services",
+    "price": 16000,
+    "discounted_price": 12800
+  },
+  {
+    "id": "ct-joint-3d-reconstruction-plain-68",
+    "name": "CT Joint 3D Reconstruction Plain",
+    "description": "CT Scan Services",
+    "price": 12000,
+    "discounted_price": 9600
+  },
+  {
+    "id": "ct-joint-3d-reconstruction-with-contrast-69",
+    "name": "CT Joint 3D Reconstruction With Contrast",
+    "description": "CT Scan Services",
+    "price": 17000,
+    "discounted_price": 13600
+  },
+  {
+    "id": "liver-donor-scan-plain-70",
+    "name": "Liver Donor Scan Plain",
+    "description": "CT Scan Services",
+    "price": 12000,
+    "discounted_price": 9600
+  },
+  {
+    "id": "liver-donor-scan-with-contrast-71",
+    "name": "Liver Donor Scan With Contrast",
+    "description": "CT Scan Services",
+    "price": 22000,
+    "discounted_price": 17600
+  },
+  {
+    "id": "renal-donor-scan-plain-72",
+    "name": "Renal Donor Scan Plain",
+    "description": "CT Scan Services",
+    "price": 12000,
+    "discounted_price": 9600
+  },
+  {
+    "id": "renal-donor-scan-with-contrast-73",
+    "name": "Renal Donor Scan With Contrast",
+    "description": "CT Scan Services",
+    "price": 26000,
+    "discounted_price": 20800
+  },
+  {
+    "id": "intracranial-plain-74",
+    "name": "Intracranial Plain",
+    "description": "CT Scan Services",
+    "price": 12000,
+    "discounted_price": 9600
+  },
+  {
+    "id": "intracranial-with-contrast-75",
+    "name": "Intracranial With Contrast",
+    "description": "CT Scan Services",
+    "price": 19000,
+    "discounted_price": 15200
+  },
+  {
+    "id": "extracranial-plain-76",
+    "name": "Extracranial Plain",
+    "description": "CT Scan Services",
+    "price": 12000,
+    "discounted_price": 9600
+  },
+  {
+    "id": "extracranial-with-contrast-77",
+    "name": "Extracranial With Contrast",
+    "description": "CT Scan Services",
+    "price": 19000,
+    "discounted_price": 15200
+  },
+  {
+    "id": "abdomen-and-pelvis-plain-78",
+    "name": "Abdomen and Pelvis Plain",
+    "description": "CT Scan Services",
+    "price": 12500,
+    "discounted_price": 10000
+  },
+  {
+    "id": "abdomen-and-pelvis-with-contrast-79",
+    "name": "Abdomen and Pelvis With Contrast",
+    "description": "CT Scan Services",
+    "price": 19500,
+    "discounted_price": 15600
+  },
+  {
+    "id": "ct-chest-abdomen-pelvis-plain-80",
+    "name": "CT Chest, Abdomen, Pelvis Plain",
+    "description": "CT Scan Services",
+    "price": 17000,
+    "discounted_price": 13600
+  },
+  {
+    "id": "ct-chest-abdomen-pelvis-with-contrast-81",
+    "name": "CT Chest, Abdomen, Pelvis With Contrast",
+    "description": "CT Scan Services",
+    "price": 24000,
+    "discounted_price": 19200
+  },
+  {
+    "id": "neck-chest-abdomen-pelvis-plain-82",
+    "name": "Neck, Chest, Abdomen, Pelvis Plain",
+    "description": "CT Scan Services",
+    "price": 19000,
+    "discounted_price": 15200
+  },
+  {
+    "id": "neck-chest-abdomen-pelvis-with-contrast-83",
+    "name": "Neck, Chest, Abdomen, Pelvis With Contrast",
+    "description": "CT Scan Services",
+    "price": 24000,
+    "discounted_price": 19200
+  },
+  {
+    "id": "angiography-from-arch-of-aorta-to-foot-84",
+    "name": "Angiography from Arch of Aorta to Foot",
+    "description": "CT Scan Services",
+    "price": 26000,
+    "discounted_price": 20800
+  },
+  {
+    "id": "base-of-skull-to-diaphragm-plain-85",
+    "name": "Base of Skull to Diaphragm Plain",
+    "description": "CT Scan Services",
+    "price": 13000,
+    "discounted_price": 10400
+  },
+  {
+    "id": "base-of-skull-to-diaphragm-with-contrast-86",
+    "name": "Base of Skull to Diaphragm With Contrast",
+    "description": "CT Scan Services",
+    "price": 20000,
+    "discounted_price": 16000
+  },
+  {
+    "id": "brain-angio-venogram-87",
+    "name": "Brain Angio/Venogram",
+    "description": "CT Scan Services",
+    "price": 20000,
+    "discounted_price": 16000
+  },
+  {
+    "id": "scanogram-lower-limb-plain-88",
+    "name": "Scanogram (Lower Limb) Plain",
+    "description": "CT Scan Services",
+    "price": 11000,
+    "discounted_price": 8800
+  },
+  {
+    "id": "calcium-scoring-plain-89",
+    "name": "Calcium Scoring Plain",
+    "description": "CT Scan Services",
+    "price": 10000,
+    "discounted_price": 8000
+  },
+  {
+    "id": "ct-enterography-with-contrast-90",
+    "name": "CT Enterography (With Contrast)",
+    "description": "CT Scan Services",
+    "price": 20000,
+    "discounted_price": 16000
+  },
+  {
+    "id": "ct-virtual-bronchoscopy-plain-91",
+    "name": "CT Virtual Bronchoscopy Plain",
+    "description": "CT Scan Services",
+    "price": 16000,
+    "discounted_price": 12800
+  },
+  {
+    "id": "ct-lower-limb-venogram-92",
+    "name": "CT Lower Limb Venogram",
+    "description": "CT Scan Services",
+    "price": 24000,
+    "discounted_price": 19200
+  },
+  {
+    "id": "ct-upper-limb-venogram-93",
+    "name": "CT Upper Limb Venogram",
+    "description": "CT Scan Services",
+    "price": 24000,
+    "discounted_price": 19200
+  },
+  {
+    "id": "cd-charges-94",
+    "name": "CD Charges",
+    "description": "CT Scan Services",
+    "price": 1000,
+    "discounted_price": 800
+  },
+  {
+    "id": "on-call-charges-95",
+    "name": "On Call Charges",
+    "description": "CT Scan Services",
+    "price": 1000,
+    "discounted_price": 800
+  },
+  {
+    "id": "ct-reporting-only-per-study-96",
+    "name": "CT Reporting Only (Per Study)",
+    "description": "CT Scan Services",
+    "price": 2500,
+    "discounted_price": 2000
+  }
+]

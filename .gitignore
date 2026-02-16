@@ -1,0 +1,19 @@
+# Node
+node_modules/
+.npm-cache/
+
+# Backend
+Backend/node_modules/
+Backend/.npm-cache/
+
+# Environment files
+.env
+.env.*
+
+# Logs
+logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

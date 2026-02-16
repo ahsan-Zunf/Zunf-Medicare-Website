@@ -1,0 +1,3716 @@
+[
+  {
+    "id": "17-oh-progesterone-ayzal-lab-0",
+    "name": "17-OH Progesterone",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 3500,
+    "discounted_price": 2100
+  },
+  {
+    "id": "24-hrs-urinary-chloride-ayzal-lab-1",
+    "name": "24 hrs Urinary Chloride",
+    "description": "Special Chemistry, 24 Hrs Urine",
+    "price": 680,
+    "discounted_price": 408
+  },
+  {
+    "id": "24-hrs-urinary-phosphate-ayzal-lab-2",
+    "name": "24 Hrs Urinary Phosphate",
+    "description": "Special Chemistry, 24 Hrs Urine",
+    "price": 680,
+    "discounted_price": 408
+  },
+  {
+    "id": "25-hydroxy-vit-d3-level-ayzal-lab-3",
+    "name": "25-Hydroxy Vit-D3 Level",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 3150,
+    "discounted_price": 1890,
+    "pinned": true
+  },
+  {
+    "id": "abdominal-fluid-for-afb-c-s-ayzal-lab-4",
+    "name": "Abdominal Fluid For AFB C/S",
+    "description": "Microbiology, Abdominal Fluid",
+    "price": 5100,
+    "discounted_price": 3060
+  },
+  {
+    "id": "abdominal-fluid-for-afb-stain-zn-stain-ayzal-lab-5",
+    "name": "Abdominal Fluid For AFB Stain / Zn Stain",
+    "description": "Microbiology, Abdominal Fluid",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "abdominal-fluid-for-c-s-ayzal-lab-6",
+    "name": "Abdominal Fluid For C/S",
+    "description": "Microbiology, Abdominal Fluid",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "abdominal-fluid-for-cytology-ayzal-lab-7",
+    "name": "Abdominal Fluid For Cytology",
+    "description": "Microbiology, Abdominal Fluid",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "abdominal-fluid-for-gram-stain-ayzal-lab-8",
+    "name": "Abdominal Fluid For Gram Stain",
+    "description": "Microbiology, Abdominal Fluid",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "absolute-eosinophil-count-ayzal-lab-9",
+    "name": "Absolute Eosinophil Count",
+    "description": "Hematology, 3cc EDTA WHOLE BLOOD",
+    "price": 350,
+    "discounted_price": 210
+  },
+  {
+    "id": "acid-phosphatase-ayzal-lab-10",
+    "name": "Acid Phosphatase",
+    "description": "Chemical Pathology, 3-5cc Clotted Blood or Serum",
+    "price": 11500,
+    "discounted_price": 6900
+  },
+  {
+    "id": "acth-adrenocorticotropic-hormone-ayzal-lab-11",
+    "name": "ACTH (Adrenocorticotropic Hormone)",
+    "description": "Special Chemistry, 3- 5cc Clotted Blood or Serum(Fasting)",
+    "price": 2800,
+    "discounted_price": 1680
+  },
+  {
+    "id": "ada-level-ayzal-lab-12",
+    "name": "ADA Level",
+    "description": "Special Chemistry, 3- 5cc Clotted Blood or Serum(Fasting)",
+    "price": 4000,
+    "discounted_price": 2400
+  },
+  {
+    "id": "adenosine-deaminase-ada-csf-ayzal-lab-13",
+    "name": "Adenosine Deaminase (ADA) (CSF)",
+    "description": "Special Chemistry, CSF",
+    "price": 4000,
+    "discounted_price": 2400
+  },
+  {
+    "id": "afb-c-s-tissue-biopsy-for-tb-ayzal-lab-14",
+    "name": "AFB C/S ( Tissue Biopsy for TB)",
+    "description": "Microbiology, Biopsy",
+    "price": 6000,
+    "discounted_price": 3600
+  },
+  {
+    "id": "afb-staining-zn-smear-ayzal-lab-15",
+    "name": "AFB Staining / Zn Smear",
+    "description": "Microbiology, Body Fluid",
+    "price": 450,
+    "discounted_price": 270
+  },
+  {
+    "id": "albumin-24-hrs-urine-ayzal-lab-16",
+    "name": "Albumin (24 Hrs Urine)",
+    "description": "Chemical Pathology, 24 Hrs Urine",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "albumin-fluid-ayzal-lab-17",
+    "name": "Albumin (fluid)",
+    "description": "Chemical Pathology, 3-5cc Clotted Blood or Serum",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "albumin-serum-ayzal-lab-18",
+    "name": "Albumin (Serum)",
+    "description": "Chemical Pathology, 3-5cc Clotted Blood or Serum",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "albumin-creatinine-ratio-urine-ayzal-lab-19",
+    "name": "Albumin / Creatinine Ratio Urine",
+    "description": "Chemical Pathology, Urine (Random/spot)",
+    "price": 1300,
+    "discounted_price": 780
+  },
+  {
+    "id": "albumin-globulin-ratio-a-g-ratio-ayzal-lab-20",
+    "name": "Albumin Globulin Ratio (A/G ratio)",
+    "description": "Chemical Pathology, 3-5cc Clotted Blood or Serum",
+    "price": 600,
+    "discounted_price": 360
+  },
+  {
+    "id": "albumin-urine-spot-random-ayzal-lab-21",
+    "name": "Albumin Urine (Spot / Random)",
+    "description": "Chemical Pathology, Urine (Random/spot)",
+    "price": 1100,
+    "discounted_price": 660
+  },
+  {
+    "id": "aldolase-serum-ayzal-lab-22",
+    "name": "Aldolase(Serum)",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 1700,
+    "discounted_price": 1020
+  },
+  {
+    "id": "aldosterone-ayzal-lab-23",
+    "name": "Aldosterone",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 3700,
+    "discounted_price": 2220
+  },
+  {
+    "id": "alkaline-phosphatase-alp-ayzal-lab-24",
+    "name": "Alkaline Phosphatase (ALP)",
+    "description": "Chemical Pathology, 3-5cc Clotted Blood or Serum",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "alpha-1-antitrypsin-level-ayzal-lab-25",
+    "name": "Alpha 1-Antitrypsin level",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "alpha-fetoprotein-afp-ayzal-lab-26",
+    "name": "Alpha Fetoprotein (AFP)",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 2550,
+    "discounted_price": 1530
+  },
+  {
+    "id": "alt-sgpt-ayzal-lab-27",
+    "name": "ALT (SGPT)",
+    "description": "Chemical Pathology, 3-5cc Clotted Blood or Serum",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "ammonia-nh3-ayzal-lab-28",
+    "name": "Ammonia(NH3)",
+    "description": "Chemical Pathology, Plasma of Edta vial",
+    "price": 1800,
+    "discounted_price": 1080
+  },
+  {
+    "id": "amphetamines-urine-ayzal-lab-29",
+    "name": "Amphetamines (urine)",
+    "description": "Chemical Pathology, Urine (Random/spot)",
+    "price": 1700,
+    "discounted_price": 1020
+  },
+  {
+    "id": "amylase-24hrs-urine-ayzal-lab-30",
+    "name": "Amylase (24Hrs Urine)",
+    "description": "Chemical Pathology, 24 Hrs Urine",
+    "price": 1200,
+    "discounted_price": 720
+  },
+  {
+    "id": "amylase-fluid-ayzal-lab-31",
+    "name": "Amylase (Fluid)",
+    "description": "Chemical Pathology, Body Fluid",
+    "price": 1870,
+    "discounted_price": 1122
+  },
+  {
+    "id": "amylase-serum-ayzal-lab-32",
+    "name": "Amylase (Serum)",
+    "description": "Chemical Pathology, 3-5cc Clotted Blood or Serum",
+    "price": 1250,
+    "discounted_price": 750
+  },
+  {
+    "id": "ana-ayzal-lab-33",
+    "name": "ANA",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 7000,
+    "discounted_price": 4200
+  },
+  {
+    "id": "ana-by-elisa-antinuclear-antibody-ayzal-lab-34",
+    "name": "ANA BY ELISA (Antinuclear Antibody)",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 2500,
+    "discounted_price": 1500
+  },
+  {
+    "id": "anaerobic-blood-culture-c-s-ayzal-lab-35",
+    "name": "Anaerobic blood Culture C/S",
+    "description": "Microbiology, BLOOD(IN BLOOD CULTURE VAIL)",
+    "price": 2300,
+    "discounted_price": 1380
+  },
+  {
+    "id": "anca-c-ayzal-lab-36",
+    "name": "ANCA - C",
+    "description": "Special Chemistry, 3-5cc EDTA blood and serum",
+    "price": 5550,
+    "discounted_price": 3330
+  },
+  {
+    "id": "anca-p-ayzal-lab-37",
+    "name": "ANCA - P",
+    "description": "Special Chemistry, 3-5cc EDTA blood and serum",
+    "price": 5550,
+    "discounted_price": 3330
+  },
+  {
+    "id": "angiotensin-converting-enzyme-ace-level-ayzal-lab-38",
+    "name": "Angiotensin Converting Enzyme (ACE) Level",
+    "description": "Hematology, 3-5cc Clotted Blood or Serum",
+    "price": 3400,
+    "discounted_price": 2040
+  },
+  {
+    "id": "anion-gap-serum-ayzal-lab-39",
+    "name": "Anion Gap (Serum)",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 1100,
+    "discounted_price": 660
+  },
+  {
+    "id": "anti-cardiolipin-antibodies-igg-ayzal-lab-40",
+    "name": "Anti Cardiolipin Antibodies IgG",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 4200,
+    "discounted_price": 2520
+  },
+  {
+    "id": "anti-cardiolipin-antibodies-igm-ayzal-lab-41",
+    "name": "Anti Cardiolipin Antibodies IgM",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 4200,
+    "discounted_price": 2520
+  },
+  {
+    "id": "anti-ccp-cyclic-citrullinated-peptide-ayzal-lab-42",
+    "name": "Anti CCP (Cyclic Citrullinated Peptide)",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 3200,
+    "discounted_price": 1920
+  },
+  {
+    "id": "anti-ds-dna-ayzal-lab-43",
+    "name": "Anti Ds DNA",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 4700,
+    "discounted_price": 2820
+  },
+  {
+    "id": "anti-endomysial-iga-ayzal-lab-44",
+    "name": "Anti Endomysial IgA",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 3000,
+    "discounted_price": 1800
+  },
+  {
+    "id": "anti-epstein-barr-virus-igg-ebv-ayzal-lab-45",
+    "name": "Anti Epstein Barr Virus IgG (EBV)",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 4250,
+    "discounted_price": 2550
+  },
+  {
+    "id": "anti-epstein-barr-virus-igm-ebv-ayzal-lab-46",
+    "name": "Anti Epstein Barr Virus IgM (EBV)",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 4250,
+    "discounted_price": 2550
+  },
+  {
+    "id": "anti-gliadin-iga-ayzal-lab-47",
+    "name": "Anti Gliadin IgA",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 2800,
+    "discounted_price": 1680
+  },
+  {
+    "id": "anti-gliadin-igm-ayzal-lab-48",
+    "name": "Anti Gliadin IgM",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 2800,
+    "discounted_price": 1680
+  },
+  {
+    "id": "anti-hbc-igg-ayzal-lab-49",
+    "name": "Anti Hbc IgG",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 2500,
+    "discounted_price": 1500
+  },
+  {
+    "id": "anti-hbc-igm-ayzal-lab-50",
+    "name": "Anti Hbc IgM",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 3200,
+    "discounted_price": 1920
+  },
+  {
+    "id": "anti-hbe-antibodies-elisa-ayzal-lab-51",
+    "name": "Anti Hbe Antibodies (elisa)",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 3200,
+    "discounted_price": 1920
+  },
+  {
+    "id": "anti-hcv-elisa-ayzal-lab-52",
+    "name": "Anti HCV (ELISA)",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 2300,
+    "discounted_price": 1380,
+    "pinned": true
+  },
+  {
+    "id": "anti-hcv-ict-ayzal-lab-53",
+    "name": "Anti HCV (ICT)",
+    "description": "Chemical Pathology, 3-5cc Clotted Blood or Serum",
+    "price": 600,
+    "discounted_price": 360,
+    "pinned": true
+  },
+  {
+    "id": "anti-hdv-anribodies-ayzal-lab-54",
+    "name": "Anti HDV Anribodies",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 3000,
+    "discounted_price": 1800
+  },
+  {
+    "id": "anti-hev-antibodies-igg-elisa-ayzal-lab-55",
+    "name": "Anti HEV Antibodies IgG (ELISA)",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 3200,
+    "discounted_price": 1920
+  },
+  {
+    "id": "anti-hev-antibodies-igm-elisa-ayzal-lab-56",
+    "name": "Anti HEV Antibodies IgM (ELISA)",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 3200,
+    "discounted_price": 1920
+  },
+  {
+    "id": "anti-hiv-1-2-ict-ayzal-lab-57",
+    "name": "Anti HIV - 1 & 2 (ICT)",
+    "description": "Chemical Pathology, 3-5cc Clotted Blood or Serum",
+    "price": 500,
+    "discounted_price": 300
+  },
+  {
+    "id": "anti-hiv-1-2-antibodies-elisa-ayzal-lab-58",
+    "name": "Anti HIV - 1 & 2 Antibodies (ELISA)",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 2700,
+    "discounted_price": 1620
+  },
+  {
+    "id": "anti-lkm-anti-liver-kidney-microsomal-ayzal-lab-59",
+    "name": "Anti LKM (Anti Liver Kidney Microsomal)",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 4400,
+    "discounted_price": 2640
+  },
+  {
+    "id": "anti-mitochondrial-antibody-ama-ayzal-lab-60",
+    "name": "Anti Mitochondrial Antibody (AMA)",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 3400,
+    "discounted_price": 2040
+  },
+  {
+    "id": "anti-mullerian-hormone-amh-ayzal-lab-61",
+    "name": "Anti Mullerian Hormone (AMH)",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 5500,
+    "discounted_price": 3300
+  },
+  {
+    "id": "anti-mumps-igm-ayzal-lab-62",
+    "name": "Anti Mumps IgM",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 2550,
+    "discounted_price": 1530
+  },
+  {
+    "id": "anti-scl-70-antibody-ayzal-lab-63",
+    "name": "Anti Scl-70 antibody",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 2500,
+    "discounted_price": 1500
+  },
+  {
+    "id": "anti-smooth-muscle-abs-asma-ayzal-lab-64",
+    "name": "Anti Smooth Muscle Abs (ASMA)",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 4500,
+    "discounted_price": 2700
+  },
+  {
+    "id": "anti-sperm-antibodies-ayzal-lab-65",
+    "name": "Anti Sperm Antibodies",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 3200,
+    "discounted_price": 1920
+  },
+  {
+    "id": "anti-thyroglobulin-antibodies-ab-ayzal-lab-66",
+    "name": "Anti Thyroglobulin Antibodies Ab",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 1500,
+    "discounted_price": 900
+  },
+  {
+    "id": "anti-tissue-transglutaminase-iga-ttg-ayzal-lab-67",
+    "name": "Anti Tissue Transglutaminase IgA (TTG)",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "anti-tissue-transglutaminase-igg-ttg-ayzal-lab-68",
+    "name": "Anti Tissue Transglutaminase IgG (TTG)",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "anti-treponema-antibodies-ayzal-lab-69",
+    "name": "Anti Treponema Antibodies",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 2000,
+    "discounted_price": 1200
+  },
+  {
+    "id": "anti-phospholipid-igg-ayzal-lab-70",
+    "name": "Anti-Phospholipid (IgG)",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 3700,
+    "discounted_price": 2220
+  },
+  {
+    "id": "anti-phospholipid-igm-ayzal-lab-71",
+    "name": "Anti-Phospholipid (IgM)",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 3700,
+    "discounted_price": 2220
+  },
+  {
+    "id": "anti-thyroglobulin-ab-ayzal-lab-72",
+    "name": "Anti-Thyroglobulin Ab",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 2500,
+    "discounted_price": 1500
+  },
+  {
+    "id": "aptt-activated-partial-thromboplastin-time-ayzal-lab-73",
+    "name": "APTT (Activated Partial Thromboplastin Time)",
+    "description": "Hematology, Sodium Citrate Vial",
+    "price": 1200,
+    "discounted_price": 720
+  },
+  {
+    "id": "ascitic-fluid-c-e-ayzal-lab-74",
+    "name": "Ascitic Fluid C/E",
+    "description": "Microbiology, Ascitic Fluid",
+    "price": 1700,
+    "discounted_price": 1020
+  },
+  {
+    "id": "ascitic-fluid-for-afb-c-s-ayzal-lab-75",
+    "name": "Ascitic Fluid For AFB C/S",
+    "description": "Microbiology, Ascitic Fluid",
+    "price": 5100,
+    "discounted_price": 3060
+  },
+  {
+    "id": "ascitic-fluid-for-afb-culture-ayzal-lab-76",
+    "name": "Ascitic Fluid for AFB Culture",
+    "description": "Microbiology, Ascitic Fluid",
+    "price": 6000,
+    "discounted_price": 3600
+  },
+  {
+    "id": "ascitic-fluid-for-afb-stain-zn-stain-ayzal-lab-77",
+    "name": "Ascitic Fluid For AFB Stain / Zn Stain",
+    "description": "Microbiology, Ascitic Fluid",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "ascitic-fluid-for-c-s-ayzal-lab-78",
+    "name": "Ascitic Fluid for C/S",
+    "description": "Microbiology, Ascitic Fluid",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "ascitic-fluid-for-cytology-ayzal-lab-79",
+    "name": "Ascitic Fluid for cytology",
+    "description": "Microbiology, Ascitic Fluid",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "ascitic-fluid-for-gram-stain-ayzal-lab-80",
+    "name": "Ascitic Fluid for Gram Stain",
+    "description": "Microbiology, Ascitic Fluid",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "ascitic-fluid-for-ldh-ayzal-lab-81",
+    "name": "Ascitic Fluid for LDH",
+    "description": "Chemical Pathology, Ascitic Fluid",
+    "price": 650,
+    "discounted_price": 390
+  },
+  {
+    "id": "ascitic-fluid-for-protein-ayzal-lab-82",
+    "name": "Ascitic Fluid for Protein",
+    "description": "Chemical Pathology, Ascitic Fluid",
+    "price": 650,
+    "discounted_price": 390
+  },
+  {
+    "id": "ascitic-fluid-for-triglycerides-ayzal-lab-83",
+    "name": "Ascitic Fluid for Triglycerides",
+    "description": "Chemical Pathology, Fluid",
+    "price": 650,
+    "discounted_price": 390
+  },
+  {
+    "id": "aso-titre-ayzal-lab-84",
+    "name": "ASO Titre",
+    "description": "Chemical Pathology, 3-5cc EDTA blood and serum",
+    "price": 1200,
+    "discounted_price": 720
+  },
+  {
+    "id": "ast-sgot-ayzal-lab-85",
+    "name": "AST (SGOT)",
+    "description": "Chemical Pathology, 3-5cc Clotted Blood or Serum",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "barbiturates-urine-ayzal-lab-86",
+    "name": "Barbiturates (Urine)",
+    "description": "Special Chemistry, spot Urine",
+    "price": 3000,
+    "discounted_price": 1800
+  },
+  {
+    "id": "basophils-ayzal-lab-87",
+    "name": "Basophils",
+    "description": "Hematology, 3cc EDTA WHOLE BLOOD",
+    "price": 300,
+    "discounted_price": 180
+  },
+  {
+    "id": "bence-jones-protein-24-hrs-urine-ayzal-lab-88",
+    "name": "Bence Jones Protein (24 Hrs Urine)",
+    "description": "Special Chemistry, 24 Hrs Urine",
+    "price": 600,
+    "discounted_price": 360
+  },
+  {
+    "id": "benzodiazepines-urine-ayzal-lab-89",
+    "name": "Benzodiazepines (Urine)",
+    "description": "Special Chemistry, Urine (Random/spot)",
+    "price": 2000,
+    "discounted_price": 1200
+  },
+  {
+    "id": "beta-hcg-female-ayzal-lab-90",
+    "name": "Beta HCG (Female)",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 1900,
+    "discounted_price": 1140
+  },
+  {
+    "id": "beta-hcg-male-ayzal-lab-91",
+    "name": "Beta HCG (Male)",
+    "description": "Chemical Pathology, 3-5cc Clotted Blood or Serum",
+    "price": 1900,
+    "discounted_price": 1140
+  },
+  {
+    "id": "bicarbonate-ayzal-lab-92",
+    "name": "Bicarbonate",
+    "description": "Chemical Pathology, 3-5cc Clotted Blood or Serum",
+    "price": 500,
+    "discounted_price": 300
+  },
+  {
+    "id": "bicarbonates-fluid-ayzal-lab-93",
+    "name": "Bicarbonates (Fluid)",
+    "description": "Special Chemistry, Body Fluid",
+    "price": 1500,
+    "discounted_price": 900
+  },
+  {
+    "id": "bicarbonates-hco3-ayzal-lab-94",
+    "name": "Bicarbonates (HCO3)",
+    "description": "Hematology, 3-5cc Clotted Blood or Serum",
+    "price": 500,
+    "discounted_price": 300
+  },
+  {
+    "id": "bicarbonates-urine-spot-random-ayzal-lab-95",
+    "name": "Bicarbonates Urine (Spot / Random)",
+    "description": "Chemical Pathology, Urine (Random/spot)",
+    "price": 1100,
+    "discounted_price": 660
+  },
+  {
+    "id": "bile-acid-serum-ayzal-lab-96",
+    "name": "Bile Acid (Serum)",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 3300,
+    "discounted_price": 1980
+  },
+  {
+    "id": "bile-pigment-ayzal-lab-97",
+    "name": "Bile Pigment",
+    "description": "Chemical Pathology, Urine (Random/spot)",
+    "price": 380,
+    "discounted_price": 228
+  },
+  {
+    "id": "bile-salt-ayzal-lab-98",
+    "name": "Bile Salt",
+    "description": "Chemical Pathology, Urine (Random/spot)",
+    "price": 420,
+    "discounted_price": 252
+  },
+  {
+    "id": "biopsy-large-ayzal-lab-99",
+    "name": "Biopsy (Large)",
+    "description": "Histopathology, Biopsy Tissue with History",
+    "price": 6000,
+    "discounted_price": 3600
+  },
+  {
+    "id": "biopsy-for-h-p-large-specimen-ayzal-lab-100",
+    "name": "Biopsy for H/P ( Large specimen )",
+    "description": "Histopathology, Biopsy",
+    "price": 6500,
+    "discounted_price": 3900
+  },
+  {
+    "id": "biopsy-for-h-p-small-specimen-ayzal-lab-101",
+    "name": "Biopsy for H/P ( Small specimen )",
+    "description": "Histopathology, Biopsy",
+    "price": 5000,
+    "discounted_price": 3000
+  },
+  {
+    "id": "biopsy-for-h-p-amputation-with-history-ayzal-lab-102",
+    "name": "Biopsy for H/P (Amputation) with history",
+    "description": "Histopathology, Biopsy",
+    "price": 8250,
+    "discounted_price": 4950
+  },
+  {
+    "id": "biopsy-for-h-p-medium-specimen-ayzal-lab-103",
+    "name": "Biopsy for H/P (Medium Specimen)",
+    "description": "Histopathology, Biopsy",
+    "price": 5500,
+    "discounted_price": 3300
+  },
+  {
+    "id": "biopsy-for-h-p-two-large-specimens-ayzal-lab-104",
+    "name": "Biopsy for H/P (Two Large Specimens)",
+    "description": "Histopathology, Biopsy",
+    "price": 6500,
+    "discounted_price": 3900
+  },
+  {
+    "id": "biopsy-for-h-p-two-small-specimen-ayzal-lab-105",
+    "name": "Biopsy for H/P (Two small specimen )",
+    "description": "Histopathology, Biopsy",
+    "price": 5800,
+    "discounted_price": 3480
+  },
+  {
+    "id": "biopsy-for-h-p-three-or-more-specimen-ayzal-lab-106",
+    "name": "Biopsy for H/P( Three or more specimen )",
+    "description": "Histopathology, Biopsy",
+    "price": 7800,
+    "discounted_price": 4680
+  },
+  {
+    "id": "biopsy-medium-ayzal-lab-107",
+    "name": "Biopsy Medium",
+    "description": "Histopathology, Biopsy Tissue with History",
+    "price": 4800,
+    "discounted_price": 2880
+  },
+  {
+    "id": "biopsy-small-ayzal-lab-108",
+    "name": "Biopsy Small",
+    "description": "Histopathology, Biopsy Tissue with History",
+    "price": 3800,
+    "discounted_price": 2280
+  },
+  {
+    "id": "bleeding-time-bt-ayzal-lab-109",
+    "name": "Bleeding Time (BT)",
+    "description": "Hematology, Blood",
+    "price": 300,
+    "discounted_price": 180
+  },
+  {
+    "id": "block-for-review-ayzal-lab-110",
+    "name": "Block For Review",
+    "description": "Histopathology, Block and Slides",
+    "price": 4998,
+    "discounted_price": 2998.8
+  },
+  {
+    "id": "blood-cell-morphology-peripheral-smear-p-s-ayzal-lab-111",
+    "name": "Blood Cell Morphology/ Peripheral smear P/S",
+    "description": "Hematology, 3cc EDTA WHOLE BLOOD",
+    "price": 500,
+    "discounted_price": 300
+  },
+  {
+    "id": "blood-cross-match-with-elisa-ayzal-lab-112",
+    "name": "Blood Cross Match With ELISA",
+    "description": "Blood Bank, Blood",
+    "price": 6000,
+    "discounted_price": 3600
+  },
+  {
+    "id": "blood-for-c-s-aerobic-ayzal-lab-113",
+    "name": "Blood For C/S (Aerobic)",
+    "description": "Microbiology, BLOOD(IN BLOOD CULTURE VAIL)",
+    "price": 2300,
+    "discounted_price": 1380
+  },
+  {
+    "id": "blood-for-c-s-aerobic-anaerobic-ayzal-lab-114",
+    "name": "Blood For C/S (Aerobic & Anaerobic)",
+    "description": "Microbiology, BLOOD(IN BLOOD CULTURE VAIL)",
+    "price": 4250,
+    "discounted_price": 2550
+  },
+  {
+    "id": "blood-for-c-s-aerobic-final-report-ayzal-lab-115",
+    "name": "Blood For C/S (Aerobic ) final Report",
+    "description": "Microbiology, BLOOD(IN BLOOD CULTURE VAIL)",
+    "price": 2300,
+    "discounted_price": 1380
+  },
+  {
+    "id": "blood-for-c-s-right-left-aerobic-anaerobic-ayzal-lab-116",
+    "name": "Blood For C/S Right & Left(Aerobic & Anaerobic)",
+    "description": "Microbiology, BLOOD(IN BLOOD CULTURE VAIL)",
+    "price": 4250,
+    "discounted_price": 2550
+  },
+  {
+    "id": "blood-grouping-ayzal-lab-117",
+    "name": "Blood Grouping",
+    "description": "Blood Bank, 3cc EDTA WHOLE BLOOD",
+    "price": 400,
+    "discounted_price": 240
+  },
+  {
+    "id": "blood-sugar-fasting-bsf-ayzal-lab-118",
+    "name": "Blood Sugar Fasting (BSF)",
+    "description": "Chemical Pathology, Blood in Sodium Fluoride vial",
+    "price": 300,
+    "discounted_price": 180,
+    "pinned": true
+  },
+  {
+    "id": "blood-sugar-random-bsr-ayzal-lab-119",
+    "name": "Blood Sugar Random (BSR)",
+    "description": "Chemical Pathology, Blood in Sodium Fluoride vial",
+    "price": 300,
+    "discounted_price": 180,
+    "pinned": true
+  },
+  {
+    "id": "body-fluid-for-afb-stain-zn-stain-ayzal-lab-120",
+    "name": "Body Fluid For AFB Stain / Zn Stain",
+    "description": "Microbiology, Body Fluid",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "body-fluid-for-cytology-ayzal-lab-121",
+    "name": "Body Fluid For Cytology",
+    "description": "Microbiology, Body Fluid",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "body-fluid-for-gram-stain-ayzal-lab-122",
+    "name": "Body Fluid For Gram Stain",
+    "description": "Microbiology, Body Fluid",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "bone-marrow-slides-for-review-ayzal-lab-123",
+    "name": "Bone Marrow (Slides For Review)",
+    "description": "Hematology, SLIDES",
+    "price": 10000,
+    "discounted_price": 6000
+  },
+  {
+    "id": "bone-marrow-biopsy-ayzal-lab-124",
+    "name": "Bone Marrow Biopsy",
+    "description": "Hematology, BoneMarrow",
+    "price": 1000,
+    "discounted_price": 600
+  },
+  {
+    "id": "breast-abscess-for-c-s-ayzal-lab-125",
+    "name": "Breast Abscess For C/S",
+    "description": "Microbiology, Breast Abscess",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "breast-abscess-for-cytology-ayzal-lab-126",
+    "name": "Breast Abscess For Cytology",
+    "description": "Microbiology, Breast Abscess",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "bronchial-washing-fluid-for-gram-stain-ayzal-lab-127",
+    "name": "Bronchial Washing Fluid For Gram Stain",
+    "description": "Microbiology, Heparinized or EDTA Blood",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "bronchial-washing-for-afb-c-s-ayzal-lab-128",
+    "name": "Bronchial Washing For AFB C/S",
+    "description": "Microbiology, Bronchial Washing",
+    "price": 5100,
+    "discounted_price": 3060
+  },
+  {
+    "id": "bronchial-washing-for-afb-stain-zn-stain-ayzal-lab-129",
+    "name": "Bronchial Washing For AFB Stain / Zn Stain",
+    "description": "Microbiology, Bronchial Washing",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "bronchial-washing-for-analysis-c-e-ayzal-lab-130",
+    "name": "Bronchial Washing For Analysis C/E",
+    "description": "Microbiology, Bronchial Washing",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "bronchial-washing-for-c-s-ayzal-lab-131",
+    "name": "Bronchial Washing For C/S",
+    "description": "Microbiology, Bronchial Washing",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "bronchial-washing-for-c-s-anerobic-ayzal-lab-132",
+    "name": "Bronchial Washing For C/S (Anerobic)",
+    "description": "Microbiology, Bronchial Washing",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "bronchial-washing-for-cytology-ayzal-lab-133",
+    "name": "Bronchial Washing For Cytology.",
+    "description": "Microbiology, Bronchial Washing",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "bronchial-washing-for-fungal-c-s-ayzal-lab-134",
+    "name": "Bronchial Washing For Fungal C/S",
+    "description": "Microbiology, Bronchial Washing",
+    "price": 1750,
+    "discounted_price": 1050
+  },
+  {
+    "id": "brucella-igg-ayzal-lab-135",
+    "name": "Brucella IgG",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "brucella-igm-ayzal-lab-136",
+    "name": "Brucella IgM",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "bun-blood-urea-nitrogen-ayzal-lab-137",
+    "name": "BUN (Blood Urea Nitrogen)",
+    "description": "Chemical Pathology, 3-5cc Clotted Blood or Serum",
+    "price": 450,
+    "discounted_price": 270
+  },
+  {
+    "id": "c-peptide-level-fasting-ayzal-lab-138",
+    "name": "C Peptide Level ( Fasting)",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 3200,
+    "discounted_price": 1920
+  },
+  {
+    "id": "c3-complement-3-ayzal-lab-139",
+    "name": "C3 (Complement 3)",
+    "description": "Hematology, Lithium Heparin Vail",
+    "price": 2000,
+    "discounted_price": 1200
+  },
+  {
+    "id": "c4-complement-level-ayzal-lab-140",
+    "name": "C4 (Complement Level)",
+    "description": "Hematology, Lithium Heparin Vail",
+    "price": 2000,
+    "discounted_price": 1200
+  },
+  {
+    "id": "ca-125-ayzal-lab-141",
+    "name": "CA 125",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 4100,
+    "discounted_price": 2460
+  },
+  {
+    "id": "ca-15-3-ayzal-lab-142",
+    "name": "CA 15-3",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 3200,
+    "discounted_price": 1920
+  },
+  {
+    "id": "ca-19-9-ayzal-lab-143",
+    "name": "CA-19-9",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 4100,
+    "discounted_price": 2460
+  },
+  {
+    "id": "calcium-ayzal-lab-144",
+    "name": "Calcium",
+    "description": "Chemical Pathology, 3-5cc Clotted Blood or Serum",
+    "price": 650,
+    "discounted_price": 390
+  },
+  {
+    "id": "calcium-fluid-ayzal-lab-145",
+    "name": "Calcium (Fluid)",
+    "description": "Chemical Pathology, Fluid",
+    "price": 800,
+    "discounted_price": 480
+  },
+  {
+    "id": "calcium-creatinine-ratio-urine-ayzal-lab-146",
+    "name": "Calcium / Creatinine Ratio Urine",
+    "description": "Chemical Pathology, Urine (Random/spot)",
+    "price": 1100,
+    "discounted_price": 660
+  },
+  {
+    "id": "calcium-urine-24-hr-ayzal-lab-147",
+    "name": "Calcium Urine (24 hr)",
+    "description": "Chemical Pathology, spot Urine",
+    "price": 680,
+    "discounted_price": 408
+  },
+  {
+    "id": "cannabinoids-urine-ayzal-lab-148",
+    "name": "Cannabinoids (Urine)",
+    "description": "Special Chemistry, Urine (Random/spot)",
+    "price": 2000,
+    "discounted_price": 1200
+  },
+  {
+    "id": "cardiac-enzymes-ayzal-lab-149",
+    "name": "Cardiac Enzymes",
+    "description": "Chemical Pathology, 3-5cc Clotted Blood or Serum",
+    "price": 2400,
+    "discounted_price": 1440
+  },
+  {
+    "id": "catheter-tip-for-c-s-ayzal-lab-150",
+    "name": "Catheter Tip For C/S",
+    "description": "Microbiology, Catheter Tip",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "cbc-complete-blood-count-ayzal-lab-151",
+    "name": "CBC (Complete Blood Count)",
+    "description": "Hematology, 3cc EDTA WHOLE BLOOD",
+    "price": 600,
+    "discounted_price": 360,
+    "pinned": true
+  },
+  {
+    "id": "cbc-peripheral-blood-smear-ayzal-lab-152",
+    "name": "CBC (peripheral Blood Smear)",
+    "description": "Hematology, 3cc EDTA WHOLE BLOOD",
+    "price": 900,
+    "discounted_price": 540,
+    "pinned": true
+  },
+  {
+    "id": "cbc-for-dengue-ayzal-lab-153",
+    "name": "CBC For (Dengue)",
+    "description": "Hematology, 3cc EDTA WHOLE BLOOD",
+    "price": 70,
+    "discounted_price": 42,
+    "pinned": true
+  },
+  {
+    "id": "cea-level-carcinoembryonic-antigen-ayzal-lab-154",
+    "name": "CEA Level (Carcinoembryonic Antigen)",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 3200,
+    "discounted_price": 1920,
+    "pinned": true
+  },
+  {
+    "id": "cea-fluid-ayzal-lab-155",
+    "name": "CEA (Fluid)",
+    "description": "Special Chemistry, Fluid",
+    "price": 3200,
+    "discounted_price": 1920
+  },
+  {
+    "id": "ceruloplasmin-level-ayzal-lab-156",
+    "name": "Ceruloplasmin level",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 1700,
+    "discounted_price": 1020
+  },
+  {
+    "id": "chloride-ayzal-lab-157",
+    "name": "Chloride",
+    "description": "Chemical Pathology, 3-5cc Clotted Blood or Serum",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "chloride-fluid-ayzal-lab-158",
+    "name": "Chloride (Fluid)",
+    "description": "Chemical Pathology, Fluid",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "chloride-urine-ayzal-lab-159",
+    "name": "Chloride (Urine)",
+    "description": "Special Chemistry, Urine",
+    "price": 500,
+    "discounted_price": 300
+  },
+  {
+    "id": "chloride-urine-spot-random-ayzal-lab-160",
+    "name": "Chloride Urine (Spot / Random)",
+    "description": "Chemical Pathology, 24 Hrs Urine",
+    "price": 650,
+    "discounted_price": 390
+  },
+  {
+    "id": "cholesterol-ayzal-lab-161",
+    "name": "Cholesterol",
+    "description": "Chemical Pathology, 3-5cc Clotted Blood or Serum",
+    "price": 450,
+    "discounted_price": 270
+  },
+  {
+    "id": "cholinesterase-serum-ayzal-lab-162",
+    "name": "Cholinesterase (Serum)",
+    "description": "Chemical Pathology, 3-5cc Clotted Blood or Serum",
+    "price": 4000,
+    "discounted_price": 2400
+  },
+  {
+    "id": "chromosome-analysis-karyotyping-female-ayzal-lab-163",
+    "name": "Chromosome Analysis / karyotyping(Female)",
+    "description": "Molecular Biology, Lithium Heparin Vail",
+    "price": 13000,
+    "discounted_price": 7800
+  },
+  {
+    "id": "chylomicrons-ayzal-lab-164",
+    "name": "Chylomicrons",
+    "description": "Chemical Pathology, 3-5cc Clotted Blood or Serum",
+    "price": 1500,
+    "discounted_price": 900
+  },
+  {
+    "id": "ck-mb-ayzal-lab-165",
+    "name": "CK MB",
+    "description": "Chemical Pathology, 3-5cc Clotted Blood or Serum",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "clotting-time-ct-ayzal-lab-166",
+    "name": "Clotting Time (CT)",
+    "description": "Hematology, Blood",
+    "price": 300,
+    "discounted_price": 180
+  },
+  {
+    "id": "cmv-igg-cytomegalovirus-ayzal-lab-167",
+    "name": "CMV IgG (Cytomegalovirus)",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "cmv-igm-cytomegalovirus-ayzal-lab-168",
+    "name": "CMV IgM (Cytomegalovirus)",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "coagulation-profile-pt-aptt-inr-ayzal-lab-169",
+    "name": "COAGULATION PROFILE ( PT,APTT, INR)",
+    "description": "Hematology, Sodium Citrate Vial",
+    "price": 2400,
+    "discounted_price": 1440
+  },
+  {
+    "id": "cold-agglutination-test-ayzal-lab-170",
+    "name": "Cold Agglutination Test",
+    "description": "Hematology, 3cc EDTA WHOLE BLOOD",
+    "price": 1300,
+    "discounted_price": 780
+  },
+  {
+    "id": "conjunctival-swab-c-s-ayzal-lab-171",
+    "name": "Conjunctival Swab C/S",
+    "description": "Microbiology, Conjunctival secreation",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "coombs-test-direct-ayzal-lab-172",
+    "name": "Coombs Test (Direct)",
+    "description": "Blood Bank, 3cc EDTA WHOLE BLOOD",
+    "price": 1700,
+    "discounted_price": 1020
+  },
+  {
+    "id": "coombs-test-indirect-ayzal-lab-173",
+    "name": "Coombs Test (Indirect)",
+    "description": "Blood Bank, Heparinized or EDTA Blood",
+    "price": 1700,
+    "discounted_price": 1020
+  },
+  {
+    "id": "copper-24-hrs-urine-ayzal-lab-174",
+    "name": "Copper (24 Hrs Urine)",
+    "description": "Chemical Pathology, 24 Hrs Urine",
+    "price": 1700,
+    "discounted_price": 1020
+  },
+  {
+    "id": "copper-serum-ayzal-lab-175",
+    "name": "Copper (Serum)",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 1700,
+    "discounted_price": 1020
+  },
+  {
+    "id": "copper-urine-spot-random-ayzal-lab-176",
+    "name": "Copper Urine (Spot / Random)",
+    "description": "Chemical Pathology, Urine (Random/spot)",
+    "price": 1700,
+    "discounted_price": 1020
+  },
+  {
+    "id": "cord-blood-group-rh-factor-ayzal-lab-177",
+    "name": "Cord Blood Group & Rh Factor",
+    "description": "Hematology, Cord Blood",
+    "price": 400,
+    "discounted_price": 240
+  },
+  {
+    "id": "corneal-scraping-c-s-ayzal-lab-178",
+    "name": "Corneal scraping C/S",
+    "description": "Microbiology, Corneal scrapping",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "cortisol-24-hour-urine-ayzal-lab-179",
+    "name": "Cortisol (24 Hour Urine)",
+    "description": "Special Chemistry, Urine (Random/spot)",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "covid-19-corona-virus-by-pcr-qualitative-ayzal-lab-180",
+    "name": "Covid-19 (Corona Virus) by PCR Qualitative",
+    "description": "Molecular Biology, 3cc EDTA WHOLE BLOOD",
+    "price": 5000,
+    "discounted_price": 3000
+  },
+  {
+    "id": "c-peptide-level-random-ayzal-lab-181",
+    "name": "C-Peptide Level (Random)",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 3200,
+    "discounted_price": 1920
+  },
+  {
+    "id": "cpk-ayzal-lab-182",
+    "name": "CPK",
+    "description": "Chemical Pathology, 3-5cc Clotted Blood or Serum",
+    "price": 1000,
+    "discounted_price": 600
+  },
+  {
+    "id": "creatinine-24-hours-urine-ayzal-lab-183",
+    "name": "Creatinine ( 24 Hours Urine )",
+    "description": "Special Chemistry, 24 Hrs Urine",
+    "price": 600,
+    "discounted_price": 360
+  },
+  {
+    "id": "creatinine-clearance-24-hrs-ayzal-lab-184",
+    "name": "Creatinine Clearance (24 Hrs)",
+    "description": "Chemical Pathology, 24 Hrs urine & Serum",
+    "price": 1700,
+    "discounted_price": 1020
+  },
+  {
+    "id": "cross-match-with-screening-ayzal-lab-185",
+    "name": "Cross Match with Screening",
+    "description": "Blood Bank, Blood",
+    "price": 3000,
+    "discounted_price": 1800
+  },
+  {
+    "id": "crp-high-sensitive-ayzal-lab-186",
+    "name": "CRP (High Sensitive)",
+    "description": "Chemical Pathology, 3-5cc Clotted Blood or Serum",
+    "price": 1200,
+    "discounted_price": 720
+  },
+  {
+    "id": "csf-fluid-for-afb-c-s-ayzal-lab-187",
+    "name": "CSF Fluid For AFB C/S",
+    "description": "Microbiology, CSF",
+    "price": 5100,
+    "discounted_price": 3060
+  },
+  {
+    "id": "csf-fluid-for-gram-stain-ayzal-lab-188",
+    "name": "CSF Fluid For Gram Stain",
+    "description": "Microbiology, CSF",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "csf-for-afb-stain-zn-stain-ayzal-lab-189",
+    "name": "CSF For AFB Stain / Zn Stain",
+    "description": "Microbiology, CSF",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "csf-for-c-e-ayzal-lab-190",
+    "name": "CSF For C/E",
+    "description": "Microbiology, CSF",
+    "price": 1700,
+    "discounted_price": 1020
+  },
+  {
+    "id": "csf-for-c-s-ayzal-lab-191",
+    "name": "CSF For C/S",
+    "description": "Microbiology, CSF",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "csf-for-cytology-ayzal-lab-192",
+    "name": "CSF For Cytology",
+    "description": "Microbiology, CSF",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "cvp-tip-for-c-s-ayzal-lab-193",
+    "name": "Cvp Tip For C/S",
+    "description": "Microbiology, Cvp Tip",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "cystic-fluid-for-afb-c-s-ayzal-lab-194",
+    "name": "Cystic Fluid For AFB C/S",
+    "description": "Microbiology, Cystic Fluid",
+    "price": 5100,
+    "discounted_price": 3060
+  },
+  {
+    "id": "cystic-fluid-for-afb-stain-zn-stain-ayzal-lab-195",
+    "name": "Cystic Fluid For AFB Stain / Zn Stain",
+    "description": "Microbiology, Cystic Fluid",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "cystic-fluid-for-c-e-ayzal-lab-196",
+    "name": "Cystic Fluid For C/E",
+    "description": "Microbiology, Cystic Fluid",
+    "price": 1700,
+    "discounted_price": 1020
+  },
+  {
+    "id": "cystic-fluid-for-c-s-ayzal-lab-197",
+    "name": "Cystic Fluid For C/S",
+    "description": "Microbiology, Cystic Fluid",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "cystic-fluid-for-cytology-ayzal-lab-198",
+    "name": "Cystic Fluid For Cytology",
+    "description": "Microbiology, Fluid",
+    "price": 1700,
+    "discounted_price": 1020
+  },
+  {
+    "id": "cystic-fluid-for-gram-stain-ayzal-lab-199",
+    "name": "Cystic Fluid For Gram Stain",
+    "description": "Microbiology, CSF",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "dengue-igg-ayzal-lab-200",
+    "name": "Dengue (IgG)",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 2700,
+    "discounted_price": 1620
+  },
+  {
+    "id": "dengue-igm-ayzal-lab-201",
+    "name": "Dengue (IgM)",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 2700,
+    "discounted_price": 1620
+  },
+  {
+    "id": "dengue-ns1-antigen-ayzal-lab-202",
+    "name": "Dengue NS1 Antigen",
+    "description": "Chemical Pathology, 3-5cc Clotted Blood or Serum",
+    "price": 3000,
+    "discounted_price": 1800,
+    "pinned": true
+  },
+  {
+    "id": "detailed-liver-function-test-lft-ayzal-lab-203",
+    "name": "Detailed Liver Function Test (LFT)",
+    "description": "Chemical Pathology, 3-5cc Clotted Blood or Serum",
+    "price": 1800,
+    "discounted_price": 1080,
+    "pinned": true
+  },
+  {
+    "id": "dhea-so4-ayzal-lab-204",
+    "name": "DHEA SO4",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "direct-bilirubin-test-ayzal-lab-205",
+    "name": "Direct Bilirubin Test",
+    "description": "Chemical Pathology, 3-5cc Clotted Blood or Serum",
+    "price": 400,
+    "discounted_price": 240
+  },
+  {
+    "id": "dlc-differential-leukocyte-count-ayzal-lab-206",
+    "name": "DLC (Differential Leukocyte Count)",
+    "description": "Hematology, 3cc EDTA WHOLE BLOOD",
+    "price": 400,
+    "discounted_price": 240
+  },
+  {
+    "id": "drug-screen-profile-spot-random-urine-ayzal-lab-207",
+    "name": "Drug Screen Profile (Spot/ Random Urine)",
+    "description": "Chemical Pathology, spot Urine",
+    "price": 4000,
+    "discounted_price": 2400
+  },
+  {
+    "id": "ear-swab-for-afb-stain-zn-stain-ayzal-lab-208",
+    "name": "Ear Swab For AFB Stain / Zn Stain",
+    "description": "Microbiology, Ear Swab",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "ear-swab-for-c-s-ayzal-lab-209",
+    "name": "Ear Swab For C/S",
+    "description": "Microbiology, Ear Swab",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "ear-swab-for-gram-stain-ayzal-lab-210",
+    "name": "Ear Swab For Gram Stain",
+    "description": "Microbiology, Ear Swab",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "ena-profile-ayzal-lab-211",
+    "name": "ENA Profile",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 8000,
+    "discounted_price": 4800
+  },
+  {
+    "id": "eosinophil-count-ayzal-lab-212",
+    "name": "Eosinophil Count",
+    "description": "Hematology, 3cc EDTA WHOLE BLOOD",
+    "price": 300,
+    "discounted_price": 180
+  },
+  {
+    "id": "esr-erythrocyte-sedimentation-rate-ayzal-lab-213",
+    "name": "ESR (Erythrocyte Sedimentation Rate)",
+    "description": "Hematology, 3cc EDTA WHOLE BLOOD",
+    "price": 400,
+    "discounted_price": 240
+  },
+  {
+    "id": "estimated-glomerular-filtration-rate-egfr-ayzal-lab-214",
+    "name": "Estimated Glomerular Filtration Rate (eGFR)",
+    "description": "Chemical Pathology, 3-5cc Clotted Blood or Serum",
+    "price": 1100,
+    "discounted_price": 660
+  },
+  {
+    "id": "factor-v-leiden-factor-ayzal-lab-215",
+    "name": "Factor V (Leiden Factor)",
+    "description": "Hematology, Sodium Citrate Plasma",
+    "price": 5000,
+    "discounted_price": 3000
+  },
+  {
+    "id": "factor-viii-level-ayzal-lab-216",
+    "name": "Factor VIII Level",
+    "description": "Hematology, Sodium Citrate Plasma",
+    "price": 5000,
+    "discounted_price": 3000
+  },
+  {
+    "id": "fasting-insulin-level-serum-ayzal-lab-217",
+    "name": "Fasting Insulin Level (Serum)",
+    "description": "Chemical Pathology, 3-5cc Clotted Blood or Serum",
+    "price": 3000,
+    "discounted_price": 1800
+  },
+  {
+    "id": "fasting-lipid-profile-flp-ayzal-lab-218",
+    "name": "Fasting Lipid Profile (FLP)",
+    "description": "Chemical Pathology, 3-5cc Clotted Blood or Serum",
+    "price": 2000,
+    "discounted_price": 1200,
+    "pinned": true
+  },
+  {
+    "id": "fdps-d-dimer-ayzal-lab-219",
+    "name": "FDPs (D-Dimer)",
+    "description": "Special Chemistry, Sodium Citrate Vial",
+    "price": 2400,
+    "discounted_price": 1440
+  },
+  {
+    "id": "fibrinogen-factor-1-ayzal-lab-220",
+    "name": "Fibrinogen ( Factor -1 )",
+    "description": "Special Chemistry, 3cc EDTA WHOLE BLOOD",
+    "price": 2000,
+    "discounted_price": 1200
+  },
+  {
+    "id": "finger-swab-for-c-s-ayzal-lab-221",
+    "name": "Finger Swab For C/S",
+    "description": "Microbiology, Swab",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "fluid-adenosine-deaminase-ada-ayzal-lab-222",
+    "name": "FLUID Adenosine Deaminase (ADA)",
+    "description": "Special Chemistry, Body Fluid",
+    "price": 4000,
+    "discounted_price": 2400
+  },
+  {
+    "id": "fluid-for-analysis-bile-c-e-ayzal-lab-223",
+    "name": "Fluid For Analysis Bile C/E",
+    "description": "Microbiology, Bile Fluid",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "fluid-for-analysis-c-e-ayzal-lab-224",
+    "name": "Fluid For Analysis C/E",
+    "description": "Microbiology, Body Fluid",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "fluid-for-c-s-ayzal-lab-225",
+    "name": "Fluid for C/S",
+    "description": "Microbiology, Body Fluid",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "fluid-for-cytology-ayzal-lab-226",
+    "name": "Fluid For Cytology",
+    "description": "Microbiology, Fluid",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "fluid-for-tlc-dlc-ayzal-lab-227",
+    "name": "Fluid For TLC & DLC",
+    "description": "Microbiology, Fluid",
+    "price": 700,
+    "discounted_price": 420
+  },
+  {
+    "id": "fnac-procedure-ayzal-lab-228",
+    "name": "FNAC Procedure",
+    "description": "Histopathology, Fluid",
+    "price": 6000,
+    "discounted_price": 3600
+  },
+  {
+    "id": "fnac-slide-review-ayzal-lab-229",
+    "name": "FNAC Slide Review",
+    "description": "Histopathology, SLIDES",
+    "price": 4000,
+    "discounted_price": 2400
+  },
+  {
+    "id": "folic-acid-folate-level-ayzal-lab-230",
+    "name": "Folic Acid (Folate Level)",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 2100,
+    "discounted_price": 1260
+  },
+  {
+    "id": "folley-s-tip-for-c-s-ayzal-lab-231",
+    "name": "Folley's Tip For C/S",
+    "description": "Microbiology, Folley's Tip",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "free-t3-ayzal-lab-232",
+    "name": "Free T3",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "free-t4-ayzal-lab-233",
+    "name": "Free T4",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "free-testosterone-ayzal-lab-234",
+    "name": "Free Testosterone",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 2550,
+    "discounted_price": 1530
+  },
+  {
+    "id": "fsh-follicle-stimulating-hormone-ayzal-lab-235",
+    "name": "FSH (Follicle Stimulating Hormone)",
+    "description": "Special Chemistry, 3-5cc Clotted Blood or Serum",
+    "price": 1870,
+    "discounted_price": 1122
+  },
+  {
+    "id": "fungal-culture-c-s-ayzal-lab-236",
+    "name": "Fungal Culture C/S",
+    "description": "Microbiology, Fungal scraping",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "fungal-stain-ayzal-lab-237",
+    "name": "Fungal Stain",
+    "description": "Microbiology Fluid After 24 hours(s)",
+    "price": 900,
+    "discounted_price": 540
+  },
+  {
+    "id": "fungus-for-skin-scraping-ayzal-lab-238",
+    "name": "Fungus For Skin Scraping",
+    "description": "Microbiology Skin Scraping After 2 day(s)",
+    "price": 1700,
+    "discounted_price": 1020
+  },
+  {
+    "id": "fungus-stain-koh-ayzal-lab-239",
+    "name": "Fungus Stain(KOH)",
+    "description": "Microbiology Fluid After 24 hours(s)",
+    "price": 1400,
+    "discounted_price": 840
+  },
+  {
+    "id": "g6pd-glucose-6-phosphate-dehydrogenase-ayzal-lab-240",
+    "name": "G6PD (Glucose 6 Phosphate Dehydrogenase)",
+    "description": "Special Chemistry 3cc EDTA WHOLE BLOOD After 2 day(s)",
+    "price": 1870,
+    "discounted_price": 1122
+  },
+  {
+    "id": "gamma-gt-ayzal-lab-241",
+    "name": "Gamma GT",
+    "description": "Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "gastrin-level-ayzal-lab-242",
+    "name": "Gastrin Level",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 3 day(s)",
+    "price": 5000,
+    "discounted_price": 3000
+  },
+  {
+    "id": "gauze-piece-for-c-s-ayzal-lab-243",
+    "name": "Gauze Piece For C/S",
+    "description": "Microbiology Gauze Piece After 3 day(s)",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "gct-glucose-challenge-test-ayzal-lab-244",
+    "name": "GCT (Glucose Challenge Test)",
+    "description": "Chemical Pathology Blood in Sodium Fluoride vial After 1 day(s)",
+    "price": 950,
+    "discounted_price": 570
+  },
+  {
+    "id": "gene-xpert-mtb-rif-gene-ayzal-lab-245",
+    "name": "Gene-Xpert MTB-RIF Gene",
+    "description": "Microbiology Pleural Fluid After 7 day(s)",
+    "price": 5100,
+    "discounted_price": 3060
+  },
+  {
+    "id": "giemsa-stain-ayzal-lab-246",
+    "name": "Giemsa Stain",
+    "description": "Microbiology 3-5cc EDTA blood and serum After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "glucose-fluid-ayzal-lab-247",
+    "name": "Glucose (Fluid)",
+    "description": "Chemical Pathology Body Fluid After 1 day(s)",
+    "price": 300,
+    "discounted_price": 180
+  },
+  {
+    "id": "glucose-1-hours-post-meal-ayzal-lab-248",
+    "name": "Glucose 1 Hours ( Post Meal )",
+    "description": "Chemical Pathology Blood in Sodium Fluoride vial After 8 hours(s)",
+    "price": 300,
+    "discounted_price": 180
+  },
+  {
+    "id": "glycosylated-hemoglobin-hba1c-ayzal-lab-249",
+    "name": "Glycosylated Hemoglobin (HbA1C)",
+    "description": "Chemical Pathology 3cc EDTA WHOLE BLOOD After 8 hours(s)",
+    "price": 1800,
+    "discounted_price": 1080,
+    "pinned": true
+  },
+  {
+    "id": "gram-stain-ayzal-lab-250",
+    "name": "Gram Stain",
+    "description": "Microbiology CONTACT LAB After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "growth-hormone-ayzal-lab-251",
+    "name": "Growth Hormone",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s)",
+    "price": 4200,
+    "discounted_price": 2520
+  },
+  {
+    "id": "gtt-glucose-tolerance-test-ayzal-lab-252",
+    "name": "GTT(Glucose tolerance test)",
+    "description": "Chemical Pathology Blood in Sodium Fluoride vial After 8 hours(s)",
+    "price": 1000,
+    "discounted_price": 600
+  },
+  {
+    "id": "h-pylori-antibodies-ict-ayzal-lab-253",
+    "name": "H.pylori Antibodies (ICT)",
+    "description": "Chemical Pathology 3-5cc Clotted Blood or Serum After 1 day(s)",
+    "price": 1150,
+    "discounted_price": 690
+  },
+  {
+    "id": "h-pylori-antibodies-igm-ayzal-lab-254",
+    "name": "H.Pylori Antibodies IgM",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 2 day(s)",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "haptoglobin-ayzal-lab-255",
+    "name": "Haptoglobin",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum Same day",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "hav-igg-elisa-ayzal-lab-256",
+    "name": "HAV IgG (ELISA)",
+    "description": "Chemical Pathology 3-5cc Clotted Blood or Serum After 1 day(s)",
+    "price": 2700,
+    "discounted_price": 1620
+  },
+  {
+    "id": "hav-igm-elisa-ayzal-lab-257",
+    "name": "HAV IgM(ELISA)",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 1 day(s)",
+    "price": 2700,
+    "discounted_price": 1620
+  },
+  {
+    "id": "hb-hemoglobin-ayzal-lab-258",
+    "name": "HB ( Hemoglobin )",
+    "description": "Hematology 3cc EDTA WHOLE BLOOD After 24 hours(s)",
+    "price": 200,
+    "discounted_price": 120
+  },
+  {
+    "id": "hb-electrophoresis-blood-ayzal-lab-259",
+    "name": "Hb Electrophoresis (Blood)",
+    "description": "Special Chemistry 3cc EDTA WHOLE BLOOD After 5 day(s)",
+    "price": 2550,
+    "discounted_price": 1530
+  },
+  {
+    "id": "hbeag-ayzal-lab-260",
+    "name": "HBeAg",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 2 day(s)",
+    "price": 2700,
+    "discounted_price": 1620
+  },
+  {
+    "id": "hbsag-elisa-ayzal-lab-261",
+    "name": "HBsAg (ELISA)",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s)",
+    "price": 1900,
+    "discounted_price": 1140,
+    "pinned": true
+  },
+  {
+    "id": "hbsag-ict-ayzal-lab-262",
+    "name": "HBsAg (ICT)",
+    "description": "Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s)",
+    "price": 600,
+    "discounted_price": 360,
+    "pinned": true
+  },
+  {
+    "id": "hbv-dna-by-pcr-qualitative-ayzal-lab-263",
+    "name": "HBV DNA by PCR (QUALITATIVE)",
+    "description": "Molecular Biology 3cc EDTA WHOLE BLOOD After 4 day(s)",
+    "price": 5000,
+    "discounted_price": 3000
+  },
+  {
+    "id": "hbv-dna-by-real-time-pcr-quantitative-ayzal-lab-264",
+    "name": "HBV DNA BY REAL-TIME PCR (Quantitative)",
+    "description": "Molecular Biology 3cc EDTA WHOLE BLOOD After 4 day(s)",
+    "price": 8000,
+    "discounted_price": 4800
+  },
+  {
+    "id": "hct-hematocrit-ayzal-lab-265",
+    "name": "HCT (Hematocrit)",
+    "description": "Hematology 3cc EDTA WHOLE BLOOD After 24 hours(s)",
+    "price": 380,
+    "discounted_price": 228
+  },
+  {
+    "id": "hcv-rna-by-pcr-qualitative-ayzal-lab-266",
+    "name": "HCV RNA by PCR (QUALITATIVE)",
+    "description": "Molecular Biology 3cc EDTA WHOLE BLOOD After 4 day(s)",
+    "price": 5000,
+    "discounted_price": 3000
+  },
+  {
+    "id": "hdv-rna-by-pcr-qualitative-ayzal-lab-267",
+    "name": "HDV RNA By Pcr (Qualitative)",
+    "description": "Molecular Biology 3-5cc Clotted Blood or Serum After 4 day(s)",
+    "price": 5000,
+    "discounted_price": 3000
+  },
+  {
+    "id": "hdv-rna-by-pcr-quantitative-ayzal-lab-268",
+    "name": "HDV RNA By Pcr (Quantitative)",
+    "description": "Molecular Biology 3-5cc Clotted Blood or Serum After 3 day(s)",
+    "price": 8000,
+    "discounted_price": 4800
+  },
+  {
+    "id": "helicobacter-pylori-iga-ayzal-lab-269",
+    "name": "Helicobacter pylori IgA",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s)",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "helicobacter-pylori-igg-ayzal-lab-270",
+    "name": "Helicobacter pylori IgG",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s)",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "herpes-hsv-igg-ayzal-lab-271",
+    "name": "Herpes (HSV) IgG",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s)",
+    "price": 1870,
+    "discounted_price": 1122
+  },
+  {
+    "id": "herpes-hsv-igm-ayzal-lab-272",
+    "name": "Herpes (HSV) IgM",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s)",
+    "price": 1870,
+    "discounted_price": 1122
+  },
+  {
+    "id": "histones-ayzal-lab-273",
+    "name": "Histones",
+    "description": "Chemical Pathology 3-5cc Clotted Blood or Serum After 3 day(s)",
+    "price": 5000,
+    "discounted_price": 3000
+  },
+  {
+    "id": "hla-b27-allele-by-pcr-ayzal-lab-274",
+    "name": "HLA B27 Allele by PCR",
+    "description": "Special Chemistry 3cc EDTA WHOLE BLOOD After 7 day(s)",
+    "price": 18000,
+    "discounted_price": 10800
+  },
+  {
+    "id": "homocysteine-level-urine-ayzal-lab-275",
+    "name": "Homocysteine Level (Urine)",
+    "description": "Special Chemistry Serum & Spot Urine After 4 day(s)",
+    "price": 3000,
+    "discounted_price": 1800
+  },
+  {
+    "id": "hospital-ot-air-for-bacterial-growth-ayzal-lab-276",
+    "name": "HOSPITAL OT AIR FOR BACTERIAL GROWTH",
+    "description": "Microbiology Hospital OT Air for Bacterial growth After 3 day(s)",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "hospital-ot-anesthesia-machine-for-bacterial-growth-ayzal-lab-277",
+    "name": "HOSPITAL OT ANESTHESIA MACHINE FOR BACTERIAL GROWTH",
+    "description": "Microbiology Hospital OT Anesthesia Machine Swab for Bacterial growth After 3 day(s)",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "hospital-ot-chair-for-culture-growth-ayzal-lab-278",
+    "name": "Hospital Ot chair for culture growth",
+    "description": "Microbiology Swab Same day",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "hospital-ot-floor-swab-for-bacterial-growth-ayzal-lab-279",
+    "name": "HOSPITAL OT FLOOR SWAB FOR BACTERIAL GROWTH",
+    "description": "Microbiology Hospital OT Floor Swab for Bacterial growth After 3 day(s)",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "hospital-ot-light-swab-for-bacterial-growth-ayzal-lab-280",
+    "name": "HOSPITAL OT LIGHT SWAB FOR BACTERIAL GROWTH",
+    "description": "Microbiology Hospital OT Light for Bacterial growth After 3 day(s)",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "hospital-ot-suction-machine-for-bacterial-growth-ayzal-lab-281",
+    "name": "HOSPITAL OT SUCTION MACHINE FOR BACTERIAL GROWTH",
+    "description": "Microbiology Hospital OT Suction Machine for Bacterial growth After 3 day(s)",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "hospital-ot-table-swab-for-bacterial-growth-ayzal-lab-282",
+    "name": "HOSPITAL OT TABLE SWAB FOR BACTERIAL GROWTH",
+    "description": "Microbiology Hospital OT Table for Bacterial growth After 3 day(s)",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "hospital-ot-trolly-for-bacterial-growth-ayzal-lab-283",
+    "name": "Hospital OT Trolly for Bacterial growth",
+    "description": "Microbiology Swab Same day",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "hospital-ot-wall-swab-for-bacterial-growth-ayzal-lab-284",
+    "name": "HOSPITAL OT WALL SWAB FOR BACTERIAL GROWTH",
+    "description": "Microbiology Hospital OT Wall for Bacterial growth After 3 day(s)",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "hvs-for-afb-stain-zn-stain-ayzal-lab-285",
+    "name": "HVS For AFB Stain / Zn Stain",
+    "description": "Microbiology Hvs Swab After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "hvs-for-c-s-ayzal-lab-286",
+    "name": "HVS For C/S",
+    "description": "Microbiology Hvs Swab After 3 day(s)",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "hvs-for-gram-stain-ayzal-lab-287",
+    "name": "HVS For Gram Stain",
+    "description": "Microbiology Hvs Swab After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "hydrocele-fluid-for-afb-c-s-ayzal-lab-288",
+    "name": "Hydrocele Fluid For AFB C/S",
+    "description": "Microbiology Hydrocele Fluid After 70 day(s)",
+    "price": 5100,
+    "discounted_price": 3060
+  },
+  {
+    "id": "hydrocele-fluid-for-afb-stain-zn-stain-ayzal-lab-289",
+    "name": "Hydrocele Fluid For AFB Stain / Zn Stain",
+    "description": "Microbiology Hydrocele Fluid After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "hydrocele-fluid-for-c-s-ayzal-lab-290",
+    "name": "Hydrocele Fluid For C/S",
+    "description": "Microbiology Hydrocele Fluid After 3 day(s)",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "hydrocele-fluid-for-gram-stain-ayzal-lab-291",
+    "name": "Hydrocele Fluid For Gram Stain",
+    "description": "Microbiology Hydrocele Fluid After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "ict-malaria-ayzal-lab-292",
+    "name": "ICT Malaria",
+    "description": "Hematology 3cc EDTA WHOLE BLOOD After 24 hours(s)",
+    "price": 1070,
+    "discounted_price": 642
+  },
+  {
+    "id": "iga-immunoglobulin-a-ayzal-lab-293",
+    "name": "IgA (Immunoglobulin A)",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s)",
+    "price": 1300,
+    "discounted_price": 780
+  },
+  {
+    "id": "ige-immunoglobulin-e-ayzal-lab-294",
+    "name": "IgE (Immunoglobulin E)",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s)",
+    "price": 2000,
+    "discounted_price": 1200,
+    "pinned": true
+  },
+  {
+    "id": "igg-immunoglobulin-g-ayzal-lab-295",
+    "name": "IgG (Immunoglobulin G)",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 1 day(s)",
+    "price": 1300,
+    "discounted_price": 780
+  },
+  {
+    "id": "igm-immunoglobulin-m-ayzal-lab-296",
+    "name": "IgM (Immunoglobulin M)",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 1 day(s)",
+    "price": 1300,
+    "discounted_price": 780
+  },
+  {
+    "id": "indirect-bilirubin-ayzal-lab-297",
+    "name": "Indirect Bilirubin",
+    "description": "Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s)",
+    "price": 400,
+    "discounted_price": 240
+  },
+  {
+    "id": "insulin-growth-factor-1-ayzal-lab-298",
+    "name": "Insulin Growth Factor-1",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 3 day(s)",
+    "price": 6000,
+    "discounted_price": 3600
+  },
+  {
+    "id": "intact-parathormone-pth-ayzal-lab-299",
+    "name": "Intact Parathormone (PTH)",
+    "description": "Chemical Pathology 3-5cc Clotted Blood or Serum After 1 day(s)",
+    "price": 2900,
+    "discounted_price": 1740
+  },
+  {
+    "id": "interleukin-6-il-6-levels-ayzal-lab-300",
+    "name": "Interleukin-6 (IL-6) levels",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s)",
+    "price": 3000,
+    "discounted_price": 1800
+  },
+  {
+    "id": "ionized-calcium-ayzal-lab-301",
+    "name": "Ionized Calcium",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 1 day(s)",
+    "price": 1100,
+    "discounted_price": 660
+  },
+  {
+    "id": "iron-ayzal-lab-302",
+    "name": "Iron",
+    "description": "Chemical Pathology 3-5cc Clotted Blood or Serum After 1 day(s)",
+    "price": 850,
+    "discounted_price": 510
+  },
+  {
+    "id": "iron-profile-ayzal-lab-303",
+    "name": "Iron profile",
+    "description": "Chemical Pathology 3-5cc Clotted Blood or Serum After 1 day(s)",
+    "price": 3300,
+    "discounted_price": 1980,
+    "pinned": true
+  },
+  {
+    "id": "joint-fluid-c-e-ayzal-lab-304",
+    "name": "Joint Fluid C/E",
+    "description": "Microbiology Joint Fluid After 24 hours(s)",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "joint-fluid-for-afb-c-s-ayzal-lab-305",
+    "name": "Joint Fluid For AFB C/S",
+    "description": "Microbiology Joint Fluid After 70 day(s)",
+    "price": 5100,
+    "discounted_price": 3060
+  },
+  {
+    "id": "joint-fluid-for-afb-stain-zn-stain-ayzal-lab-306",
+    "name": "Joint Fluid For AFB Stain / Zn Stain",
+    "description": "Microbiology Joint Fluid After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "joint-fluid-for-analysis-c-e-ayzal-lab-307",
+    "name": "Joint Fluid For Analysis C/E",
+    "description": "Microbiology Knee Joint Fluid After 24 hours(s)",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "joint-fluid-for-c-s-ayzal-lab-308",
+    "name": "Joint Fluid For C/S",
+    "description": "Microbiology Joint Fluid After 3 day(s)",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "joint-fluid-for-crystals-ayzal-lab-309",
+    "name": "Joint Fluid For Crystals",
+    "description": "Microbiology Fluid After 24 hours(s)",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "joint-fluid-for-gram-stain-ayzal-lab-310",
+    "name": "Joint Fluid For Gram Stain",
+    "description": "Microbiology Joint Fluid After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "ketone-blood-ayzal-lab-311",
+    "name": "Ketone (Blood)",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s)",
+    "price": 600,
+    "discounted_price": 360
+  },
+  {
+    "id": "ketones-bodies-urine-ayzal-lab-312",
+    "name": "Ketones Bodies (Urine)",
+    "description": "Special Chemistry Urine After 24 hours(s)",
+    "price": 500,
+    "discounted_price": 300
+  },
+  {
+    "id": "knee-joint-fluid-for-afb-c-s-ayzal-lab-313",
+    "name": "Knee Joint Fluid For AFB C/S",
+    "description": "Microbiology Knee Joint Fluid After 70 day(s)",
+    "price": 5100,
+    "discounted_price": 3060
+  },
+  {
+    "id": "knee-joint-fluid-for-afb-stain-zn-stain-ayzal-lab-314",
+    "name": "Knee Joint Fluid For AFB Stain / Zn Stain",
+    "description": "Microbiology Knee Joint Fluid After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "knee-joint-fluid-for-c-s-ayzal-lab-315",
+    "name": "Knee Joint Fluid For C/S",
+    "description": "Microbiology Knee Joint Fluid After 3 day(s)",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "knee-joint-fluid-for-cytology-ayzal-lab-316",
+    "name": "Knee Joint Fluid For Cytology",
+    "description": "Microbiology Knee Joint Fluid After 24 hours(s)",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "knee-joint-fluid-for-gram-stain-ayzal-lab-317",
+    "name": "Knee Joint Fluid For Gram Stain",
+    "description": "Microbiology Knee Joint Fluid After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "lactate-level-ayzal-lab-318",
+    "name": "Lactate Level",
+    "description": "Special Chemistry 1-2 Separate Plasma of Fluoride Vial After 1 day(s)",
+    "price": 2000,
+    "discounted_price": 1200
+  },
+  {
+    "id": "ldh-csf-ayzal-lab-319",
+    "name": "LDH (CSF)",
+    "description": "Chemical Pathology CSF After 8 hours(s)",
+    "price": 630,
+    "discounted_price": 378
+  },
+  {
+    "id": "ldh-serum-ayzal-lab-320",
+    "name": "LDH (Serum)",
+    "description": "Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s)",
+    "price": 630,
+    "discounted_price": 378
+  },
+  {
+    "id": "ldl-cholesterol-ayzal-lab-321",
+    "name": "LDL (Cholesterol)",
+    "description": "Chemical Pathology 3- 5cc Clotted Blood or Serum(Fasting) After 8 hours(s)",
+    "price": 500,
+    "discounted_price": 300
+  },
+  {
+    "id": "le-cell-ayzal-lab-322",
+    "name": "LE Cell",
+    "description": "Hematology 3cc EDTA WHOLE BLOOD After 24 hours(s)",
+    "price": 3000,
+    "discounted_price": 1800
+  },
+  {
+    "id": "lh-luteinizing-hormone-ayzal-lab-323",
+    "name": "LH (Luteinizing Hormone)",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 2 day(s)",
+    "price": 1800,
+    "discounted_price": 1080
+  },
+  {
+    "id": "lipase-fluid-ayzal-lab-324",
+    "name": "Lipase (Fluid)",
+    "description": "Chemical Pathology Fluid After 1 day(s)",
+    "price": 1270,
+    "discounted_price": 762
+  },
+  {
+    "id": "lipase-serum-ayzal-lab-325",
+    "name": "Lipase (Serum)",
+    "description": "Chemical Pathology 3-5cc Clotted Blood or Serum After 1 day(s)",
+    "price": 1270,
+    "discounted_price": 762
+  },
+  {
+    "id": "lipid-profile-random-ayzal-lab-326",
+    "name": "Lipid Profile (Random)",
+    "description": "Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s)",
+    "price": 2000,
+    "discounted_price": 1200,
+    "pinned": true
+  },
+  {
+    "id": "liver-function-test-lft-ayzal-lab-327",
+    "name": "Liver Function Test (LFT)",
+    "description": "Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s)",
+    "price": 1700,
+    "discounted_price": 1020,
+    "pinned": true
+  },
+  {
+    "id": "lupus-anticoagulant-abs-ayzal-lab-328",
+    "name": "Lupus Anticoagulant Abs",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 3 day(s)",
+    "price": 5500,
+    "discounted_price": 3300
+  },
+  {
+    "id": "magnesium-fluid-ayzal-lab-329",
+    "name": "Magnesium (Fluid)",
+    "description": "Chemical Pathology Fluid After 1 day(s)",
+    "price": 650,
+    "discounted_price": 390
+  },
+  {
+    "id": "mch-ayzal-lab-330",
+    "name": "MCH",
+    "description": "Hematology 3cc EDTA WHOLE BLOOD After 24 hours(s)",
+    "price": 300,
+    "discounted_price": 180
+  },
+  {
+    "id": "mchc-ayzal-lab-331",
+    "name": "MCHC",
+    "description": "Hematology 3cc EDTA WHOLE BLOOD After 24 hours(s)",
+    "price": 300,
+    "discounted_price": 180
+  },
+  {
+    "id": "mcv-ayzal-lab-332",
+    "name": "MCV",
+    "description": "Hematology 3cc EDTA WHOLE BLOOD After 24 hours(s)",
+    "price": 300,
+    "discounted_price": 180
+  },
+  {
+    "id": "measles-igg-ayzal-lab-333",
+    "name": "Measles IgG",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 3 day(s)",
+    "price": 2550,
+    "discounted_price": 1530
+  },
+  {
+    "id": "measles-igm-ayzal-lab-334",
+    "name": "Measles IgM",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 3 day(s)",
+    "price": 2550,
+    "discounted_price": 1530
+  },
+  {
+    "id": "metamyelocytes-ayzal-lab-335",
+    "name": "Metamyelocytes",
+    "description": "Hematology 3cc EDTA WHOLE BLOOD After 24 hours(s)",
+    "price": 1500,
+    "discounted_price": 900
+  },
+  {
+    "id": "microalbuminuria-24-hrs-urine-ayzal-lab-336",
+    "name": "Microalbuminuria (24 Hrs Urine)",
+    "description": "Special Chemistry 24 Hrs Urine After 24 hours(s)",
+    "price": 1300,
+    "discounted_price": 780
+  },
+  {
+    "id": "microalbuminuria-spot-urine-ayzal-lab-337",
+    "name": "Microalbuminuria Spot Urine",
+    "description": "Chemical Pathology spot Urine After 8 hours(s)",
+    "price": 1300,
+    "discounted_price": 780
+  },
+  {
+    "id": "milk-for-analysis-ayzal-lab-338",
+    "name": "Milk for Analysis",
+    "description": "Microbiology Milk After 24 hours(s)",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "milk-for-c-s-ayzal-lab-339",
+    "name": "Milk For C/S",
+    "description": "Microbiology Milk After 3 day(s)",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "milk-for-cytology-ayzal-lab-340",
+    "name": "Milk For Cytology",
+    "description": "Microbiology Milk After 24 hours(s)",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "milk-for-gram-stain-ayzal-lab-341",
+    "name": "Milk For Gram Stain",
+    "description": "Microbiology Milk After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "milk-for-zn-stain-ayzal-lab-342",
+    "name": "Milk For Zn Stain",
+    "description": "Microbiology Milk After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "mycobacterium-culture-c-s-ayzal-lab-343",
+    "name": "Mycobacterium Culture C/S",
+    "description": "Microbiology Body Fluid After 70 day(s)",
+    "price": 5100,
+    "discounted_price": 3060
+  },
+  {
+    "id": "mycodot-igg-ayzal-lab-344",
+    "name": "Mycodot IgG",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 1 day(s)",
+    "price": 1700,
+    "discounted_price": 1020
+  },
+  {
+    "id": "mycodot-igm-ayzal-lab-345",
+    "name": "Mycodot IgM",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 1 day(s)",
+    "price": 1700,
+    "discounted_price": 1020
+  },
+  {
+    "id": "nasal-secretion-c-s-ayzal-lab-346",
+    "name": "Nasal Secretion C/S",
+    "description": "Microbiology Nasal Secretion After 3 day(s)",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "nasal-secretion-for-afb-c-s-ayzal-lab-347",
+    "name": "Nasal Secretion For AFB C/S",
+    "description": "Microbiology Nasal Secretion After 70 day(s)",
+    "price": 5100,
+    "discounted_price": 3060
+  },
+  {
+    "id": "nasal-secretion-for-afb-stain-zn-stain-ayzal-lab-348",
+    "name": "Nasal Secretion For AFB Stain / Zn Stain",
+    "description": "Microbiology Nasal Secretion After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "nasal-secretion-for-gram-stain-ayzal-lab-349",
+    "name": "Nasal Secretion For Gram Stain",
+    "description": "Microbiology Nasal Secretion After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "neutrophils-ayzal-lab-350",
+    "name": "Neutrophils",
+    "description": "Hematology 3cc EDTA WHOLE BLOOD After 24 hours(s)",
+    "price": 300,
+    "discounted_price": 180
+  },
+  {
+    "id": "opiates-urine-ayzal-lab-351",
+    "name": "Opiates (Urine)",
+    "description": "Special Chemistry spot Urine After 3 day(s)",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "osmolality-serum-ayzal-lab-352",
+    "name": "Osmolality (Serum)",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 2 day(s)",
+    "price": 1800,
+    "discounted_price": 1080
+  },
+  {
+    "id": "osmolality-urine-spot-random-ayzal-lab-353",
+    "name": "Osmolality Urine (Spot / Random)",
+    "description": "Chemical Pathology Urine (Random/spot) After 8 hours(s)",
+    "price": 1800,
+    "discounted_price": 1080
+  },
+  {
+    "id": "osmotic-rbc-s-fragility-ayzal-lab-354",
+    "name": "Osmotic / RBC,s Fragility",
+    "description": "Hematology Lithium Heparin Vail After 2 day(s)",
+    "price": 1800,
+    "discounted_price": 1080
+  },
+  {
+    "id": "pap-smear-ayzal-lab-355",
+    "name": "Pap Smear",
+    "description": "Histopathology SLIDES After 1 day(s)",
+    "price": 3500,
+    "discounted_price": 2100
+  },
+  {
+    "id": "pap-smear-for-cytology-ayzal-lab-356",
+    "name": "PAP Smear For Cytology",
+    "description": "Microbiology Block and Slides After 1 day(s)",
+    "price": 2990,
+    "discounted_price": 1794
+  },
+  {
+    "id": "pericardial-fluid-for-afb-c-s-ayzal-lab-357",
+    "name": "Pericardial Fluid For AFB C/S",
+    "description": "Microbiology Pericardial Fluid After 70 day(s)",
+    "price": 5100,
+    "discounted_price": 3060
+  },
+  {
+    "id": "pericardial-fluid-for-afb-stain-zn-stain-ayzal-lab-358",
+    "name": "Pericardial Fluid For AFB Stain / Zn Stain",
+    "description": "Microbiology Pericardial Fluid After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "pericardial-fluid-for-c-e-ayzal-lab-359",
+    "name": "Pericardial Fluid For C/E",
+    "description": "Microbiology Pericardial Fluid After 24 hours(s)",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "pericardial-fluid-for-c-s-ayzal-lab-360",
+    "name": "Pericardial Fluid For C/S",
+    "description": "Microbiology Pericardial Fluid After 3 day(s)",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "pericardial-fluid-for-cytology-ayzal-lab-361",
+    "name": "Pericardial Fluid For Cytology",
+    "description": "Microbiology Fluid After 24 hours(s)",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "pericardial-fluid-for-gram-stain-ayzal-lab-362",
+    "name": "Pericardial Fluid For Gram Stain",
+    "description": "Microbiology Pericardial Fluid After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "peripheral-blood-film-smear-ayzal-lab-363",
+    "name": "Peripheral Blood Film/Smear",
+    "description": "Hematology 3cc EDTA WHOLE BLOOD After 24 hours(s)",
+    "price": 600,
+    "discounted_price": 360
+  },
+  {
+    "id": "peritoneal-fluid-c-e-ayzal-lab-364",
+    "name": "Peritoneal Fluid C/E",
+    "description": "Microbiology Peritoneal Fluid After 24 hours(s)",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "peritoneal-fluid-for-afb-c-s-ayzal-lab-365",
+    "name": "Peritoneal Fluid For AFB C/S",
+    "description": "Microbiology Peritoneal Fluid After 70 day(s)",
+    "price": 5100,
+    "discounted_price": 3060
+  },
+  {
+    "id": "peritoneal-fluid-for-afb-stain-zn-stain-ayzal-lab-366",
+    "name": "Peritoneal Fluid For AFB Stain / Zn Stain",
+    "description": "Microbiology Pericardial Fluid After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "peritoneal-fluid-for-c-s-ayzal-lab-367",
+    "name": "Peritoneal Fluid For C/S",
+    "description": "Microbiology Peritoneal Fluid After 3 day(s)",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "peritoneal-fluid-for-cytology-ayzal-lab-368",
+    "name": "Peritoneal Fluid For Cytology",
+    "description": "Microbiology Fluid After 24 hours(s)",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "peritoneal-fluid-for-gram-stain-ayzal-lab-369",
+    "name": "Peritoneal Fluid For Gram Stain",
+    "description": "Microbiology Peritoneal Fluid After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "ph-for-urine-ayzal-lab-370",
+    "name": "Ph For Urine",
+    "description": "Chemical Pathology Urine (Random/spot) After 8 hours(s)",
+    "price": 200,
+    "discounted_price": 120
+  },
+  {
+    "id": "phosphate-24-hrs-urine-ayzal-lab-371",
+    "name": "Phosphate (24 Hrs Urine)",
+    "description": "Chemical Pathology 24 Hrs Urine After 1 day(s)",
+    "price": 600,
+    "discounted_price": 360
+  },
+  {
+    "id": "phosphorus-ayzal-lab-372",
+    "name": "Phosphorus",
+    "description": "Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s)",
+    "price": 700,
+    "discounted_price": 420
+  },
+  {
+    "id": "pivka-ii-ayzal-lab-373",
+    "name": "PIVKA - II",
+    "description": "Special Chemistry Lithium Heparin Vail After 2 day(s)",
+    "price": 3800,
+    "discounted_price": 2280
+  },
+  {
+    "id": "platelet-count-ayzal-lab-374",
+    "name": "Platelet Count",
+    "description": "Hematology 3cc EDTA WHOLE BLOOD After 24 hours(s)",
+    "price": 300,
+    "discounted_price": 180
+  },
+  {
+    "id": "pleural-fluid-c-e-ayzal-lab-375",
+    "name": "Pleural Fluid C/E",
+    "description": "Microbiology Pleural Fluid After 24 hours(s)",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "pleural-fluid-for-afb-c-s-ayzal-lab-376",
+    "name": "Pleural Fluid For AFB C/S",
+    "description": "Microbiology Pleural Fluid After 70 day(s)",
+    "price": 5100,
+    "discounted_price": 3060
+  },
+  {
+    "id": "pleural-fluid-for-afb-stain-zn-stain-ayzal-lab-377",
+    "name": "Pleural Fluid For AFB Stain / Zn Stain",
+    "description": "Microbiology Pleural Fluid After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "pleural-fluid-for-c-s-ayzal-lab-378",
+    "name": "Pleural Fluid For C/S",
+    "description": "Microbiology Pleural Fluid After 3 day(s)",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "pleural-fluid-for-cytology-ayzal-lab-379",
+    "name": "Pleural Fluid For Cytology",
+    "description": "Microbiology Fluid After 24 hours(s)",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "pleural-fluid-for-gram-stain-ayzal-lab-380",
+    "name": "Pleural Fluid For Gram Stain",
+    "description": "Microbiology Pleural Fluid After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "potassium-ayzal-lab-381",
+    "name": "Potassium",
+    "description": "Chemical Pathology 3-5cc Clotted Blood or Serum After 1 day(s)",
+    "price": 500,
+    "discounted_price": 300
+  },
+  {
+    "id": "potassium-24-hrs-urine-ayzal-lab-382",
+    "name": "Potassium (24 hrs Urine)",
+    "description": "Special Chemistry 24 Hrs Urine After 24 hours(s)",
+    "price": 500,
+    "discounted_price": 300
+  },
+  {
+    "id": "potassium-fluid-ayzal-lab-383",
+    "name": "Potassium (Fluid)",
+    "description": "Chemical Pathology Fluid After 8 hours(s)",
+    "price": 500,
+    "discounted_price": 300
+  },
+  {
+    "id": "potassium-urine-spot-random-ayzal-lab-384",
+    "name": "Potassium Urine (Spot / Random)",
+    "description": "Special Chemistry Urine (Random/spot) After 24 hours(s)",
+    "price": 500,
+    "discounted_price": 300
+  },
+  {
+    "id": "pregnancy-test-ayzal-lab-385",
+    "name": "Pregnancy Test",
+    "description": "Chemical Pathology Urine (Random/spot) After 1 hours(s)",
+    "price": 500,
+    "discounted_price": 300
+  },
+  {
+    "id": "probnp-n-t-ii-ayzal-lab-386",
+    "name": "ProBNP (N-t) II",
+    "description": "Special Chemistry Heparinized or EDTA Blood After 1 day(s)",
+    "price": 2800,
+    "discounted_price": 1680
+  },
+  {
+    "id": "progesterone-ayzal-lab-387",
+    "name": "Progesterone",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 1 day(s)",
+    "price": 2000,
+    "discounted_price": 1200
+  },
+  {
+    "id": "protein-24-hrs-urine-ayzal-lab-388",
+    "name": "Protein (24 Hrs Urine)",
+    "description": "Chemical Pathology 24 Hrs Urine After 8 hours(s)",
+    "price": 800,
+    "discounted_price": 480
+  },
+  {
+    "id": "protein-spot-urine-ayzal-lab-389",
+    "name": "Protein (Spot Urine)",
+    "description": "Chemical Pathology Urine (Random/spot) After 8 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "protein-electrophoresis-blood-ayzal-lab-390",
+    "name": "Protein Electrophoresis (Blood)",
+    "description": "Molecular Biology Lithium Heparin Vail After 10 day(s)",
+    "price": 2400,
+    "discounted_price": 1440
+  },
+  {
+    "id": "protein-albumin-ratio-ayzal-lab-391",
+    "name": "Protein/Albumin ratio",
+    "description": "Chemical Pathology Blood Serum Same day",
+    "price": 900,
+    "discounted_price": 540
+  },
+  {
+    "id": "protein-c-ayzal-lab-392",
+    "name": "Protein-C",
+    "description": "Hematology Lithium Heparin Vail After 24 hours(s)",
+    "price": 5100,
+    "discounted_price": 3060
+  },
+  {
+    "id": "protein-s-ayzal-lab-393",
+    "name": "Protein-S",
+    "description": "Hematology Lithium Heparin Vail After 1 day(s)",
+    "price": 5100,
+    "discounted_price": 3060
+  },
+  {
+    "id": "psa-prostate-specific-antigen-ayzal-lab-394",
+    "name": "PSA (Prostate Specific Antigen)",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 1 day(s)",
+    "price": 2800,
+    "discounted_price": 1680,
+    "pinned": true
+  },
+  {
+    "id": "pt-with-inr-ayzal-lab-395",
+    "name": "PT with INR",
+    "description": "Hematology Sodium Citrate Vial After 24 hours(s)",
+    "price": 1000,
+    "discounted_price": 600
+  },
+  {
+    "id": "pus-for-afb-c-s-ayzal-lab-396",
+    "name": "Pus For AFB C/S",
+    "description": "Microbiology PUS for C/S After 70 day(s)",
+    "price": 5100,
+    "discounted_price": 3060
+  },
+  {
+    "id": "pus-for-afb-stain-zn-stain-ayzal-lab-397",
+    "name": "Pus For AFB Stain / Zn Stain",
+    "description": "Microbiology PUS for C/S After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "pus-for-c-s-ayzal-lab-398",
+    "name": "Pus For C/S",
+    "description": "Microbiology PUS for C/S After 3 day(s)",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "pus-for-cytology-ayzal-lab-399",
+    "name": "Pus For Cytology",
+    "description": "Microbiology PUS for C/S After 24 hours(s)",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "pus-for-gram-staining-ayzal-lab-400",
+    "name": "Pus For Gram staining",
+    "description": "Microbiology PUS for C/S After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "pus-swab-for-afb-stain-zn-stain-ayzal-lab-401",
+    "name": "Pus Swab For AFB Stain / Zn Stain",
+    "description": "Microbiology PUS SWAB After 24 hours(s)",
+    "price": 6000,
+    "discounted_price": 3600
+  },
+  {
+    "id": "pus-swab-for-c-s-ayzal-lab-402",
+    "name": "Pus Swab For C/S",
+    "description": "Microbiology PUS SWAB After 3 day(s)",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "pus-swab-for-gram-stain-ayzal-lab-403",
+    "name": "Pus Swab For Gram Stain",
+    "description": "Microbiology PUS SWAB After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "ra-factor-quantitative-ayzal-lab-404",
+    "name": "RA Factor (Quantitative)",
+    "description": "Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s)",
+    "price": 1000,
+    "discounted_price": 600
+  },
+  {
+    "id": "rbc-morphology-ayzal-lab-405",
+    "name": "RBC Morphology",
+    "description": "Hematology 3cc EDTA WHOLE BLOOD After 24 hours(s)",
+    "price": 600,
+    "discounted_price": 360
+  },
+  {
+    "id": "real-time-pcr-hcv-quantitative-ayzal-lab-406",
+    "name": "Real time PCR HCV (QUANTITATIVE)",
+    "description": "Molecular Biology 3cc EDTA WHOLE BLOOD After 4 day(s)",
+    "price": 8000,
+    "discounted_price": 4800
+  },
+  {
+    "id": "red-cell-folic-acid-whole-blood-ayzal-lab-407",
+    "name": "Red Cell Folic Acid (Whole Blood)",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s)",
+    "price": 2300,
+    "discounted_price": 1380
+  },
+  {
+    "id": "renal-function-test-rfts-ayzal-lab-408",
+    "name": "Renal Function Test (RFTs)",
+    "description": "Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s)",
+    "price": 1550,
+    "discounted_price": 930,
+    "pinned": true
+  },
+  {
+    "id": "retic-count-ayzal-lab-409",
+    "name": "Retic Count",
+    "description": "Hematology 3cc EDTA WHOLE BLOOD After 24 hours(s)",
+    "price": 650,
+    "discounted_price": 390
+  },
+  {
+    "id": "rubella-igg-ayzal-lab-410",
+    "name": "Rubella IgG",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 1 day(s)",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "rubella-igm-ayzal-lab-411",
+    "name": "Rubella IgM",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 1 day(s)",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "semen-analysis-ayzal-lab-412",
+    "name": "Semen Analysis",
+    "description": "Microbiology Semen After 24 hours(s)",
+    "price": 2550,
+    "discounted_price": 1530
+  },
+  {
+    "id": "semen-for-afb-stain-zn-stain-ayzal-lab-413",
+    "name": "Semen For AFB Stain / Zn Stain",
+    "description": "Microbiology Semen After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "semen-for-c-s-ayzal-lab-414",
+    "name": "Semen For C/S",
+    "description": "Microbiology Semen After 3 day(s)",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "semen-for-gram-stain-ayzal-lab-415",
+    "name": "Semen For Gram Stain",
+    "description": "Microbiology Semen After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "serum-anti-gad-65-ayzal-lab-416",
+    "name": "Serum Anti GAD 65",
+    "description": "Special Chemistry 3- 5cc Clotted Blood or Serum(Fasting) After 3 day(s)",
+    "price": 7000,
+    "discounted_price": 4200
+  },
+  {
+    "id": "serum-anti-islet-antibody-ayzal-lab-417",
+    "name": "Serum Anti-islet Antibody",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 7 day(s)",
+    "price": 8000,
+    "discounted_price": 4800
+  },
+  {
+    "id": "serum-bilirubin-ayzal-lab-418",
+    "name": "Serum Bilirubin",
+    "description": "Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s)",
+    "price": 400,
+    "discounted_price": 240
+  },
+  {
+    "id": "serum-ck-ayzal-lab-419",
+    "name": "Serum CK",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s)",
+    "price": 2000,
+    "discounted_price": 1200
+  },
+  {
+    "id": "serum-cortisol-am-ayzal-lab-420",
+    "name": "Serum Cortisol (AM)",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s)",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "serum-cortisol-pm-ayzal-lab-421",
+    "name": "Serum Cortisol (PM)",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s)",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "serum-creatinine-ayzal-lab-422",
+    "name": "Serum Creatinine",
+    "description": "Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s)",
+    "price": 500,
+    "discounted_price": 300
+  },
+  {
+    "id": "serum-electrolytes-ayzal-lab-423",
+    "name": "Serum Electrolytes",
+    "description": "Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s)",
+    "price": 1300,
+    "discounted_price": 780
+  },
+  {
+    "id": "serum-estradiol-level-ayzal-lab-424",
+    "name": "Serum Estradiol level",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 1 day(s)",
+    "price": 1950,
+    "discounted_price": 1170
+  },
+  {
+    "id": "serum-estrogen-level-ayzal-lab-425",
+    "name": "Serum Estrogen level",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum Same day",
+    "price": 1700,
+    "discounted_price": 1020
+  },
+  {
+    "id": "serum-ferritin-level-ayzal-lab-426",
+    "name": "Serum Ferritin Level",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s)",
+    "price": 1870,
+    "discounted_price": 1122
+  },
+  {
+    "id": "serum-globulin-ayzal-lab-427",
+    "name": "Serum Globulin",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s)",
+    "price": 500,
+    "discounted_price": 300
+  },
+  {
+    "id": "serum-magnesium-ayzal-lab-428",
+    "name": "Serum Magnesium",
+    "description": "Chemical Pathology 3-5cc Clotted Blood or Serum After 1 day(s)",
+    "price": 650,
+    "discounted_price": 390
+  },
+  {
+    "id": "serum-phosphate-ayzal-lab-429",
+    "name": "Serum Phosphate",
+    "description": "Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "serum-procalcitonin-pct-ayzal-lab-430",
+    "name": "Serum Procalcitonin (PCT)",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 2 day(s)",
+    "price": 4100,
+    "discounted_price": 2460
+  },
+  {
+    "id": "serum-prolactin-ayzal-lab-431",
+    "name": "Serum Prolactin",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s)",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "serum-transferrin-level-ayzal-lab-432",
+    "name": "Serum Transferrin level",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 2 day(s)",
+    "price": 1000,
+    "discounted_price": 600,
+    "pinned": true
+  },
+  {
+    "id": "serum-triglycerides-ayzal-lab-433",
+    "name": "Serum Triglycerides",
+    "description": "Chemical Pathology 3-5cc Clotted Blood or Serum After 1 day(s)",
+    "price": 400,
+    "discounted_price": 240
+  },
+  {
+    "id": "serum-uric-acid-ayzal-lab-434",
+    "name": "Serum Uric Acid",
+    "description": "Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s)",
+    "price": 650,
+    "discounted_price": 390
+  },
+  {
+    "id": "sodium-ayzal-lab-435",
+    "name": "Sodium",
+    "description": "Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "sodium-24-hrs-urine-ayzal-lab-436",
+    "name": "Sodium (24 hrs Urine)",
+    "description": "Chemical Pathology 24 Hrs Urine After 8 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "sodium-fluid-ayzal-lab-437",
+    "name": "Sodium (Fluid)",
+    "description": "Chemical Pathology Fluid After 8 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "specific-gravity-urine-ayzal-lab-438",
+    "name": "Specific Gravity Urine",
+    "description": "Chemical Pathology Urine (Random/spot) After 8 hours(s)",
+    "price": 300,
+    "discounted_price": 180
+  },
+  {
+    "id": "sputum-for-afb-c-s-ayzal-lab-439",
+    "name": "Sputum For AFB C/S",
+    "description": "Microbiology SPUTUM After 70 day(s)",
+    "price": 5100,
+    "discounted_price": 3060
+  },
+  {
+    "id": "sputum-for-afb-smear-z-n-ayzal-lab-440",
+    "name": "Sputum For AFB Smear / Z.N",
+    "description": "Microbiology SPUTUM After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "sputum-for-c-s-ayzal-lab-441",
+    "name": "Sputum For C/S",
+    "description": "Microbiology SPUTUM After 3 day(s)",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "sputum-for-cytology-ayzal-lab-442",
+    "name": "Sputum For Cytology",
+    "description": "Microbiology SPUTUM After 24 hours(s)",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "sputum-for-fungal-smear-ayzal-lab-443",
+    "name": "Sputum for Fungal Smear",
+    "description": "Microbiology SPUTUM After 24 hours(s)",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "sputum-for-gram-stain-ayzal-lab-444",
+    "name": "Sputum For Gram Stain",
+    "description": "Microbiology SPUTUM After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "sternal-wound-swab-for-c-s-ayzal-lab-445",
+    "name": "Sternal Wound Swab For C/S",
+    "description": "Microbiology Wound Swab After 3 day(s)",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "stone-analysis-ayzal-lab-446",
+    "name": "STONE ANALYSIS",
+    "description": "Chemical Pathology Stone After 1 day(s)",
+    "price": 4000,
+    "discounted_price": 2400
+  },
+  {
+    "id": "stool-for-c-e-ayzal-lab-447",
+    "name": "Stool for C/E",
+    "description": "Microbiology Stool For C/S Same day",
+    "price": 600,
+    "discounted_price": 360
+  },
+  {
+    "id": "stool-for-c-s-ayzal-lab-448",
+    "name": "Stool For C/S",
+    "description": "Microbiology Stool For C/S After 3 day(s)",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "stool-for-fecal-calprotactin-ayzal-lab-449",
+    "name": "Stool for fecal Calprotactin",
+    "description": "Microbiology Stool For C/S After 2 day(s)",
+    "price": 4500,
+    "discounted_price": 2700
+  },
+  {
+    "id": "stool-for-h-pylori-antigen-ayzal-lab-450",
+    "name": "Stool for H, Pylori Antigen",
+    "description": "Special Chemistry Stool For C/S After 1 day(s)",
+    "price": 5500,
+    "discounted_price": 3300,
+    "pinned": true
+  },
+  {
+    "id": "stool-for-occult-blood-ayzal-lab-451",
+    "name": "stool for occult blood",
+    "description": "Special Chemistry Stool For C/S Same day",
+    "price": 800,
+    "discounted_price": 480
+  },
+  {
+    "id": "sugar-random-2hrs-after-breakfast-ayzal-lab-452",
+    "name": "Sugar Random 2Hrs. After Breakfast",
+    "description": "Chemical Pathology Blood in Sodium Fluoride vial After 8 hours(s)",
+    "price": 300,
+    "discounted_price": 180
+  },
+  {
+    "id": "swab-for-c-s-ayzal-lab-453",
+    "name": "Swab For C/S",
+    "description": "Microbiology Swab After 3 day(s)",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "synovial-fluid-c-e-ayzal-lab-454",
+    "name": "Synovial Fluid C/E",
+    "description": "Microbiology Synovial Fluid After 24 hours(s)",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "synovial-fluid-for-afb-c-s-ayzal-lab-455",
+    "name": "Synovial Fluid For AFB C/S",
+    "description": "Microbiology Synovial Fluid After 70 day(s)",
+    "price": 5100,
+    "discounted_price": 3060
+  },
+  {
+    "id": "synovial-fluid-for-afb-stain-zn-stain-ayzal-lab-456",
+    "name": "Synovial Fluid For AFB Stain / Zn Stain",
+    "description": "Microbiology Synovial Fluid After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "synovial-fluid-for-c-s-ayzal-lab-457",
+    "name": "Synovial Fluid For C/S",
+    "description": "Microbiology Synovial Fluid After 3 day(s)",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "synovial-fluid-for-cytology-ayzal-lab-458",
+    "name": "Synovial Fluid For Cytology",
+    "description": "Microbiology Synovial Fluid After 24 hours(s)",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "synovial-fluid-for-gram-stain-ayzal-lab-459",
+    "name": "Synovial Fluid For Gram Stain",
+    "description": "Microbiology Synovial Fluid After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "syphilis-vdrl-ict-ayzal-lab-460",
+    "name": "Syphilis (VDRL) - (ICT)",
+    "description": "Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s)",
+    "price": 600,
+    "discounted_price": 360
+  },
+  {
+    "id": "t3-triiodothyronine-ayzal-lab-461",
+    "name": "T3 (TriIodothyronine)",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s)",
+    "price": 1300,
+    "discounted_price": 780
+  },
+  {
+    "id": "t4-tetraiodothyronine-ayzal-lab-462",
+    "name": "T4 (Tetraiodothyronine)",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s)",
+    "price": 1300,
+    "discounted_price": 780
+  },
+  {
+    "id": "testosterone-level-ayzal-lab-463",
+    "name": "Testosterone Level",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 1 day(s)",
+    "price": 1700,
+    "discounted_price": 1020
+  },
+  {
+    "id": "throat-swab-for-afb-stain-zn-stain-ayzal-lab-464",
+    "name": "Throat Swab For AFB Stain / Zn Stain",
+    "description": "Microbiology Throat Swab After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "throat-swab-for-c-s-ayzal-lab-465",
+    "name": "Throat Swab For C/S",
+    "description": "Microbiology Throat Swab After 3 day(s)",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "throat-swab-for-gram-stain-ayzal-lab-466",
+    "name": "Throat Swab For Gram Stain",
+    "description": "Microbiology Throat Swab After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "thyroid-peroxidase-antibodies-tpo-ayzal-lab-467",
+    "name": "Thyroid Peroxidase Antibodies (TPO)",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s)",
+    "price": 3400,
+    "discounted_price": 2040
+  },
+  {
+    "id": "thyroid-profile-tsh-t4-t3-ayzal-lab-468",
+    "name": "Thyroid profile ( TSH, T4, T3)",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 8 hours(s)",
+    "price": 3300,
+    "discounted_price": 1980
+  },
+  {
+    "id": "tibc-ayzal-lab-469",
+    "name": "TIBC",
+    "description": "Chemical Pathology 3-5cc Clotted Blood or Serum After 1 day(s)",
+    "price": 1400,
+    "discounted_price": 840,
+    "pinned": true
+  },
+  {
+    "id": "tissue-biopsy-for-afb-smear-zn-stain-ayzal-lab-470",
+    "name": "Tissue Biopsy for AFB Smear/Zn stain",
+    "description": "Microbiology Biopsy After 1 day(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "tissue-biopsy-for-bacterial-c-s-aerobic-ayzal-lab-471",
+    "name": "Tissue Biopsy for Bacterial C/S (Aerobic)",
+    "description": "Microbiology Biopsy Tissue with History After 3 day(s)",
+    "price": 2700,
+    "discounted_price": 1620
+  },
+  {
+    "id": "tissue-biopsy-for-fungus-c-s-with-fungus-stain-koh-ayzal-lab-472",
+    "name": "Tissue Biopsy for Fungus C/S with Fungus stain (KOH)",
+    "description": "Microbiology Biopsy After 3 day(s)",
+    "price": 2700,
+    "discounted_price": 1620
+  },
+  {
+    "id": "tissue-biopsy-for-gram-stain-ayzal-lab-473",
+    "name": "Tissue BiOPSY for gram stain",
+    "description": "Hematology Tissue After 1 day(s)",
+    "price": 500,
+    "discounted_price": 300
+  },
+  {
+    "id": "tissue-for-afb-stain-zn-stain-ayzal-lab-474",
+    "name": "Tissue For AFB Stain / Zn Stain",
+    "description": "Microbiology Tissue After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "tissue-for-c-s-ayzal-lab-475",
+    "name": "Tissue For C/S",
+    "description": "Microbiology Tissue After 3 day(s)",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "torch-profile-igg-ayzal-lab-476",
+    "name": "Torch Profile (IgG)",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 24 hours(s)",
+    "price": 5000,
+    "discounted_price": 3000
+  },
+  {
+    "id": "torch-profile-igm-ayzal-lab-477",
+    "name": "Torch Profile (IgM)",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 1 day(s)",
+    "price": 5000,
+    "discounted_price": 3000
+  },
+  {
+    "id": "total-bilirubin-ayzal-lab-478",
+    "name": "Total Bilirubin",
+    "description": "Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s)",
+    "price": 400,
+    "discounted_price": 240
+  },
+  {
+    "id": "total-protein-ayzal-lab-479",
+    "name": "Total Protein",
+    "description": "Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s)",
+    "price": 400,
+    "discounted_price": 240
+  },
+  {
+    "id": "total-rbcs-ayzal-lab-480",
+    "name": "Total RBCs",
+    "description": "Hematology 3cc EDTA WHOLE BLOOD After 24 hours(s)",
+    "price": 300,
+    "discounted_price": 180
+  },
+  {
+    "id": "toxoplasma-igg-ayzal-lab-481",
+    "name": "Toxoplasma IgG",
+    "description": "Special Chemistry Lithium Heparin Vail After 1 day(s)",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "toxoplasma-igm-ayzal-lab-482",
+    "name": "Toxoplasma IgM",
+    "description": "Special Chemistry Lithium Heparin Vail After 1 day(s)",
+    "price": 2200,
+    "discounted_price": 1320
+  },
+  {
+    "id": "tpha-ayzal-lab-483",
+    "name": "TPHA",
+    "description": "Chemical Pathology 3-5cc Clotted Blood or Serum After 1 day(s)",
+    "price": 1700,
+    "discounted_price": 1020
+  },
+  {
+    "id": "tracheal-tube-secretion-c-s-ayzal-lab-484",
+    "name": "Tracheal Tube Secretion C/S",
+    "description": "Microbiology Tracheal TIP After 3 day(s)",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "tracheal-tube-secretion-for-gram-stain-ayzal-lab-485",
+    "name": "Tracheal Tube Secretion for Gram Stain",
+    "description": "Microbiology Fluid After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "troponin-i-high-sensitive-ayzal-lab-486",
+    "name": "Troponin-I (High Sensitive)",
+    "description": "Chemical Pathology 3cc EDTA WHOLE BLOOD After 8 hours(s)",
+    "price": 2550,
+    "discounted_price": 1530
+  },
+  {
+    "id": "troponin-t-ayzal-lab-487",
+    "name": "Troponin-T",
+    "description": "Chemical Pathology 3cc EDTA WHOLE BLOOD After 8 hours(s)",
+    "price": 2300,
+    "discounted_price": 1380
+  },
+  {
+    "id": "tsh-thyroid-stimulating-hormone-ayzal-lab-488",
+    "name": "TSH (Thyroid Stimulating Hormone)",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum Same day",
+    "price": 1450,
+    "discounted_price": 870
+  },
+  {
+    "id": "typhidot-igm-igg-screening-ayzal-lab-489",
+    "name": "Typhidot IgM ,IgG (Screening)",
+    "description": "Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s)",
+    "price": 1200,
+    "discounted_price": 720
+  },
+  {
+    "id": "urea-ayzal-lab-490",
+    "name": "Urea",
+    "description": "Chemical Pathology 3-5cc Clotted Blood or Serum After 8 hours(s)",
+    "price": 400,
+    "discounted_price": 240
+  },
+  {
+    "id": "urea-24-hrs-urine-ayzal-lab-491",
+    "name": "Urea (24 Hrs Urine)",
+    "description": "Chemical Pathology 24 Hrs Urine After 1 day(s)",
+    "price": 500,
+    "discounted_price": 300
+  },
+  {
+    "id": "urea-urine-spot-random-ayzal-lab-492",
+    "name": "Urea Urine (Spot / Random)",
+    "description": "Chemical Pathology Urine (Random/spot) After 1 day(s)",
+    "price": 600,
+    "discounted_price": 360
+  },
+  {
+    "id": "urethral-swab-for-c-s-ayzal-lab-493",
+    "name": "Urethral Swab For C/S",
+    "description": "Microbiology Swab After 3 day(s)",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "uric-acid-24-hrs-urine-ayzal-lab-494",
+    "name": "Uric Acid (24 Hrs Urine)",
+    "description": "Chemical Pathology 24 Hrs Urine After 1 day(s)",
+    "price": 700,
+    "discounted_price": 420
+  },
+  {
+    "id": "uric-acid-urine-ayzal-lab-495",
+    "name": "Uric Acid (Urine)",
+    "description": "Chemical Pathology Urine (Random/spot) After 1 day(s)",
+    "price": 700,
+    "discounted_price": 420
+  },
+  {
+    "id": "urine-complete-examination-urine-c-e-ayzal-lab-496",
+    "name": "Urine Complete Examination, Urine C/E",
+    "description": "Microbiology First Morning mid stream Urine After 24 hours(s)",
+    "price": 500,
+    "discounted_price": 300,
+    "pinned": true
+  },
+  {
+    "id": "urine-creatinine-spot-ayzal-lab-497",
+    "name": "Urine Creatinine (Spot)",
+    "description": "Chemical Pathology Urine (Random/spot) After 8 hours(s)",
+    "price": 700,
+    "discounted_price": 420
+  },
+  {
+    "id": "urine-for-afb-c-s-ayzal-lab-498",
+    "name": "Urine For AFB C/S",
+    "description": "Microbiology Urine After 70 day(s)",
+    "price": 5100,
+    "discounted_price": 3060
+  },
+  {
+    "id": "urine-for-afb-stain-zn-stain-ayzal-lab-499",
+    "name": "Urine For AFB Stain / Zn Stain",
+    "description": "Microbiology Urine After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "urine-for-bile-pigment-ayzal-lab-500",
+    "name": "Urine For Bile Pigment",
+    "description": "Chemical Pathology Urine (Random/spot) After 1 day(s)",
+    "price": 700,
+    "discounted_price": 420
+  },
+  {
+    "id": "urine-for-c-s-ayzal-lab-501",
+    "name": "Urine For C/S",
+    "description": "Microbiology First Morning mid stream Urine After 3 day(s)",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "urine-for-cytology-ayzal-lab-502",
+    "name": "Urine For Cytology",
+    "description": "Microbiology Urine (Random/spot) After 1 hours(s)",
+    "price": 1600,
+    "discounted_price": 960
+  },
+  {
+    "id": "urine-for-gram-stain-ayzal-lab-503",
+    "name": "Urine for Gram Stain",
+    "description": "Microbiology Urine (Random/spot) After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "urine-for-ketones-ayzal-lab-504",
+    "name": "Urine for Ketones",
+    "description": "Special Chemistry 24 Hrs Urine After 24 hours(s)",
+    "price": 600,
+    "discounted_price": 360
+  },
+  {
+    "id": "urine-for-protein-ayzal-lab-505",
+    "name": "Urine for Protein",
+    "description": "Chemical Pathology Urine (Random/spot) After 8 hours(s)",
+    "price": 400,
+    "discounted_price": 240
+  },
+  {
+    "id": "urine-for-rbc-ayzal-lab-506",
+    "name": "Urine For RBC",
+    "description": "Microbiology Urine (Random/spot) After 24 hours(s)",
+    "price": 200,
+    "discounted_price": 120
+  },
+  {
+    "id": "urine-for-sugar-ayzal-lab-507",
+    "name": "Urine for Sugar",
+    "description": "Chemical Pathology Urine (Random/spot) After 8 hours(s)",
+    "price": 800,
+    "discounted_price": 480
+  },
+  {
+    "id": "urine-pregnancy-test-ayzal-lab-508",
+    "name": "Urine Pregnancy Test",
+    "description": "Microbiology Urine (Random/spot) After 24 hours(s)",
+    "price": 400,
+    "discounted_price": 240
+  },
+  {
+    "id": "urine-protein-spot-ayzal-lab-509",
+    "name": "Urine Protein (Spot)",
+    "description": "Chemical Pathology Urine (Random/spot) After 8 hours(s)",
+    "price": 600,
+    "discounted_price": 360
+  },
+  {
+    "id": "urine-protein-creatinine-ratio-ayzal-lab-510",
+    "name": "Urine Protein Creatinine Ratio",
+    "description": "Special Chemistry Urine (Random/spot) After 1 day(s)",
+    "price": 1300,
+    "discounted_price": 780
+  },
+  {
+    "id": "urine-uric-acid-creatinine-ratio-ayzal-lab-511",
+    "name": "Urine Uric Acid / Creatinine Ratio",
+    "description": "Chemical Pathology Urine (Random/spot) After 1 day(s)",
+    "price": 1300,
+    "discounted_price": 780
+  },
+  {
+    "id": "vdrl-quantitative-ayzal-lab-512",
+    "name": "VDRL (Quantitative)",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 1 day(s)",
+    "price": 1900,
+    "discounted_price": 1140
+  },
+  {
+    "id": "vitamin-b12-ayzal-lab-513",
+    "name": "Vitamin B12",
+    "description": "Special Chemistry 3-5cc Clotted Blood or Serum After 1 day(s)",
+    "price": 2000,
+    "discounted_price": 1200
+  },
+  {
+    "id": "vitreous-fluid-for-afb-c-s-ayzal-lab-514",
+    "name": "Vitreous Fluid For AFB C/S",
+    "description": "Microbiology Vitreous Fluid After 70 day(s)",
+    "price": 5100,
+    "discounted_price": 3060
+  },
+  {
+    "id": "vitreous-fluid-for-c-s-ayzal-lab-515",
+    "name": "Vitreous Fluid For C/S",
+    "description": "Microbiology Vitreous Fluid After 3 day(s)",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "vitreous-fluid-for-gram-stain-ayzal-lab-516",
+    "name": "Vitreous Fluid For Gram Stain",
+    "description": "Microbiology Vitreous Fluid After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "vitreous-for-afb-stain-zn-stain-ayzal-lab-517",
+    "name": "Vitreous for AFB Stain / Zn Stain",
+    "description": "Microbiology Vitreous Fluid After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "vldl-cholesterol-ayzal-lab-518",
+    "name": "VLDL (Cholesterol)",
+    "description": "Chemical Pathology 3- 5cc Clotted Blood or Serum(Fasting) After 8 hours(s)",
+    "price": 400,
+    "discounted_price": 240
+  },
+  {
+    "id": "wbc-tlc-ayzal-lab-519",
+    "name": "WBC (TLC)",
+    "description": "Hematology 3cc EDTA WHOLE BLOOD After 1 day(s)",
+    "price": 300,
+    "discounted_price": 180
+  },
+  {
+    "id": "wbcs-morphology-ayzal-lab-520",
+    "name": "WBCs Morphology",
+    "description": "Hematology 3cc EDTA WHOLE BLOOD After 24 hours(s)",
+    "price": 600,
+    "discounted_price": 360
+  },
+  {
+    "id": "wound-aspirate-for-afb-stain-zn-stain-ayzal-lab-521",
+    "name": "Wound Aspirate For AFB Stain / Zn Stain",
+    "description": "Microbiology Wound Swab After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "wound-swab-for-afb-smear-ayzal-lab-522",
+    "name": "Wound Swab for AFB Smear",
+    "description": "Microbiology Wound Swab After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "wound-swab-for-c-s-ayzal-lab-523",
+    "name": "Wound Swab For C/S",
+    "description": "Microbiology Wound Swab After 3 day(s)",
+    "price": 2350,
+    "discounted_price": 1410
+  },
+  {
+    "id": "wound-swab-for-gram-stain-ayzal-lab-524",
+    "name": "Wound Swab For Gram Stain",
+    "description": "Microbiology Wound Swab After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  },
+  {
+    "id": "zinc-level-blood-ayzal-lab-525",
+    "name": "Zinc Level (Blood)",
+    "description": "Special Chemistry Lithium Heparin Vail After 1 day(s)",
+    "price": 3200,
+    "discounted_price": 1920
+  },
+  {
+    "id": "zn-staining-ayzal-lab-526",
+    "name": "Zn Staining",
+    "description": "Microbiology Body Fluid After 24 hours(s)",
+    "price": 550,
+    "discounted_price": 330
+  }
+]
