@@ -1,0 +1,8 @@
+[build]
+builder = "NIXPACKS"
+
+[deploy]
+startCommand = "npm start"
+# If your Railway service points to the root, we need to cd into Backend
+# However, it is RECOMMENDED to set the "Root Directory" to "/Backend" in Railway Settings.
+# If you cannot do that, change startCommand to: "cd Backend && npm start"

@@ -14,7 +14,14 @@ const chatRoutes = require('./routes/chatRoutes');
 const leadRoutes = require('./routes/leadRoutes');
 
 const app = express();
+
+// Railway injects a PORT env var. We MUST use it and NOT overwrite it with .env
 const PORT = process.env.PORT || 8000;
+
+console.log('🚀 [STARTUP] Initializing server...');
+console.log('🚀 [STARTUP] Environment PORT:', process.env.PORT);
+console.log('🚀 [STARTUP] Final Resolved PORT:', PORT);
+console.log('🚀 [STARTUP] NODE_ENV:', process.env.NODE_ENV);
 
 // ✅ Clean CORS origins - NO trailing spaces!
 const allowedOrigins = [
