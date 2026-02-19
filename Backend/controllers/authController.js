@@ -21,20 +21,21 @@ const generateVerificationCode = () => {
  */
 exports.signup = async (req, res) => {
   try {
-    const { name, mobile, password } = req.body;
-    console.log('🔵 [SIGNUP] Request received:', { name, mobile, hasPassword: !!password });
+    const { name, mobile, identifier, password } = req.body;
+    const finalMobile = mobile || identifier;
+    console.log('🔵 [SIGNUP] Request received:', { name, mobile: finalMobile, hasPassword: !!password });
 
     if (!name || !password) {
       return res.status(400).json({ message: 'Name and password are required' });
     }
 
-    if (!mobile) {
+    if (!finalMobile) {
       return res.status(400).json({ message: 'Mobile number is required' });
     }
 
     // Check if user already exists
     console.log('🔵 [SIGNUP] Checking if user exists...');
-    const existingUser = await User.findOne({ mobile });
+    const existingUser = await User.findOne({ mobile: finalMobile });
     if (existingUser) {
       return res.status(400).json({ message: 'Mobile number already registered' });
     }
@@ -46,7 +47,7 @@ exports.signup = async (req, res) => {
 
     // Create or update pending user
     console.log('🔵 [SIGNUP] Saving pending user...');
-    let pendingUser = await PendingUser.findOne({ mobile });
+    let pendingUser = await PendingUser.findOne({ mobile: finalMobile });
     if (pendingUser) {
       pendingUser.name = name;
       pendingUser.password = password;
@@ -57,7 +58,7 @@ exports.signup = async (req, res) => {
     } else {
       pendingUser = new PendingUser({
         name,
-        mobile,
+        mobile: finalMobile,
         password,
         verificationCode,
         verificationCodeExpiry,
@@ -70,13 +71,13 @@ exports.signup = async (req, res) => {
     let smsSent = false;
     console.log('🔵 [SIGNUP] Sending SMS...');
     try {
-      await messageService.sendVerificationSms(mobile, verificationCode);
+      await messageService.sendVerificationSms(finalMobile, verificationCode);
       smsSent = true;
-      console.log('✅ [SIGNUP] SMS sent successfully to:', mobile);
-      console.log('📱 [TERMINAL LOG] Verification Code for', mobile, ':', verificationCode);
+      console.log('✅ [SIGNUP] SMS sent successfully to:', finalMobile);
+      console.log('📱 [TERMINAL LOG] Verification Code for', finalMobile, ':', verificationCode);
     } catch (smsError) {
       console.error('❌ [SIGNUP] Failed to send SMS:', smsError.message);
-      console.log('📱 [TERMINAL LOG] Verification Code for', mobile, ':', verificationCode);
+      console.log('📱 [TERMINAL LOG] Verification Code for', finalMobile, ':', verificationCode);
     }
 
     res.status(201).json({
@@ -97,20 +98,21 @@ exports.signup = async (req, res) => {
  */
 exports.login = async (req, res) => {
   try {
-    const { mobile, password } = req.body;
+    const { mobile, identifier, password } = req.body;
+    const finalMobile = mobile || identifier;
 
-    console.log('🔵 [BACKEND] Login request received:', { mobile, hasPassword: !!password });
+    console.log('🔵 [BACKEND] Login request received:', { mobile: finalMobile, hasPassword: !!password });
 
     if (!password) {
       return res.status(400).json({ message: 'Password is required' });
     }
 
-    if (!mobile) {
+    if (!finalMobile) {
       return res.status(400).json({ message: 'Mobile number is required' });
     }
 
     // Find user by mobile
-    const user = await User.findOne({ mobile });
+    const user = await User.findOne({ mobile: finalMobile });
 
     if (!user) {
       return res.status(401).json({ message: 'Invalid credentials' });
@@ -147,19 +149,20 @@ exports.login = async (req, res) => {
  */
 exports.verifyMobile = async (req, res) => {
   try {
-    const { mobile, code } = req.body;
+    const { mobile, identifier, code } = req.body;
+    const finalMobile = mobile || identifier;
 
-    if (!mobile || !code) {
+    if (!finalMobile || !code) {
       return res.status(400).json({ message: 'Mobile number and verification code are required' });
     }
 
     // Convert code to string to ensure proper comparison
     const codeStr = String(code).trim();
 
-    const pendingUser = await PendingUser.findOne({ mobile });
+    const pendingUser = await PendingUser.findOne({ mobile: finalMobile });
     if (!pendingUser) {
       // Check if user is already verified and exists in main User collection
-      const existingUser = await User.findOne({ mobile });
+      const existingUser = await User.findOne({ mobile: finalMobile });
       if (existingUser) {
         return res.status(400).json({ message: 'Account already verified and created.' });
       }
@@ -217,16 +220,17 @@ exports.verifyMobile = async (req, res) => {
  */
 exports.resendVerificationCode = async (req, res) => {
   try {
-    const { mobile } = req.body;
+    const { mobile, identifier } = req.body;
+    const finalMobile = mobile || identifier;
 
-    if (!mobile) {
+    if (!finalMobile) {
       return res.status(400).json({ message: 'Mobile number is required' });
     }
 
-    const pendingUser = await PendingUser.findOne({ mobile });
+    const pendingUser = await PendingUser.findOne({ mobile: finalMobile });
     if (!pendingUser) {
       // Check if already in main User collection
-      const existingUser = await User.findOne({ mobile });
+      const existingUser = await User.findOne({ mobile: finalMobile });
       if (existingUser) {
         return res.status(400).json({ message: 'Account already verified.' });
       }
@@ -295,13 +299,14 @@ exports.getCurrentUser = async (req, res) => {
  */
 exports.requestPasswordReset = async (req, res) => {
   try {
-    const { mobile } = req.body;
+    const { mobile, identifier } = req.body;
+    const finalMobile = mobile || identifier;
 
-    if (!mobile) {
+    if (!finalMobile) {
       return res.status(400).json({ message: 'Mobile number is required' });
     }
 
-    const user = await User.findOne({ mobile });
+    const user = await User.findOne({ mobile: finalMobile });
     if (!user) {
       // Don't reveal if user exists for security
       return res.json({
@@ -351,13 +356,14 @@ exports.requestPasswordReset = async (req, res) => {
  */
 exports.verifyPasswordResetCode = async (req, res) => {
   try {
-    const { mobile, code } = req.body;
+    const { mobile, identifier, code } = req.body;
+    const finalMobile = mobile || identifier;
 
-    if (!mobile || !code) {
+    if (!finalMobile || !code) {
       return res.status(400).json({ message: 'Mobile and reset code are required' });
     }
 
-    const user = await User.findOne({ mobile });
+    const user = await User.findOne({ mobile: finalMobile });
     if (!user) {
       return res.status(404).json({ message: 'User not found' });
     }
@@ -382,9 +388,10 @@ exports.verifyPasswordResetCode = async (req, res) => {
  */
 exports.resetPassword = async (req, res) => {
   try {
-    const { mobile, code, newPassword } = req.body;
+    const { mobile, identifier, code, newPassword } = req.body;
+    const finalMobile = mobile || identifier;
 
-    if (!mobile || !code || !newPassword) {
+    if (!finalMobile || !code || !newPassword) {
       return res.status(400).json({ message: 'Mobile, reset code, and new password are required' });
     }
 
@@ -392,7 +399,7 @@ exports.resetPassword = async (req, res) => {
       return res.status(400).json({ message: 'Password must be at least 6 characters long' });
     }
 
-    const user = await User.findOne({ mobile });
+    const user = await User.findOne({ mobile: finalMobile });
     if (!user) {
       return res.status(404).json({ message: 'User not found' });
     }

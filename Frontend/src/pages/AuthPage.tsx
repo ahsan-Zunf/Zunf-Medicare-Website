@@ -73,7 +73,7 @@ function AuthForm() {
         }
 
         const fullMobile = countryCode + mobile;
-        const result = await signup("", "", fullMobile, password); // Changed name to "" and email to ""
+        const result = await signup(name, "", fullMobile, password);
         setVerifyingMobile(fullMobile);
         setShowVerification(true);
         if (result.smsSent) {
