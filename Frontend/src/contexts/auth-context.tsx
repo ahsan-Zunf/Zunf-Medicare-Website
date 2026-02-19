@@ -12,13 +12,14 @@ export interface User {
 interface AuthContextType {
   user: User | null;
   token: string | null;
-  login: (mobile: string, password: string) => Promise<void>;
-  signup: (name: string, mobile: string, password: string) => Promise<{ smsSent: boolean }>;
+  login: (identifier: string, password: string) => Promise<void>;
+  signup: (name: string, email: string, mobile: string, password: string) => Promise<{ emailSent: boolean; smsSent: boolean }>;
+  verifyEmail: (email: string, code: string) => Promise<void>;
   verifyMobile: (mobile: string, code: string) => Promise<void>;
-  resendVerificationCode: (mobile: string) => Promise<{ smsSent: boolean }>;
-  requestPasswordReset: (mobile: string) => Promise<{ smsSent: boolean }>;
-  verifyPasswordResetCode: (mobile: string, code: string) => Promise<void>;
-  resetPassword: (mobile: string, code: string, newPassword: string) => Promise<void>;
+  resendVerificationCode: (identifier: string) => Promise<{ emailSent: boolean; smsSent: boolean }>;
+  requestPasswordReset: (identifier: string) => Promise<{ emailSent: boolean; smsSent: boolean }>;
+  verifyPasswordResetCode: (identifier: string, code: string) => Promise<void>;
+  resetPassword: (identifier: string, code: string, newPassword: string) => Promise<void>;
   updateProfile: (data: Partial<User>) => Promise<void>;
   logout: () => void;
   isAuthenticated: boolean;
@@ -53,14 +54,15 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     setIsLoading(false);
   }, []);
 
-  const login = async (mobile: string, password: string) => {
+  const login = async (identifier: string, password: string) => {
     try {
       // Admin Bypass
-      if ((mobile === "admin" || mobile === "+923350952023") && password === "admin123") {
+      if ((identifier === "admin" || identifier === "+923350952023" || identifier === "admin@zunf.com") && password === "admin123") {
         console.log('✅ [AUTH] Admin bypass login successful');
         const adminUser = {
           id: "admin-bypass-id",
           name: "Administrator",
+          email: "admin@zunf.com",
           mobile: "+920000000000",
           isMobileVerified: true
         };
@@ -73,7 +75,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         return;
       }
 
-      const requestBody = { mobile, password };
+      const requestBody = { identifier, password };
       console.log('🔵 [AUTH] Attempting login to:', `${API_BASE_URL}/auth/login`);
       console.log('🔵 [AUTH] Request body:', requestBody);
       const response = await fetch(`${API_BASE_URL}/auth/login`, {
@@ -108,11 +110,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
   };
 
-  const signup = async (name: string, mobile: string, password: string) => {
+  const signup = async (name: string, email: string, mobile: string, password: string) => {
     try {
       console.log('🔵 [AUTH] Attempting signup to:', `${API_BASE_URL}/auth/signup`);
 
-      // Create an AbortController with timeout (increased to 20 seconds to allow SMS sending)
+      // Create an AbortController with timeout (increased to 20 seconds to allow SMS/Email sending)
       const controller = new AbortController();
       const timeoutId = setTimeout(() => controller.abort(), 20000); // 20 second timeout
 
@@ -121,7 +123,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ name, mobile, password }),
+        body: JSON.stringify({ name, email, mobile, password }),
         signal: controller.signal,
       });
 
@@ -140,8 +142,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       const data = await response.json();
       console.log('✅ [AUTH] Signup successful:', data);
 
-      // Return SMS status so frontend can show appropriate message
-      return { smsSent: data.smsSent !== false };
+      // Return status so frontend can show appropriate message
+      return {
+        emailSent: data.emailSent !== false,
+        smsSent: data.smsSent !== false
+      };
     } catch (error: any) {
       console.error('🔴 [AUTH] Signup catch error:', error);
 
@@ -153,6 +158,34 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
       if (error.message.includes("fetch") || error.name === "TypeError" || error.message.includes("Failed to fetch")) {
         throw new Error("Failed to connect to server. Please check your internet connection or try again later.");
+      }
+      throw error;
+    }
+  };
+
+  const verifyEmail = async (email: string, code: string) => {
+    try {
+      const response = await fetch(`${API_BASE_URL}/auth/verify-email`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email, code }),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({ message: "Network error" }));
+        throw new Error(errorData.message || "Verification failed");
+      }
+
+      const data = await response.json();
+      setToken(data.token);
+      setUser(data.user);
+      localStorage.setItem(TOKEN_KEY, data.token);
+      localStorage.setItem(USER_KEY, JSON.stringify(data.user));
+    } catch (error: any) {
+      if (error.message.includes("fetch") || error.name === "TypeError") {
+        throw new Error("Failed to connect to server. Please check if the backend is running on " + API_BASE_URL);
       }
       throw error;
     }
@@ -186,14 +219,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
   };
 
-  const resendVerificationCode = async (mobile: string) => {
+  const resendVerificationCode = async (identifier: string) => {
     try {
       const response = await fetch(`${API_BASE_URL}/auth/resend-verification`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ mobile }),
+        body: JSON.stringify({ identifier }),
       });
 
       if (!response.ok) {
@@ -202,7 +235,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       }
 
       const data = await response.json();
-      return { smsSent: data.smsSent !== false };
+      return {
+        emailSent: data.emailSent !== false,
+        smsSent: data.smsSent !== false
+      };
     } catch (error: any) {
       if (error.message.includes("fetch") || error.name === "TypeError") {
         throw new Error("Failed to connect to server. Please check if the backend is running on " + API_BASE_URL);
@@ -211,14 +247,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
   };
 
-  const requestPasswordReset = async (mobile: string) => {
+  const requestPasswordReset = async (identifier: string) => {
     try {
       const response = await fetch(`${API_BASE_URL}/auth/forgot-password`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ mobile }),
+        body: JSON.stringify({ identifier }),
       });
 
       if (!response.ok) {
@@ -227,7 +263,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       }
 
       const data = await response.json();
-      return { smsSent: data.smsSent !== false };
+      return {
+        emailSent: data.emailSent !== false,
+        smsSent: data.smsSent !== false
+      };
     } catch (error: any) {
       if (error.message.includes("fetch") || error.name === "TypeError") {
         throw new Error("Failed to connect to server. Please check if the backend is running on " + API_BASE_URL);
@@ -236,14 +275,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
   };
 
-  const verifyPasswordResetCode = async (mobile: string, code: string) => {
+  const verifyPasswordResetCode = async (identifier: string, code: string) => {
     try {
       const response = await fetch(`${API_BASE_URL}/auth/verify-reset-code`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ mobile, code }),
+        body: JSON.stringify({ identifier, code }),
       });
 
       if (!response.ok) {
@@ -260,14 +299,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
   };
 
-  const resetPassword = async (mobile: string, code: string, newPassword: string) => {
+  const resetPassword = async (identifier: string, code: string, newPassword: string) => {
     try {
       const response = await fetch(`${API_BASE_URL}/auth/reset-password`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ mobile, code, newPassword }),
+        body: JSON.stringify({ identifier, code, newPassword }),
       });
 
       if (!response.ok) {
@@ -314,6 +353,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         token,
         login,
         signup,
+        verifyEmail,
         verifyMobile,
         resendVerificationCode,
         requestPasswordReset,

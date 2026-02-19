@@ -24,6 +24,7 @@ export interface LabTestsResponse {
 
 export interface OrderCustomer {
   name: string;
+  email: string;
   mobile: string;
   age: string;
   city: string;

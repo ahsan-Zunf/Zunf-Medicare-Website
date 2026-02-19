@@ -16,7 +16,7 @@ function AuthForm() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const { login, signup, verifyEmail, resendVerificationCode, isAuthenticated } = useAuth();
-  
+
   const [isLogin, setIsLogin] = useState(true);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -50,7 +50,7 @@ function AuthForm() {
         await login(email, password);
         router.push("/");
       } else {
-        const result = await signup(email, password);
+        const result = await signup("", email, "", password);
         setShowVerification(true);
         if (result.emailSent) {
           setSuccess("Account created! Please check your email for verification code.");

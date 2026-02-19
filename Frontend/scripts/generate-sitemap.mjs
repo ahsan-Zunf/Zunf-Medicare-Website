@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-const BASE_URL = 'https://zunfmedicare.com';
+const BASE_URL = process.env.VITE_SITE_URL || 'https://newzunf.netlify.app';
 
 const pages = [
   '',

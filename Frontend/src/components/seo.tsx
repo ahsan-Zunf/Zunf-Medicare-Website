@@ -10,12 +10,12 @@ interface SEOProps {
 
 export const SEO: React.FC<SEOProps> = ({ title, description, canonicalPath }) => {
     const location = useLocation();
-    const siteUrl = 'https://zunfmedicare.com'; // Adjust this to the actual production URL
+    const BASE_URL = import.meta.env.VITE_SITE_URL || 'https://newzunf.netlify.app'; // Updated to provided Netlify URL
 
     // Sanitize path: remove trailing slashes, ensuring the root '/' remains correctly handled
     const rawPath = canonicalPath || location.pathname;
     const sanitizedPath = rawPath === '/' ? '/' : rawPath.replace(/\/$/, "");
-    const canonicalUrl = `${siteUrl}${sanitizedPath}`;
+    const canonicalUrl = `${BASE_URL}${sanitizedPath}`;
 
     return (
         <Helmet>
