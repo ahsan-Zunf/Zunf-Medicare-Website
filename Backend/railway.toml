@@ -1,0 +1,6 @@
+[build]
+builder = "NIXPACKS"
+
+[deploy]
+startCommand = "node server.js"
+# Railway defaults to port 8080 or 3000, we log our port on startup.

@@ -1,9 +1,0 @@
-[build]
-builder = "nixpacks"
-
-[[services]]
-name = "backend"
-source = "Backend"
-
-[services.deploy]
-startCommand = "node server.js"
