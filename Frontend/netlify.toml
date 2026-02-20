@@ -1,47 +1,9 @@
 [build]
   command = "npm run build"
-  publish = "Frontend/dist"  # ✅ Match your actual build output
+  publish = "dist"
 
-# Static assets - serve directly (NO redirect to index.html)
-[[redirects]]
-  from = "/assets/*"
-  to = "/assets/:splat"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/*.js"
-  to = "/:splat.js"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/*.css"
-  to = "/:splat.css"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/*.png"
-  to = "/:splat.png"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/*.jpg"
-  to = "/:splat.jpg"
-  status = 200
-  force = true
-
-# SPA fallback - React Router handles these paths
+# React Router SPA fallback (catch-all LAST)
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-
-# Optional: Security headers (avoid wildcard CORS with credentials)
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Frame-Options = "DENY"
-    X-Content-Type-Options = "nosniff"
