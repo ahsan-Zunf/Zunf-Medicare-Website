@@ -28,6 +28,8 @@ const allowedOrigins = [
   'http://localhost:5173',
   'http://localhost:3000',
   'https://newzunf.netlify.app',
+  'https://zunfmedicare.com',
+  'https://www.zunfmedicare.com',
   process.env.FRONTEND_URL?.trim()
 ].filter(Boolean);
 
