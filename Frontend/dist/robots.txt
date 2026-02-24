@@ -1,8 +1,8 @@
 User-agent: *
+Allow: /
 Disallow: /admin
 Disallow: /health-card/auth
 Disallow: /health-card/form
 Disallow: /health-card/view
 
 Sitemap: https://zunfmedicare.com/sitemap.xml
-
