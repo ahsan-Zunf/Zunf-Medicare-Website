@@ -19,36 +19,42 @@ const app = express();
 const PORT = process.env.PORT || 8000;
 
 console.log('🚀 [STARTUP] Initializing server...');
-console.log('🚀 [STARTUP] Environment PORT:', process.env.PORT);
-console.log('🚀 [STARTUP] Final Resolved PORT:', PORT);
-console.log('🚀 [STARTUP] NODE_ENV:', process.env.NODE_ENV);
 
-// ✅ Clean CORS origins - NO trailing spaces!
+// ✅ Clean CORS origins - Explicitly adding your domains
 const allowedOrigins = [
   'http://localhost:5173',
   'http://localhost:3000',
   'https://newzunf.netlify.app',
   'https://zunfmedicare.com',
   'https://www.zunfmedicare.com',
-  process.env.FRONTEND_URL?.trim()
-].filter(Boolean);
+  'https://zunf-medicare-website.up.railway.app' // Railway internal domain
+];
 
-// ✅ CORS middleware
+// Add FRONTEND_URL from environment variables if it exists
+if (process.env.FRONTEND_URL) {
+  allowedOrigins.push(process.env.FRONTEND_URL.trim());
+}
+
+// ✅ Improved CORS middleware to handle Preflight (OPTIONS) correctly
 app.use(cors({
   origin: (origin, callback) => {
-    // Allow requests with no origin (mobile apps, curl, etc.)
+    // Allow requests with no origin (like mobile apps or curl)
     if (!origin) return callback(null, true);
 
-    if (allowedOrigins.includes(origin) || allowedOrigins.includes('*')) {
+    // Check if the origin is in our allowed list
+    const isAllowed = allowedOrigins.some(allowed => origin === allowed || origin.endsWith(allowed));
+    
+    if (isAllowed) {
       return callback(null, true);
+    } else {
+      console.warn(`🚫 CORS blocked: ${origin}`);
+      return callback(new Error('Not allowed by CORS'));
     }
-    console.warn(`🚫 CORS blocked: ${origin}`);
-    return callback(new Error('Not allowed by CORS'));
   },
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
-  exposedHeaders: ['Content-Range', 'X-Content-Range']
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'Accept'],
+  optionsSuccessStatus: 200 // Some legacy browsers choke on 204
 }));
 
 // ✅ Body parsers
@@ -63,14 +69,12 @@ if (process.env.NODE_ENV !== 'production') {
   });
 }
 
-// ✅ Health check (public - no auth needed)
+// ✅ Health check
 app.get('/health', (req, res) => {
   res.json({
     status: 'ok',
     service: 'zunf-medicare-backend',
-    uptime: process.uptime(),
-    timestamp: new Date().toISOString(),
-    env: process.env.NODE_ENV || 'development'
+    timestamp: new Date().toISOString()
   });
 });
 
@@ -86,46 +90,24 @@ app.use('/leads', leadRoutes);
 
 // ✅ 404 handler
 app.use((req, res) => {
-  console.warn(`⚠️  404: ${req.method} ${req.url}`);
   res.status(404).json({ error: 'Route not found', path: req.url });
 });
 
 // ✅ Global error handler
 app.use((err, req, res, next) => {
   console.error('💥 [ERROR]', err.stack);
-
-  // Don't leak error details in production
   const isProd = process.env.NODE_ENV === 'production';
-
   res.status(err.status || 500).json({
-    error: isProd ? 'Internal server error' : err.message,
-    ...(isProd ? {} : { stack: err.stack })
+    error: isProd ? 'Internal server error' : err.message
   });
-});
-
-// ✅ Graceful shutdown
-process.on('SIGTERM', () => {
-  console.log('🛑 [SERVER] SIGTERM received, shutting down gracefully');
-  process.exit(0);
-});
-
-process.on('unhandledRejection', (reason, promise) => {
-  console.error('💥 [UNHANDLED REJECTION]', reason);
-});
-
-process.on('uncaughtException', (err) => {
-  console.error('💥 [UNCAUGHT EXCEPTION]', err);
-  setTimeout(() => process.exit(1), 1000);
 });
 
 // ✅ Start server
 connectDB()
   .then(() => {
     console.log('✅ [SERVER] Database connected');
-
     app.listen(PORT, '0.0.0.0', () => {
-      console.log(`🚀 [SERVER] Running on port ${PORT} (PID: ${process.pid})`);
-      console.log(`🔗 Public URL: https://zunf-medicare-website.up.railway.app`);
+      console.log(`🚀 [SERVER] Running on port ${PORT}`);
     });
   })
   .catch((err) => {
