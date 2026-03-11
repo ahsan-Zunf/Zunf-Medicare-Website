@@ -15,7 +15,16 @@ const leadRoutes = require('./routes/leadRoutes');
 
 const app = express();
 
-// ✅ Google Cloud Run aur Railway dono ke liye 8080 best hai
+// ✅ SEO FIX: Redirect www to non-www
+app.use((req, res, next) => {
+  if (req.headers.host && req.headers.host.startsWith('www.')) {
+    const newHost = req.headers.host.slice(4);
+    return res.redirect(301, `https://${newHost}${req.originalUrl}`);
+  }
+  next();
+});
+
+// ✅ Google Cloud Run uses 8080 by default
 const PORT = process.env.PORT || 8080;
 
 console.log('🚀 [STARTUP] Initializing server...');
@@ -27,7 +36,7 @@ const allowedOrigins = [
   'https://newzunf.netlify.app',
   'https://zunfmedicare.com',
   'https://www.zunfmedicare.com',
-  'https://zunf-medicare-website-378538196369.europe-west1.run.app' // Naya Google Cloud URL
+  'https://zunf-medicare-website-378538196369.europe-west1.run.app' // Google Cloud URL
 ];
 
 if (process.env.FRONTEND_URL) {
@@ -61,7 +70,7 @@ if (process.env.NODE_ENV !== 'production') {
   });
 }
 
-// ✅ Health check (Google Cloud needs this to know app is alive)
+// ✅ Health check (Google Cloud needs this)
 app.get('/health', (req, res) => {
   res.json({
     status: 'ok',
@@ -91,11 +100,11 @@ app.use((err, req, res, next) => {
   });
 });
 
-// ✅ Database connect hone ke baad hi server start hoga
+// ✅ Start server
 connectDB()
   .then(() => {
     console.log('✅ [SERVER] Database connected');
-    // '0.0.0.0' zaroori hai Google Cloud ke liye
+    // '0.0.0.0' is mandatory for Google Cloud Run
     app.listen(PORT, '0.0.0.0', () => {
       console.log(`🚀 [SERVER] Running on port ${PORT}`);
     });
