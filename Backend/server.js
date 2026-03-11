@@ -15,35 +15,29 @@ const leadRoutes = require('./routes/leadRoutes');
 
 const app = express();
 
-// Railway injects a PORT env var. We MUST use it and NOT overwrite it with .env
-const PORT = process.env.PORT || 8000;
+// ✅ Google Cloud Run aur Railway dono ke liye 8080 best hai
+const PORT = process.env.PORT || 8080;
 
 console.log('🚀 [STARTUP] Initializing server...');
 
-// ✅ Clean CORS origins - Explicitly adding your domains
+// ✅ Clean CORS origins
 const allowedOrigins = [
   'http://localhost:5173',
   'http://localhost:3000',
   'https://newzunf.netlify.app',
   'https://zunfmedicare.com',
   'https://www.zunfmedicare.com',
-  'https://zunf-medicare-website.up.railway.app' // Railway internal domain
+  'https://zunf-medicare-website-378538196369.europe-west1.run.app' // Naya Google Cloud URL
 ];
 
-// Add FRONTEND_URL from environment variables if it exists
 if (process.env.FRONTEND_URL) {
   allowedOrigins.push(process.env.FRONTEND_URL.trim());
 }
 
-// ✅ Improved CORS middleware to handle Preflight (OPTIONS) correctly
 app.use(cors({
   origin: (origin, callback) => {
-    // Allow requests with no origin (like mobile apps or curl)
     if (!origin) return callback(null, true);
-
-    // Check if the origin is in our allowed list
     const isAllowed = allowedOrigins.some(allowed => origin === allowed || origin.endsWith(allowed));
-    
     if (isAllowed) {
       return callback(null, true);
     } else {
@@ -54,14 +48,12 @@ app.use(cors({
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'Accept'],
-  optionsSuccessStatus: 200 // Some legacy browsers choke on 204
+  optionsSuccessStatus: 200
 }));
 
-// ✅ Body parsers
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 
-// ✅ Request logger (dev only)
 if (process.env.NODE_ENV !== 'production') {
   app.use((req, res, next) => {
     console.log(`🌐 [${req.method}] ${req.url} from ${req.ip}`);
@@ -69,7 +61,7 @@ if (process.env.NODE_ENV !== 'production') {
   });
 }
 
-// ✅ Health check
+// ✅ Health check (Google Cloud needs this to know app is alive)
 app.get('/health', (req, res) => {
   res.json({
     status: 'ok',
@@ -78,7 +70,6 @@ app.get('/health', (req, res) => {
   });
 });
 
-// ✅ API Routes
 app.use('/labs', labRoutes);
 app.use('/messages', messageRoutes);
 app.use('/orders', orderRoutes);
@@ -88,12 +79,10 @@ app.use('/booking', bookingRoutes);
 app.use('/chat', chatRoutes);
 app.use('/leads', leadRoutes);
 
-// ✅ 404 handler
 app.use((req, res) => {
   res.status(404).json({ error: 'Route not found', path: req.url });
 });
 
-// ✅ Global error handler
 app.use((err, req, res, next) => {
   console.error('💥 [ERROR]', err.stack);
   const isProd = process.env.NODE_ENV === 'production';
@@ -102,10 +91,11 @@ app.use((err, req, res, next) => {
   });
 });
 
-// ✅ Start server
+// ✅ Database connect hone ke baad hi server start hoga
 connectDB()
   .then(() => {
     console.log('✅ [SERVER] Database connected');
+    // '0.0.0.0' zaroori hai Google Cloud ke liye
     app.listen(PORT, '0.0.0.0', () => {
       console.log(`🚀 [SERVER] Running on port ${PORT}`);
     });

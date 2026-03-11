@@ -1,8 +1,8 @@
 // Backend API Configuration - Direct Production URL
 console.log('🔍 [ENV] Finalizing API Configuration for Production');
 
-// ✅ Direct URL for Railway Backend
-export const API_BASE_URL = 'https://zunf-medicare-website.up.railway.app';
+// ✅ Direct URL for Railway Backend (UPDATED)
+export const API_BASE_URL = 'https://observant-serenity-production.up.railway.app';
 
 console.log(`🔧 [API] Resolved URL: ${API_BASE_URL}`);
 
