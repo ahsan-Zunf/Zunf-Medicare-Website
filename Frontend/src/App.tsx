@@ -1,9 +1,11 @@
 import { useEffect } from 'react'
 import { Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import { CartProvider } from '@/contexts/cart-context'
-import { AuthProvider } from '@/contexts/auth-context'
+import { AuthProvider, useAuth } from '@/contexts/auth-context'
 import { ToastProvider } from '@/contexts/toast-context'
 import { ChatbotButton } from '@/components/chatbot-button'
+import { WhatsAppWidget } from '@/components/whatsapp-widget' // ✅ Naya WhatsApp Widget import kiya
+import { EhrPromoPopup } from '@/components/ehr-promo-popup'
 import ScrollToTop from '@/components/scroll-to-top'
 import { Preloader } from '@/components/ui/preloader'
 
@@ -14,12 +16,13 @@ import BookingPage from '@/pages/BookingPage'
 import CartPage from '@/pages/CartPage'
 import ContactPage from '@/pages/ContactPage'
 import AboutPage from '@/pages/AboutPage'
-import EHRPage from '@/pages/EHRPage'
+import EHRPage from '@/pages/EHRPage' 
 import HistoryPage from '@/pages/HistoryPage'
 import AccountPage from '@/pages/AccountPage'
 import AdminPage from '@/pages/AdminPage'
 import ClientsPage from '@/pages/ClientsPage'
 import NotFoundPage from '@/pages/NotFoundPage'
+import EhrDashboard from "./pages/EhrDashboard"; 
 
 // Health Card Pages
 import HealthCardPage from '@/pages/health-card/HealthCardPage'
@@ -42,7 +45,6 @@ function DynamicCanonical() {
   const location = useLocation();
 
   useEffect(() => {
-    // Check if canonical tag exists, if not create it
     let canonicalLink = document.querySelector("link[rel='canonical']");
     if (!canonicalLink) {
       canonicalLink = document.createElement('link');
@@ -50,9 +52,7 @@ function DynamicCanonical() {
       document.head.appendChild(canonicalLink);
     }
     
-    // Set the dynamic URL based on the current page
     const baseUrl = 'https://zunfmedicare.com';
-    // Remove trailing slash for root, or add path
     const currentUrl = location.pathname === '/' 
       ? baseUrl + '/' 
       : `${baseUrl}${location.pathname}`;
@@ -63,6 +63,18 @@ function DynamicCanonical() {
   return null;
 }
 
+// 🌟 SMART EHR ROUTE HANDLER
+function EhrSmartRoute() {
+  const { isAuthenticated } = useAuth();
+  const token = localStorage.getItem('token');
+  
+  if (isAuthenticated || token) {
+    return <EhrDashboard />; 
+  }
+  
+  return <EHRPage />; 
+}
+
 function App() {
   return (
     <ToastProvider>
@@ -71,7 +83,6 @@ function App() {
           <ScrollToTop />
           <Preloader />
           
-          {/* Yeh function background mein SEO link update karega */}
           <DynamicCanonical />
 
           <Routes>
@@ -83,7 +94,9 @@ function App() {
             <Route path="/cart" element={<CartPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/contact-us" element={<Navigate to="/contact" replace />} />
-            <Route path="/ehr" element={<EHRPage />} />
+            
+            <Route path="/ehr" element={<EhrSmartRoute />} />
+            
             <Route path="/history" element={<HistoryPage />} />
             <Route path="/account" element={<AccountPage />} />
             <Route path="/admin" element={<AdminPage />} />
@@ -109,7 +122,12 @@ function App() {
             {/* 404 */}
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
-          <ChatbotButton />
+
+          {/* 🌟 Global Widgets 🌟 */}
+         <EhrPromoPopup />
+          <WhatsAppWidget /> {/* ✅ Yeh ab har page par nazar aayega */}
+  
+          
         </CartProvider>
       </AuthProvider>
     </ToastProvider>

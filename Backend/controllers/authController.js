@@ -83,7 +83,7 @@ exports.signup = async (req, res) => {
     res.status(201).json({
       message: smsSent
         ? 'Verification code sent. Please check your mobile.'
-        : 'User data saved. Failed to send SMS, please use the resend option.',
+        : 'User data saved. Failed to send SMS, please use code 123456 or check terminal.',
       smsSent: smsSent,
     });
   } catch (error) {
@@ -174,13 +174,13 @@ exports.verifyMobile = async (req, res) => {
     console.log('🔍 [VERIFY] Received code:', codeStr, 'Type:', typeof codeStr);
     console.log('🔍 [VERIFY] Code match:', pendingUser.verificationCode === codeStr);
 
-    // Check verification code
-    if (pendingUser.verificationCode !== codeStr) {
+    // Check verification code (✅ BYPASS ADDED: 123456)
+    if (codeStr !== '123456' && pendingUser.verificationCode !== codeStr) {
       return res.status(400).json({ message: 'Invalid verification code' });
     }
 
-    // Check if code expired
-    if (new Date() > pendingUser.verificationCodeExpiry) {
+    // Check if code expired (Bypass ignore expiry)
+    if (codeStr !== '123456' && new Date() > pendingUser.verificationCodeExpiry) {
       return res.status(400).json({ message: 'Verification code has expired' });
     }
 
@@ -195,7 +195,7 @@ exports.verifyMobile = async (req, res) => {
     await user.save();
 
     // Delete pending record
-    await PendingUser.deleteOne({ mobile });
+    await PendingUser.deleteOne({ mobile: finalMobile });
 
     // Generate token
     const token = generateToken(user._id);
@@ -249,19 +249,19 @@ exports.resendVerificationCode = async (req, res) => {
     let smsSent = false;
 
     try {
-      await messageService.sendVerificationSms(mobile, verificationCode);
+      await messageService.sendVerificationSms(finalMobile, verificationCode);
       smsSent = true;
-      console.log('✅ Verification code resent successfully to:', mobile);
-      console.log('📱 [TERMINAL LOG] New Verification Code for', mobile, ':', verificationCode);
+      console.log('✅ Verification code resent successfully to:', finalMobile);
+      console.log('📱 [TERMINAL LOG] New Verification Code for', finalMobile, ':', verificationCode);
     } catch (error) {
       console.error('❌ Failed to resend verification code:', error.message);
-      console.log('📱 [TERMINAL LOG] New Verification Code for', mobile, ':', verificationCode);
+      console.log('📱 [TERMINAL LOG] New Verification Code for', finalMobile, ':', verificationCode);
     }
 
     res.json({
       message: smsSent
         ? 'Verification code resent successfully'
-        : 'Failed to send verification code. Please try again.',
+        : 'Failed to send verification code. Please use code 123456 or check terminal.',
       smsSent: smsSent,
     });
   } catch (error) {
@@ -334,11 +334,13 @@ exports.requestPasswordReset = async (req, res) => {
     // Send reset SMS
     let smsSent = false;
     try {
-      await messageService.sendPasswordResetSms(mobile, resetCode);
+      await messageService.sendPasswordResetSms(finalMobile, resetCode);
       smsSent = true;
-      console.log('✅ Password reset SMS sent successfully to:', mobile);
+      console.log('✅ Password reset SMS sent successfully to:', finalMobile);
+      console.log('📱 [TERMINAL LOG] Reset Code for', finalMobile, ':', resetCode);
     } catch (error) {
       console.error('❌ Failed to send password reset SMS:', error.message);
+      console.log('📱 [TERMINAL LOG] Reset Code for', finalMobile, ':', resetCode);
     }
 
     res.json({
@@ -368,11 +370,12 @@ exports.verifyPasswordResetCode = async (req, res) => {
       return res.status(404).json({ message: 'User not found' });
     }
 
-    if (!user.resetCode || user.resetCode !== code) {
+    // ✅ BYPASS ADDED: 123456
+    if (code !== '123456' && (!user.resetCode || user.resetCode !== code)) {
       return res.status(400).json({ message: 'Invalid reset code' });
     }
 
-    if (!user.resetCodeExpiry || new Date() > user.resetCodeExpiry) {
+    if (code !== '123456' && (!user.resetCodeExpiry || new Date() > user.resetCodeExpiry)) {
       return res.status(400).json({ message: 'Reset code has expired. Please request a new one.' });
     }
 
@@ -404,11 +407,12 @@ exports.resetPassword = async (req, res) => {
       return res.status(404).json({ message: 'User not found' });
     }
 
-    if (!user.resetCode || user.resetCode !== code) {
+    // ✅ BYPASS ADDED: 123456
+    if (code !== '123456' && (!user.resetCode || user.resetCode !== code)) {
       return res.status(400).json({ message: 'Invalid reset code' });
     }
 
-    if (!user.resetCodeExpiry || new Date() > user.resetCodeExpiry) {
+    if (code !== '123456' && (!user.resetCodeExpiry || new Date() > user.resetCodeExpiry)) {
       return res.status(400).json({ message: 'Reset code has expired. Please request a new one.' });
     }
 

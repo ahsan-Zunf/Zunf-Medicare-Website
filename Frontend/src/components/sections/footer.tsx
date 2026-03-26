@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/custom";
 import { Phone, Mail, Clock, MapPin, Send, Loader2 } from "lucide-react";
 import { useState } from "react";
 import { createLead } from "@/lib/api";
@@ -40,153 +40,134 @@ export function Footer() {
   };
 
   return (
-    <footer className="border-t bg-gradient-to-r from-[#58b437] to-[#7ab630] text-white">
-      <div className="mx-auto max-w-7xl px-4 md:px-6 py-12 md:py-16">
+    <footer className="bg-slate-900 text-slate-300 border-t border-slate-800">
+      <div className="mx-auto max-w-7xl px-4 md:px-6 py-16 md:py-20">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-          {/* Company Info */}
-          <div className="space-y-4">
-            <Link to="/" className="inline-block">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 mb-12">
+          
+          {/* Company Info (Takes up more space) */}
+          <div className="lg:col-span-4 space-y-6">
+            <Link to="/" className="inline-block bg-white p-2 rounded-xl">
               <img
                 src="/zunf.png"
-                height={28}
+                height={32}
                 width={140}
                 alt="ZUNF logo"
+                className="object-contain"
               />
             </Link>
-            <p className="text-sm text-slate-100">
-              Pakistan's trusted healthcare partner, bringing quality healthcare to your doorstep.
+            <p className="text-sm text-slate-400 leading-relaxed pr-4">
+              Pakistan's most trusted healthcare ecosystem. We connect you with top labs, aesthetic centers, and digital health records directly from your home.
             </p>
-            <div className="flex flex-col gap-2 text-sm">
-              <div className="flex items-center gap-2 text-slate-100">
-                <Phone className="h-4 w-4 text-white" />
-                <span>03090622004</span>
+            <div className="flex flex-col gap-4 text-sm pt-2">
+              <div className="flex items-center gap-3 text-slate-300">
+                <div className="bg-slate-800 p-2 rounded-lg text-primary"><Phone className="h-4 w-4" /></div>
+                <span className="font-medium">0309 0622004</span>
               </div>
-              <div className="flex items-center gap-2 text-slate-100">
-                <Mail className="h-4 w-4 text-white" />
-                <span>info@zunfmedicare.com</span>
+              <div className="flex items-center gap-3 text-slate-300">
+                <div className="bg-slate-800 p-2 rounded-lg text-primary"><Mail className="h-4 w-4" /></div>
+                <span className="font-medium">info@zunfmedicare.com</span>
               </div>
-              <div className="flex items-center gap-2 text-slate-100">
-                <Clock className="h-4 w-4 text-white" />
-                <span>24×7 Helpline</span>
+              <div className="flex items-center gap-3 text-slate-300">
+                <div className="bg-slate-800 p-2 rounded-lg text-primary"><Clock className="h-4 w-4" /></div>
+                <span className="font-medium">24/7 Customer Support</span>
               </div>
             </div>
           </div>
 
           {/* Quick Links */}
-          <div>
-            <h3 className="font-semibold text-white mb-4">Quick Links</h3>
-            <nav className="flex flex-col gap-2">
-              <Link to="/" className="text-sm text-slate-100 hover:text-white transition-colors">
-                Home
-              </Link>
-              <Link to="/services/labs" className="text-sm text-slate-100 hover:text-white transition-colors">
-                Labs
-              </Link>
-              <Link to="/services/health-program" className="text-sm text-slate-100 hover:text-white transition-colors">
-                Health Program
-              </Link>
-              <Link to="/services/school-health-program" className="text-sm text-slate-100 hover:text-white transition-colors">
-                School Health Program
-              </Link>
-              <Link to="/services/corporate-health-screening" className="text-sm text-slate-100 hover:text-white transition-colors">
-                Corporate Health Screening
-              </Link>
+          <div className="lg:col-span-2">
+            <h3 className="font-bold text-white mb-6 text-lg">Quick Links</h3>
+            <nav className="flex flex-col gap-3">
+              {['Home', 'About Us', 'Health Card', 'EHR Portal', 'Contact Us'].map((item) => (
+                <Link key={item} to={item === 'Home' ? '/' : `/${item.toLowerCase().replace(' ', '-')}`} className="text-sm text-slate-400 hover:text-primary hover:translate-x-1 transition-all">
+                  {item}
+                </Link>
+              ))}
             </nav>
           </div>
 
           {/* Services */}
-          <div>
-            <h3 className="font-semibold text-white mb-4">Services</h3>
-            <nav className="flex flex-col gap-2">
-              <Link to="/services/labs" className="text-sm text-slate-100 hover:text-white transition-colors">
-                Lab Tests
-              </Link>
-              <Link to="/services/health-program" className="text-sm text-slate-100 hover:text-white transition-colors">
-                Home Care
-              </Link>
-              <Link to="/services/school-health-program" className="text-sm text-slate-100 hover:text-white transition-colors">
-                School Screening
-              </Link>
-              <Link to="/services/corporate-health-screening" className="text-sm text-slate-100 hover:text-white transition-colors">
-                Corporate Screening
-              </Link>
+          <div className="lg:col-span-2">
+            <h3 className="font-bold text-white mb-6 text-lg">Our Services</h3>
+            <nav className="flex flex-col gap-3">
+              <Link to="/services/labs" className="text-sm text-slate-400 hover:text-primary hover:translate-x-1 transition-all">Lab Tests</Link>
+              <Link to="/services/labs" className="text-sm text-slate-400 hover:text-primary hover:translate-x-1 transition-all">Aesthetics</Link>
+              <Link to="/services/health-program" className="text-sm text-slate-400 hover:text-primary hover:translate-x-1 transition-all">Home Care</Link>
+              <Link to="/services/school-health-program" className="text-sm text-slate-400 hover:text-primary hover:translate-x-1 transition-all">School Screening</Link>
+              <Link to="/services/corporate-health-screening" className="text-sm text-slate-400 hover:text-primary hover:translate-x-1 transition-all">Corporate Plans</Link>
             </nav>
           </div>
 
           {/* Contact Form */}
-          <div>
-            <h3 className="font-semibold text-white mb-4">Get in Touch</h3>
-            <form onSubmit={handleSubmit} className="space-y-3">
-              <div>
-                <Label htmlFor="footer-name" className="sr-only">Name</Label>
-                <Input
-                  id="footer-name"
-                  placeholder="Your Name"
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="h-9 text-sm bg-white/10 border-white/20 text-white placeholder:text-white/60 focus:border-white focus:ring-white"
-                  required
-                />
+          <div className="lg:col-span-4">
+            <h3 className="font-bold text-white mb-6 text-lg">Need Help?</h3>
+            <form onSubmit={handleSubmit} className="space-y-3 bg-slate-800/50 p-5 rounded-2xl border border-slate-700/50">
+              <div className="grid grid-cols-2 gap-3">
+                <div>
+                  <Input
+                    id="footer-name"
+                    placeholder="Name"
+                    value={formData.name}
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    className="h-10 text-sm bg-slate-900 border-slate-700 text-white placeholder:text-slate-500 focus:border-primary focus:ring-primary rounded-xl"
+                    required
+                  />
+                </div>
+                <div>
+                  <Input
+                    id="footer-phone"
+                    type="tel"
+                    placeholder="Phone"
+                    value={formData.phone}
+                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                    className="h-10 text-sm bg-slate-900 border-slate-700 text-white placeholder:text-slate-500 focus:border-primary focus:ring-primary rounded-xl"
+                    required
+                  />
+                </div>
               </div>
               <div>
-                <Label htmlFor="footer-email" className="sr-only">Email</Label>
                 <Input
                   id="footer-email"
                   type="email"
-                  placeholder="Your Email"
+                  placeholder="Email Address"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="h-9 text-sm bg-white/10 border-white/20 text-white placeholder:text-white/60 focus:border-white focus:ring-white"
+                  className="h-10 text-sm bg-slate-900 border-slate-700 text-white placeholder:text-slate-500 focus:border-primary focus:ring-primary rounded-xl"
                   required
                 />
               </div>
               <div>
-                <Label htmlFor="footer-phone" className="sr-only">Phone</Label>
-                <Input
-                  id="footer-phone"
-                  type="tel"
-                  placeholder="Your Phone"
-                  value={formData.phone}
-                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  className="h-9 text-sm bg-white/10 border-white/20 text-white placeholder:text-white/60 focus:border-white focus:ring-white"
-                  required
-                />
-              </div>
-              <div>
-                <Label htmlFor="footer-message" className="sr-only">Message</Label>
                 <Textarea
                   id="footer-message"
-                  placeholder="Your Message"
+                  placeholder="How can we help you?"
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  rows={3}
-                  className="text-sm resize-none bg-white/10 border-white/20 text-white placeholder:text-white/60 focus:border-white focus:ring-white"
+                  rows={2}
+                  className="text-sm resize-none bg-slate-900 border-slate-700 text-white placeholder:text-slate-500 focus:border-primary focus:ring-primary rounded-xl"
                   required
                 />
               </div>
-              <Button type="submit" size="sm" className="w-full bg-white text-[#94ca43] hover:bg-slate-100" disabled={isLoading}>
+              <Button type="submit" className="w-full bg-primary text-white hover:bg-[#86b83c] rounded-xl font-bold h-10 shadow-lg shadow-primary/20" disabled={isLoading}>
                 {isLoading ? (
                   <Loader2 className="h-4 w-4 mr-2 animate-spin" />
                 ) : (
                   <Send className="h-4 w-4 mr-2" />
                 )}
-                {isLoading ? "Submitting..." : "Send Message"}
+                {isLoading ? "Sending..." : "Send Message"}
               </Button>
             </form>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-white/20 pt-6">
-          <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
-            <p className="text-xs text-slate-100 text-center sm:text-left">
-              © 2025 ZUNF Medicare. All rights reserved.
-            </p>
-            <div className="flex items-center gap-2 text-xs text-slate-100">
-              <MapPin className="h-3 w-3" />
-              <span>Pakistan</span>
-            </div>
+        <div className="border-t border-slate-800 pt-8 mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
+          <p className="text-sm text-slate-500 text-center sm:text-left">
+            © {new Date().getFullYear()} <span className="text-white font-semibold">ZUNF Medicare</span>. All rights reserved.
+          </p>
+          <div className="flex items-center gap-2 text-sm text-slate-500 bg-slate-800/50 px-3 py-1.5 rounded-full border border-slate-700/50">
+            <MapPin className="h-3.5 w-3.5 text-primary" />
+            <span>Punjab, Pakistan</span>
           </div>
         </div>
       </div>
