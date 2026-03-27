@@ -14,7 +14,8 @@ import axios from "axios";
 import { motion, AnimatePresence } from "framer-motion";
 import QRCode from "react-qr-code";
 
-const API_URL = "http://localhost:8080/reports"; 
+import { API_BASE_URL } from '@/config/api';
+const API_URL = `${API_BASE_URL}/reports`; 
 
 const uploadCategories = [
   { id: "blood", name: "Blood Test", icon: <Droplet className="h-5 w-5" /> },
