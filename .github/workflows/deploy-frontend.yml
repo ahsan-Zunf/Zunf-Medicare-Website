@@ -18,11 +18,11 @@ jobs:
           node-version: '18'
           
       - name: 📦 Install Dependencies
-        working-directory: ./frontend
+        working-directory: ./Frontend
         run: npm install
         
       - name: 🏗️ Build Project
-        working-directory: ./frontend
+        working-directory: ./Frontend
         run: npm run build
         
       - name: 🚀 Sync files to Namecheap
@@ -31,5 +31,5 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./frontend/dist/
+          local-dir: ./Frontend/dist/
           server-dir: /
