@@ -1,5 +1,5 @@
-import { API_BASE_URL } from '@/config/api';
-
+// ✅ API Base URL updated for Google Cloud Run Production
+export const API_BASE_URL = 'https://zunf-medicare-website-378538196369.europe-west1.run.app';
 
 export interface Lab {
   id: string;
@@ -562,5 +562,3 @@ export async function chatWithAI(message: string, history: any[] = []): Promise<
     throw error;
   }
 }
-
-
