@@ -8,10 +8,10 @@ import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { getLabTests, type LabTestsResponse, type LabTest } from "@/lib/api";
 import { useCart } from "@/contexts/cart-context";
-import { SEO } from "@/components/seo";
+import { Helmet } from 'react-helmet-async'; // 🚀 Naya SEO Import
 import { labs } from "@/data/labs";
 
-// Map lab IDs to their logo files (reusing from LabDetailPage - ideal refactor: move to utils)
+// Map lab IDs to their logo files
 const getLabLogo = (labId: string): string | null => {
     const logoMap: Record<string, string> = {
         "chughtai-lab": "/chughtai.jpeg",
@@ -52,8 +52,6 @@ export default function TestDetailPage() {
                     setError("Lab data not available");
                 } else {
                     setLabData(response);
-                    // Find test by ID (or name if ID is not unique/consistent, but strictly ID is better)
-                    // Since existing API returns tests with 'id' field, we match that.
                     const foundTest = response.tests.find(t => t.id === testId);
                     if (foundTest) {
                         setTest(foundTest);
@@ -83,7 +81,7 @@ export default function TestDetailPage() {
             <div className="flex min-h-dvh flex-col">
                 <SiteHeader />
                 <main className="flex-1 flex items-center justify-center">
-                    <Loader2 className="h-8 w-8 animate-spin text-primary" />
+                    <Loader2 className="h-8 w-8 animate-spin text-[#8CC63F]" />
                 </main>
                 <Footer />
             </div>
@@ -96,9 +94,9 @@ export default function TestDetailPage() {
                 <SiteHeader />
                 <main className="flex-1 flex items-center justify-center">
                     <div className="text-center max-w-md mx-auto px-4">
-                        <AlertCircle className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
+                        <AlertCircle className="h-12 w-12 text-slate-400 mx-auto mb-4" />
                         <h1 className="text-2xl font-bold mb-2">Test Not Found</h1>
-                        <p className="text-muted-foreground mb-6">
+                        <p className="text-slate-500 mb-6">
                             {error || "The requested test could not be found."}
                         </p>
                         <Button onClick={() => navigate(-1)} variant="outline">
@@ -113,19 +111,35 @@ export default function TestDetailPage() {
 
     return (
         <div className="flex min-h-dvh flex-col bg-slate-50">
-            <SEO
-                title={`${test.name} at ${lab.name}`}
-                description={`Book the ${test.name} at ${lab.name}. ${test.description || "Get accurate results with Zunf Medicare."}`}
-            />
+            
+            {/* 🚀 SEO MAGIC STARTS HERE */}
+            <Helmet>
+                <title>Book {test.name} in Lahore - {lab.name} | ZUNF Medicare</title>
+                
+                <meta 
+                    name="description" 
+                    content={`Book ${test.name} online at ${lab.name} through ZUNF Medicare. ${test.description || "Get accurate results, home sampling facility, and up to 40% discount."} Check details and book now!`} 
+                />
+                
+                <meta 
+                    name="keywords" 
+                    content={`${test.name}, ${lab.name}, lab test Lahore, blood test home sampling, ZUNF Medicare, book ${test.name} online, discounted lab tests Pakistan`} 
+                />
+
+                {/* Canonical Tag taake Google duplicate content na samjhe */}
+                <link rel="canonical" href={window.location.href} />
+            </Helmet>
+            {/* 🚀 SEO MAGIC ENDS HERE */}
+
             <SiteHeader />
-            <main className="flex-1 pt-24 pb-12">
+            <main className="flex-1 pt-8 md:pt-12 pb-12">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6">
 
                     {/* Breadcrumb / Back Navigation */}
                     <div className="mb-6">
                         <Link
                             to={`/lab/${labId}`}
-                            className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+                            className="inline-flex items-center gap-2 text-slate-500 hover:text-[#8CC63F] transition-colors font-medium text-sm"
                         >
                             <ArrowLeft className="h-4 w-4" />
                             <span>Back to {lab.name}</span>
@@ -137,70 +151,70 @@ export default function TestDetailPage() {
                         <div className="lg:col-span-2 space-y-6">
 
                             {/* Header Card */}
-                            <Card className="p-6 border-none shadow-md overflow-hidden relative bg-white">
+                            <Card className="p-6 md:p-8 border-none shadow-sm rounded-3xl bg-white relative overflow-hidden">
+                                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#8CC63F] to-[#00AEEF]"></div>
                                 <div className="flex flex-col md:flex-row gap-6 items-start">
-                                    <div className="h-20 w-20 rounded-xl bg-gray-50 flex items-center justify-center border p-2 flex-shrink-0">
+                                    <div className="h-20 w-20 rounded-2xl bg-slate-50 flex items-center justify-center border border-slate-100 p-2 flex-shrink-0 shadow-inner">
                                         {getLabLogo(labId!) ? (
                                             <img
                                                 src={getLabLogo(labId!)!}
                                                 alt={lab.name}
-                                                className="max-h-full max-w-full object-contain"
+                                                className="max-h-full max-w-full object-contain rounded-xl"
                                             />
                                         ) : (
-                                            <Activity className="h-8 w-8 text-primary" />
+                                            <Activity className="h-8 w-8 text-[#8CC63F]" />
                                         )}
                                     </div>
                                     <div>
-                                        <h1 className="text-3xl font-bold text-slate-900 mb-2">{test.name}</h1>
-                                        <div className="flex items-center gap-2 text-muted-foreground text-sm">
-                                            <span className="bg-primary/10 text-primary px-2 py-1 rounded text-xs font-semibold">
+                                        <h1 className="text-2xl md:text-3xl font-bold text-slate-900 mb-3 font-syne">{test.name}</h1>
+                                        <div className="flex items-center gap-2 text-slate-500 text-sm">
+                                            <span className="bg-[#8CC63F]/10 text-[#8CC63F] px-2.5 py-1 rounded-md text-[11px] font-bold uppercase tracking-wider">
                                                 LAB TEST
                                             </span>
                                             <span>•</span>
-                                            <span>{lab.name}</span>
+                                            <span className="font-medium">{lab.name}</span>
                                         </div>
                                     </div>
                                 </div>
                             </Card>
 
                             {/* Description & Details */}
-                            <Card className="p-6 border-none shadow-md bg-white">
-                                <h2 className="text-xl font-semibold mb-4 flex items-center gap-2">
-                                    <Activity className="h-5 w-5 text-primary" />
-                                    Description
+                            <Card className="p-6 md:p-8 border-none shadow-sm rounded-3xl bg-white">
+                                <h2 className="text-xl font-bold mb-4 flex items-center gap-2 text-slate-800 font-syne">
+                                    <Activity className="h-5 w-5 text-[#8CC63F]" />
+                                    Test Description
                                 </h2>
-                                <div className="prose prose-slate max-w-none text-slate-600">
-                                    <p>{test.description || "No specific description available for this test."}</p>
+                                <div className="prose prose-slate max-w-none text-slate-600 leading-relaxed text-sm md:text-base">
+                                    <p>{test.description || "Detailed description for this test is currently being updated by our medical team. However, you can still book it online."}</p>
 
-                                    {/* Generic placeholder content to make the page look richer as per request */}
-                                    <div className="mt-6 space-y-4">
-                                        <div className="bg-slate-50 p-4 rounded-lg">
-                                            <h3 className="text-sm font-semibold text-slate-900 mb-2">Why get tested?</h3>
-                                            <p className="text-sm">
-                                                Regular testing helps in early detection of potential health issues, monitoring existing conditions, and maintaining overall wellness.
+                                    <div className="mt-8 space-y-4">
+                                        <div className="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                                            <h3 className="text-sm font-bold text-slate-800 mb-2">Why get tested?</h3>
+                                            <p className="text-sm text-slate-500">
+                                                Regular testing helps in early detection of potential health issues, monitoring existing conditions, and maintaining your overall wellness.
                                             </p>
                                         </div>
                                     </div>
                                 </div>
 
-                                <Separator className="my-6" />
+                                <Separator className="my-8 bg-slate-100" />
 
-                                <h2 className="text-xl font-semibold mb-4 flex items-center gap-2">
-                                    <ShieldCheck className="h-5 w-5 text-primary" />
-                                    What is included?
+                                <h2 className="text-xl font-bold mb-5 flex items-center gap-2 text-slate-800 font-syne">
+                                    <ShieldCheck className="h-5 w-5 text-[#8CC63F]" />
+                                    What's Included?
                                 </h2>
-                                <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-slate-600">
-                                    <li className="flex items-center gap-2">
-                                        <CheckCircle2 className="h-4 w-4 text-green-500" />
-                                        <span>Sample Collection</span>
+                                <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-slate-600">
+                                    <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                                        <CheckCircle2 className="h-5 w-5 text-[#8CC63F]" />
+                                        <span className="font-medium">Home Sample Collection</span>
                                     </li>
-                                    <li className="flex items-center gap-2">
-                                        <CheckCircle2 className="h-4 w-4 text-green-500" />
-                                        <span>Digital Report</span>
+                                    <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                                        <CheckCircle2 className="h-5 w-5 text-[#8CC63F]" />
+                                        <span className="font-medium">Digital Smart Report</span>
                                     </li>
-                                    <li className="flex items-center gap-2">
-                                        <CheckCircle2 className="h-4 w-4 text-green-500" />
-                                        <span>Expert Verification</span>
+                                    <li className="flex items-center gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                                        <CheckCircle2 className="h-5 w-5 text-[#8CC63F]" />
+                                        <span className="font-medium">Expert Verification</span>
                                     </li>
                                 </ul>
                             </Card>
@@ -208,16 +222,18 @@ export default function TestDetailPage() {
 
                         {/* Sidebar - Right Column */}
                         <div className="lg:col-span-1">
-                            <div className="sticky top-24 space-y-6">
+                            <div className="sticky top-28 space-y-6">
 
                                 {/* Price & Action Card */}
-                                <Card className="p-6 border-2 border-primary/20 shadow-lg bg-white">
-                                    <h3 className="font-semibold text-slate-900 mb-4">Order Summary</h3>
+                                <Card className="p-6 md:p-8 border border-slate-100 shadow-xl shadow-slate-200/50 rounded-3xl bg-white relative overflow-hidden">
+                                    <div className="absolute top-0 right-0 w-32 h-32 bg-[#8CC63F]/5 rounded-full blur-[40px] pointer-events-none" />
+                                    
+                                    <h3 className="text-lg font-bold text-slate-800 mb-6 font-syne">Order Summary</h3>
 
-                                    <div className="space-y-3 mb-6">
+                                    <div className="space-y-4 mb-8">
                                         <div className="flex justify-between items-center">
-                                            <span className="text-slate-600">Lab Price</span>
-                                            <span className="text-slate-400 line-through">
+                                            <span className="text-slate-500 text-sm font-medium">Standard Price</span>
+                                            <span className="text-slate-400 line-through text-sm">
                                                 Rs. {(test.price || 0).toLocaleString()}
                                             </span>
                                         </div>
@@ -225,22 +241,22 @@ export default function TestDetailPage() {
                                         {test.price != null && test.discounted_price != null &&
                                             test.discounted_price > 0 && test.discounted_price < test.price ? (
                                             <>
-                                                <div className="flex justify-between items-center font-medium text-green-600">
+                                                <div className="flex justify-between items-center font-bold text-[#8CC63F] bg-[#8CC63F]/10 p-2.5 rounded-xl text-sm">
                                                     <span>Discount ({discountPercent}%)</span>
                                                     <span>- Rs. {((test.price || 0) - (test.discounted_price || 0)).toLocaleString()}</span>
                                                 </div>
-                                                <Separator />
-                                                <div className="flex justify-between items-center pt-2">
-                                                    <span className="text-lg font-bold text-slate-900">Total</span>
-                                                    <span className="text-2xl font-bold text-primary">
+                                                <Separator className="bg-slate-100" />
+                                                <div className="flex justify-between items-end pt-2">
+                                                    <span className="text-sm font-bold text-slate-500 mb-1">Total to Pay</span>
+                                                    <span className="text-3xl font-black text-slate-900 tracking-tight">
                                                         Rs. {(test.discounted_price || 0).toLocaleString()}
                                                     </span>
                                                 </div>
                                             </>
                                         ) : (
-                                            <div className="flex justify-between items-center pt-2 border-t mt-2">
-                                                <span className="text-lg font-bold text-slate-900">Total</span>
-                                                <span className="text-2xl font-bold text-primary">
+                                            <div className="flex justify-between items-end pt-4 border-t border-slate-100 mt-2">
+                                                <span className="text-sm font-bold text-slate-500 mb-1">Total to Pay</span>
+                                                <span className="text-3xl font-black text-slate-900 tracking-tight">
                                                     Rs. {(test.price || 0).toLocaleString()}
                                                 </span>
                                             </div>
@@ -249,27 +265,29 @@ export default function TestDetailPage() {
 
                                     <Button
                                         onClick={handleAddToCart}
-                                        className="w-full h-12 text-lg font-semibold shadow-primary/20 shadow-lg hover:shadow-primary/40 transition-all"
+                                        className="w-full h-14 text-base font-bold shadow-[0_10px_20px_rgba(140,198,63,0.3)] transition-all bg-[#8CC63F] hover:bg-[#7ab332] rounded-2xl text-white hover:-translate-y-1"
                                     >
                                         <ShoppingCart className="mr-2 h-5 w-5" />
                                         Add to Cart
                                     </Button>
 
-                                    <p className="text-xs text-center text-muted-foreground mt-4 flex items-center justify-center gap-1">
-                                        <Clock className="h-3 w-3" />
-                                        Reports usually available within 24-48 hours
-                                    </p>
+                                    <div className="mt-5 p-3 bg-blue-50/50 rounded-xl border border-blue-100/50 flex items-start gap-3">
+                                        <Clock className="h-5 w-5 text-blue-500 shrink-0 mt-0.5" />
+                                        <p className="text-xs text-slate-600 leading-relaxed font-medium">
+                                            Reports usually available within 24-48 hours. View directly in your ZUNF Dashboard.
+                                        </p>
+                                    </div>
                                 </Card>
 
                                 {/* Trust Badges */}
                                 <div className="grid grid-cols-2 gap-4">
-                                    <div className="bg-white p-4 rounded-lg shadow-sm text-center">
-                                        <ShieldCheck className="h-6 w-6 text-primary mx-auto mb-2" />
-                                        <p className="text-xs font-semibold text-slate-700">Verified Labs</p>
+                                    <div className="bg-slate-50 border border-slate-100 p-4 rounded-2xl text-center hover:bg-white transition-colors">
+                                        <ShieldCheck className="h-7 w-7 text-[#8CC63F] mx-auto mb-2" />
+                                        <p className="text-[11px] font-bold text-slate-700 uppercase tracking-wider">Verified Labs</p>
                                     </div>
-                                    <div className="bg-white p-4 rounded-lg shadow-sm text-center">
-                                        <CheckCircle2 className="h-6 w-6 text-primary mx-auto mb-2" />
-                                        <p className="text-xs font-semibold text-slate-700">Best Prices</p>
+                                    <div className="bg-slate-50 border border-slate-100 p-4 rounded-2xl text-center hover:bg-white transition-colors">
+                                        <CheckCircle2 className="h-7 w-7 text-[#8CC63F] mx-auto mb-2" />
+                                        <p className="text-[11px] font-bold text-slate-700 uppercase tracking-wider">Best Prices</p>
                                     </div>
                                 </div>
 
