@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
 import { getLabTests, type LabTest, type LabTestsResponse } from "@/lib/api";
 import { useCart } from "@/contexts/cart-context";
-import { SEO } from "@/components/seo";
+import { Helmet } from 'react-helmet-async'; // 🚀 Advanced SEO Import
 
 // Map lab IDs to their logo files
 const getLabLogo = (labId: string): string | null => {
@@ -54,12 +54,17 @@ export default function LabDetailPage() {
           setError("Lab data not available");
         } else {
           setLabData(response);
-          const pinned = response.tests.filter(test => test.pinned === true);
-          const regular = response.tests.filter(test => !test.pinned);
-          setPinnedTests(pinned);
-          setRegularTests(regular);
-          setFilteredPinnedTests(pinned);
-          setFilteredRegularTests(regular);
+          // Handle dynamic structure safely
+          const allTests = Array.isArray(response) ? response : response.tests;
+          
+          if (allTests && allTests.length > 0) {
+            const pinned = allTests.filter((test: LabTest) => test.pinned === true);
+            const regular = allTests.filter((test: LabTest) => !test.pinned);
+            setPinnedTests(pinned);
+            setRegularTests(regular);
+            setFilteredPinnedTests(pinned);
+            setFilteredRegularTests(regular);
+          }
         }
       } catch (err) {
         setError("Failed to load lab tests");
@@ -73,8 +78,6 @@ export default function LabDetailPage() {
   }, [labId]);
 
   useEffect(() => {
-    if (!labData) return;
-
     const query = searchQuery.toLowerCase().trim();
 
     if (!query) {
@@ -85,11 +88,11 @@ export default function LabDetailPage() {
 
     const filterTest = (test: LabTest) =>
       test.name.toLowerCase().includes(query) ||
-      test.description?.toLowerCase().includes(query);
+      (test.description && test.description.toLowerCase().includes(query));
 
     setFilteredPinnedTests(pinnedTests.filter(filterTest));
     setFilteredRegularTests(regularTests.filter(filterTest));
-  }, [searchQuery, pinnedTests, regularTests, labData]);
+  }, [searchQuery, pinnedTests, regularTests]);
 
   const handleAddToCart = (test: LabTest) => {
     if (lab && labId) {
@@ -104,7 +107,7 @@ export default function LabDetailPage() {
         <main className="flex-1 flex items-center justify-center">
           <div className="text-center">
             <h1 className="text-2xl font-bold mb-4">Lab not found</h1>
-            <Link to="/" className="text-primary hover:underline">
+            <Link to="/" className="text-[#8CC63F] hover:underline">
               Go back to home
             </Link>
           </div>
@@ -116,71 +119,57 @@ export default function LabDetailPage() {
 
   return (
     <div className="flex min-h-dvh flex-col">
-      <SEO
-        title={`${lab.name} Tests`}
-        description={`Browse and book diagnostic tests from ${lab.name} through Zunf Medicare.`}
-      />
+      
+      {/* 🚀 ADVANCED SEO MAGIC STARTS HERE */}
+      <Helmet>
+        <title>{lab.name} Lab Tests & Prices in Lahore | ZUNF Medicare</title>
+        <meta 
+          name="description" 
+          content={`Browse and book ${labData?.tests?.length || 'all'} diagnostic lab tests from ${lab.name} with up to 40% discount. Free home sampling available via ZUNF Medicare.`} 
+        />
+        <meta 
+          name="keywords" 
+          content={`${lab.name}, lab tests Lahore, blood tests, book lab test online, ${lab.name} test prices, ZUNF Medicare`} 
+        />
+        <link rel="canonical" href={window.location.href} />
+      </Helmet>
+      {/* 🚀 ADVANCED SEO MAGIC ENDS HERE */}
+
       <SiteHeader />
       <main className="flex-1">
         {/* Header Section */}
-        <section className="relative w-full bg-gradient-to-br from-primary/10 via-secondary to-accent/10 pt-24 pb-12 overflow-hidden">
+        <section className="relative w-full bg-gradient-to-br from-[#8CC63F]/10 via-slate-50 to-[#00AEEF]/10 pt-24 pb-12 overflow-hidden">
           <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden>
-            <div className="absolute -top-24 -right-24 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
-            <div className="absolute top-1/2 -left-32 w-80 h-80 bg-accent/5 rounded-full blur-3xl" />
+            <div className="absolute -top-24 -right-24 w-96 h-96 bg-[#8CC63F]/5 rounded-full blur-3xl" />
+            <div className="absolute top-1/2 -left-32 w-80 h-80 bg-[#00AEEF]/5 rounded-full blur-3xl" />
           </div>
 
           <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
-            {/* Lab logo at top-right edge */}
             {getLabLogo(labId!) && (
-              <div className="absolute top-0 right-4 sm:right-6 w-80 h-80 sm:w-96 sm:h-96 pointer-events-none" style={{ maxHeight: '100%', maxWidth: '100%' }}>
-                <img
-                  src={getLabLogo(labId!)!}
-                  alt={lab.name}
-                  width={384}
-                  height={384}
-                  className="object-contain w-full h-full"
-                />
+              <div className="absolute top-0 right-4 sm:right-6 w-80 h-80 sm:w-96 sm:h-96 pointer-events-none opacity-20" style={{ maxHeight: '100%', maxWidth: '100%' }}>
+                <img src={getLabLogo(labId!)!} alt={lab.name} width={384} height={384} className="object-contain w-full h-full" />
               </div>
             )}
 
-            <Link
-              to="/"
-              className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-6 relative z-10"
-            >
+            <Link to="/services/labs" className="inline-flex items-center gap-2 text-slate-500 hover:text-[#8CC63F] transition-colors mb-6 relative z-10 font-medium text-sm">
               <ArrowLeft className="h-4 w-4" />
-              <span>Back to Home</span>
+              <span>Back to All Labs</span>
             </Link>
 
             <div className="flex items-center gap-4 mb-6 relative">
-              <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white shadow-lg overflow-hidden flex-shrink-0">
+              <div className="flex h-20 w-20 items-center justify-center rounded-2xl bg-white shadow-sm border border-slate-100 overflow-hidden flex-shrink-0">
                 {getLabLogo(labId!) ? (
-                  <img
-                    src={getLabLogo(labId!)!}
-                    alt={lab.name}
-                    width={64}
-                    height={64}
-                    className="object-contain p-2"
-                  />
+                  <img src={getLabLogo(labId!)!} alt={lab.name} className="object-contain p-2 max-w-full max-h-full" />
                 ) : (
-                  <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-primary/20 to-accent/20 text-primary">
-                    <TestTube className="h-8 w-8" />
-                  </div>
+                  <TestTube className="h-8 w-8 text-[#8CC63F]" />
                 )}
               </div>
               <div className="flex-1 relative">
-                <h1 className="text-4xl font-bold tracking-tight mb-2 relative z-10">{lab.name}</h1>
-                {!loading && labData && (
-                  <p className="text-muted-foreground">
-                    {labData.tests.length} {labData.tests.length === 1 ? "test" : "tests"} available
-                    {pinnedTests.length > 0 && (
-                      <span className="ml-2 text-primary">
-                        • {pinnedTests.length} pinned {pinnedTests.length === 1 ? "test" : "tests"}
-                      </span>
-                    )}
+                <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-2 relative z-10 font-syne text-slate-900">{lab.name}</h1>
+                {!loading && (
+                  <p className="text-slate-600 font-medium">
+                    {pinnedTests.length + regularTests.length} Medical Tests Available
                   </p>
-                )}
-                {loading && (
-                  <p className="text-muted-foreground">Loading...</p>
                 )}
               </div>
             </div>
@@ -188,119 +177,82 @@ export default function LabDetailPage() {
         </section>
 
         {/* Tests Section */}
-        <section className="py-12 bg-background">
+        <section className="py-12 bg-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6">
             {loading && (
               <div className="flex flex-col items-center justify-center py-20">
-                <Loader2 className="h-8 w-8 animate-spin text-primary mb-4" />
-                <p className="text-muted-foreground">Loading tests...</p>
+                <Loader2 className="h-8 w-8 animate-spin text-[#8CC63F] mb-4" />
+                <p className="text-slate-500 font-medium">Loading medical tests...</p>
               </div>
             )}
 
             {error && (
-              <div className="flex flex-col items-center justify-center py-20">
-                <AlertCircle className="h-12 w-12 text-muted-foreground mb-4" />
-                <h3 className="text-xl font-semibold text-foreground mb-2">Data Not Available</h3>
-                <p className="text-muted-foreground text-center max-w-md mb-6">
-                  {lab.name} test data is not currently available in our system. Please check back later or contact us for more information.
+              <div className="flex flex-col items-center justify-center py-20 text-center">
+                <AlertCircle className="h-12 w-12 text-slate-400 mb-4 mx-auto" />
+                <h3 className="text-xl font-bold text-slate-900 mb-2 font-syne">Tests Not Available</h3>
+                <p className="text-slate-500 max-w-md mx-auto mb-6">
+                  {lab.name} test catalog is currently being updated. Please check back shortly.
                 </p>
-                <Link
-                  to="/"
-                  className="inline-flex items-center gap-2 text-primary hover:underline"
-                >
-                  <ArrowLeft className="h-4 w-4" />
-                  Back to Home
+                <Link to="/services/labs" className="inline-flex items-center gap-2 text-[#8CC63F] font-bold hover:underline">
+                  <ArrowLeft className="h-4 w-4" /> Back to Labs
                 </Link>
               </div>
             )}
 
-            {!loading && !error && labData && labData.tests.length > 0 && (
+            {!loading && !error && (
               <div className="mb-12">
+                
                 {/* Search Bar */}
-                <div className="mb-6">
-                  <div className="relative max-w-md">
-                    <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
+                <div className="mb-10 max-w-xl">
+                  <div className="relative">
+                    <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-400" />
                     <Input
                       type="search"
-                      placeholder="Search tests by name or description..."
+                      placeholder={`Search in ${lab.name}...`}
                       value={searchQuery}
                       onChange={(e) => setSearchQuery(e.target.value)}
-                      className="pl-10 bg-white/50 backdrop-blur-md border-primary/30 focus:border-primary"
+                      className="pl-12 h-14 rounded-2xl bg-slate-50 border-slate-200 focus:border-[#8CC63F] focus:ring-[#8CC63F]/20 text-base shadow-inner"
                     />
                   </div>
-                  {searchQuery && (
-                    <p className="text-sm text-muted-foreground mt-2">
-                      {(filteredPinnedTests.length + filteredRegularTests.length)} {(filteredPinnedTests.length + filteredRegularTests.length) === 1 ? "test" : "tests"} found
-                    </p>
-                  )}
                 </div>
 
-                {/* Pinned Tests Section */}
+                {/* SEO CRAWLABLE LINKS: Pinned Tests */}
                 {filteredPinnedTests.length > 0 && (
-                  <div className="mb-12">
-                    <h2 className="text-2xl font-bold mb-6 text-foreground flex items-center gap-2">
-                      <Pin className="h-5 w-5 text-primary" />
-                      Popular Tests ({filteredPinnedTests.length})
+                  <div className="mb-16">
+                    <h2 className="text-2xl font-bold mb-6 text-slate-900 flex items-center gap-2 font-syne">
+                      <Pin className="h-6 w-6 text-[#8CC63F]" /> Popular Tests
                     </h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
                       {filteredPinnedTests.map((test) => (
-                        <Card
-                          key={test.id}
-                          className="p-6 border-2 border-primary/30 hover:border-primary/50 bg-gradient-to-br from-primary/5 to-accent/5 hover:shadow-lg transition-all duration-300 group relative"
-                        >
-                          <div className="absolute top-2 right-2">
-                            <Pin className="h-4 w-4 text-primary fill-primary" />
+                        <Card key={test.id} className="p-5 border border-slate-100 hover:border-[#8CC63F]/50 bg-white hover:shadow-xl transition-all duration-300 group rounded-2xl relative flex flex-col h-full">
+                          <div className="absolute top-4 right-4 bg-[#8CC63F]/10 p-1.5 rounded-lg">
+                            <Pin className="h-3.5 w-3.5 text-[#8CC63F]" />
                           </div>
-                          <div className="flex flex-col gap-4">
-                            <div>
-                              <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-primary transition-colors pr-6">
-                                <Link to={`/lab/${labId}/test/${test.id}`} className="hover:underline focus:outline-none">
-                                  {test.name}
-                                </Link>
-                              </h3>
-                              {test.description && (
-                                <p className="text-sm text-muted-foreground line-clamp-2">{test.description}</p>
+                          
+                          <div className="mb-4 pr-8 flex-1">
+                            {/* SEO LINK HIGHLIGHT */}
+                            <Link to={`/lab/${labId}/test/${test.id}`} className="hover:text-[#8CC63F] transition-colors focus:outline-none">
+                              <h3 className="text-base font-bold text-slate-800 line-clamp-2 leading-snug">{test.name}</h3>
+                            </Link>
+                          </div>
+
+                          <div className="mt-auto pt-4 border-t border-slate-50">
+                            <div className="flex flex-col mb-4">
+                              {test.price != null && test.discounted_price != null && test.discounted_price < test.price ? (
+                                <>
+                                  <span className="text-xs text-slate-400 line-through mb-0.5">Rs. {(test.price || 0).toLocaleString()}</span>
+                                  <div className="flex items-center gap-2">
+                                    <span className="font-black text-slate-900 text-lg">Rs. {(test.discounted_price || 0).toLocaleString()}</span>
+                                    <span className="text-[10px] bg-[#8CC63F]/10 text-[#8CC63F] px-2 py-0.5 rounded-md font-bold uppercase tracking-wider">{discountPercent}% OFF</span>
+                                  </div>
+                                </>
+                              ) : (
+                                <span className="font-black text-slate-900 text-lg mt-4">Rs. {(test.price || 0).toLocaleString()}</span>
                               )}
                             </div>
 
-                            <div className="flex items-center justify-between pt-4 border-t border-border">
-                              <div className="flex flex-col gap-1">
-                                {test.price != null && test.discounted_price != null &&
-                                  test.discounted_price > 0 && test.discounted_price < test.price ? (
-                                  <>
-                                    <div className="flex items-center gap-2 text-sm">
-                                      <DollarSign className="h-4 w-4 text-muted-foreground" />
-                                      <span className="text-muted-foreground line-through">
-                                        Rs. {(test.price || 0).toLocaleString()}
-                                      </span>
-                                    </div>
-                                    <div className="flex items-center gap-2">
-                                      <DollarSign className="h-4 w-4 text-primary" />
-                                      <span className="font-semibold text-primary text-lg">
-                                        Rs. {(test.discounted_price || 0).toLocaleString()}
-                                      </span>
-                                      <span className="text-xs bg-primary/20 text-primary px-2 py-0.5 rounded-full font-medium">
-                                        {discountPercent}% OFF
-                                      </span>
-                                    </div>
-                                  </>
-                                ) : (
-                                  <div className="flex items-center gap-2">
-                                    <DollarSign className="h-4 w-4 text-primary" />
-                                    <span className="font-semibold text-foreground">
-                                      Rs. {(test.price || 0).toLocaleString()}
-                                    </span>
-                                  </div>
-                                )}
-                              </div>
-                            </div>
-
-                            <Button
-                              onClick={() => handleAddToCart(test)}
-                              className="mt-2 w-full bg-primary/10 hover:bg-primary text-primary hover:text-primary-foreground font-medium transition-all duration-300 border border-primary/20 hover:border-primary"
-                            >
-                              <ShoppingCart className="h-4 w-4 mr-2" />
-                              Add to Cart
+                            <Button onClick={() => handleAddToCart(test)} className="w-full bg-slate-50 hover:bg-[#8CC63F] text-slate-700 hover:text-white font-bold transition-all rounded-xl shadow-sm border border-slate-100">
+                              <ShoppingCart className="h-4 w-4 mr-2" /> Add to Cart
                             </Button>
                           </div>
                         </Card>
@@ -309,69 +261,40 @@ export default function LabDetailPage() {
                   </div>
                 )}
 
-                {/* Regular Tests Section */}
+                {/* SEO CRAWLABLE LINKS: All Regular Tests */}
                 {filteredRegularTests.length > 0 && (
                   <div>
-                    <h2 className="text-2xl font-bold mb-6 text-foreground flex items-center gap-2">
-                      <div className="h-1 w-1 rounded-full bg-primary" />
-                      All Tests ({filteredRegularTests.length})
+                    <h2 className="text-2xl font-bold mb-6 text-slate-900 flex items-center gap-2 font-syne">
+                      <TestTube className="h-6 w-6 text-[#8CC63F]" /> All Available Tests
                     </h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
                       {filteredRegularTests.map((test) => (
-                        <Card
-                          key={test.id}
-                          className="p-6 border-2 border-primary/20 hover:border-primary/40 bg-card hover:shadow-lg transition-all duration-300 group"
-                        >
-                          <div className="flex flex-col gap-4">
-                            <div>
-                              <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
-                                <Link to={`/lab/${labId}/test/${test.id}`} className="hover:underline focus:outline-none">
-                                  {test.name}
-                                </Link>
-                              </h3>
-                              {test.description && (
-                                <p className="text-sm text-muted-foreground line-clamp-2">{test.description}</p>
+                        <Card key={test.id} className="p-5 border border-slate-100 hover:border-[#00AEEF]/50 bg-white hover:shadow-xl transition-all duration-300 group rounded-2xl flex flex-col h-full">
+                          
+                          <div className="mb-4 flex-1">
+                             {/* SEO LINK HIGHLIGHT */}
+                            <Link to={`/lab/${labId}/test/${test.id}`} className="hover:text-[#00AEEF] transition-colors focus:outline-none">
+                              <h3 className="text-base font-bold text-slate-800 line-clamp-2 leading-snug">{test.name}</h3>
+                            </Link>
+                          </div>
+
+                          <div className="mt-auto pt-4 border-t border-slate-50">
+                            <div className="flex flex-col mb-4">
+                              {test.price != null && test.discounted_price != null && test.discounted_price < test.price ? (
+                                <>
+                                  <span className="text-xs text-slate-400 line-through mb-0.5">Rs. {(test.price || 0).toLocaleString()}</span>
+                                  <div className="flex items-center gap-2">
+                                    <span className="font-black text-slate-900 text-lg">Rs. {(test.discounted_price || 0).toLocaleString()}</span>
+                                    <span className="text-[10px] bg-[#00AEEF]/10 text-[#00AEEF] px-2 py-0.5 rounded-md font-bold uppercase tracking-wider">{discountPercent}% OFF</span>
+                                  </div>
+                                </>
+                              ) : (
+                                <span className="font-black text-slate-900 text-lg mt-4">Rs. {(test.price || 0).toLocaleString()}</span>
                               )}
                             </div>
 
-                            <div className="flex items-center justify-between pt-4 border-t border-border">
-                              <div className="flex flex-col gap-1">
-                                {test.price != null && test.discounted_price != null &&
-                                  test.discounted_price > 0 && test.discounted_price < test.price ? (
-                                  <>
-                                    <div className="flex items-center gap-2 text-sm">
-                                      <DollarSign className="h-4 w-4 text-muted-foreground" />
-                                      <span className="text-muted-foreground line-through">
-                                        Rs. {(test.price || 0).toLocaleString()}
-                                      </span>
-                                    </div>
-                                    <div className="flex items-center gap-2">
-                                      <DollarSign className="h-4 w-4 text-primary" />
-                                      <span className="font-semibold text-primary text-lg">
-                                        Rs. {(test.discounted_price || 0).toLocaleString()}
-                                      </span>
-                                      <span className="text-xs bg-primary/20 text-primary px-2 py-0.5 rounded-full font-medium">
-                                        {discountPercent}% OFF
-                                      </span>
-                                    </div>
-                                  </>
-                                ) : (
-                                  <div className="flex items-center gap-2">
-                                    <DollarSign className="h-4 w-4 text-primary" />
-                                    <span className="font-semibold text-foreground">
-                                      Rs. {(test.price || 0).toLocaleString()}
-                                    </span>
-                                  </div>
-                                )}
-                              </div>
-                            </div>
-
-                            <Button
-                              onClick={() => handleAddToCart(test)}
-                              className="mt-2 w-full bg-primary/10 hover:bg-primary text-primary hover:text-primary-foreground font-medium transition-all duration-300 border border-primary/20 hover:border-primary"
-                            >
-                              <ShoppingCart className="h-4 w-4 mr-2" />
-                              Add to Cart
+                            <Button onClick={() => handleAddToCart(test)} className="w-full bg-slate-50 hover:bg-[#00AEEF] text-slate-700 hover:text-white font-bold transition-all rounded-xl shadow-sm border border-slate-100">
+                              <ShoppingCart className="h-4 w-4 mr-2" /> Book Test
                             </Button>
                           </div>
                         </Card>
@@ -379,21 +302,6 @@ export default function LabDetailPage() {
                     </div>
                   </div>
                 )}
-
-                {/* No Results */}
-                {filteredPinnedTests.length === 0 && filteredRegularTests.length === 0 && (
-                  <div className="text-center py-12">
-                    <p className="text-muted-foreground">
-                      No tests found matching "{searchQuery}"
-                    </p>
-                  </div>
-                )}
-              </div>
-            )}
-
-            {!loading && !error && labData && labData.tests.length === 0 && (
-              <div className="text-center py-12">
-                <p className="text-muted-foreground">No tests available for this lab.</p>
               </div>
             )}
           </div>
@@ -403,5 +311,3 @@ export default function LabDetailPage() {
     </div>
   );
 }
-
-
