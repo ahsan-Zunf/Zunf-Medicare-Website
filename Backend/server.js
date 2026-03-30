@@ -12,7 +12,8 @@ const healthCardRoutes = require('./routes/healthCardRoutes');
 const bookingRoutes = require('./routes/bookingRoutes');
 const chatRoutes = require('./routes/chatRoutes');
 const leadRoutes = require('./routes/leadRoutes');
-const reportRoutes = require('./routes/reportRoutes'); // ✅ NEW: Report Route Import
+const reportRoutes = require('./routes/reportRoutes'); 
+const blogRoutes = require('./routes/blogRoutes'); // ✅ NEW: Blog Route Import
 
 const app = express();
 
@@ -88,7 +89,8 @@ app.use('/health-card', healthCardRoutes);
 app.use('/booking', bookingRoutes);
 app.use('/chat', chatRoutes);
 app.use('/leads', leadRoutes);
-app.use('/reports', reportRoutes); // ✅ NEW: Report Route API Use
+app.use('/reports', reportRoutes); 
+app.use('/blogs', blogRoutes); // ✅ NEW: Blog Route API Use
 
 app.use((req, res) => {
   res.status(404).json({ error: 'Route not found', path: req.url });
