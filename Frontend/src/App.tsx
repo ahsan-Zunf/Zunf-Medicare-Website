@@ -23,6 +23,9 @@ import AdminPage from '@/pages/AdminPage'
 import ClientsPage from '@/pages/ClientsPage'
 import NotFoundPage from '@/pages/NotFoundPage'
 import EhrDashboard from "./pages/EhrDashboard"; 
+import AdminBlogEditor from "./pages/AdminBlogEditor";
+import BlogsPage from "./pages/BlogsPage";
+import BlogDetailPage from "./pages/BlogDetailPage";
 
 // Health Card Pages
 import HealthCardPage from '@/pages/health-card/HealthCardPage'
@@ -100,6 +103,9 @@ function App() {
             <Route path="/history" element={<HistoryPage />} />
             <Route path="/account" element={<AccountPage />} />
             <Route path="/admin" element={<AdminPage />} />
+            <Route path="/admin/write-blog" element={<AdminBlogEditor />} />
+            <Route path="/blogs" element={<BlogsPage />} />
+<Route path="/blog/:slug" element={<BlogDetailPage />} />
 
             {/* Health Card Routes */}
             <Route path="/health-card" element={<HealthCardPage />} />

@@ -562,3 +562,61 @@ export async function chatWithAI(message: string, history: any[] = []): Promise<
     throw error;
   }
 }
+
+// ==========================================
+// 🚀 BLOGS API (SEO & Content)
+// ==========================================
+
+export interface BlogPost {
+  _id: string;
+  title: string;
+  slug: string;
+  content: string;
+  excerpt?: string;
+  author: string;
+  coverImage?: string;
+  seoTitle?: string;
+  seoKeywords?: string;
+  isPublished: boolean;
+  createdAt: string;
+}
+
+// 1. Get all blogs (Public page ke liye)
+export async function getBlogs(): Promise<BlogPost[]> {
+  try {
+    const response = await fetch(`${API_BASE_URL}/blogs`);
+    if (!response.ok) throw new Error('Failed to fetch blogs');
+    const data = await response.json();
+    return data.blogs || [];
+  } catch (error) {
+    console.error('Error fetching blogs:', error);
+    return [];
+  }
+}
+
+// 2. Get single blog (Parhne ke liye)
+export async function getBlogBySlug(slug: string): Promise<BlogPost | null> {
+  try {
+    const response = await fetch(`${API_BASE_URL}/blogs/${slug}`);
+    if (!response.ok) return null;
+    const data = await response.json();
+    return data.blog;
+  } catch (error) {
+    console.error('Error fetching blog:', error);
+    return null;
+  }
+}
+
+// 3. Create a new blog (Bahzad bhai ke Editor ke liye)
+export async function createBlog(payload: Partial<BlogPost>, token: string): Promise<BlogPost> {
+  const response = await fetch(`${API_BASE_URL}/blogs`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${token}`
+    },
+    body: JSON.stringify(payload)
+  });
+  if (!response.ok) throw new Error('Failed to create blog');
+  return response.json();
+}

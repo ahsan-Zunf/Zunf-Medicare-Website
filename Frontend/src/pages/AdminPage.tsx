@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import { Link } from "react-router-dom"; // ✅ NEW: Link import kiya hai
 import { SiteHeader } from "@/components/sections/site-header";
 import { Footer } from "@/components/sections/footer";
 import { Card } from "@/components/ui/card";
@@ -19,6 +20,7 @@ import {
   X,
   Phone,
   Mail,
+  PenTool, // ✅ NEW: Blog button ke icon ke liye
 } from "lucide-react";
 import { getOrders, updateOrderStatus, deleteOrder, getLeads, updateLeadStatus, deleteLead, type Order, type OrderStatus, type Lead } from "@/lib/api";
 import { useToast } from "@/contexts/toast-context";
@@ -220,10 +222,20 @@ export default function AdminPage() {
                     Overview of today's operations and lab bookings.
                   </p>
                 </div>
-                <Button variant="outline" onClick={handleLogout} className="self-start sm:self-auto">
-                  <LogOut className="h-4 w-4 mr-2" />
-                  Logout
-                </Button>
+                
+                {/* ✅ NEW: Action Buttons (Blog & Logout) */}
+                <div className="flex gap-3 self-start sm:self-auto">
+                  <Link to="/admin/write-blog">
+                    <Button className="bg-[#8CC63F] hover:bg-[#7ab332] text-white font-bold transition-colors">
+                      <PenTool className="h-4 w-4 mr-2" />
+                      Write New Blog
+                    </Button>
+                  </Link>
+                  <Button variant="outline" onClick={handleLogout}>
+                    <LogOut className="h-4 w-4 mr-2" />
+                    Logout
+                  </Button>
+                </div>
               </div>
 
               {/* Tab Navigation */}
@@ -590,5 +602,3 @@ export default function AdminPage() {
     </div>
   );
 }
-
-
