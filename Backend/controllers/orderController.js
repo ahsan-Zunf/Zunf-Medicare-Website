@@ -1,3 +1,4 @@
+const sendEmail = require('../utils/sendEmail'); // ✅ NEW: Email sender import kar liya
 const Order = require('../models/orderModel');
 const {
   ensureQuotaOrThrow,
@@ -118,43 +119,76 @@ exports.createOrder = async (req, res) => {
     };
 
     console.log('🛒 [ORDER] Creating new order...');
-    console.log('🛒 [ORDER] Customer:', customer.name, customer.email);
-    console.log('🛒 [ORDER] Items count:', items.length);
-
+    
     const order = await Order.create({
       customer,
       preferredDate: finalPreferredDate,
       preferredTime: finalPreferredTime,
       items: orderItems,
       totals: orderTotals,
-      status: 'Pending', // Initial status set to Pending as requested
+      status: 'Pending', 
     });
 
-    // Verify order was saved to database
     const savedOrder = await Order.findById(order._id);
     if (!savedOrder) {
       throw new Error('Order was not saved to database');
     }
 
     console.log('✅ [ORDER] Order created and saved successfully!');
-    console.log('✅ [ORDER] Order ID:', order._id);
-    console.log('✅ [ORDER] Order created at:', order.createdAt);
-    console.log('✅ [ORDER] Order status:', order.status);
-    console.log('✅ [ORDER] Customer mobile saved as:', order.customer.mobile);
-    console.log('✅ [ORDER] Customer email:', order.customer.email);
-    console.log('✅ [ORDER] Total items:', order.items.length);
-    console.log('✅ [ORDER] Total amount:', order.totals.final);
 
-    // Send SMS confirmation (existing functionality)
+    // ==========================================
+    // 🚨 NEW: ADMIN EMAIL NOTIFICATION SYSTEM
+    // ==========================================
+    try {
+      // Tests ki list banana
+      const testsListHtml = orderItems.map(item => 
+        `<li><strong>${item.testName}</strong> (${item.labName}) - Qty: ${item.quantity} - Rs. ${item.discountedPrice}</li>`
+      ).join('');
+
+      const emailBody = `
+        <div style="font-family: Arial, sans-serif; padding: 20px; border: 1px solid #e0e0e0; border-radius: 10px; max-w: 600px; margin: 0 auto;">
+          <div style="text-align: center; margin-bottom: 20px;">
+            <h2 style="color: #8CC63F; margin: 0;">🚨 Nayi Lab Booking Aayi Hai!</h2>
+            <p style="color: #666; font-size: 14px;">ZUNF Medicare Website</p>
+          </div>
+          
+          <div style="background-color: #f8f9fa; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+            <h3 style="color: #333; margin-top: 0; border-bottom: 2px solid #00AEEF; padding-bottom: 5px;">Patient Details</h3>
+            <p style="margin: 5px 0;"><strong>Name:</strong> ${customer.name}</p>
+            <p style="margin: 5px 0;"><strong>Mobile:</strong> <a href="tel:${customer.mobile}">${customer.mobile}</a></p>
+            <p style="margin: 5px 0;"><strong>Email:</strong> ${customer.email || 'N/A'}</p>
+            <p style="margin: 5px 0;"><strong>Age:</strong> ${customer.age} | <strong>City:</strong> ${customer.city}</p>
+          </div>
+
+          <div style="margin-bottom: 20px;">
+            <h3 style="color: #333; border-bottom: 2px solid #00AEEF; padding-bottom: 5px;">Booking Information</h3>
+            <p style="margin: 5px 0;"><strong>Preferred Slot:</strong> ${finalPreferredDate} at ${finalPreferredTime}</p>
+            <p style="margin: 5px 0;"><strong>Total Bill:</strong> <span style="color: #8CC63F; font-size: 18px; font-weight: bold;">Rs. ${orderTotals.final}</span></p>
+            
+            <h4 style="margin-bottom: 5px;">Tests Ordered:</h4>
+            <ul style="margin-top: 5px; padding-left: 20px; color: #555;">
+              ${testsListHtml}
+            </ul>
+          </div>
+          
+          <div style="text-align: center; margin-top: 30px;">
+            <a href="https://zunfmedicare.com/admin" style="background-color: #00AEEF; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block;">Admin Panel Kholaing</a>
+          </div>
+        </div>
+      `;
+      
+      // Email background mein bhejo
+      sendEmail('🚨 NEW ORDER ALRET - ZUNF Medicare', emailBody);
+    } catch (emailError) {
+      console.error('❌ [ORDER] Admin Email bhejne mein masla aaya:', emailError);
+    }
+    // ==========================================
+
+    // Send SMS confirmation
     sendOrderConfirmation(order).catch((error) => {
       console.error('❌ [ORDER] Confirmation SMS scheduling error:', error);
     });
 
-    // TODO: Email functionality - Implement email service when needed
-    // sendOrderConfirmationEmail(order)
-    // sendOrderNotificationEmail(order)
-
-    console.log('✅ [ORDER] Order processing completed');
     return res.status(201).json(order);
   } catch (error) {
     if (error.code === 'SMS_QUOTA_EXCEEDED') {
@@ -171,10 +205,8 @@ exports.getOrders = async (req, res) => {
     const { mobile } = req.query;
     let query = {};
 
-    // If mobile is provided, filter by customer mobile OR email (handles mobile-as-email legacy cases)
     if (mobile) {
       const trimmedQuery = String(mobile).trim();
-      // Handle potential mangling where +92 was prepended to emails
       const mangledQuery = (trimmedQuery.includes('@') && !trimmedQuery.startsWith('+'))
         ? `+92${trimmedQuery}`
         : trimmedQuery;
@@ -186,20 +218,9 @@ exports.getOrders = async (req, res) => {
           { 'customer.mobile': mangledQuery }
         ]
       };
-      console.log('📋 [ORDERS] Fetching orders for:', trimmedQuery, mangledQuery !== trimmedQuery ? `(also checking ${mangledQuery})` : '');
-    } else {
-      console.log('📋 [ORDERS] Fetching all orders (no filter)');
-    }
+    } 
 
     const orders = await Order.find(query).sort({ createdAt: -1 }).lean();
-
-    console.log(`📋 [ORDERS] Found ${orders.length} order(s) for query: "${mobile}"`);
-    if (orders.length > 0) {
-      console.log('📋 [ORDERS] Match found for mobile/email');
-    } else {
-      console.log('📋 [ORDERS] No orders found matching query:', JSON.stringify(query));
-    }
-
     return res.json({ orders });
   } catch (error) {
     console.error('❌ [ORDERS] Error fetching orders:', error);
@@ -236,7 +257,6 @@ exports.updateOrderStatus = async (req, res) => {
 exports.deleteOrder = async (req, res) => {
   try {
     const { id } = req.params;
-
     const order = await Order.findByIdAndDelete(id);
 
     if (!order) {
@@ -249,5 +269,3 @@ exports.deleteOrder = async (req, res) => {
     return res.status(500).json({ message: 'Failed to delete order' });
   }
 };
-
-
