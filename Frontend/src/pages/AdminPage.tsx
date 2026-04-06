@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { Link } from "react-router-dom"; // ✅ NEW: Link import kiya hai
+import { Link } from "react-router-dom"; 
 import { SiteHeader } from "@/components/sections/site-header";
 import { Footer } from "@/components/sections/footer";
 import { Card } from "@/components/ui/card";
@@ -20,9 +20,15 @@ import {
   X,
   Phone,
   Mail,
-  PenTool, // ✅ NEW: Blog button ke icon ke liye
+  PenTool, 
+  FileText // ✅ NEW: Blog icon import
 } from "lucide-react";
-import { getOrders, updateOrderStatus, deleteOrder, getLeads, updateLeadStatus, deleteLead, type Order, type OrderStatus, type Lead } from "@/lib/api";
+import { 
+  getOrders, updateOrderStatus, deleteOrder, 
+  getLeads, updateLeadStatus, deleteLead, 
+  getBlogs, deleteBlog, // ✅ NEW: Blog API imports
+  type Order, type OrderStatus, type Lead, type BlogPost 
+} from "@/lib/api";
 import { useToast } from "@/contexts/toast-context";
 import { useAuth } from "@/contexts/auth-context";
 import { Badge } from "@/components/ui/badge";
@@ -44,18 +50,31 @@ export default function AdminPage() {
   const [code, setCode] = useState("");
   const [authorized, setAuthorized] = useState(false);
   const [error, setError] = useState("");
+  
+  // States
   const [orders, setOrders] = useState<Order[]>([]);
+  const [leads, setLeads] = useState<Lead[]>([]);
+  const [blogs, setBlogs] = useState<BlogPost[]>([]); // ✅ NEW: Blogs state
+
+  // Error States
   const [ordersError, setOrdersError] = useState("");
+  const [leadsError, setLeadsError] = useState("");
+  const [blogsError, setBlogsError] = useState("");
+
+  // Loading States
   const [loadingOrders, setLoadingOrders] = useState(false);
+  const [loadingLeads, setLoadingLeads] = useState(false);
+  const [loadingBlogs, setLoadingBlogs] = useState(false);
+
+  // Action States
   const [updatingOrderId, setUpdatingOrderId] = useState<string | null>(null);
   const [deletingOrderId, setDeletingOrderId] = useState<string | null>(null);
+  const [updatingLeadId, setUpdatingLeadId] = useState<string | null>(null);
+  const [deletingBlogId, setDeletingBlogId] = useState<string | null>(null);
+
   const [labFilter, setLabFilter] = useState<string>("all");
   const [dateFilter, setDateFilter] = useState<string>("");
-  const [activeTab, setActiveTab] = useState<"orders" | "leads">("orders");
-  const [leads, setLeads] = useState<Lead[]>([]);
-  const [loadingLeads, setLoadingLeads] = useState(false);
-  const [leadsError, setLeadsError] = useState("");
-  const [updatingLeadId, setUpdatingLeadId] = useState<string | null>(null);
+  const [activeTab, setActiveTab] = useState<"orders" | "leads" | "blogs">("orders"); // ✅ NEW: Blogs tab option
 
   const { token } = useAuth();
 
@@ -75,15 +94,15 @@ export default function AdminPage() {
     setError("");
     setOrders([]);
     setOrdersError("");
+    setLeads([]);
+    setBlogs([]);
     setLabFilter("all");
     setDateFilter("");
   };
 
+  // --- DELETE HANDLERS ---
   const handleDeleteOrder = async (orderId: string) => {
-    if (!confirm("Are you sure you want to delete this order? This action cannot be undone.")) {
-      return;
-    }
-
+    if (!confirm("Are you sure you want to delete this order? This action cannot be undone.")) return;
     setDeletingOrderId(orderId);
     try {
       await deleteOrder(orderId);
@@ -97,19 +116,31 @@ export default function AdminPage() {
     }
   };
 
+  const handleDeleteBlog = async (blogId: string) => {
+    if (!confirm("Are you sure you want to delete this blog? This action cannot be undone.")) return;
+    setDeletingBlogId(blogId);
+    try {
+      const currentToken = localStorage.getItem("token") || "admin-token";
+      await deleteBlog(blogId, currentToken);
+      setBlogs((prev) => prev.filter((b) => b._id !== blogId));
+      showToast("Blog deleted successfully", "success");
+    } catch (err) {
+      console.error(err);
+      showToast("Failed to delete blog. Please try again.", "error");
+    } finally {
+      setDeletingBlogId(null);
+    }
+  };
+
+  // --- FETCH HANDLERS ---
   const fetchOrders = async () => {
     setLoadingOrders(true);
     setOrdersError("");
     try {
       const data = await getOrders();
-      if (!data.length) {
-        setOrdersError("No orders have been placed yet.");
-      } else {
-        setOrdersError("");
-      }
+      if (!data.length) setOrdersError("No orders have been placed yet.");
       setOrders(data);
     } catch (err) {
-      console.error(err);
       setOrdersError("Failed to load orders.");
     } finally {
       setLoadingOrders(false);
@@ -122,14 +153,25 @@ export default function AdminPage() {
     try {
       const data = await getLeads(token || undefined);
       setLeads(data);
-      if (!data.length) {
-        setLeadsError("No inquiries found.");
-      }
+      if (!data.length) setLeadsError("No inquiries found.");
     } catch (err) {
-      console.error(err);
       setLeadsError("Failed to load inquiries.");
     } finally {
       setLoadingLeads(false);
+    }
+  };
+
+  const fetchAllBlogs = async () => {
+    setLoadingBlogs(true);
+    setBlogsError("");
+    try {
+      const data = await getBlogs();
+      setBlogs(data);
+      if (!data.length) setBlogsError("No blogs published yet.");
+    } catch (err) {
+      setBlogsError("Failed to load blogs.");
+    } finally {
+      setLoadingBlogs(false);
     }
   };
 
@@ -137,6 +179,7 @@ export default function AdminPage() {
     if (authorized) {
       fetchOrders();
       fetchLeads();
+      fetchAllBlogs(); // ✅ Fetch blogs on login
     }
   }, [authorized, token]);
 
@@ -157,27 +200,24 @@ export default function AdminPage() {
       if (labFilter !== "all" && !order.items.some((item) => item.labId === labFilter)) {
         return false;
       }
-
       if (dateFilter) {
         const orderDate = new Date(order.createdAt).toISOString().split("T")[0];
         return orderDate === dateFilter;
       }
-
       return true;
     });
   }, [orders, labFilter, dateFilter]);
 
   const dashboardStats = useMemo(() => {
     const pendingOrders = filteredOrders.filter((order) => order.status === "Pending").length;
-    const uniquePatients = new Set(filteredOrders.map((order) => order.customer.email)).size;
     const revenue = filteredOrders.reduce((sum, order) => sum + (order.totals?.final ?? 0), 0);
 
     return [
       { label: "Pending Orders", value: pendingOrders, icon: ShoppingBag },
-      { label: "Registered Patients", value: uniquePatients, icon: Users },
       { label: "Revenue (Filtered)", value: formatCurrency(revenue), icon: IndianRupee },
+      { label: "Total Blogs", value: blogs.length, icon: FileText }, // ✅ Show total blogs
     ];
-  }, [filteredOrders]);
+  }, [filteredOrders, blogs.length]);
 
   return (
     <div className="flex min-h-dvh flex-col bg-background">
@@ -223,7 +263,6 @@ export default function AdminPage() {
                   </p>
                 </div>
                 
-                {/* ✅ NEW: Action Buttons (Blog & Logout) */}
                 <div className="flex gap-3 self-start sm:self-auto">
                   <Link to="/admin/write-blog">
                     <Button className="bg-[#8CC63F] hover:bg-[#7ab332] text-white font-bold transition-colors">
@@ -239,11 +278,11 @@ export default function AdminPage() {
               </div>
 
               {/* Tab Navigation */}
-              <div className="flex bg-muted/50 p-1 rounded-xl border border-border/50 max-w-fit">
+              <div className="flex bg-muted/50 p-1 rounded-xl border border-border/50 max-w-fit overflow-x-auto">
                 <Button
                   variant={activeTab === "orders" ? "secondary" : "ghost"}
                   onClick={() => setActiveTab("orders")}
-                  className={`rounded-lg transition-all ${activeTab === "orders" ? "shadow-sm" : ""}`}
+                  className={`rounded-lg whitespace-nowrap transition-all ${activeTab === "orders" ? "shadow-sm" : ""}`}
                 >
                   <ShoppingBag className="h-4 w-4 mr-2" />
                   Order Bookings
@@ -251,10 +290,19 @@ export default function AdminPage() {
                 <Button
                   variant={activeTab === "leads" ? "secondary" : "ghost"}
                   onClick={() => setActiveTab("leads")}
-                  className={`rounded-lg transition-all ${activeTab === "leads" ? "shadow-sm" : ""}`}
+                  className={`rounded-lg whitespace-nowrap transition-all ${activeTab === "leads" ? "shadow-sm" : ""}`}
                 >
                   <MessageSquare className="h-4 w-4 mr-2" />
                   Service Inquiries
+                </Button>
+                {/* ✅ NEW: Blogs Tab */}
+                <Button
+                  variant={activeTab === "blogs" ? "secondary" : "ghost"}
+                  onClick={() => setActiveTab("blogs")}
+                  className={`rounded-lg whitespace-nowrap transition-all ${activeTab === "blogs" ? "shadow-sm" : ""}`}
+                >
+                  <FileText className="h-4 w-4 mr-2" />
+                  Manage Blogs
                 </Button>
               </div>
 
@@ -276,7 +324,62 @@ export default function AdminPage() {
                 ))}
               </div>
 
-              {activeTab === "orders" ? (
+              {/* 🚀 BLOGS TAB CONTENT */}
+              {activeTab === "blogs" && (
+                <Card className="p-6 border border-primary/20">
+                  <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                    <div>
+                      <h2 className="text-xl font-semibold text-foreground">Published Blogs</h2>
+                      <p className="text-sm text-muted-foreground">Manage and delete your website content.</p>
+                    </div>
+                    <Button variant="ghost" size="sm" onClick={fetchAllBlogs} disabled={loadingBlogs} className="text-primary">
+                      {loadingBlogs ? <Loader2 className="h-4 w-4 animate-spin mr-2" /> : null} Refresh
+                    </Button>
+                  </div>
+
+                  {loadingBlogs ? (
+                    <div className="flex justify-center py-12"><Loader2 className="h-8 w-8 animate-spin text-primary" /></div>
+                  ) : blogsError ? (
+                    <div className="text-center py-12 text-muted-foreground">{blogsError}</div>
+                  ) : (
+                    <div className="grid grid-cols-1 gap-4">
+                      {blogs.map((blog) => (
+                        <Card key={blog._id} className="p-4 border-border/60 hover:shadow-md transition-shadow bg-card/70">
+                          <div className="flex flex-col md:flex-row justify-between md:items-center gap-4">
+                            <div>
+                              <h3 className="font-bold text-lg text-foreground line-clamp-1">{blog.title}</h3>
+                              <div className="flex items-center gap-4 text-xs text-muted-foreground mt-1">
+                                <span className="flex items-center gap-1"><Calendar className="h-3.5 w-3.5" /> {new Date(blog.createdAt).toLocaleDateString()}</span>
+                                <span className="flex items-center gap-1"><PenTool className="h-3.5 w-3.5" /> {blog.author}</span>
+                              </div>
+                            </div>
+                            <div className="flex gap-2">
+                              <Link to={`/blog/${blog.slug}`} target="_blank">
+                                <Button variant="outline" size="sm" className="h-8">
+                                  <ExternalLink className="h-3.5 w-3.5 mr-1.5"/> View Live
+                                </Button>
+                              </Link>
+                              <Button 
+                                variant="destructive" 
+                                size="sm" 
+                                className="h-8"
+                                onClick={() => handleDeleteBlog(blog._id)}
+                                disabled={deletingBlogId === blog._id}
+                              >
+                                {deletingBlogId === blog._id ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : <Trash2 className="h-3.5 w-3.5 mr-1.5" />}
+                                Delete
+                              </Button>
+                            </div>
+                          </div>
+                        </Card>
+                      ))}
+                    </div>
+                  )}
+                </Card>
+              )}
+
+              {/* ORDERS TAB CONTENT */}
+              {activeTab === "orders" && (
                 <Card className="p-6 border border-primary/20">
                   <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                     <div>
@@ -452,7 +555,10 @@ export default function AdminPage() {
                     </div>
                   )}
                 </Card>
-              ) : (
+              )}
+
+              {/* LEADS TAB CONTENT */}
+              {activeTab === "leads" && (
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
                     <div>
@@ -594,6 +700,7 @@ export default function AdminPage() {
                   )}
                 </div>
               )}
+
             </div>
           )}
         </div>

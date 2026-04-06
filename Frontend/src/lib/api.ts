@@ -1,5 +1,8 @@
-// ✅ API Base URL updated for Google Cloud Run Production
+// ✅ Live URL ko ON kar dein (Comment hata dein)
 export const API_BASE_URL = 'https://zunf-medicare-website-378538196369.europe-west1.run.app';
+
+// ❌ Localhost ko OFF kar dein (Shuru mein // laga dein ya delete kar dein)
+// export const API_BASE_URL = 'http://localhost:8080';
 
 export interface Lab {
   id: string;
@@ -619,4 +622,43 @@ export async function createBlog(payload: Partial<BlogPost>, token: string): Pro
   });
   if (!response.ok) throw new Error('Failed to create blog');
   return response.json();
+}
+
+
+// ==========================================
+// 🚀 NEW: EXTRA BLOG APIs
+// ==========================================
+
+// Blog delete karne ki API
+export async function deleteBlog(id: string, token: string): Promise<void> {
+  const response = await fetch(`${API_BASE_URL}/blogs/${id}`, {
+    method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${token}`
+    },
+  });
+
+  if (!response.ok) {
+    const errorData = await response.json().catch(() => ({}));
+    throw new Error(errorData.message || 'Failed to delete blog');
+  }
+}
+
+// Editor ke andar image Cloudinary par bhejne ki API
+export async function uploadImageToCloudinary(file: File): Promise<string> {
+  const formData = new FormData();
+  formData.append('file', file);
+  // ZUNF Cloudinary settings 
+  formData.append('upload_preset', 'zunf_medicare_preset'); 
+
+  // Replace 'dvddiu3zr' with your actual CLOUDINARY_CLOUD_NAME
+  const response = await fetch(`https://api.cloudinary.com/v1_1/dvddiu3zr/image/upload`, {
+    method: 'POST',
+    body: formData,
+  });
+
+  if (!response.ok) throw new Error("Image upload failed");
+  const data = await response.json();
+  return data.secure_url; 
 }
