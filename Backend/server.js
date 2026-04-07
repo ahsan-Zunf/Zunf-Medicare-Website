@@ -17,6 +17,11 @@ const blogRoutes = require('./routes/blogRoutes'); // ✅ NEW: Blog Route Import
 
 const app = express();
 
+// 🚀 SEO PRO FIX: Prerender.io Middleware (Bots ke liye)
+// Isay hamesha app = express() ke foran baad rakhte hain
+const prerender = require('prerender-node').set('prerenderToken', 'ZFu0vdvEhhVv8hW5oBxo');
+app.use(prerender);
+
 // ✅ SEO FIX: Redirect www to non-www
 app.use((req, res, next) => {
   if (req.headers.host && req.headers.host.startsWith('www.')) {
