@@ -131,7 +131,7 @@ export default function LabDetailPage() {
           name="keywords" 
           content={`${lab.name}, lab tests Lahore, blood tests, book lab test online, ${lab.name} test prices, ZUNF Medicare`} 
         />
-        <link rel="canonical" href={window.location.href} />
+        
       </Helmet>
       {/* 🚀 ADVANCED SEO MAGIC ENDS HERE */}
 

@@ -127,7 +127,7 @@ export default function TestDetailPage() {
                 />
 
                 {/* Canonical Tag taake Google duplicate content na samjhe */}
-                <link rel="canonical" href={window.location.href} />
+        
             </Helmet>
             {/* 🚀 SEO MAGIC ENDS HERE */}
 
