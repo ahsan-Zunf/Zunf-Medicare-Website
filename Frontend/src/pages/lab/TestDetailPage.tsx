@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams, Link, useNavigate } from "react-router-dom";
+import { useParams, useSearchParams, Link, useNavigate } from "react-router-dom";
 import { ArrowLeft, DollarSign, ShoppingCart, Clock, CheckCircle2, ShieldCheck, Activity, AlertCircle, Loader2 } from "lucide-react";
 import { SiteHeader } from "@/components/sections/site-header";
 import { Footer } from "@/components/sections/footer";
@@ -8,7 +8,7 @@ import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { getLabTests, type LabTestsResponse, type LabTest } from "@/lib/api";
 import { useCart } from "@/contexts/cart-context";
-import { Helmet } from 'react-helmet-async'; // 🚀 Naya SEO Import
+import { Helmet } from 'react-helmet-async'; 
 import { labs } from "@/data/labs";
 
 // Map lab IDs to their logo files
@@ -26,7 +26,11 @@ const getLabLogo = (labId: string): string | null => {
 };
 
 export default function TestDetailPage() {
-    const { labId, testId } = useParams<{ labId: string; testId: string }>();
+    // ✅ SEO FIX 1: LabId ab URL path se nahi, URL Parameters (?lab=) se aayega
+    const { testId } = useParams<{ testId: string }>(); 
+    const [searchParams] = useSearchParams();
+    const labId = searchParams.get("lab"); // e.g., ?lab=chughtai-lab
+    
     const navigate = useNavigate();
     const { addToCart } = useCart();
 
@@ -35,18 +39,30 @@ export default function TestDetailPage() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
 
+    // Canonical Tag Generator (Ignoring ?lab parameter)
+    const canonicalUrl = typeof window !== 'undefined' ? `${window.location.origin}${window.location.pathname}` : '';
+
     const lab = labs.find((l) => l.id === labId);
     const isChughtai = labId === 'chughtai-lab';
     const discountPercent = isChughtai ? 20 : 40;
 
     useEffect(() => {
         const fetchData = async () => {
-            if (!labId || !testId) return;
+            if (!testId) return;
+
+            // Agar URL mein lab nahi hai, toh abhi ke liye default behaviour rok dein
+            // (Kyunke baad mein hum yahan comparison list dikhayenge)
+            if (!labId) {
+                setLoading(false);
+                setError("Please select a lab to view test details.");
+                return;
+            }
 
             setLoading(true);
             setError(null);
 
             try {
+                // Waqti taur par existing API use kar rahe hain
                 const response = await getLabTests(labId);
                 if (response === null) {
                     setError("Lab data not available");
@@ -95,9 +111,9 @@ export default function TestDetailPage() {
                 <main className="flex-1 flex items-center justify-center">
                     <div className="text-center max-w-md mx-auto px-4">
                         <AlertCircle className="h-12 w-12 text-slate-400 mx-auto mb-4" />
-                        <h1 className="text-2xl font-bold mb-2">Test Not Found</h1>
+                        <h1 className="text-2xl font-bold mb-2">Notice</h1>
                         <p className="text-slate-500 mb-6">
-                            {error || "The requested test could not be found."}
+                            {error || "The requested test details could not be loaded."}
                         </p>
                         <Button onClick={() => navigate(-1)} variant="outline">
                             Go Back
@@ -126,8 +142,8 @@ export default function TestDetailPage() {
                     content={`${test.name}, ${lab.name}, lab test Lahore, blood test home sampling, ZUNF Medicare, book ${test.name} online, discounted lab tests Pakistan`} 
                 />
 
-                {/* Canonical Tag taake Google duplicate content na samjhe */}
-        
+                {/* ✅ SEO FIX 2: Canonical Tag strictly locked to Master URL */}
+                <link rel="canonical" href={canonicalUrl} />
             </Helmet>
             {/* 🚀 SEO MAGIC ENDS HERE */}
 
@@ -137,13 +153,14 @@ export default function TestDetailPage() {
 
                     {/* Breadcrumb / Back Navigation */}
                     <div className="mb-6">
-                        <Link
-                            to={`/lab/${labId}`}
-                            className="inline-flex items-center gap-2 text-slate-500 hover:text-[#8CC63F] transition-colors font-medium text-sm"
+                        <Button
+                            variant="ghost"
+                            onClick={() => navigate(-1)}
+                            className="inline-flex items-center gap-2 text-slate-500 hover:text-[#8CC63F] transition-colors font-medium text-sm p-0 h-auto"
                         >
                             <ArrowLeft className="h-4 w-4" />
-                            <span>Back to {lab.name}</span>
-                        </Link>
+                            <span>Go Back</span>
+                        </Button>
                     </div>
 
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -279,22 +296,18 @@ export default function TestDetailPage() {
                                     </div>
                                 </Card>
 
-                                {/* Trust Badges */}
-                                <div className="grid grid-cols-2 gap-4">
-                                    <div className="bg-slate-50 border border-slate-100 p-4 rounded-2xl text-center hover:bg-white transition-colors">
-                                        <ShieldCheck className="h-7 w-7 text-[#8CC63F] mx-auto mb-2" />
-                                        <p className="text-[11px] font-bold text-slate-700 uppercase tracking-wider">Verified Labs</p>
-                                    </div>
-                                    <div className="bg-slate-50 border border-slate-100 p-4 rounded-2xl text-center hover:bg-white transition-colors">
-                                        <CheckCircle2 className="h-7 w-7 text-[#8CC63F] mx-auto mb-2" />
-                                        <p className="text-[11px] font-bold text-slate-700 uppercase tracking-wider">Best Prices</p>
-                                    </div>
-                                </div>
-
                             </div>
                         </div>
 
                     </div>
+                    
+                    {/* ✅ SEO FIX 3: Master Test Aggregation Footer (Google yahan se cross-link banayega) */}
+                    <div className="mt-12 text-center border-t border-slate-200 pt-8">
+                        <p className="text-sm text-slate-500">
+                            The <span className="font-semibold text-slate-700">{test.name}</span> is available at trusted diagnostic centers across Pakistan including {labs.map(l => l.name).join(', ')}. Compare prices and book online via ZUNF Medicare.
+                        </p>
+                    </div>
+
                 </div>
             </main>
             <Footer />

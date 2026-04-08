@@ -230,8 +230,8 @@ export default function LabDetailPage() {
                           </div>
                           
                           <div className="mb-4 pr-8 flex-1">
-                            {/* SEO LINK HIGHLIGHT */}
-                            <Link to={`/lab/${labId}/test/${test.id}`} className="hover:text-[#8CC63F] transition-colors focus:outline-none">
+                            {/* ✅ SEO FIX: Masterpiece Link Structure */}
+                            <Link to={`/test/${test.id}?lab=${labId}`} className="hover:text-[#8CC63F] transition-colors focus:outline-none">
                               <h3 className="text-base font-bold text-slate-800 line-clamp-2 leading-snug">{test.name}</h3>
                             </Link>
                           </div>
@@ -272,8 +272,8 @@ export default function LabDetailPage() {
                         <Card key={test.id} className="p-5 border border-slate-100 hover:border-[#00AEEF]/50 bg-white hover:shadow-xl transition-all duration-300 group rounded-2xl flex flex-col h-full">
                           
                           <div className="mb-4 flex-1">
-                             {/* SEO LINK HIGHLIGHT */}
-                            <Link to={`/lab/${labId}/test/${test.id}`} className="hover:text-[#00AEEF] transition-colors focus:outline-none">
+                            {/* ✅ SEO FIX: Masterpiece Link Structure */}
+                            <Link to={`/test/${test.id}?lab=${labId}`} className="hover:text-[#00AEEF] transition-colors focus:outline-none">
                               <h3 className="text-base font-bold text-slate-800 line-clamp-2 leading-snug">{test.name}</h3>
                             </Link>
                           </div>

@@ -8,11 +8,15 @@ import './app/globals.css'
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <HelmetProvider>
-      <BrowserRouter>
+      {/* ✅ FIX: React Router v7 future flags added to remove warnings */}
+      <BrowserRouter
+        future={{
+          v7_startTransition: true,
+          v7_relativeSplatPath: true,
+        }}
+      >
         <App />
       </BrowserRouter>
     </HelmetProvider>
   </React.StrictMode>,
 )
-
-

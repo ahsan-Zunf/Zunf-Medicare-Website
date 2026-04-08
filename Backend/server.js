@@ -14,6 +14,7 @@ const chatRoutes = require('./routes/chatRoutes');
 const leadRoutes = require('./routes/leadRoutes');
 const reportRoutes = require('./routes/reportRoutes'); 
 const blogRoutes = require('./routes/blogRoutes'); // ✅ NEW: Blog Route Import
+const testRoutes = require('./routes/testRoutes'); // 🚀 NEW: Masterpiece Aggregated Test Route
 
 const app = express();
 
@@ -95,7 +96,8 @@ app.use('/booking', bookingRoutes);
 app.use('/chat', chatRoutes);
 app.use('/leads', leadRoutes);
 app.use('/reports', reportRoutes); 
-app.use('/blogs', blogRoutes); // ✅ NEW: Blog Route API Use
+app.use('/blogs', blogRoutes); 
+app.use('/tests', testRoutes); // 🚀 NEW: Masterpiece Test API Endpoint
 
 app.use((req, res) => {
   res.status(404).json({ error: 'Route not found', path: req.url });

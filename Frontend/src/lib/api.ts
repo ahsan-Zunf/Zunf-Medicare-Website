@@ -25,6 +25,51 @@ export interface LabTestsResponse {
   tests: LabTest[];
 }
 
+// ==========================================
+// 🚀 MASTERPIECE MODEL: Aggregated Test APIs
+// ==========================================
+export interface AvailableLab {
+  lab_id: string;
+  name: string;
+  price: number | null;
+  discounted_price: number | null;
+}
+
+export interface AggregatedTest {
+  test_id: string;
+  test_name: string;
+  description?: string;
+  available_labs: AvailableLab[];
+}
+
+/**
+ * Fetch a specific test and all labs offering it (Masterpiece Model)
+ */
+export async function getTestDetails(testId: string): Promise<AggregatedTest | null> {
+  try {
+    const response = await fetch(`${API_BASE_URL}/tests/${testId}`, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+
+    if (!response.ok) {
+      if (response.status === 404) {
+        return null;
+      }
+      throw new Error(`Failed to fetch test details: ${response.statusText}`);
+    }
+
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error(`Error fetching aggregated test ${testId}:`, error);
+    return null;
+  }
+}
+// ==========================================
+
 export interface OrderCustomer {
   name: string;
   email: string;
@@ -623,7 +668,6 @@ export async function createBlog(payload: Partial<BlogPost>, token: string): Pro
   if (!response.ok) throw new Error('Failed to create blog');
   return response.json();
 }
-
 
 // ==========================================
 // 🚀 NEW: EXTRA BLOG APIs

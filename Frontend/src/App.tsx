@@ -4,7 +4,7 @@ import { CartProvider } from '@/contexts/cart-context'
 import { AuthProvider, useAuth } from '@/contexts/auth-context'
 import { ToastProvider } from '@/contexts/toast-context'
 import { ChatbotButton } from '@/components/chatbot-button'
-import { WhatsAppWidget } from '@/components/whatsapp-widget' // ✅ Naya WhatsApp Widget import kiya
+import { WhatsAppWidget } from '@/components/whatsapp-widget' 
 import { EhrPromoPopup } from '@/components/ehr-promo-popup'
 import ScrollToTop from '@/components/scroll-to-top'
 import { Preloader } from '@/components/ui/preloader'
@@ -105,7 +105,7 @@ function App() {
             <Route path="/admin" element={<AdminPage />} />
             <Route path="/admin/write-blog" element={<AdminBlogEditor />} />
             <Route path="/blogs" element={<BlogsPage />} />
-<Route path="/blog/:slug" element={<BlogDetailPage />} />
+            <Route path="/blog/:slug" element={<BlogDetailPage />} />
 
             {/* Health Card Routes */}
             <Route path="/health-card" element={<HealthCardPage />} />
@@ -115,7 +115,9 @@ function App() {
 
             {/* Lab Routes */}
             <Route path="/lab/:labId" element={<LabDetailPage />} />
-            <Route path="/lab/:labId/test/:testId" element={<TestDetailPage />} />
+            
+            {/* ✅ SEO FIX: Masterpage Model Route (labId removed from URL path) */}
+            <Route path="/test/:testId" element={<TestDetailPage />} />
 
             {/* Services Routes */}
             <Route path="/services/labs" element={<LabsPage />} />
@@ -130,10 +132,9 @@ function App() {
           </Routes>
 
           {/* 🌟 Global Widgets 🌟 */}
-         <EhrPromoPopup />
-          <WhatsAppWidget /> {/* ✅ Yeh ab har page par nazar aayega */}
+          <EhrPromoPopup />
+          <WhatsAppWidget /> 
   
-          
         </CartProvider>
       </AuthProvider>
     </ToastProvider>
