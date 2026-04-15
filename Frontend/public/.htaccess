@@ -3,6 +3,10 @@ Options -MultiViews
 RewriteEngine On
 RewriteBase /
 
+# 🚀 SEO FIX: Redirect sitemap.xml to Google Cloud Backend
+# (Yeh line sitemap ki request ko seedha backend par bhej degi)
+RewriteRule ^sitemap\.xml$ https://zunf-medicare-website-378538196369.europe-west1.run.app/sitemap.xml [R=301,L]
+
 # Handle Angular and React routes
 # Don't rewrite files or directories
 RewriteCond %{REQUEST_FILENAME} !-f
