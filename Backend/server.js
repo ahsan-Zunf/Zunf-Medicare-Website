@@ -3,6 +3,9 @@ const express = require('express');
 const cors = require('cors');
 const connectDB = require('./config/db');
 
+// Models
+const labModel = require('./models/labModel'); // 🚀 NEW: Import for dynamic sitemap
+
 // Routes
 const labRoutes = require('./routes/labRoutes');
 const messageRoutes = require('./routes/messageRoutes');
@@ -13,13 +16,12 @@ const bookingRoutes = require('./routes/bookingRoutes');
 const chatRoutes = require('./routes/chatRoutes');
 const leadRoutes = require('./routes/leadRoutes');
 const reportRoutes = require('./routes/reportRoutes'); 
-const blogRoutes = require('./routes/blogRoutes'); // ✅ NEW: Blog Route Import
-const testRoutes = require('./routes/testRoutes'); // 🚀 NEW: Masterpiece Aggregated Test Route
+const blogRoutes = require('./routes/blogRoutes'); 
+const testRoutes = require('./routes/testRoutes'); 
 
 const app = express();
 
-// 🚀 SEO PRO FIX: Prerender.io Middleware (Bots ke liye)
-// Isay hamesha app = express() ke foran baad rakhte hain
+// 🚀 SEO PRO FIX: Prerender.io Middleware
 const prerender = require('prerender-node').set('prerenderToken', 'ZFu0vdvEhhVv8hW5oBxo');
 app.use(prerender);
 
@@ -30,6 +32,56 @@ app.use((req, res, next) => {
     return res.redirect(301, `https://${newHost}${req.originalUrl}`);
   }
   next();
+});
+
+// ✅ SEO FIX: 301 Permanent Redirect for Old Lab Test URLs (Moved outside of Dev block)
+app.get('/lab/:labId/test/:testId', (req, res) => {
+  const { labId, testId } = req.params;
+  // Google ko batayein ke page permanently naye address par shift ho gaya hai
+  res.redirect(301, `/test/${testId}?lab=${labId}`);
+});
+
+// ==========================================
+// 🚀 SEO PRO: Automatic Dynamic Sitemap
+// ==========================================
+app.get('/sitemap.xml', (req, res) => {
+  const baseUrl = 'https://zunfmedicare.com';
+  let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
+  xml += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
+
+  // 1. Static Pages
+  const staticPages = [
+    '', '/about', '/contact', '/services/labs',
+    '/services/health-program', '/services/school-health-program',
+    '/services/corporate-health-screening', '/clients'
+  ];
+
+  staticPages.forEach(page => {
+    xml += `  <url>\n    <loc>${baseUrl}${page}</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>\n`;
+  });
+
+  // 2. Dynamic Pages (Aapke 2500+ Tests)
+  try {
+    const labsList = labModel.getLabs();
+    
+    labsList.forEach(lab => {
+      const labData = labModel.getLabTests(lab.id);
+      
+      if (labData && labData.tests) {
+        labData.tests.forEach(test => {
+          xml += `  <url>\n    <loc>${baseUrl}/test/${test.id}?lab=${lab.id}</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.6</priority>\n  </url>\n`;
+        });
+      }
+    });
+  } catch (error) {
+    console.error("Sitemap generation error:", error);
+  }
+
+  xml += `</urlset>`;
+
+  // Browser/Google ko batana ke yeh XML file hai
+  res.header('Content-Type', 'application/xml');
+  res.send(xml);
 });
 
 // ✅ Google Cloud Run uses 8080 by default
@@ -97,7 +149,7 @@ app.use('/chat', chatRoutes);
 app.use('/leads', leadRoutes);
 app.use('/reports', reportRoutes); 
 app.use('/blogs', blogRoutes); 
-app.use('/tests', testRoutes); // 🚀 NEW: Masterpiece Test API Endpoint
+app.use('/tests', testRoutes); 
 
 app.use((req, res) => {
   res.status(404).json({ error: 'Route not found', path: req.url });
