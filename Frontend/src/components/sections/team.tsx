@@ -11,7 +11,7 @@ export function Team() {
     teamMembers[0], // 1st Member
     {
       name: "Bisma Rehman",
-      role: "Co-Founder",
+      role: "COO",
       image: "/bisma.jpeg", // Using the correct public image path
       linkedin: "#", 
     },
