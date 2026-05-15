@@ -6,15 +6,24 @@ import { Button } from "@/components/custom";
 import { useEffect, useRef } from "react";
 
 export function Team() {
+  // ✅ FIX 1: Updated Bisma Rehman's image path to use the public folder image
   const topLeadership = [
-    ...teamMembers.slice(0, 3), 
+    teamMembers[0], // 1st Member
+    {
+      name: "Bisma Rehman",
+      role: "Co-Founder",
+      image: "/bisma.jpeg", // Using the correct public image path
+      linkedin: "#", 
+    },
+    teamMembers[1], // 3rd Member
+    teamMembers[2], // 4th Member
     {
       name: "Dr. Shaharyar",
       role: "Head of Doctors",
       image: "/Dr. Shaharyar.jpeg", 
       linkedin: "#", 
     }
-  ];
+  ].filter(Boolean); // Keep existing safety check
 
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -92,7 +101,7 @@ export function Team() {
 
         <div 
           ref={scrollRef}
-          className="flex overflow-x-auto md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10 pb-8 -mx-4 px-4 md:mx-auto md:px-0 snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
+          className="flex overflow-x-auto md:grid md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8 pb-8 -mx-4 px-4 md:mx-auto md:px-0 snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
         >
           {topLeadership.map((member, index) => (
             <motion.div
@@ -101,16 +110,14 @@ export function Team() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              // ✅ FIX: Mobile par w-full aur max-w-sm diya taake zyada phelay na
               className="group flex flex-col items-center min-w-[85vw] sm:min-w-[300px] max-w-[320px] md:min-w-0 shrink-0 snap-center md:max-w-none mx-auto"
             >
-              {/* Image Container */}
-              {/* ✅ FIX: Mobile pe fixed height (h-[320px] sm:h-[350px]) aur desktop pe aspect-[4/5] */}
+              {/* Image Container - Aspect ratio force */}
               <div className="relative w-full h-[320px] sm:h-[350px] md:h-auto md:aspect-[4/5] mb-5 md:mb-8 overflow-hidden rounded-[2rem] border border-slate-100 shadow-sm transition-all duration-500 md:group-hover:shadow-2xl md:group-hover:shadow-accent/10 md:group-hover:-translate-y-2">
                 <img
                   src={member.image}
                   alt={member.name}
-                  // ✅ FIX: object-cover ensure karega picture apni jagah se bahar na nikle
+                  // ✅ FIX 2: Added 'object-top' and forced stretch for inconsistent ratios to ensure equal card heights.
                   className="w-full h-full object-cover object-top transition-transform duration-700 md:group-hover:scale-110"
                   onError={(e) => {
                     e.currentTarget.src = "https://via.placeholder.com/400x500/f8fafc/94ca43?text=Photo+Missing";
@@ -136,9 +143,9 @@ export function Team() {
                 </div>
               </div>
 
-              {/* Text Content */}
+              {/* Text Content - Ensured consistent text alignment */}
               <div className="text-center w-full px-2">
-                <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-1.5 transition-colors md:group-hover:text-accent truncate">
+                <h3 className="text-xl md:text-xl lg:text-2xl font-bold text-slate-900 mb-1.5 transition-colors md:group-hover:text-accent truncate">
                   {member.name}
                 </h3>
                 <div className="inline-block bg-slate-50 border border-slate-100 px-3 py-1 rounded-full mb-3">
@@ -158,7 +165,7 @@ export function Team() {
                   <Link
                     to="/contact"
                     className="p-2 rounded-full bg-slate-50 text-primary hover:bg-slate-100 transition-colors"
-                  >
+                    >
                     <Mail className="h-4 w-4" />
                   </Link>
                 </div>
