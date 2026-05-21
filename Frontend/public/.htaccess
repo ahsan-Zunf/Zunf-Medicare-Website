@@ -17,3 +17,28 @@ RewriteRule ^sitemap\.xml$ https://zunf-medicare-website-378538196369.europe-wes
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^ index.html [L]
+
+# 🚀 SEO FIX 3: BROWSER CACHING (For JS, CSS, and Images)
+<IfModule mod_expires.c>
+  ExpiresActive On
+  
+  # Images & Icons (1 Year Cache)
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  
+  # CSS & JavaScript (1 Month Cache)
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  
+  # Fonts (1 Year Cache)
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/ttf "access plus 1 year"
+  
+  # Default fallback
+  ExpiresDefault "access plus 2 days"
+</IfModule>

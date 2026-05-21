@@ -26,7 +26,6 @@ const getLabLogo = (labId: string): string | null => {
 };
 
 export default function TestDetailPage() {
-    // ✅ SEO FIX 1: LabId ab URL path se nahi, URL Parameters (?lab=) se aayega
     const { testId } = useParams<{ testId: string }>(); 
     const [searchParams] = useSearchParams();
     const labId = searchParams.get("lab"); // e.g., ?lab=chughtai-lab
@@ -39,8 +38,9 @@ export default function TestDetailPage() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
 
-    // Canonical Tag Generator (Ignoring ?lab parameter)
-    const canonicalUrl = typeof window !== 'undefined' ? `${window.location.origin}${window.location.pathname}` : '';
+    // 🚀 SEO FIX 1: Enforced strict No-Trailing-Slash rule for Canonical URL
+    const cleanPath = typeof window !== 'undefined' ? window.location.pathname.replace(/\/+$/, "") : '';
+    const canonicalUrl = typeof window !== 'undefined' ? `${window.location.origin}${cleanPath}` : '';
 
     const lab = labs.find((l) => l.id === labId);
     const isChughtai = labId === 'chughtai-lab';
@@ -50,8 +50,6 @@ export default function TestDetailPage() {
         const fetchData = async () => {
             if (!testId) return;
 
-            // Agar URL mein lab nahi hai, toh abhi ke liye default behaviour rok dein
-            // (Kyunke baad mein hum yahan comparison list dikhayenge)
             if (!labId) {
                 setLoading(false);
                 setError("Please select a lab to view test details.");
@@ -62,7 +60,6 @@ export default function TestDetailPage() {
             setError(null);
 
             try {
-                // Waqti taur par existing API use kar rahe hain
                 const response = await getLabTests(labId);
                 if (response === null) {
                     setError("Lab data not available");
@@ -125,27 +122,39 @@ export default function TestDetailPage() {
         );
     }
 
+    // 🚀 SEO FIX 2: Dynamic Name Sanitizer & Title Truncator
+    // Wording ke andar se repetitive templates (e.g. "at Chughtai Lab", "-0") ko dynamically saaf karna
+    const cleanTestName = test.name
+        .replace(/\s+at\s+[\w\s\-\.\/]+(?:lab|center|laboratory|la).*/gi, '') 
+        .replace(/-\d+$/g, '')
+        .trim();
+
+    // Enforce high-optimized title tag strictly keeping under 60-65 chars limit
+    let seoTitle = `${cleanTestName} - ${lab.name} | ZUNF`;
+    if (seoTitle.length > 60) {
+        seoTitle = `${cleanTestName} | ${lab.name}`;
+    }
+
     return (
         <div className="flex min-h-dvh flex-col bg-slate-50">
             
-            {/* 🚀 SEO MAGIC STARTS HERE */}
+            {/* 🚀 FIXED SEO HELMET MODULE */}
             <Helmet>
-                <title>Book {test.name} in Lahore - {lab.name} | ZUNF Medicare</title>
+                <title>{seoTitle}</title>
                 
                 <meta 
                     name="description" 
-                    content={`Book ${test.name} online at ${lab.name} through ZUNF Medicare. ${test.description || "Get accurate results, home sampling facility, and up to 40% discount."} Check details and book now!`} 
+                    content={`Book ${cleanTestName} at ${lab.name} via ZUNF Medicare. Get up to ${discountPercent}% discount with doorstep home sample collection facility in Lahore.`} 
                 />
                 
                 <meta 
                     name="keywords" 
-                    content={`${test.name}, ${lab.name}, lab test Lahore, blood test home sampling, ZUNF Medicare, book ${test.name} online, discounted lab tests Pakistan`} 
+                    content={`${cleanTestName}, ${lab.name}, book lab test online, home sampling lahore, zunf healthcare`} 
                 />
 
-                {/* ✅ SEO FIX 2: Canonical Tag strictly locked to Master URL */}
+                {/* Secure locked canonical URL */}
                 <link rel="canonical" href={canonicalUrl} />
             </Helmet>
-            {/* 🚀 SEO MAGIC ENDS HERE */}
 
             <SiteHeader />
             <main className="flex-1 pt-8 md:pt-12 pb-12">
@@ -301,10 +310,10 @@ export default function TestDetailPage() {
 
                     </div>
                     
-                    {/* ✅ SEO FIX 3: Master Test Aggregation Footer (Google yahan se cross-link banayega) */}
+                    {/* Master Test Aggregation Footer */}
                     <div className="mt-12 text-center border-t border-slate-200 pt-8">
                         <p className="text-sm text-slate-500">
-                            The <span className="font-semibold text-slate-700">{test.name}</span> is available at trusted diagnostic centers across Pakistan including {labs.map(l => l.name).join(', ')}. Compare prices and book online via ZUNF Medicare.
+                            The <span className="font-semibold text-slate-700">{cleanTestName}</span> is available at trusted diagnostic centers across Pakistan including {labs.map(l => l.name).join(', ')}. Compare prices and book online via ZUNF Medicare.
                         </p>
                     </div>
 
