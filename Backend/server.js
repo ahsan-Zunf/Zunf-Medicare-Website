@@ -4,7 +4,7 @@ const cors = require('cors');
 const connectDB = require('./config/db');
 
 // Models
-const labModel = require('./models/labModel'); // 🚀 NEW: Import for dynamic sitemap
+const labModel = require('./models/labModel'); 
 
 // Routes
 const labRoutes = require('./routes/labRoutes');
@@ -34,10 +34,9 @@ app.use((req, res, next) => {
   next();
 });
 
-// ✅ SEO FIX: 301 Permanent Redirect for Old Lab Test URLs (Moved outside of Dev block)
+// ✅ SEO FIX: 301 Permanent Redirect for Old Lab Test URLs
 app.get('/lab/:labId/test/:testId', (req, res) => {
   const { labId, testId } = req.params;
-  // Google ko batayein ke page permanently naye address par shift ho gaya hai
   res.redirect(301, `/test/${testId}?lab=${labId}`);
 });
 
@@ -45,6 +44,7 @@ app.get('/lab/:labId/test/:testId', (req, res) => {
 // 🚀 SEO PRO: Automatic Dynamic Sitemap
 // ==========================================
 app.get('/sitemap.xml', (req, res) => {
+  // STRICT FIX: Base URL without trailing slash
   const baseUrl = 'https://zunfmedicare.com';
   let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
   xml += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
@@ -57,7 +57,9 @@ app.get('/sitemap.xml', (req, res) => {
   ];
 
   staticPages.forEach(page => {
-    xml += `  <url>\n    <loc>${baseUrl}${page}</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>\n`;
+    // 🚀 STRICT SANITIZER: Automatically remove any accidental trailing slashes
+    const cleanPage = page === '/' ? '' : page.replace(/\/+$/, "");
+    xml += `  <url>\n    <loc>${baseUrl}${cleanPage}</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>\n`;
   });
 
   // 2. Dynamic Pages (Aapke 2500+ Tests)
@@ -69,6 +71,7 @@ app.get('/sitemap.xml', (req, res) => {
       
       if (labData && labData.tests) {
         labData.tests.forEach(test => {
+          // Dynamic pages pehle se hi bina slash ke set hain
           xml += `  <url>\n    <loc>${baseUrl}/test/${test.id}?lab=${lab.id}</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.6</priority>\n  </url>\n`;
         });
       }
@@ -79,7 +82,6 @@ app.get('/sitemap.xml', (req, res) => {
 
   xml += `</urlset>`;
 
-  // Browser/Google ko batana ke yeh XML file hai
   res.header('Content-Type', 'application/xml');
   res.send(xml);
 });
@@ -89,11 +91,10 @@ const PORT = process.env.PORT || 8080;
 
 console.log('🚀 [STARTUP] Initializing server...');
 
-// ✅ Clean CORS origins
+// 🚀 FIX: Cleaned CORS origins (Removed old Netlify URL)
 const allowedOrigins = [
   'http://localhost:5173',
   'http://localhost:3000',
-  'https://newzunf.netlify.app',
   'https://zunfmedicare.com',
   'https://www.zunfmedicare.com',
   'https://zunf-medicare-website-378538196369.europe-west1.run.app' // Google Cloud URL
@@ -130,7 +131,7 @@ if (process.env.NODE_ENV !== 'production') {
   });
 }
 
-// ✅ Health check (Google Cloud needs this)
+// ✅ Health check
 app.get('/health', (req, res) => {
   res.json({
     status: 'ok',
@@ -167,7 +168,6 @@ app.use((err, req, res, next) => {
 connectDB()
   .then(() => {
     console.log('✅ [SERVER] Database connected');
-    // '0.0.0.0' is mandatory for Google Cloud Run
     app.listen(PORT, '0.0.0.0', () => {
       console.log(`🚀 [SERVER] Running on port ${PORT}`);
     });

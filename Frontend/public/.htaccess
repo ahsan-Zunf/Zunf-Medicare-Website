@@ -3,7 +3,12 @@ Options -MultiViews
 RewriteEngine On
 RewriteBase /
 
-# 🚀 SEO FIX: Redirect sitemap.xml to Google Cloud Backend
+# 🚀 SEO FIX 1: STRICT TRAILING SLASH REMOVAL
+# (Agar koi URL '/' par khatam hota hai, toh usay bina '/' wale clean URL par bhej do)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+# 🚀 SEO FIX 2: Redirect sitemap.xml to Google Cloud Backend
 # (Yeh line sitemap ki request ko seedha backend par bhej degi)
 RewriteRule ^sitemap\.xml$ https://zunf-medicare-website-378538196369.europe-west1.run.app/sitemap.xml [R=301,L]
 
